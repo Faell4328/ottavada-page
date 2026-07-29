@@ -1,0 +1,209 @@
+/* ==========================================================================
+   HOME PAGE -- Orchestra shell
+   ========================================================================== */
+.home-shell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(4, 10, 19, 0.36) 0%,
+            rgba(4, 10, 19, 0.74) 100%
+        ),
+        url("/orquestra.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   HOME PAGE -- Hero
+   ========================================================================== */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 180px);
+    position: relative;
+}
+.hero-title {
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .hero-title {
+        width: 80%;
+    }
+}
+.hero-title-line {
+    display: block;
+    max-width: 100%;
+    min-height: 1.1em;
+    font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+    .hero-title-line {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1024px) {
+    .hero-title-line {
+        font-size: 4.5rem;
+    }
+}
+
+/* ==========================================================================
+   HOME PAGE -- Main content area
+   ========================================================================== */
+.main-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 7rem;
+}
+@media (min-width: 768px) {
+    .main-content {
+        padding-top: 8rem;
+    }
+}
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+.section {
+    padding: 1.15rem 0 2rem;
+}
+.section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 999px;
+    padding: 0.38rem 0.72rem;
+    color: var(--brand-strong);
+    background: var(--brand-soft);
+    font-weight: 700;
+}
+.section h2 {
+    margin: 0.8rem 0 0.55rem;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    letter-spacing: -0.04em;
+}
+.section h3 {
+    margin: 0.8rem 0 0.55rem;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   HOME PAGE -- Benefits grid & cards
+   ========================================================================== */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+@media (min-width: 640px) {
+    .benefit-card {
+        padding: 3rem 2rem;
+    }
+}
+.benefit-card h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+.benefit-card p {
+    font-size: 1.15rem;
+    color: #fff;
+    margin: 0;
+}
+.benefit-card .card-body {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+/* ==========================================================================
+   HOME PAGE -- Tutorial
+   ========================================================================== */
+.tutorial-video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.tutorial-video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1rem;
+    border: none;
+}
+
+/* ==========================================================================
+   HOME PAGE -- Footer
+   ========================================================================== */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    gap: 0.5rem;
+}
+.footer p,
+.footer span {
+    margin: 0;
+}
+
+/* ==========================================================================
+   HOME PAGE -- Mobile CTA
+   ========================================================================== */
+.mobile-cta {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.mobile-cta .button {
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .mobile-cta {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE -- Home specific
+   ========================================================================== */
+@media (max-width: 680px) {
+    .hero-title-line {
+        width: 100%;
+    }
+}

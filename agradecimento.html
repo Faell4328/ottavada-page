@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/avif" href="/logo.avif" />
+        <title>Ottavada &mdash; Obrigado</title>
+        <meta
+            name="description"
+            content="Obrigado pelo interesse no Ottavada."
+        />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/agradecimento.css" />
+    </head>
+    <body>
+        <main class="thanks-layout">
+            <div class="container" style="max-width: 56rem">
+                <div class="thanks-card">
+                    <div>
+                        <h1>Obrigado pelo interesse na ferramenta!</h1>
+                        <p class="countdown-text" id="thanks-countdown">
+                            Você será redirecionado a seção de tutorial em 5
+                            segundos...
+                        </p>
+                    </div>
+                    <div class="thanks-video-wrap">
+                        <video
+                            src="/agradecimento.mp4"
+                            autoplay
+                            muted
+                            playsinline
+                            preload="auto"
+                        ></video>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var downloadFrame = document.createElement("iframe");
+                downloadFrame.style.display = "none";
+                downloadFrame.src =
+                    "https://ottavada.rhafaell.com.br/v1/download";
+                document.body.appendChild(downloadFrame);
+                setTimeout(function () {
+                    if (downloadFrame.parentNode) {
+                        downloadFrame.parentNode.removeChild(downloadFrame);
+                    }
+                }, 5000);
+
+                var seconds = 5;
+                var countdownEl = document.getElementById("thanks-countdown");
+
+                var timerId = setInterval(function () {
+                    seconds--;
+                    if (seconds <= 0) {
+                        clearInterval(timerId);
+                        window.location.href = "/index.html#tutorial";
+                        return;
+                    }
+                    if (countdownEl) {
+                        countdownEl.textContent =
+                            "Você será redirecionado a seção de tutorial em " +
+                            seconds +
+                            " segundos...";
+                    }
+                }, 1000);
+            })();
+        </script>
+    </body>
+</html>

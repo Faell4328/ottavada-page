@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
+:root {
+    --bg-strong: #c6d7ea;
+    --shell-bg: #081220;
+    --shell-bg-strong: #10243d;
+    --surface-strong: rgba(247, 251, 255, 0.96);
+    --border: rgba(126, 147, 175, 0.28);
+    --text: #eee;
+    --muted: #aaa;
+    --brand-strong: #8b5cf6;
+    --brand-soft: #ede9fe;
+    --shadow-soft: 0 14px 32px rgba(19, 38, 58, 0.09);
+}
+
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.4);
+    border: 2px solid transparent;
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+    background-clip: content-box;
+    transition: all 160ms ease;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 92, 246, 0.7);
+    background-clip: content-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: "Manrope", sans-serif;
+    background-color: var(--shell-bg);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 10, 19, 0.38) 0%,
+            rgba(4, 10, 19, 0.72) 100%
+        ),
+        radial-gradient(
+            circle at top left,
+            rgba(255, 255, 255, 0.12),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at top right,
+            rgba(139, 92, 246, 0.16),
+            transparent 30%
+        ),
+        linear-gradient(180deg, var(--shell-bg) 0%, var(--shell-bg-strong) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 52px 52px;
+    opacity: 0.35;
+    mix-blend-mode: soft-light;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ==========================================================================
+   LAYOUT UTILITIES
+   ========================================================================== */
+.container {
+    width: min(1180px, calc(100% - 1.5rem));
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem 0 0.7rem;
+}
+
+/* -- Brand -- */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.brand img {
+    width: 3.35rem;
+    height: 3.35rem;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(139, 92, 246, 0.18);
+}
+.brand strong {
+    display: block;
+    font-size: 1.02rem;
+    letter-spacing: 0.01em;
+}
+.brand span {
+    display: block;
+    margin-top: 0.14rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* -- Desktop nav -- */
+.nav-desktop {
+    display: none;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .nav-desktop {
+        display: flex;
+    }
+}
+
+/* ==========================================================================
+   BUTTON
+   ========================================================================== */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.2rem;
+    padding: 0.88rem 1.18rem;
+    border-radius: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(180deg, #a78bfa 0%, var(--brand-strong) 100%);
+    box-shadow: 0 18px 40px rgba(139, 92, 246, 0.24);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease;
+}
+.button:hover,
+.button:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 24px 48px rgba(139, 92, 246, 0.28);
+}
+
+/* ==========================================================================
+   SPACING UTILITIES
+   ========================================================================== */
+.mt-24 {
+    margin-top: 6rem;
+}
+.my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE FINE TUNING
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .topbar {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+}
+@media (max-width: 680px) {
+    .container {
+        width: min(100% - 1rem, 1180px);
+    }
+    .button {
+        width: 100%;
+    }
+}
