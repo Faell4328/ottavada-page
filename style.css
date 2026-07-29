@@ -11,8 +11,8 @@
     --border: rgba(126, 147, 175, 0.28);
     --text: #eee;
     --muted: #aaa;
-    --brand-strong: #8b5cf6;
-    --brand-soft: #ede9fe;
+    --brand-strong: #184acb;
+    --brand-soft: #e7f0ff;
     --shadow-soft: 0 14px 32px rgba(19, 38, 58, 0.09);
 }
 
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-track {
     background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-    background: rgba(139, 92, 246, 0.4);
+    background: rgba(47, 102, 219, 0.4);
     border: 2px solid transparent;
     border-radius: 999px;
     backdrop-filter: blur(10px);
@@ -44,7 +44,7 @@ html::-webkit-scrollbar-thumb {
     transition: all 160ms ease;
 }
 html::-webkit-scrollbar-thumb:hover {
-    background: rgba(139, 92, 246, 0.7);
+    background: rgba(47, 102, 219, 0.7);
     background-clip: content-box;
 }
 
@@ -67,7 +67,7 @@ body {
         ),
         radial-gradient(
             circle at top right,
-            rgba(139, 92, 246, 0.16),
+            rgba(79, 130, 255, 0.16),
             transparent 30%
         ),
         linear-gradient(180deg, var(--shell-bg) 0%, var(--shell-bg-strong) 100%);
@@ -140,7 +140,7 @@ img {
     height: 3.35rem;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 18px 40px rgba(139, 92, 246, 0.18);
+    box-shadow: 0 18px 40px rgba(24, 74, 203, 0.18);
 }
 .brand strong {
     display: block;
@@ -178,8 +178,8 @@ img {
     font-weight: 800;
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(180deg, #a78bfa 0%, var(--brand-strong) 100%);
-    box-shadow: 0 18px 40px rgba(139, 92, 246, 0.24);
+    background: linear-gradient(180deg, #3d79f0 0%, var(--brand-strong) 100%);
+    box-shadow: 0 18px 40px rgba(24, 74, 203, 0.24);
     border: none;
     cursor: pointer;
     font-family: inherit;
@@ -191,7 +191,7 @@ img {
 .button:hover,
 .button:focus-visible {
     transform: translateY(-2px);
-    box-shadow: 0 24px 48px rgba(139, 92, 246, 0.28);
+    box-shadow: 0 24px 48px rgba(24, 74, 203, 0.28);
 }
 
 /* ==========================================================================

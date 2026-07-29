@@ -4,37 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            Ottavada — Aprenda música de forma simples e eficiente
+            Ottavada — Organize e sincronize partituras da sua orquestra
         </title>
         <meta
             name="description"
-            content="Ottavada é a plataforma que te ajuda a aprender e dominar teoria musical. Software grátis para Windows e Linux."
+            content="Ottavada e um software gratuito para gerenciar, organizar e sincronizar partituras. Para Windows 10 e 11."
         />
         <meta
             property="og:title"
-            content="Ottavada — Aprenda Música de Forma Simples"
+            content="Ottavada — Organize e Sincronize Partituras"
         />
         <meta
             property="og:description"
-            content="Software grátis para aprender e dominar teoria musical."
+            content="Software gratuito para gerenciar e sincronizar partituras da sua orquestra."
         />
         <meta
             property="og:image"
-            content="https://ottavada.rhafaell.com.br/logo.avif"
+            content="https://ottavada.com/icon.png"
         />
         <meta
             property="og:url"
-            content="https://ottavada.rhafaell.com.br"
+            content="https://ottavada.com"
         />
         <meta property="og:type" content="website" />
-        <link rel="icon" type="image/avif" href="/logo.avif" />
+        <link rel="icon" type="image/avif" href="/files/icon.png" />
         <link
             rel="preload"
             as="image"
             href="/orquestra.avif"
             fetchpriority="high"
         />
-        <link rel="preload" as="image" href="/logo.avif" fetchpriority="high" />
+        <link rel="preload" as="image" href="/files/icon.png" fetchpriority="high" />
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -42,11 +42,12 @@
                 "name": "Ottavada",
                 "operatingSystem": "Windows",
                 "applicationCategory": "Multimedia",
-                "description": "Aprenda e domine teoria musical de forma simples e eficiente."
+                "description": "Organize e sincronize partituras da sua orquestra de forma simples e eficiente."
             }
         </script>
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/home.css" />
+        <link rel="stylesheet" href="/chat.css" />
     </head>
     <body>
         <div id="app">
@@ -56,14 +57,13 @@
                 <div class="container topbar">
                     <div class="brand">
                         <img
-                            src="/logo.avif"
+                            src="/files/icon.png"
                             alt="Ottavada"
-                            width="54"
-                            height="54"
+                            style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.5)"
                         />
                         <div>
                             <strong>Ottavada</strong>
-                            <span>Sua jornada musical começa aqui</span>
+                            <span>O seu maestro de partituras</span>
                         </div>
                     </div>
                     <nav class="nav-desktop" aria-label="Navegação principal">
@@ -71,7 +71,7 @@
                             class="button"
                             href="/agradecimento.html"
                             rel="noreferrer"
-                            >Baixar o Ottavada</a
+                            >Instalar</a
                         >
                     </nav>
                 </div>
@@ -81,7 +81,7 @@
                 <section class="hero-section">
                     <h1
                         class="hero-title"
-                        aria-label="Aprenda Teoria Musical no Seu Ritmo, com Ferramentas que Fazem Sentido."
+                        aria-label="Encontre, Organize e Compartilhe Partituras sem Duplicacao entre seus Computadores"
                     >
                         <span class="hero-title-line" id="hero-line-1"></span>
                         <span class="hero-title-line" id="hero-line-2"></span>
@@ -91,13 +91,14 @@
                 <section class="section mt-24" id="descricao">
                     <div>
                         <h2 style="text-align: center">
-                            Ottavada é um aplicativo gratuito para Windows
-                            10 e 11 (x32 e x64).
+                            Ottavada e um aplicativo gratuito para Windows
+                            10 e 11 (x32 e x64) que organiza e sincroniza
+                            partituras da sua orquestra.
                         </h2>
-                        <p style="font-size: 20px">
-                            Sem configurações complicadas, sem instalações
+                        <p style="font-size: 20px; text-align: center; max-width: 52rem; margin: 1rem auto 0;">
+                            Sem configuracoes complicadas, sem instalacoes
                             adicionais e sem precisar de internet para acessar
-                            SEUS arquivos.
+                            SUAS partituras.
                         </p>
                     </div>
                 </section>
@@ -107,65 +108,70 @@
                         <span class="section-kicker">Benefícios</span>
                         <h2>
                             O Ottavada resolve os problemas que mais
-                            atrapalham sua evolução musical.
+                            atrapalham a rotina musical.
                         </h2>
                     </div>
                     <div class="benefits-grid" id="benefits-grid">
                         <article class="benefit-card">
                             <div>
-                                <h3>Teoria musical descomplicada</h3>
+                                <span class="card-icon">🎼</span>
+                                <h3>Suas partituras nao saem do lugar</h3>
                             </div>
                             <div class="card-body">
                                 <p>
-                                    Aprenda escalas, acordes, intervalos e
-                                    muito mais com explicações diretas e
-                                    exemplos práticos.
-                                    <strong
-                                        >Do básico ao avançado, sem enrolação.</strong
-                                    >
+                                    Voce ja tem suas partituras organizadas do
+                                    seu jeito. O Ottavada nao mexe em nada
+                                    &mdash; elas continuam exatamente onde voce
+                                    as colocou.
                                 </p>
                             </div>
                         </article>
                         <article class="benefit-card">
                             <div>
-                                <h3>Você não fica preso na ferramenta</h3>
+                                <span class="card-icon">🔓</span>
+                                <h3>Voce nao fica preso na ferramenta</h3>
                             </div>
                             <div class="card-body">
                                 <p>
                                     Diferente de outros programas que prendem
-                                    você, aqui é o contrário. Quer parar de
-                                    usar? É só desinstalar. Seus arquivos e
-                                    progresso continuam com você
+                                    voce, aqui e o contrario. Quer parar de
+                                    usar? E so desinstalar. Suas partituras
+                                    continuam no seu computador e na nuvem que
+                                    voce escolheu
                                     <strong
-                                        >sem pegadinha, sem letra miúda.</strong
+                                        >sem pegadinha, sem letra miuda.</strong
                                     >
                                 </p>
                             </div>
                         </article>
                         <article class="benefit-card">
                             <div>
-                                <h3>Exercícios interativos</h3>
+                                <span class="card-icon">✅</span>
+                                <h3>Nunca mais perca a versao certa</h3>
                             </div>
                             <div class="card-body">
                                 <p>
-                                    Pratique identificação de notas, intervalos
-                                    e acordes com exercícios que se adaptam ao
-                                    seu nível.
+                                    Sabe quando voce nao sabe mais qual e o
+                                    arquivo certo? O Ottavada
+                                    impede que isso aconteca.
                                     <strong
-                                        >Aprenda fazendo, não apenas lendo.</strong
+                                        >Ele nao deixa criar duas partituras com o
+                                        mesmo nome,</strong
                                     >
+                                    acabando de vez com a confusao.
                                 </p>
                             </div>
                         </article>
                         <article class="benefit-card">
                             <div>
-                                <h3>Ache qualquer conteúdo em segundos</h3>
+                                <span class="card-icon">🔍</span>
+                                <h3>Ache qualquer partitura em segundos</h3>
                             </div>
                             <div class="card-body">
                                 <p>
-                                    Chega de ficar procurando aquele tópico
-                                    específico. Filtre por categoria, nível ou
-                                    simplesmente digite o que procura.
+                                    Chega de ficar cacando arquivo por minutos.
+                                    Filtre por tipo, compositor ou arranjador,
+                                    ou simplesmente digite o que procura.
                                     <strong
                                         >O que levava minutos agora leva
                                         segundos.</strong
@@ -175,41 +181,44 @@
                         </article>
                         <article class="benefit-card">
                             <div>
-                                <h3>Você decide o que estudar</h3>
+                                <span class="card-icon">🎯</span>
+                                <h3>Voce decide o que vai para o ensaio</h3>
                             </div>
                             <div class="card-body">
                                 <p>
-                                    Monte sua própria trilha de estudos.
-                                    Escolha os tópicos que importam para você e
-                                    avance no seu ritmo.
-                                    <strong>Você no controle, sempre.</strong>
+                                    Nem tudo precisa ir para o computador do
+                                    ensaio. Voce escolhe: essa partitura pode
+                                    ser enviada, bloqueada ou ignorada.
+                                    <strong>Voce no controle, sempre.</strong>
                                 </p>
                             </div>
                         </article>
                         <article class="benefit-card">
                             <div>
-                                <h3>Nuvem grátis que poupa seu espaço</h3>
+                                <span class="card-icon">☁️</span>
+                                <h3>Nuvem gratis que poupa seu espaco</h3>
                             </div>
                             <div class="card-body">
                                 <p>
-                                    Salve seu progresso na nuvem com Google
-                                    Drive e Koofr,
+                                    Funciona com Google Drive e Koofr,
                                     <strong>sem gastar um centavo.</strong> E
-                                    ainda acesse de qualquer dispositivo quando
-                                    precisar.
+                                    ainda compacta os arquivos antes de enviar,
+                                    ocupando menos espaco e sendo mais rapido.
                                 </p>
                             </div>
                         </article>
                         <article class="benefit-card">
                             <div>
+                                <span class="card-icon">💾</span>
                                 <h3>
-                                    Computador quebrou? Seu progresso não.
+                                    Computador quebrou? Suas partituras nao.
                                 </h3>
                             </div>
                             <div class="card-body">
                                 <p>
                                     Deu problema no PC? Formatou? Trocou de
-                                    máquina? Seu progresso está salvo na nuvem.
+                                    maquina? Suas partituras estao salvas na
+                                    nuvem.
                                     <strong>Com um clique, tudo volta</strong>
                                     para o mesmo lugar de antes.
                                 </p>
@@ -253,7 +262,7 @@
                 </div>
 
                 <footer class="footer">
-                    <p>Email de contato: contato@ottavada.rhafaell.com.br</p>
+                    <p>Email de contato: ottavada@hotmail.com</p>
                     <span>Desenvolvido por Rhafaell (faell4328)</span>
                 </footer>
             </main>
@@ -264,8 +273,8 @@
                 "use strict";
 
                 var heroTitleLines = [
-                    "Aprenda Teoria Musical no Seu Ritmo,",
-                    "com Ferramentas que Fazem Sentido.",
+                    "Encontre, Organize e Compartilhe Partituras",
+                    "sem Duplicação entre seus Computadores.",
                 ];
 
                 var firstLineLength = heroTitleLines[0].length;
@@ -318,6 +327,271 @@
                         }, 100);
                     }
                 }
+            })();
+        </script>
+
+        <!-- Chat Widget -->
+        <button class="chat-fab" id="chatFAB" aria-label="Abrir chat" style="display: none;">
+            <img id="fabImg" src="/files/bot.png" alt="bot" style="padding: 5px">
+            <span class="chat-fab-dot" id="chatDot"></span>
+        </button>
+        <div class="chat-tooltip" id="chatTooltip" style="display: none;">
+            Caso tenha alguma duvida, pergunte ao nosso chatbot
+        </div>
+
+        <div class="chat-popup" id="chatPopup" aria-label="Janela do chat">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <strong>Ambrozio</strong>
+                    <span id="chatStatus">Online</span>
+                </div>
+                <button class="chat-close" id="chatClose" aria-label="Fechar chat">
+                    &times;
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-bubble bot">
+                    Ola! Como posso ajudar? Envie sua mensagem.
+                </div>
+            </div>
+            <form class="chat-input-area" id="chatForm" autocomplete="off">
+                <textarea
+                    id="chatInput"
+                    rows="1"
+                    placeholder="Digite sua mensagem..."
+                    aria-label="Mensagem"
+                ></textarea>
+                <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Enviar">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="22" y1="2" x2="11" y2="13" />
+                        <polygon points="22,2 15,22 11,13 2,9" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var fab = document.getElementById("chatFAB");
+                var popup = document.getElementById("chatPopup");
+                var closeBtn = document.getElementById("chatClose");
+                var form = document.getElementById("chatForm");
+                var input = document.getElementById("chatInput");
+                var messages = document.getElementById("chatMessages");
+                var sendBtn = document.getElementById("chatSendBtn");
+                var dot = document.getElementById("chatDot");
+                var statusEl = document.getElementById("chatStatus");
+
+                var fabImg = document.getElementById("fabImg");
+
+                function autoResize() {
+                    input.style.height = "auto";
+                    input.style.height = input.scrollHeight + "px";
+                }
+
+                function resetTextarea() {
+                    input.style.height = "";
+                }
+
+                function setBotImages(src) {
+                    if (fabImg) fabImg.src = src;
+                }
+
+                var isOpen = false;
+                var isSending = false;
+                var history = [];
+                var webhookUrl =
+                    "https://servidor.rhafaell.com.br/bot";
+
+                function openChat() {
+                    isOpen = true;
+                    popup.classList.add("open");
+                    dot.classList.remove("visible");
+                    input.focus();
+                }
+
+                function closeChat() {
+                    isOpen = false;
+                    popup.classList.remove("open");
+                    hasInteracted = true;
+                }
+
+                function toggleChat() {
+                    if (isOpen) closeChat();
+                    else openChat();
+                }
+
+                function addMessage(text, type) {
+                    var bubble = document.createElement("div");
+                    bubble.className = "chat-bubble " + type;
+                    bubble.textContent = text;
+                    messages.appendChild(bubble);
+                    messages.scrollTop = messages.scrollHeight;
+                    return bubble;
+                }
+
+                function showThinking() {
+                    var bubble = document.createElement("div");
+                    bubble.className = "chat-bubble bot thinking-bubble";
+                    bubble.id = "thinkingBubble";
+
+                    for (var i = 0; i < 3; i++) {
+                        var dot = document.createElement("span");
+                        dot.className = "thinking-dot";
+                        bubble.appendChild(dot);
+                    }
+
+                    messages.appendChild(bubble);
+                    messages.scrollTop = messages.scrollHeight;
+                }
+
+                function removeThinking() {
+                    var bubble = document.getElementById("thinkingBubble");
+                    if (bubble) bubble.remove();
+                }
+
+                function setStatus(text) {
+                    if (statusEl) statusEl.textContent = text;
+                }
+
+                function sendMessage(text) {
+                    if (!text.trim() || isSending) return;
+
+                    var msg = text.trim();
+                    addMessage(msg, "user");
+                    history.push({ role: "user", msg: msg });
+
+                    input.value = "";
+                    resetTextarea();
+                    sendBtn.disabled = true;
+                    isSending = true;
+
+                    setBotImages("/files/bot-pensando.png");
+                    showThinking();
+                    setStatus("Digitando...");
+
+                    var body = {
+                        old_msg: history.length > 1 ? history.slice(0, -1) : null,
+                        msg: msg,
+                    };
+
+                    fetch(webhookUrl, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(body),
+                    })
+                        .then(function (res) {
+                            if (!res.ok) throw new Error("Erro " + res.status);
+                            return res.json();
+                        })
+                        .then(function (data) {
+                            removeThinking();
+                            setBotImages("/files/bot.png");
+                            setStatus("Online");
+
+                            if (data && data.msg) {
+                                addMessage(data.msg, "bot");
+                                history.push({ role: "bot", msg: data.msg });
+                            }
+                        })
+                        .catch(function () {
+                            removeThinking();
+                            setBotImages("/files/bot.png");
+                            setStatus("Online");
+                            addMessage(
+                                "Desculpe, ocorreu um erro. Tente novamente.",
+                                "bot",
+                            );
+                        })
+                        .finally(function () {
+                            isSending = false;
+                        });
+                }
+
+                function initChat() {
+                    var tooltip = document.getElementById("chatTooltip");
+                    var hasInteracted = false;
+                    fab.style.display = "";
+                    tooltip.style.display = "";
+
+                    fab.addEventListener("click", toggleChat);
+                    closeBtn.addEventListener("click", closeChat);
+
+                    input.addEventListener("input", function () {
+                        sendBtn.disabled = !input.value.trim() || isSending;
+                        autoResize();
+                    });
+
+                    input.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                            e.preventDefault();
+                            if (!input.value.trim() || isSending) return;
+                            sendMessage(input.value);
+                        }
+                        if (e.key === "Escape") {
+                            closeChat();
+                            fab.focus();
+                        }
+                    });
+
+                    form.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        if (!input.value.trim() || isSending) return;
+                        sendMessage(input.value);
+                    });
+
+                    dot.classList.add("visible");
+
+                    var tooltipTimer = null;
+                    var tooltipVisible = false;
+
+                    function showTooltip() {
+                        if (isOpen) return;
+                        tooltip.classList.add("visible");
+                        tooltipVisible = true;
+                        tooltipTimer = setTimeout(function () {
+                            tooltip.classList.remove("visible");
+                            tooltipVisible = false;
+                        }, 8000);
+                    }
+
+                    function scheduleTooltip() {
+                        if (hasInteracted) return;
+                        var delay = 30000 + Math.random() * 30000;
+                        setTimeout(function () {
+                            if (hasInteracted) return;
+                            if (!isOpen && !tooltipVisible) showTooltip();
+                            scheduleTooltip();
+                        }, delay);
+                    }
+
+                    showTooltip();
+                    scheduleTooltip();
+
+                    var origOpen = openChat;
+                    openChat = function () {
+                        tooltip.classList.remove("visible");
+                        tooltipVisible = false;
+                        if (tooltipTimer) clearTimeout(tooltipTimer);
+                        origOpen();
+                    };
+                }
+
+                fetch(webhookUrl + "/status", {
+                    method: "POST",
+                })
+                    .then(function (res) {
+                        if (!res.ok) throw new Error("Erro " + res.status);
+                        return res.json();
+                    })
+                    .then(function (data) {
+                        if (data && data.status === "ok") {
+                            initChat();
+                        }
+                    })
+                    .catch(function () {});
             })();
         </script>
     </body>
