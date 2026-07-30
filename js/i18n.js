@@ -28,7 +28,6 @@
         "organizacao": { "kicker": "Organiza\u00e7\u00e3o", "heading": "Nunca mais perca tempo procurando a partitura certa." },
         "sincronizacao": { "kicker": "Sincroniza\u00e7\u00e3o", "heading": "Um s\u00f3 aplicativo. Dois modos de uso." },
         "liberdade": { "kicker": "Liberdade", "heading": "Voc\u00ea n\u00e3o fica preso \u00e0 ferramenta." },
-        "tutorial": { "kicker": "Tutorial", "heading": "O Ottavada \u00e9 cheio de recursos. Recomendamos assistir ao tutorial para aproveitar tudo que ele oferece." }
       },
       "benefits": {
         "indexacao": { "title": "Indexa\u00e7\u00e3o inteligente", "body": "Basta selecionar uma pasta com partituras. O Ottavada identifica o nome da m\u00fasica pelo diret\u00f3rio e sugere os instrumentos a partir dos arquivos \u2014 sem cadastro manual." },
@@ -71,7 +70,7 @@
         "title": "Ottavada \u2014 Obrigado",
         "description": "Obrigado pelo interesse no Ottavada.",
         "heading": "Obrigado pelo interesse na ferramenta!",
-        "countdown": "Voc\u00ea ser\u00e1 redirecionado a se\u00e7\u00e3o de tutorial em {seconds} segundos..."
+        "countdown": "Voc\u00ea ser\u00e1 redirecionado \u00e0 p\u00e1gina inicial em {seconds} segundos..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "Baixar o Ottavada"
@@ -99,7 +98,6 @@
         "organizacao": { "kicker": "Organization", "heading": "Never waste time looking for the right sheet music again." },
         "sincronizacao": { "kicker": "Sync", "heading": "One app. Two usage modes." },
         "liberdade": { "kicker": "Freedom", "heading": "You're not locked into the tool." },
-        "tutorial": { "kicker": "Tutorial", "heading": "Ottavada is packed with features. We recommend watching the tutorial to get the most out of it." }
       },
       "benefits": {
         "indexacao": { "title": "Smart indexing", "body": "Just select a folder with sheet music. Ottavada identifies the song name from the directory and suggests instruments from the files \u2014 no manual entry needed." },
@@ -142,7 +140,7 @@
         "title": "Ottavada \u2014 Thank You",
         "description": "Thank you for your interest in Ottavada.",
         "heading": "Thank you for your interest in the tool!",
-        "countdown": "You will be redirected to the tutorial section in {seconds} seconds..."
+        "countdown": "You will be redirected to the homepage in {seconds} seconds..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "Download Ottavada"
@@ -170,7 +168,6 @@
         "organizacao": { "kicker": "Organizaci\u00f3n", "heading": "Nunca m\u00e1s pierdas tiempo buscando la partitura correcta." },
         "sincronizacao": { "kicker": "Sincronizaci\u00f3n", "heading": "Una sola aplicaci\u00f3n. Dos modos de uso." },
         "liberdade": { "kicker": "Libertad", "heading": "No est\u00e1s atado a la herramienta." },
-        "tutorial": { "kicker": "Tutorial", "heading": "Ottavada est\u00e1 lleno de funciones. Recomendamos ver el tutorial para aprovechar todo lo que ofrece." }
       },
       "benefits": {
         "indexacao": { "title": "Indexaci\u00f3n inteligente", "body": "Solo selecciona una carpeta con partituras. Ottavada identifica el nombre de la canci\u00f3n por el directorio y sugiere los instrumentos a partir de los archivos \u2014 sin registro manual." },
@@ -213,7 +210,7 @@
         "title": "Ottavada \u2014 Gracias",
         "description": "Gracias por tu inter\u00e9s en Ottavada.",
         "heading": "\u00a1Gracias por tu inter\u00e9s en la herramienta!",
-        "countdown": "Ser\u00e1s redirigido a la secci\u00f3n de tutorial en {seconds} segundos..."
+        "countdown": "Ser\u00e1s redirigido a la p\u00e1gina principal en {seconds} segundos..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "Descargar Ottavada"
@@ -241,7 +238,6 @@
         "organizacao": { "kicker": "Organisation", "heading": "Ne perdez plus jamais de temps \u00e0 chercher la bonne partition." },
         "sincronizacao": { "kicker": "Synchronisation", "heading": "Une seule application. Deux modes d\u2019utilisation." },
         "liberdade": { "kicker": "Libert\u00e9", "heading": "Vous n\u2019\u00eates pas prisonnier de l\u2019outil." },
-        "tutorial": { "kicker": "Tutoriel", "heading": "Ottavada regorge de fonctionnalit\u00e9s. Nous vous recommandons de regarder le tutoriel pour en tirer le meilleur parti." }
       },
       "benefits": {
         "indexacao": { "title": "Indexation intelligente", "body": "S\u00e9lectionnez simplement un dossier contenant des partitions. Ottavada identifie le nom du morceau par le r\u00e9pertoire et sugg\u00e8re les instruments \u00e0 partir des fichiers \u2014 sans saisie manuelle." },
@@ -284,7 +280,7 @@
         "title": "Ottavada \u2014 Merci",
         "description": "Merci de votre int\u00e9r\u00eat pour Ottavada.",
         "heading": "Merci de votre int\u00e9r\u00eat pour l\u2019outil\u00a0!",
-        "countdown": "Vous serez redirig\u00e9 vers la section du tutoriel dans {seconds} secondes..."
+        "countdown": "Vous serez redirig\u00e9 vers la page d\u2019accueil dans {seconds} secondes..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "T\u00e9l\u00e9charger Ottavada"
@@ -312,7 +308,6 @@
         "organizacao": { "kicker": "Organizzazione", "heading": "Non perdere mai pi\u00f9 tempo a cercare lo spartito giusto." },
         "sincronizacao": { "kicker": "Sincronizzazione", "heading": "Una sola app. Due modalit\u00e0 d\u2019uso." },
         "liberdade": { "kicker": "Libert\u00e0", "heading": "Non sei vincolato allo strumento." },
-        "tutorial": { "kicker": "Tutorial", "heading": "Ottavada \u00e8 pieno di funzionalit\u00e0. Ti consigliamo di guardare il tutorial per sfruttare tutto ci\u00f2 che offre." }
       },
       "benefits": {
         "indexacao": { "title": "Indicizzazione intelligente", "body": "Basta selezionare una cartella con gli spartiti. Ottavada identifica il nome del brano dalla directory e suggerisce gli strumenti dai file \u2014 senza inserimento manuale." },
@@ -355,7 +350,7 @@
         "title": "Ottavada \u2014 Grazie",
         "description": "Grazie per il tuo interesse in Ottavada.",
         "heading": "Grazie per il tuo interesse nello strumento!",
-        "countdown": "Sarai reindirizzato alla sezione del tutorial tra {seconds} secondi..."
+        "countdown": "Sarai reindirizzato alla home page tra {seconds} secondi..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "Scarica Ottavada"
@@ -383,7 +378,6 @@
         "organizacao": { "kicker": "Organisation", "heading": "Verschwenden Sie nie wieder Zeit mit der Suche nach der richtigen Note." },
         "sincronizacao": { "kicker": "Synchronisation", "heading": "Eine App. Zwei Nutzungsmodi." },
         "liberdade": { "kicker": "Freiheit", "heading": "Sie sind nicht an das Werkzeug gebunden." },
-        "tutorial": { "kicker": "Tutorial", "heading": "Ottavada steckt voller Funktionen. Wir empfehlen, das Tutorial anzusehen, um alles optimal zu nutzen." }
       },
       "benefits": {
         "indexacao": { "title": "Intelligente Indizierung", "body": "W\u00e4hlen Sie einfach einen Ordner mit Noten aus. Ottavada erkennt den Namen des St\u00fccks anhand des Verzeichnisses und schl\u00e4gt Instrumente aus den Dateien vor \u2014 ohne manuelle Eingabe." },
@@ -426,7 +420,7 @@
         "title": "Ottavada \u2014 Vielen Dank",
         "description": "Vielen Dank f\u00fcr Ihr Interesse an Ottavada.",
         "heading": "Vielen Dank f\u00fcr Ihr Interesse an dem Tool!",
-        "countdown": "Sie werden in {seconds} Sekunden zum Tutorial-Bereich weitergeleitet..."
+        "countdown": "Sie werden in {seconds} Sekunden zur Startseite weitergeleitet..."
       },
       "alt": { "logo": "Ottavada" },
       "mobileCta": "Ottavada herunterladen"

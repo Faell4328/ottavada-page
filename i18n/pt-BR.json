@@ -42,11 +42,6 @@
     "liberdade": {
       "kicker": "Liberdade",
       "heading": "Você não fica preso à ferramenta."
-    },
-    "tutorial": {
-      "kicker": "Tutorial",
-      "heading": "O Ottavada é cheio de recursos. Recomendamos assistir ao tutorial para aproveitar tudo que ele oferece."
-    }
   },
 
   "benefits": {
@@ -138,7 +133,7 @@
     "title": "Ottavada — Obrigado",
     "description": "Obrigado pelo interesse no Ottavada.",
     "heading": "Obrigado pelo interesse na ferramenta!",
-    "countdown": "Você será redirecionado a seção de tutorial em {seconds} segundos..."
+    "countdown": "Você será redirecionado à página inicial em {seconds} segundos..."
   },
 
   "alt": {

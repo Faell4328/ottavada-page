@@ -21,7 +21,7 @@
                     <div>
                         <h1 data-i18n="thanks.heading">Obrigado pelo interesse na ferramenta!</h1>
                         <p class="countdown-text" id="thanks-countdown">
-                            Você será redirecionado a seção de tutorial em 5
+                            Você será redirecionado à página inicial em 5
                             segundos...
                         </p>
                     </div>
@@ -60,7 +60,7 @@
                     seconds--;
                     if (seconds <= 0) {
                         clearInterval(timerId);
-                        window.location.href = "/index.html?lang=" + window.__i18n.lang + "#tutorial";
+                        window.location.href = "/?lang=" + window.__i18n.lang;
                         return;
                     }
                     if (countdownEl) {

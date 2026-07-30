@@ -380,22 +380,6 @@
     text-transform: uppercase;
 }
 
-/* ==========================================================================
-   HOME PAGE -- Tutorial
-   ========================================================================== */
-.tutorial-video-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 0;
-}
-.tutorial-video-wrapper iframe {
-    width: 100%;
-    max-width: 900px;
-    aspect-ratio: 16 / 9;
-    border-radius: 1.25rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
-}
 
 /* ==========================================================================
    HOME PAGE -- Footer

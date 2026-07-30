@@ -42,11 +42,6 @@
     "liberdade": {
       "kicker": "Freedom",
       "heading": "You're not locked into the tool."
-    },
-    "tutorial": {
-      "kicker": "Tutorial",
-      "heading": "Ottavada is packed with features. We recommend watching the tutorial to get the most out of it."
-    }
   },
 
   "benefits": {
@@ -138,7 +133,7 @@
     "title": "Ottavada — Thank You",
     "description": "Thank you for your interest in Ottavada.",
     "heading": "Thank you for your interest in the tool!",
-    "countdown": "You will be redirected to the tutorial section in {seconds} seconds..."
+    "countdown": "You will be redirected to the homepage in {seconds} seconds..."
   },
 
   "alt": {
