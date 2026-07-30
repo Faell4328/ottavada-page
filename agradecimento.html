@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/avif" href="/logo.avif" />
-        <title>Ottavada &mdash; Obrigado</title>
+        <title data-i18n="thanks.title">Ottavada &mdash; Obrigado</title>
         <meta
             name="description"
+            data-i18n-content="thanks.description"
             content="Obrigado pelo interesse no Ottavada."
         />
+        <script src="/js/i18n.js"></script>
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/files/agradecimento.css" />
     </head>
@@ -17,7 +19,7 @@
             <div class="container" style="max-width: 56rem">
                 <div class="thanks-card">
                     <div>
-                        <h1>Obrigado pelo interesse na ferramenta!</h1>
+                        <h1 data-i18n="thanks.heading">Obrigado pelo interesse na ferramenta!</h1>
                         <p class="countdown-text" id="thanks-countdown">
                             Você será redirecionado a seção de tutorial em 5
                             segundos...
@@ -62,10 +64,10 @@
                         return;
                     }
                     if (countdownEl) {
-                        countdownEl.textContent =
-                            "Você será redirecionado a seção de tutorial em " +
-                            seconds +
-                            " segundos...";
+                        countdownEl.textContent = window.__i18nFormat(
+                            window.__i18n.thanks.countdown,
+                            { seconds: seconds }
+                        );
                     }
                 }, 1000);
             })();

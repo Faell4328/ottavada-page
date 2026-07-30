@@ -1,0 +1,149 @@
+{
+  "lang": "pt-BR",
+  "langLabel": "Português",
+
+  "meta": {
+    "title": "Ottavada — Organize e sincronize partituras da sua orquestra",
+    "description": "Ottavada é um software gratuito para gerenciar, organizar e sincronizar partituras. Para Windows 10 e 11.",
+    "ogTitle": "Ottavada — Organize e Sincronize Partituras",
+    "ogDescription": "Software gratuito para gerenciar e sincronizar partituras da sua orquestra."
+  },
+
+  "brand": {
+    "name": "Ottavada",
+    "tagline": "O seu maestro de partituras"
+  },
+
+  "nav": {
+    "download": "Baixar agora"
+  },
+
+  "hero": {
+    "line1": "Encontre, organize e compartilhe",
+    "line2": "partituras sem duplicação entre seus computadores.",
+    "subtitle": "Gerencie, organize e sincronize partituras da sua orquestra. Sem complicações, sem mudar a sua forma de trabalhar.",
+    "cta": "Baixar gratuitamente",
+    "ctaNote": "Para Windows 10 e 11 (x32 e x64)"
+  },
+
+  "sections": {
+    "descricao": {
+      "kicker": "Por que o Ottavada?",
+      "text": "O gerenciamento de partituras em orquestras ainda é feito manualmente: troca de e-mails, pen drives, pastas e partituras duplicadas, e risco constante de perder a versão certa. O Ottavada resolve isso."
+    },
+    "organizacao": {
+      "kicker": "Organização",
+      "heading": "Nunca mais perca tempo procurando a partitura certa."
+    },
+    "sincronizacao": {
+      "kicker": "Sincronização",
+      "heading": "Um só aplicativo. Dois modos de uso."
+    },
+    "liberdade": {
+      "kicker": "Liberdade",
+      "heading": "Você não fica preso à ferramenta."
+    },
+    "tutorial": {
+      "kicker": "Tutorial",
+      "heading": "O Ottavada é cheio de recursos. Recomendamos assistir ao tutorial para aproveitar tudo que ele oferece."
+    }
+  },
+
+  "benefits": {
+    "indexacao": {
+      "title": "Indexação inteligente",
+      "body": "Basta selecionar uma pasta com partituras. O Ottavada identifica o nome da música pelo diretório e sugere os instrumentos a partir dos arquivos — sem cadastro manual."
+    },
+    "duplicatas": {
+      "title": "Chega de duplicatas",
+      "body": "O sistema não permite dois nomes iguais de música ou partitura. Se tem dois violinos, serão \"Violino I\" e \"Violino II\" — nunca \"Violino\" repetido."
+    },
+    "busca": {
+      "title": "Busca e filtros inteligentes",
+      "body": "Encontre qualquer música em segundos. Pesquise por nome ou filtre por categoria, compositor e arranjador. Perfeito para acervos grandes."
+    },
+    "ordem": {
+      "title": "Ordem profissional de orquestra",
+      "body": "Ao expandir uma música, as partituras aparecem na ordem padrão de grade: madeiras, metais, percussão, teclados e cordas — igual ao Finale."
+    },
+    "favoritos": {
+      "title": "Favoritos e seções rápidas",
+      "body": "Marque músicas como favoritas e acesse seções como \"Não permitidas\" ou \"Sem partituras\" com um clique. Tudo ao alcance da mão."
+    },
+    "ferramentas": {
+      "title": "Use as ferramentas que você já conhece",
+      "body": "Funciona com Finale, MuseScore, Sibelius, Dorico e qualquer programa que gere PDF, MusicXML ou MIDI. Você continua trabalhando do seu jeito, sem mudar nada."
+    },
+    "maestro": {
+      "title": "Computador do Maestro",
+      "body": "Controle total do repertório: adicione, edite e remova músicas e partituras. Defina quais vão para o ensaio e quais ficam só com você."
+    },
+    "ensaio": {
+      "title": "Computador de Ensaio",
+      "body": "Consulta rápida para a sala de ensaio. Músicos só visualizam o repertório, sem risco de alterar ou remover nada sem querer."
+    },
+    "nuvem": {
+      "title": "Nuvem gratuita",
+      "body": "Sincronize pelo Google Drive ou Koofr sem custo adicional. Arquivos são compactados antes do envio, ocupando menos espaço e sendo mais rápidos."
+    },
+    "backup": {
+      "title": "Computador quebrou? Nada se perdeu",
+      "body": "Formatou ou trocou de máquina? Suas partituras, categorias, compositores e arranjadores estão seguros. Com um clique, tudo volta ao lugar."
+    },
+    "arquivos": {
+      "title": "Seus arquivos, suas regras",
+      "body": "O Ottavada não renomeia pastas nem arquivos, não movimenta nada e não impõe formatos proprietários. Sua organização manual é respeitada e incentivada."
+    },
+    "desinstalou": {
+      "title": "Desinstalou? Seus arquivos continuam lá",
+      "body": "Se um dia decidir não usar mais, suas partituras continuam exatamente onde estavam — organizadas, acessíveis e sem nenhuma dependência do Ottavada."
+    },
+    "escolha": {
+      "title": "Você decide o que vai para o ensaio",
+      "body": "Nem tudo precisa ir para o computador do ensaio. Você escolhe: essa partitura pode ser enviada, bloqueada ou ignorada. Você no controle, sempre."
+    },
+    "idiomas": {
+      "title": "Multi-idiomas",
+      "body": "Suporte para português, inglês, espanhol, francês e alemão em desenvolvimento, para atender músicos de qualquer lugar."
+    },
+    "atualizacoes": {
+      "title": "Atualizações automáticas",
+      "body": "O aplicativo se mantém atualizado sozinho, mas você decide quando aplicar a atualização. Nada é forçado."
+    },
+    "copias": {
+      "title": "Cópias locais",
+      "body": "As partituras ficam salvas no seu computador. Acesse tudo mesmo sem internet durante o ensaio. Rápido e sem depender de nuvem."
+    }
+  },
+
+  "footer": {
+    "email": "Email de contato: ottavada@hotmail.com",
+    "dev": "Desenvolvido por Rhafaell (faell4328)"
+  },
+
+  "chat": {
+    "welcome": "Olá! Como posso ajudar? Envie sua mensagem.",
+    "placeholder": "Digite sua mensagem...",
+    "statusOnline": "Online",
+    "statusTyping": "Digitando...",
+    "tooltip": "Caso tenha alguma dúvida, pergunte ao nosso chatbot",
+    "error": "Desculpe, ocorreu um erro. Tente novamente.",
+    "ariaLabel": "Abrir chat",
+    "ariaClose": "Fechar chat",
+    "ariaSend": "Enviar",
+    "ariaMsg": "Mensagem"
+  },
+
+  "thanks": {
+    "title": "Ottavada — Obrigado",
+    "description": "Obrigado pelo interesse no Ottavada.",
+    "heading": "Obrigado pelo interesse na ferramenta!",
+    "countdown": "Você será redirecionado a seção de tutorial em {seconds} segundos..."
+  },
+
+  "alt": {
+    "logo": "Ottavada"
+  },
+
+  "mobileCta": "Baixar o Ottavada"
+}
