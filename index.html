@@ -30,14 +30,14 @@
             content="https://ottavada.com"
         />
         <meta property="og:type" content="website" />
-        <link rel="icon" type="image/avif" href="/files/icon.png" />
+        <link rel="icon" type="image/avif" href="files/icon.png" />
         <link
             rel="preload"
             as="image"
-            href="/orquestra.avif"
+            href="orquestra.avif"
             fetchpriority="high"
         />
-        <link rel="preload" as="image" href="/files/icon.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="files/icon.png" fetchpriority="high" />
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -48,11 +48,10 @@
                 "description": "Organize e sincronize partituras da sua orquestra de forma simples e eficiente."
             }
         </script>
-        <base href="/ottavada-page/">
-        <script src="/js/i18n.js"></script>
-        <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="/home.css" />
-        <link rel="stylesheet" href="/chat.css" />
+        <script src="js/i18n.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="home.css" />
+        <link rel="stylesheet" href="chat.css" />
     </head>
     <body>
         <div id="app">
@@ -62,7 +61,7 @@
                 <div class="container topbar">
                     <div class="brand">
                         <img
-                            src="/files/icon.png"
+                            src="files/icon.png"
                             data-i18n-aria="alt.logo"
                             data-i18n-aria-attr="alt"
                             alt="Ottavada"
@@ -101,7 +100,7 @@
                     Sem complicações, sem mudar a sua forma de trabalhar.
                 </p>
                 <div class="hero-cta">
-                    <a class="button" href="/agradecimento.html" rel="noreferrer">
+                    <a class="button" href="agradecimento.html" rel="noreferrer">
                         <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         <span data-i18n="hero.cta">Baixar gratuitamente</span>
                     </a>
@@ -374,7 +373,7 @@
                 <div class="mobile-cta">
                     <a
                         class="button"
-                        href="/agradecimento.html"
+                        href="agradecimento.html"
                         rel="noreferrer"
                         ><span data-i18n="mobileCta">Baixar o Ottavada</span></a
                     >
@@ -451,7 +450,7 @@
 
         <!-- Chat Widget -->
         <button class="chat-fab" id="chatFAB" data-i18n-aria="chat.ariaLabel" aria-label="Abrir chat" style="display: none;">
-            <img id="fabImg" src="/files/bot.png" alt="bot" style="padding: 5px">
+            <img id="fabImg" src="files/bot.png" alt="bot" style="padding: 5px">
             <span class="chat-fab-dot" id="chatDot"></span>
         </button>
         <div class="chat-tooltip" id="chatTooltip" data-i18n="chat.tooltip" style="display: none;">
@@ -593,7 +592,7 @@
                     sendBtn.disabled = true;
                     isSending = true;
 
-                    setBotImages("/files/bot-pensando.png");
+                    setBotImages("files/bot-pensando.png");
                     showThinking();
                     setStatus(window.__i18n.chat.statusTyping);
 
@@ -613,7 +612,7 @@
                         })
                         .then(function (data) {
                             removeThinking();
-                            setBotImages("/files/bot.png");
+                            setBotImages("files/bot.png");
                             setStatus(window.__i18n.chat.statusOnline);
 
                             if (data && data.msg) {
@@ -623,7 +622,7 @@
                         })
                         .catch(function () {
                             removeThinking();
-                            setBotImages("/files/bot.png");
+                            setBotImages("files/bot.png");
                             setStatus(window.__i18n.chat.statusOnline);
                             addMessage(
                                 window.__i18n.chat.error,

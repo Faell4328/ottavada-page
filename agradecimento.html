@@ -3,17 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/avif" href="/logo.avif" />
+        <link rel="icon" type="image/avif" href="logo.avif" />
         <title data-i18n="thanks.title">Ottavada &mdash; Obrigado</title>
         <meta
             name="description"
             data-i18n-content="thanks.description"
             content="Obrigado pelo interesse no Ottavada."
         />
-        <base href="/ottavada-page/">
-        <script src="/js/i18n.js"></script>
-        <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="/agradecimento.css" />
+        <script src="js/i18n.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="agradecimento.css" />
     </head>
     <body>
         <main class="thanks-layout">
@@ -28,7 +27,7 @@
                     </div>
                     <div class="thanks-video-wrap">
                         <video
-                            src="/files/agradecimento.mp4"
+                            src="files/agradecimento.mp4"
                             autoplay
                             muted
                             playsinline
@@ -61,7 +60,8 @@
                     seconds--;
                     if (seconds <= 0) {
                         clearInterval(timerId);
-                        window.location.href = window.location.pathname + "?lang=" + window.__i18n.lang;
+                        var base = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/") + 1);
+                        window.location.href = base + "?lang=" + window.__i18n.lang;
                         return;
                     }
                     if (countdownEl) {
