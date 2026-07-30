@@ -331,6 +331,29 @@
 }
 
 /* ==========================================================================
+   CHAT — Notice banner
+   ========================================================================== */
+.chat-notice {
+    margin: 0.25rem 0 0.5rem;
+    padding: 0.65rem 1rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.25);
+    color: #ffc107;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+.chat-notice-icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
    CHAT — Responsive
    ========================================================================== */
 @media (max-width: 480px) {

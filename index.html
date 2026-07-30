@@ -487,7 +487,7 @@
         <div class="chat-popup" id="chatPopup" aria-label="Janela do chat">
             <div class="chat-header">
                 <div class="chat-header-info">
-                    <strong>Ambrósio</strong>
+                    <strong>OtavoBot</strong>
                     <span id="chatStatus" data-i18n="chat.statusOnline">Online</span>
                 </div>
                 <button class="chat-close" id="chatClose" data-i18n-aria="chat.ariaClose" aria-label="Fechar chat">
@@ -495,6 +495,10 @@
                 </button>
             </div>
             <div class="chat-messages" id="chatMessages">
+                <div class="chat-notice">
+                    <span class="chat-notice-icon">&#9888;</span>
+                    <span data-i18n="chat.statusSubtitle">O OtavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
+                </div>
                 <div class="chat-bubble bot" data-i18n="chat.welcome">
                     Olá! Como posso ajudar? Envie sua mensagem.
                 </div>
@@ -691,13 +695,17 @@
 
                     dot.classList.add("visible");
 
+                    var tooltips = window.__i18n.chat.tooltips || [window.__i18n.chat.tooltip];
+                    var tooltipIndex = 0;
                     var tooltipTimer = null;
                     var tooltipVisible = false;
 
                     function showTooltip() {
                         if (isOpen) return;
+                        tooltip.textContent = tooltips[tooltipIndex] || tooltips[0];
                         tooltip.classList.add("visible");
                         tooltipVisible = true;
+                        tooltipIndex = (tooltipIndex + 1) % tooltips.length;
                         tooltipTimer = setTimeout(function () {
                             tooltip.classList.remove("visible");
                             tooltipVisible = false;
