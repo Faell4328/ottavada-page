@@ -2,7 +2,7 @@
    HOME PAGE -- Orchestra shell
    ========================================================================== */
 .home-shell {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -16,9 +16,10 @@
         url("/orquestra.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     z-index: 0;
     pointer-events: none;
+    will-change: transform;
 }
 
 /* ==========================================================================
@@ -29,16 +30,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 180px);
+    min-height: 100vh;
     position: relative;
-    gap: 1.5rem;
+    gap: 2rem;
+    padding: 6rem 1rem 4rem;
 }
 .hero-title {
-    position: absolute;
-    top: 7rem;
-    width: 100%;
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
 }
 @media (min-width: 768px) {
     .hero-title {
@@ -65,6 +68,35 @@
     }
 }
 
+/* Hero subtitle */
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 36rem;
+    text-align: center;
+    line-height: 1.65;
+    font-weight: 500;
+}
+
+/* Hero CTA */
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+.hero-cta .button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 18px;
+    min-width: 240px;
+}
+.hero-cta-note {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+}
+
 /* ==========================================================================
    HOME PAGE -- Main content area
    ========================================================================== */
@@ -83,63 +115,113 @@
    SECTIONS
    ========================================================================== */
 .section {
-    padding: 1.15rem 0 2rem;
+    padding: 2.5rem 0 3.5rem;
+    position: relative;
 }
 .section-kicker {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
     border-radius: 999px;
-    padding: 0.38rem 0.72rem;
-    color: var(--brand-strong);
-    background: rgba(231, 240, 255, 0.94);
+    padding: 0.4rem 0.9rem;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(24, 74, 203, 0.25), rgba(61, 121, 240, 0.15));
+    border: 1px solid rgba(61, 121, 240, 0.25);
     font-weight: 700;
-    font-size: 0.875rem;
-    letter-spacing: 0.02em;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 .section h2 {
-    margin: 0.8rem 0 0.55rem;
-    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
-    letter-spacing: -0.04em;
+    margin: 1rem 0 0.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    font-weight: 800;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.78) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .section h3 {
     margin: 0.8rem 0 0.55rem;
     font-weight: 700;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Description section */
+.description-text {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 48rem;
+    margin: 1rem auto 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+}
+@media (min-width: 768px) {
+    .description-text {
+        font-size: 1.75rem;
+    }
 }
 
 /* ==========================================================================
-   HOME PAGE -- Benefits about, grid & cards
+   HOME PAGE -- Benefits grid & cards
    ========================================================================== */
 .benefits-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+@media (min-width: 640px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Grid of 4 cards should be 2 cols on desktop */
+.benefits-grid.grid-2col {
+    grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+    .benefits-grid.grid-2col {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .benefit-card {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    gap: 1.25rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(
         180deg,
-        rgba(24, 74, 203, 0.06) 0%,
-        rgba(255, 255, 255, 0.05) 30%,
-        rgba(255, 255, 255, 0.03) 100%
+        rgba(24, 74, 203, 0.05) 0%,
+        rgba(255, 255, 255, 0.04) 40%,
+        rgba(255, 255, 255, 0.02) 100%
     );
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
-    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition:
-        transform 200ms ease,
-        border-color 200ms ease,
-        box-shadow 200ms ease;
+        transform 300ms ease,
+        border-color 300ms ease,
+        box-shadow 300ms ease,
+        background 300ms ease;
     position: relative;
     overflow: hidden;
+    cursor: default;
 }
 .benefit-card::before {
     content: "";
@@ -147,38 +229,67 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 50%;
     height: 2px;
     background: linear-gradient(
         90deg,
         transparent,
-        var(--brand-strong),
+        rgba(61, 121, 240, 0.5),
         transparent
     );
-    opacity: 0.6;
+    opacity: 0;
     border-radius: 999px;
+    transition: opacity 300ms ease, width 300ms ease;
+}
+.benefit-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(61, 121, 240, 0.06),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
 }
 .benefit-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(24, 74, 203, 0.3);
-    box-shadow: 0 32px 96px rgba(24, 74, 203, 0.12);
+    transform: translateY(-6px);
+    border-color: rgba(61, 121, 240, 0.3);
+    box-shadow: 0 20px 48px rgba(24, 74, 203, 0.15);
+    background: linear-gradient(
+        180deg,
+        rgba(24, 74, 203, 0.1) 0%,
+        rgba(255, 255, 255, 0.06) 40%,
+        rgba(255, 255, 255, 0.03) 100%
+    );
+}
+.benefit-card:hover::before {
+    opacity: 1;
+    width: 70%;
+}
+.benefit-card:hover::after {
+    opacity: 1;
 }
 @media (min-width: 640px) {
     .benefit-card {
-        padding: 3rem 2rem;
+        padding: 2.5rem 2rem;
     }
 }
 .benefit-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #fff;
     margin: 0;
+    line-height: 1.3;
 }
 .benefit-card p {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.75);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.65;
 }
 .benefit-card .card-body {
     display: flex;
@@ -186,12 +297,87 @@
     align-items: center;
 }
 
-/* Card icon (emoji) */
+/* Card icon */
 .card-icon {
-    display: block;
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(24, 74, 203, 0.2), rgba(61, 121, 240, 0.1));
+    border: 1px solid rgba(61, 121, 240, 0.15);
+    margin: 0 auto 0.5rem;
+    transition:
+        transform 300ms ease,
+        background 300ms ease;
+}
+.benefit-card:hover .card-icon {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, rgba(24, 74, 203, 0.3), rgba(61, 121, 240, 0.15));
+}
+
+/* ==========================================================================
+   HOME PAGE -- Featured cards (maestro/ensaio)
+   ========================================================================== */
+.benefit-card.featured {
+    border-color: rgba(24, 74, 203, 0.2);
+    background: linear-gradient(
+        180deg,
+        rgba(24, 74, 203, 0.1) 0%,
+        rgba(255, 255, 255, 0.05) 40%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+}
+.benefit-card.featured:hover {
+    border-color: rgba(24, 74, 203, 0.5);
+    box-shadow: 0 20px 48px rgba(24, 74, 203, 0.25);
+}
+
+/* ==========================================================================
+   HOME PAGE -- Stats bar
+   ========================================================================== */
+.stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0 0;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+@media (min-width: 640px) {
+    .stats-bar {
+        gap: 3rem;
+        padding: 2rem 2.5rem;
+    }
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
     line-height: 1;
+    background: linear-gradient(135deg, #fff, var(--brand-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -200,13 +386,15 @@
 .tutorial-video-wrapper {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem 0 0;
 }
 .tutorial-video-wrapper iframe {
     width: 100%;
+    max-width: 900px;
     aspect-ratio: 16 / 9;
-    border-radius: 1rem;
-    border: none;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
 }
 
 /* ==========================================================================
@@ -215,13 +403,13 @@
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0 1.5rem;
+    padding: 2.5rem 0 1.5rem;
     text-align: center;
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.45);
     gap: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    margin-top: 3rem;
 }
 .footer p,
 .footer span {
@@ -233,7 +421,7 @@
    ========================================================================== */
 .mobile-cta {
     display: flex;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem;
 }
 .mobile-cta .button {
     width: 100%;
@@ -251,5 +439,8 @@
 @media (max-width: 680px) {
     .hero-title-line {
         width: 100%;
+    }
+    .benefit-card {
+        padding: 1.75rem 1.25rem;
     }
 }
