@@ -12,7 +12,7 @@
         />
         <script src="/js/i18n.js"></script>
         <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="/files/agradecimento.css" />
+        <link rel="stylesheet" href="/agradecimento.css" />
     </head>
     <body>
         <main class="thanks-layout">
@@ -60,7 +60,7 @@
                     seconds--;
                     if (seconds <= 0) {
                         clearInterval(timerId);
-                        window.location.href = "/index.html#tutorial";
+                        window.location.href = "/index.html?lang=" + window.__i18n.lang + "#tutorial";
                         return;
                     }
                     if (countdownEl) {
