@@ -10,6 +10,7 @@
             data-i18n-content="thanks.description"
             content="Obrigado pelo interesse no Ottavada."
         />
+        <base href="/ottavada-page/">
         <script src="/js/i18n.js"></script>
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/agradecimento.css" />
@@ -60,7 +61,7 @@
                     seconds--;
                     if (seconds <= 0) {
                         clearInterval(timerId);
-                        window.location.href = "/?lang=" + window.__i18n.lang;
+                        window.location.href = window.location.pathname + "?lang=" + window.__i18n.lang;
                         return;
                     }
                     if (countdownEl) {
