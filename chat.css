@@ -362,11 +362,17 @@
         right: 1rem;
     }
     .chat-popup {
-        bottom: 5rem;
+        bottom: 50%;
         right: 0;
-        width: 100vw;
-        height: calc(100vh - 5rem);
-        max-height: calc(100vh - 5rem);
-        border-radius: 0;
+        left: 0;
+        margin: 0 auto;
+        width: min(100vw, 420px);
+        height: 85dvh;
+        max-height: 85dvh;
+        transform: translateY(50%);
+        border-radius: 1.25rem;
+    }
+    .chat-popup.open {
+        transform: translateY(50%) scale(1);
     }
 }

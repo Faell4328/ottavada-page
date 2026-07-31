@@ -93,6 +93,11 @@ body::before {
     opacity: 0.35;
     mix-blend-mode: soft-light;
 }
+@media (max-width: 768px) {
+    body::before {
+        display: none;
+    }
+}
 
 a {
     color: inherit;
@@ -126,6 +131,13 @@ img {
     background: rgba(8, 18, 32, 0.7);
     transition: background 300ms ease;
 }
+@media (max-width: 768px) {
+    .header {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(8, 18, 32, 0.85);
+    }
+}
 
 .topbar {
     display: flex;
@@ -135,6 +147,15 @@ img {
     padding: 1rem 0;
 }
 
+@media (max-width: 767px) {
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.85rem;
+    }
+}
+
 /* -- Brand -- */
 .brand {
     display: flex;
@@ -142,11 +163,10 @@ img {
     gap: 0.9rem;
 }
 .brand img {
-    width: 3.35rem;
-    height: 3.35rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 18px 40px rgba(24, 74, 203, 0.18);
 }
 .brand strong {
     display: block;
@@ -182,6 +202,7 @@ img {
     gap: 0.35rem;
 }
 .lang-label {
+    margin: auto;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -206,6 +227,17 @@ img {
         background 180ms ease,
         border-color 180ms ease,
         transform 180ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang-btn img {
+    display: block;
+    width: 1.4rem;
+    height: 1rem;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 .lang-btn:hover {
     background: rgba(255, 255, 255, 0.12);
@@ -216,11 +248,42 @@ img {
     background: var(--brand-strong);
     border-color: var(--brand-strong);
 }
+.lang-btn.active img {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
 .thanks-lang-switcher {
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 60;
+}
+
+/* Mobile: nav sempre visível, centralizado abaixo do brand */
+@media (max-width: 767px) {
+    .nav-desktop {
+        display: flex;
+    }
+    .brand {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .brand img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 14px;
+    }
+    .brand strong {
+        font-size: 1rem;
+    }
+    .brand span {
+        font-size: 0.78rem;
+    }
+    .lang-switcher {
+        align-items: center;
+    }
+    .lang-label {
+        display: none;
+    }
 }
 
 /* ==========================================================================
@@ -337,8 +400,8 @@ img {
    ========================================================================== */
 @media (max-width: 1024px) {
     .topbar {
-        align-items: flex-start;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
     }
 }
 @media (max-width: 680px) {

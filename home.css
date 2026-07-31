@@ -19,7 +19,7 @@
     background-position: center top;
     z-index: 0;
     pointer-events: none;
-    will-change: transform;
+    transform: translateZ(0);
 }
 
 /* ==========================================================================
@@ -401,23 +401,6 @@
 }
 
 /* ==========================================================================
-   HOME PAGE -- Mobile CTA
-   ========================================================================== */
-.mobile-cta {
-    display: flex;
-    margin: 0 0 3rem;
-}
-.mobile-cta .button {
-    width: 100%;
-    text-align: center;
-}
-@media (min-width: 768px) {
-    .mobile-cta {
-        display: none;
-    }
-}
-
-/* ==========================================================================
    RESPONSIVE -- Home specific
    ========================================================================== */
 @media (max-width: 680px) {
@@ -426,5 +409,16 @@
     }
     .benefit-card {
         padding: 1.75rem 1.25rem;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: linear-gradient(
+            180deg,
+            rgba(24, 74, 203, 0.08) 0%,
+            rgba(255, 255, 255, 0.05) 100%
+        );
+    }
+    .section-kicker {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 }
