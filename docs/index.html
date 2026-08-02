@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documentação — Ottavada</title>
+        <meta
+            name="description"
+            content="Documentação oficial do Ottavada. Guias, referência e tutoriais para organizar e sincronizar partituras da sua orquestra."
+        />
+        <meta
+            property="og:title"
+            content="Documentação — Ottavada"
+        />
+        <meta
+            property="og:description"
+            content="Guias, referência e tutoriais do Ottavada."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://ottavada.com/icon.png"
+        />
+        <meta
+            property="og:url"
+            content="https://ottavada.com/docs"
+        />
+        <link rel="icon" type="image/avif" href="/files/icon.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/home.css" />
+        <link rel="stylesheet" href="/chat.css" />
+        <link rel="stylesheet" href="/docs/docs.css" />
+    </head>
+    <body class="docs-body">
+        <div id="app">
+            <header class="header" aria-label="Navegação principal">
+                <div class="container topbar">
+                    <div class="brand">
+                        <img
+                            src="/files/icon.png"
+                            alt="Ottavada"
+                        />
+                        <div>
+                            <strong>Ottavada</strong>
+                            <span>O seu maestro de partituras</span>
+                        </div>
+                    </div>
+                    <nav class="nav-desktop" aria-label="Navegação principal">
+                        <div class="lang-switcher">
+                            <span class="lang-label">Language</span>
+                            <div class="lang-flags">
+                                <button class="lang-btn" title="Português" aria-label="Português">
+                                    <img src="/files/flags/br.svg" alt="" />
+                                </button>
+                                <button class="lang-btn" title="English" aria-label="English">
+                                    <img src="/files/flags/us.svg" alt="" />
+                                </button>
+                                <button class="lang-btn" title="Español" aria-label="Español">
+                                    <img src="/files/flags/es.svg" alt="" />
+                                </button>
+                                <button class="lang-btn" title="Français" aria-label="Français">
+                                    <img src="/files/flags/fr.svg" alt="" />
+                                </button>
+                                <button class="lang-btn" title="Italiano" aria-label="Italiano">
+                                    <img src="/files/flags/it.svg" alt="" />
+                                </button>
+                                <button class="lang-btn" title="Deutsch" aria-label="Deutsch">
+                                    <img src="/files/flags/de.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="container docs-main">
+                <article class="docs-content">
+                    <header class="docs-header">
+                        <span class="section-kicker">Documentação</span>
+                    </header>
+
+                    <nav class="docs-toc" aria-label="Nesta página">
+                        <strong>Seções</strong>
+                        <ul>
+                            <li><a href="#instalacao">Instalação</a></li>
+                            <li><a href="#primeiros-passos">Primeiros passos</a></li>
+                            <li><a href="#adicionando-musica">Adicionando musica e partituras</a></li>
+                            <li><a href="#atalhos">Atalhos</a></li>
+                            <li><a href="#faq">Perguntas frequentes</a></li>
+                            <li><a href="#suporte">Suporte</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="docs-callout">
+                        <strong>Dica</strong>
+                        <p>Caso tenha alguma dúvida sobre a documentação, fique a vontade para pergunte ao ChatBot.</p>
+                    </div>
+
+                    <section class="docs-section" id="instalacao">
+                        <h2>
+                            Instalação
+                        </h2>
+                        <p>Na página home, clique em "Baixar gratuitamente".</p>
+                        <img alt="" src="/docs/files/image1-pt-BR.avif">
+                        <p>Será baixado o "ottavada.cmd"; ao clicar nele, aparecerá um aviso, mas basta clicar em <b>Executar</b>.</p>
+                        <img alt="" src="/docs/files/image2-pt-BR.avif">
+                        <p>Será aberta uma tela de um programinha que identifica se o seu sistema é x32 ou x64 e instala o Ottavada. Após a instalação, o Ottavada será iniciado.</p>
+                    </section>
+
+                    <section class="docs-section" id="primeiros-passos">
+                        <h2>Primeiros passos</h2>
+                        <p>Ao abrir o Ottavada pela primeira vez, será iniciada a etapa de configuração.</p>
+
+                        <h3>1ª Etapa: Selecionar Idioma</h3>
+                        <p>Aqui você seleciona o idioma que deseja que o Ottavada use. Ele sugere com base no idioma configurado em seu computador, mas você pode alterar para o de sua preferência.</p>
+
+                        <h3>2ª Etapa: Tipo de Computador</h3>
+                        <p>Aqui você seleciona o tipo de computador. Temos dois:</p>
+                        <ul>
+                            <li><strong>Computador do Maestro</strong>: responsável por adicionar, editar e remover músicas e partituras, controlando o que vai ou não para os outros computadores.</li>
+                            <li><strong>Computador do Ensaio</strong>: utilizado apenas para leitura das músicas e partituras que o <strong>computador do maestro</strong> disponibilizou.</li>
+                        </ul>
+
+                        <h3>3ª Etapa: Nome do Computador e Nome da Organização ou Instituição</h3>
+                        <p>Aqui basta colocar o nome do seu computador (por exemplo: "Computador de Casa" ou "Computador da Orquestra") e, no outro campo, o nome da orquestra, banda ou instituição.</p>
+
+                        <h3>4ª Etapa: Configuração do Provedor de Nuvem</h3>
+                        <p>Atualmente o Ottavada suporta o <strong>Koofr</strong> (recomendado) e o <strong>Google Drive</strong>. O Koofr é recomendado porque é <em>muito</em> mais rápido que o Google Drive, mas, em contrapartida, é mais chato de configurar.</p>
+                        <p><strong>Importante</strong>: você precisa usar a mesma conta do provedor de nuvem nos outros computadores com Ottavada. Isso é necessário para que todos consigam acessar os mesmos arquivos.</p>
+                        <div class="docs-callout">
+                            <strong>Importante</strong>
+                            <p>Você precisa usar a mesma conta do provedor de nuvem nos outros computadores com Ottavada. Isso é necessário para que todos consigam acessar os mesmos arquivos.</p>
+                        </div>
+
+                        <h4>Koofr</h4>
+                        <p>Caso você não tenha uma conta, acesse: <a target="_blank" rel="noopener noreferrer" href="https://koofr.eu">Koofr</a> (clique) ou pesquise por <strong>koofr</strong> no Google. Recomendo criar uma conta no Koofr caso não tenha, utilizando uma conta Google — o processo é mais rápido.</p>
+                        <p>Logado no Koofr e na página inicial do Drive, clique no canto superior direito. Aparecerá um menu; selecione <strong>Preferências</strong> e vá em <strong>Password</strong>. Em <strong>Passwords da App</strong>, coloque um nome (por exemplo: "Ottavada") e clique em <strong>Gerar</strong>. Em seguida, clique no botão de <strong>Copiar</strong>. Recomendo salvar essa senha — ela será usada nos seus outros computadores com Ottavada.</p>
+                        <p>Voltando ao Ottavada, coloque o e-mail que você utilizou para acessar o Koofr (caso seja pelo Gmail, use o mesmo e-mail) e, depois, a senha que você copiou.</p>
+
+                        <h4>Google Drive</h4>
+                        <p>Aqui é bem mais simples que o Koofr, mas, em contrapartida, é <em>muito</em> mais lento. Basta clicar no botão <strong>Configurar e testar Google Drive</strong>. Será aberto o navegador para você selecionar uma conta; basta escolher a conta que deseja utilizar e pronto.</p>
+
+                        <h3>5ª Etapa: Revisão das informações</h3>
+                        <p>E, finalmente, temos a tela de revisão das informações, mostrando o nome do computador, o nome da orquestra ou instituição, o tipo de computador e o provedor de nuvem.</p>
+
+                    </section>
+
+                    <section class="docs-section" id="adicionando-musica">
+                        <h2>Adicionando música e partituras</h2>
+                        <p>O Ottavada funciona utilizando indexação de pastas, a grosso modo funciona assim: você aponta para o Ottavada uma pasta que tenha partituras, o Ottavada vai ler a pastas e os arquivos que são partituras. Com base no nome da pasta e dos arquivos ele vai <b>sugerir</b> (podendo ser alterado) o nome da música e partitura</p>
+                        <p>Então para que isso funcione corretamente, você precisa seguir alguns padrões:</p>
+
+                        <ol>
+                            <li>O nome da pasta deve ser o nome da música. Exemplo: <b>/Can-Can</b></li>
+                            <li>No nome do instrumento deve ser o nome do arquivo ou terminar com nome do instrumento. Exemplos: <b>Can-Can - Bassoon.mscz</b> ou <b>Bassoon.mscz</b></li>
+                        </ol>
+                        <div class="docs-callout">
+                            <strong>Observação</strong>
+                            <p>Foi colado isso para agilizar a adição de músicas e partituras, o desenvolvedor observou esse padrão (pastas com nome da música e arquivos da partitura com nome do instrumento) em vários orquestras e também aplicativos musicais. Ele não é perfeito, mas seguindo esse padrão ele vai ajudar muito.</p>
+                        </div>
+
+                        <p>Para indexar um diretório você clica no ícone que a seta está apontado na imagem abaixo.</p>
+                        <img>
+                        <p>Ao clicar será aberto o Explore do Windows, você vai até uma pasta com a partitura, seleciona ela e clica em <b>Selecionar pasta</b>.</p>
+                        <img>
+                        <p>Irá aparecer um Modal com <b>Nome da Música</b>,<b>Nome do Compositor</b>, <b>Nome do Arranjador</b> e <b>Os instrumentos</b>. Cada arquivo é considerado um instrumento pelo Ottavada, então mesmo que a partitura com todos os instrumentos não seja um instrumento especifico, ele é considerado o instrumento: <b>Score</b>, <b>Grade</b> e outros</p>
+                        <p>O nome que você colocar na música ou na partitura não altera no arquivo real, </p>
+
+                    </section>
+
+                    <section class="docs-section" id="atalhos">
+                        <h2>Atalhos</h2>
+                        <ul class="docs-list">
+                            <li><kbd>Ctrl</kbd> + <kbd>O</kbd> &mdash; <span>Abrir pasta</span></li>
+                            <li><kbd>Ctrl</kbd> + <kbd>F</kbd> &mdash; <span>Buscar</span></li>
+                            <li><kbd>Esc</kbd> &mdash; <span>Fechar diálogo</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="docs-section" id="faq">
+                        <h2>Perguntas frequentes</h2>
+                        <details class="docs-faq">
+                            <summary>O Ottavada é gratuito?</summary>
+                            <p>
+                                Sim, o Ottavada é gratuito para uso pessoal e de orquestras.
+                            </p>
+                        </details>
+                        <details class="docs-faq">
+                            <summary>Funciona offline?</summary>
+                            <p>
+                                Sim, após a primeira sincronização todas as partituras
+                                ficam disponíveis localmente.
+                            </p>
+                        </details>
+                        <details class="docs-faq">
+                            <summary>Posso desinstalar sem perder minhas partituras?</summary>
+                            <p>
+                                Sim, o Ottavada não altera nem move seus arquivos.
+                                Ao desinstalar, suas partituras permanecem exatamente
+                                onde estavam.
+                            </p>
+                        </details>
+                    </section>
+
+                    <section class="docs-section" id="suporte">
+                        <h2>Suporte</h2>
+                        <p>
+                            <span>Em caso de dúvidas, entre em contato pelo email</span>
+                            <a href="mailto:ottavada@hotmail.com">ottavada@hotmail.com</a>
+                            <span>ou use o chatbot no canto inferior da tela.</span>
+                        </p>
+                    </section>
+                </article>
+            </main>
+
+            <footer class="footer">
+                <p>Email de contato: ottavada@hotmail.com</p>
+                <span>Desenvolvido por Rhafaell (faell4328)</span>
+            </footer>
+        </div>
+
+        <button class="chat-fab" id="chatFAB" aria-label="Abrir chat" style="display: none;">
+            <img id="fabImg" src="/files/bot.png" alt="bot" style="padding: 5px">
+            <span class="chat-fab-dot" id="chatDot"></span>
+        </button>
+        <div class="chat-tooltip" id="chatTooltip" style="display: none;">
+            Caso tenha alguma dúvida, pergunte ao nosso chatbot
+        </div>
+
+        <div class="chat-popup" id="chatPopup" aria-label="Janela do chat">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <strong>OtavoBot</strong>
+                    <span id="chatStatus">Online</span>
+                </div>
+                <button class="chat-close" id="chatClose" aria-label="Fechar chat">
+                    &times;
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-notice">
+                    <span class="chat-notice-icon">&#9888;</span>
+                    <span>O OtavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
+                </div>
+                <div class="chat-bubble bot">
+                    Olá! Como posso ajudar? Envie sua mensagem.
+                </div>
+            </div>
+            <form class="chat-input-area" id="chatForm" autocomplete="off">
+                <textarea
+                    id="chatInput"
+                    rows="1"
+                    placeholder="Digite sua mensagem..."
+                    aria-label="Mensagem"
+                ></textarea>
+                <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Enviar">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="22" y1="2" x2="11" y2="13" />
+                        <polygon points="22,2 15,22 11,13 2,9" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var rawHash = window.location.hash;
+                if (rawHash && rawHash.length > 1) {
+                    var sectionId = rawHash.slice(1);
+                    var el = document.getElementById(sectionId);
+                    if (el) {
+                        setTimeout(function () {
+                            el.scrollIntoView({ behavior: "smooth" });
+                        }, 100);
+                    }
+                }
+            })();
+        </script>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var fab = document.getElementById("chatFAB");
+                var popup = document.getElementById("chatPopup");
+                var closeBtn = document.getElementById("chatClose");
+                var form = document.getElementById("chatForm");
+                var input = document.getElementById("chatInput");
+                var messages = document.getElementById("chatMessages");
+                var sendBtn = document.getElementById("chatSendBtn");
+                var dot = document.getElementById("chatDot");
+                var statusEl = document.getElementById("chatStatus");
+
+                var fabImg = document.getElementById("fabImg");
+
+                function autoResize() {
+                    input.style.height = "auto";
+                    input.style.height = input.scrollHeight + "px";
+                }
+
+                function resetTextarea() {
+                    input.style.height = "";
+                }
+
+                function setBotImages(src) {
+                    if (fabImg) fabImg.src = src;
+                }
+
+                var isOpen = false;
+                var isSending = false;
+                var history = [];
+                var webhookUrl =
+                    "https://servidor.rhafaell.com.br/bot";
+
+                function openChat() {
+                    isOpen = true;
+                    popup.classList.add("open");
+                    dot.classList.remove("visible");
+                    input.focus();
+                }
+
+                function closeChat() {
+                    isOpen = false;
+                    popup.classList.remove("open");
+                    hasInteracted = true;
+                }
+
+                function toggleChat() {
+                    if (isOpen) closeChat();
+                    else openChat();
+                }
+
+                function addMessage(text, type) {
+                    var bubble = document.createElement("div");
+                    bubble.className = "chat-bubble " + type;
+                    bubble.textContent = text;
+                    messages.appendChild(bubble);
+                    messages.scrollTop = messages.scrollHeight;
+                    return bubble;
+                }
+
+                function showThinking() {
+                    var bubble = document.createElement("div");
+                    bubble.className = "chat-bubble bot thinking-bubble";
+                    bubble.id = "thinkingBubble";
+
+                    for (var i = 0; i < 3; i++) {
+                        var dot = document.createElement("span");
+                        dot.className = "thinking-dot";
+                        bubble.appendChild(dot);
+                    }
+
+                    messages.appendChild(bubble);
+                    messages.scrollTop = messages.scrollHeight;
+                }
+
+                function removeThinking() {
+                    var bubble = document.getElementById("thinkingBubble");
+                    if (bubble) bubble.remove();
+                }
+
+                function setStatus(text) {
+                    if (statusEl) statusEl.textContent = text;
+                }
+
+                function sendMessage(text) {
+                    if (!text.trim() || isSending) return;
+
+                    var msg = text.trim();
+                    addMessage(msg, "user");
+                    history.push({ role: "user", msg: msg });
+
+                    input.value = "";
+                    resetTextarea();
+                    sendBtn.disabled = true;
+                    isSending = true;
+
+                    setBotImages("/files/bot-pensando.png");
+                    showThinking();
+                    setStatus("Digitando...");
+
+                    var body = {
+                        old_msg: history.length > 1 ? history.slice(0, -1) : null,
+                        msg: msg,
+                    };
+
+                    fetch(webhookUrl, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(body),
+                    })
+                        .then(function (res) {
+                            if (!res.ok) throw new Error("Erro " + res.status);
+                            return res.json();
+                        })
+                        .then(function (data) {
+                            removeThinking();
+                            setBotImages("/files/bot.png");
+                            setStatus("Online");
+
+                            if (data && data.msg) {
+                                addMessage(data.msg, "bot");
+                                history.push({ role: "bot", msg: data.msg });
+                            }
+                        })
+                        .catch(function () {
+                            removeThinking();
+                            setBotImages("/files/bot.png");
+                            setStatus("Online");
+                            addMessage(
+                                "Desculpe, ocorreu um erro. Tente novamente.",
+                                "bot",
+                            );
+                        })
+                        .finally(function () {
+                            isSending = false;
+                        });
+                }
+
+                function initChat() {
+                    var tooltip = document.getElementById("chatTooltip");
+                    var hasInteracted = false;
+                    fab.style.display = "";
+                    tooltip.style.display = "";
+
+                    fab.addEventListener("click", toggleChat);
+                    closeBtn.addEventListener("click", closeChat);
+
+                    input.addEventListener("input", function () {
+                        sendBtn.disabled = !input.value.trim() || isSending;
+                        autoResize();
+                    });
+
+                    input.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                            e.preventDefault();
+                            if (!input.value.trim() || isSending) return;
+                            sendMessage(input.value);
+                        }
+                        if (e.key === "Escape") {
+                            closeChat();
+                            fab.focus();
+                        }
+                    });
+
+                    form.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        if (!input.value.trim() || isSending) return;
+                        sendMessage(input.value);
+                    });
+
+                    dot.classList.add("visible");
+
+                    var tooltips = [
+                        "Caso tenha alguma dúvida, pergunte ao nosso chatbot",
+                        "Caso tenha alguma dúvida sobre a ferramenta, pode me perguntar",
+                        "Precisa de ajuda com o Ottavada? Pergunte aqui!"
+                    ];
+                    var tooltipIndex = 0;
+                    var tooltipTimer = null;
+                    var tooltipVisible = false;
+
+                    function showTooltip() {
+                        if (isOpen) return;
+                        tooltip.textContent = tooltips[tooltipIndex] || tooltips[0];
+                        tooltip.classList.add("visible");
+                        tooltipVisible = true;
+                        tooltipIndex = (tooltipIndex + 1) % tooltips.length;
+                        tooltipTimer = setTimeout(function () {
+                            tooltip.classList.remove("visible");
+                            tooltipVisible = false;
+                        }, 8000);
+                    }
+
+                    function scheduleTooltip() {
+                        if (hasInteracted) return;
+                        var delay = 30000 + Math.random() * 30000;
+                        setTimeout(function () {
+                            if (hasInteracted) return;
+                            if (!isOpen && !tooltipVisible) showTooltip();
+                            scheduleTooltip();
+                        }, delay);
+                    }
+
+                    showTooltip();
+                    scheduleTooltip();
+
+                    var origOpen = openChat;
+                    openChat = function () {
+                        tooltip.classList.remove("visible");
+                        tooltipVisible = false;
+                        if (tooltipTimer) clearTimeout(tooltipTimer);
+                        origOpen();
+                    };
+                }
+
+                fetch(webhookUrl + "/status", {
+                    method: "POST",
+                })
+                    .then(function (res) {
+                        if (!res.ok) throw new Error("Erro " + res.status);
+                        return res.json();
+                    })
+                    .then(function (data) {
+                        if (data && data.status === "ok") {
+                            initChat();
+                        }
+                    })
+                    .catch(function () {});
+            })();
+        </script>
+    </body>
+</html>
