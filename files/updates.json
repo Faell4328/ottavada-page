@@ -1,0 +1,15 @@
+{
+  "version": "1.4.0",
+  "notes": "Migração para Ottavada e suporte a multi-idioma",
+  "pub_date": "2026-08-02T18:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "ASSINATURA_X64",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v0.11/Ottavada_0.11.0_x64-setup.exe"
+    },
+    "windows-i686": {
+      "signature": "ASSINATURA_X86",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v0.11/Ottavada_0.11.0_x86-setup.exe"
+    }
+  }
+}
