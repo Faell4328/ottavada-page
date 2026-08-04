@@ -165,7 +165,7 @@
                         <h4>Computador do Maestro</h4>
                         <p>É o computador responsável por adicionar, editar e remover músicas, partituras, categorias, compositor, arranjador e enviar backups para o provedor de nuvem.</p>
                         <h4>Provedor de Nuvem</h4>
-                        <p>É o intermediador entre os computadores. Ele recebe os arquivos enviados pelo <b>Computador do Maestro</b> e os repassa para os outros computadores: para outros <b>Computadores do Maestro</b> e <b>Computadores de Ensaio</b>.</p>
+                        <p>É o intermediador entre os computadores. Ele recebe os arquivos enviados pelo <b>Computador do Maestro</b> e os repassa para os outros computadores.</p>
                         <h4>Computador de Ensaio</h4>
                         <p>É o computador utilizado unicamente para consultar as músicas e partituras <b>permitidas</b> pelo <b>computador do maestro</b>.</p>
 
@@ -229,11 +229,6 @@
                             <li><b>Ignorado:</b> a partitura é ignorada pelo Ottavada, como se não existisse.</li>
                         </ul>
 
-                        <div class="docs-callout">
-                            <strong>Importante</strong>
-                            <p>O Ottavada não mantém a última versão do <b>envio permitido</b>, então se a música ou partitura está com <b>envio não permitido</b> ela não irá aparecer no <b>computador de ensaio</b>.</p>
-                        </div>
-
                         <p><b>Exemplo:</b> Na imagem abaixo, o <b>Computador do Maestro</b> (esquerda) tem uma música com partitura em status <b>envio não permitido</b> que é do <b>Oboé I</b>. Note que no <b>Computador de Ensaio</b> (direita), essa música não aparece.</p>
                         <img alt="" src="/docs/files/image1-pt-BR.avif">
 
@@ -241,7 +236,7 @@
                         <img alt="" src="/docs/files/image2-pt-BR.avif">
 
                         <h4>Não é permitido duplicar</h4>
-                        <p><b>Música com o mesmo nome:</b> você pode ter músicas com o mesmo nome, desde que tenham <b>compositor</b> ou <b>arranjador</b> diferente. Por exemplo, pode ter "Can-Can" sem compositor, "Can-Can" com compositor X, ou "Can-Can" com compositor X e arranjador Y, são consideradas músicas diferentes.</p>
+                        <p><b>Músicas com o mesmo nome:</b> você pode ter músicas com o mesmo nome, desde que tenham <b>compositor</b> ou <b>arranjador</b> diferente. Por exemplo, pode ter "Can-Can" sem compositor, "Can-Can" com compositor X, ou "Can-Can" com compositor X e arranjador Y, são consideradas músicas diferentes.</p>
                         <p>No entanto, se você adicionar uma música sem compositor e sem arranjador, e depois tentar adicionar outra com o mesmo nome também sem compositor e sem arranjador, será considerado duplicação. Da mesma forma, se você adicionar uma música com compositor X, e depois tentar adicionar outra com o mesmo nome e compositor X, também será duplicação.</p>
                         <p><b>Partituras com o mesmo nome:</b> não é permitido ter o mesmo instrumento duas vezes na mesma música, por exemplo: <b>Violino</b> e <b>Violino</b>. É necessário diferenciar, ex: <b>Violino I</b> e <b>Violino II</b> ou <b>Violino</b> e <b>Violino (Solo)</b>. Mesmo sendo arquivos com extensões diferentes, ex: <b>Violino.mus</b> e <b>Violino.pdf</b>, é considerado duplicação.</p>
 
@@ -847,6 +842,61 @@
                     window.addEventListener("load", onScroll);
                     onScroll();
                 }
+            })();
+        </script>
+
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">
+                <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var lightbox = document.getElementById("lightbox");
+                var lightboxImg = document.getElementById("lightboxImg");
+                var lightboxClose = document.getElementById("lightboxClose");
+                var docsContent = document.querySelector(".docs-content");
+
+                if (!lightbox || !lightboxImg || !lightboxClose || !docsContent) return;
+
+                function openLightbox(src, alt) {
+                    lightboxImg.src = src;
+                    lightboxImg.alt = alt || "";
+                    lightbox.classList.add("open");
+                    lightbox.setAttribute("aria-hidden", "false");
+                    document.body.style.overflow = "hidden";
+                }
+
+                function closeLightbox() {
+                    lightbox.classList.remove("open");
+                    lightbox.setAttribute("aria-hidden", "true");
+                    document.body.style.overflow = "";
+                    setTimeout(function () {
+                        lightboxImg.src = "";
+                    }, 200);
+                }
+
+                var imgs = docsContent.querySelectorAll("img");
+                imgs.forEach(function (img) {
+                    img.addEventListener("click", function () {
+                        openLightbox(img.src, img.alt);
+                    });
+                });
+
+                lightboxClose.addEventListener("click", closeLightbox);
+                lightbox.addEventListener("click", function (e) {
+                    if (e.target === lightbox) closeLightbox();
+                });
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && lightbox.classList.contains("open")) {
+                        closeLightbox();
+                    }
+                });
             })();
         </script>
     </body>
