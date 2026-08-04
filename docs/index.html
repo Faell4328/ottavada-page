@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Documentação — Ottavada</title>
+        <title>Documentação: Ottavada</title>
         <meta
             name="description"
             content="Documentação oficial do Ottavada. Guias, referência e tutoriais para organizar e sincronizar partituras da sua orquestra."
         />
         <meta
             property="og:title"
-            content="Documentação — Ottavada"
+            content="Documentação: Ottavada"
         />
         <meta
             property="og:description"
@@ -19,13 +19,13 @@
         <meta property="og:type" content="website" />
         <meta
             property="og:image"
-            content="https://ottavada.com/icon.png"
+            content="https://ottavada.com/icon.avif"
         />
         <meta
             property="og:url"
             content="https://ottavada.com/docs"
         />
-        <link rel="icon" type="image/avif" href="/files/icon.png" />
+        <link rel="icon" type="image/avif" href="/files/icon.avif" />
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/home.css" />
         <link rel="stylesheet" href="/chat.css" />
@@ -35,15 +35,20 @@
         <div id="app">
             <header class="header" aria-label="Navegação principal">
                 <div class="container topbar">
-                    <div class="brand">
-                        <img
-                            src="/files/icon.png"
-                            alt="Ottavada"
-                        />
-                        <div>
-                            <strong>Ottavada</strong>
-                            <span>O seu maestro de partituras</span>
-                        </div>
+                    <div class="topbar-left">
+                        <button class="docs-sidebar-toggle" id="docsSidebarToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="docsSidebar">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                        </button>
+                        <a class="brand" href="../" aria-label="Ottavada: Página inicial">
+                            <img
+                                src="/files/icon.avif"
+                                alt="Ottavada"
+                            />
+                            <div>
+                                <strong>Ottavada</strong>
+                                <span>O seu maestro de partituras</span>
+                            </div>
+                        </a>
                     </div>
                     <nav class="nav-desktop" aria-label="Navegação principal">
                         <div class="lang-switcher">
@@ -73,28 +78,167 @@
                 </div>
             </header>
 
+            <aside class="docs-sidebar" id="docsSidebar" aria-label="Navegação da documentação">
+                <div class="docs-sidebar-inner">
+                    <div class="docs-sidebar-header">
+                        <span class="docs-sidebar-title">Tópicos</span>
+                        <button class="docs-sidebar-close" id="docsSidebarClose" aria-label="Fechar menu">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        </button>
+                    </div>
+                    <nav class="docs-sidebar-nav" aria-label="Tópicos">
+                        <ul>
+                            <li>
+                                <a href="#mensagem-desenvolvedor" class="docs-nav-link" data-nav-target="mensagem-desenvolvedor">
+                                    <span class="docs-nav-text">Mensagem do desenvolvedor</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#conceitos-essenciais" class="docs-nav-link" data-nav-target="conceitos-essenciais">
+                                    <span class="docs-nav-text">Conceitos essenciais</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#instalacao" class="docs-nav-link" data-nav-target="instalacao">
+                                    <span class="docs-nav-text">Instalação</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#primeiros-passos" class="docs-nav-link" data-nav-target="primeiros-passos">
+                                    <span class="docs-nav-text">Primeiros passos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#adicionando-musica" class="docs-nav-link" data-nav-target="adicionando-musica">
+                                    <span class="docs-nav-text">Adicionando música</span>
+                                </a>
+                            </li>
+                            <li>
+                            <li>
+                                <a href="#enviando-nuvem" class="docs-nav-link" data-nav-target="enviando-nuvem">
+                                    <span class="docs-nav-text">Enviando para nuvem</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#verificando-alteracoes" class="docs-nav-link" data-nav-target="verificando-alteracoes">
+                                    <span class="docs-nav-text">Verificando alterações</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#atalhos" class="docs-nav-link" data-nav-target="atalhos">
+                                    <span class="docs-nav-text">Atalhos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="docs-nav-link" data-nav-target="faq">
+                                    <span class="docs-nav-text">Perguntas frequentes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#suporte" class="docs-nav-link" data-nav-target="suporte">
+                                    <span class="docs-nav-text">Suporte</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <div class="docs-sidebar-backdrop" id="docsSidebarBackdrop" aria-hidden="true"></div>
+
             <main class="container docs-main">
                 <article class="docs-content">
                     <header class="docs-header">
                         <span class="section-kicker">Documentação</span>
                     </header>
 
-                    <nav class="docs-toc" aria-label="Nesta página">
-                        <strong>Seções</strong>
-                        <ul>
-                            <li><a href="#instalacao">Instalação</a></li>
-                            <li><a href="#primeiros-passos">Primeiros passos</a></li>
-                            <li><a href="#adicionando-musica">Adicionando musica e partituras</a></li>
-                            <li><a href="#atalhos">Atalhos</a></li>
-                            <li><a href="#faq">Perguntas frequentes</a></li>
-                            <li><a href="#suporte">Suporte</a></li>
-                        </ul>
-                    </nav>
-
                     <div class="docs-callout">
                         <strong>Dica</strong>
-                        <p>Caso tenha alguma dúvida sobre a documentação, fique a vontade para pergunte ao ChatBot.</p>
+                        <p>Caso tenha alguma dúvida sobre a documentação, fique à vontade para perguntar ao ChatBot.</p>
                     </div>
+                    <section class="docs-section" id="mensagem-desenvolvedor">
+                        <h2>Mensagem do desenvolvedor</h2>
+                        <p>O Ottavada está em fase inicial de desenvolvimento. Tentei mantê-lo o mais simples e flexível possível, mas ainda há muitas funcionalidades que gostaria de implementar e outras sobre as quais tenho dúvidas.</p>
+                        <p>Por isso, seu feedback é muito importante. Envie opiniões, ideias, críticas ou qualquer outra sugestão para <b>ottavada@hotmail.com</b>. Isso ajuda (e muito) o projeto.</p>
+                        <p>Outra coisa <b>muito importante</b>, essa documentação foi projetada para ser a mais enxuta possível, então leia ela por completa para conseguir utiliza-la.</p>
+                    </section>
+                    <section class="docs-section" id="conceitos-essenciais">
+                        <h2>Conceitos essenciais</h2>
+
+                        <h3>Como Funciona?</h3>
+                        <h4>Computador do Maestro</h4>
+                        <p>É o computador responsável por adicionar, editar e remover músicas, partituras, categorias, compositor, arranjador e enviar backups para o provedor de nuvem.</p>
+                        <h4>Provedor de Nuvem</h4>
+                        <p>É o intermediador entre os computadores. Ele recebe os arquivos enviados pelo <b>Computador do Maestro</b> e os repassa para os outros computadores: para outros <b>Computadores do Maestro</b> e <b>Computadores de Ensaio</b>.</p>
+                        <h4>Computador de Ensaio</h4>
+                        <p>É o computador utilizado unicamente para consultar as músicas e partituras <b>permitidas</b> pelo <b>computador do maestro</b>.</p>
+
+                        <h3>Limitações</h3>
+                        <h4>Mais de um computador maestro sendo usado ao mesmo tempo</h4>
+                        <p>O desenvolvedor do Ottavada não recomenda a utilização de mais de um Ottavada com o tipo <b>computador do maestro</b> ao mesmo tempo. Isso ocorre a uma limitação proposital da arquitetura (forma que ele foi planejado e desenvolvido), por isso ele é gratuito e não precisa de um servidor para funcionar, mas possui essa desvantagem.</p>
+                        <p>Você pode ter mais de um <b>computador do maestro</b>, mas que sejam usados em momentos diferentes. Pois mesmo aberto, o Ottavada fica enviando backups para o provedor de nuvem. <b>O desenvolvedor já está trabalho em uma solução para isso</b>.</p>
+                        <p>Isso não ocorre com o <b>computador do ensaio</b>, já que ele é utilizado apenas para leitura e não envia nada para o provedor de nuvem.</p>
+
+                        <h3>Músicas e partituras</h3>
+                        <p>Agora que você entende como os computadores se conectam, vamos ao conteúdo em si. O Ottavada funciona com base no que você <b>já tem</b> organizado no seu computador. Ele não cria uma estrutura nova: ele lê a que você já usa.</p>
+                        <p>A ideia é simples:</p>
+                        <ul>
+                            <li>Cada <b>música</b> é uma <b>pasta</b>.</li>
+                            <li>Cada <b>partitura</b> é um <b>arquivo</b> dentro dessa pasta.</li>
+                        </ul>
+                        <p>Quando você aponta uma pasta para o Ottavada, ele <b>indexa</b> ela, ou seja, lê a pasta e os arquivos dentro dela para entender que aquela pasta é a música X e cada arquivo é uma partitura de um instrumento. Isso se chama <b>indexar pasta (diretório)</b>.</p>
+                        <p>Para que ele sugira os nomes certos, ele usa:</p>
+                        <ul>
+                            <li>O <b>nome da pasta</b> para sugerir o <b>nome da música</b>.</li>
+                            <li>O <b>nome do arquivo</b> para sugerir o <b>nome do instrumento</b>.</li>
+                        </ul>
+                        <p>Exemplo de uma pasta bem organizada:</p>
+                        <ul>
+                            <li><b>Can-Can/</b>
+                                <ul>
+                                    <li><b>Score.mscz</b> ou <b>Can-Can - Score.mscz</b></li>
+                                    <li><b>Flauta.mscz</b> ou <b>Can-Can - Flauta.mscz</b></li>
+                                    <li><b>Violino.mscz</b> ou <b>Can-Can - Violino.mscz</b></li>
+                                    <li><b>Cello.mscz</b> ou <b>Can-Can - Cello.mscz</b></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="docs-callout">
+                            <strong>Observação</strong>
+                            <p>Internamente, a partitura com todos os instrumentos (chamada de <b>score</b> ou <b>grade</b>) também é tratada como um instrumento. Ela aparece sempre no topo da lista dentro de uma música.</p>
+                        </div>
+
+                        <h3>Regras</h3>
+                        <p>O Ottavada aplica algumas regras para manter a biblioteca organizada e evitar conflitos. São elas:</p>
+
+                        <h4>Status de Música e Partitura</h4>
+                        <p>Toda <b>música</b> e <b>partitura</b> possui um <b>status</b> que define o que será ou não enviado para o <b>computador de ensaio</b>.</p>
+                        <p><b>Status Música:</b></p>
+                        <ul>
+                            <li><b>Envio permitido:</b> a música é enviada para o <b>computador de ensaio</b>.</li>
+                            <li><b>Envio não permitido:</b> a música não é enviada para o <b>computador de ensaio</b>.</li>
+                            <li><b>Sem partitura:</b> a música não é enviada para o <b>computador de ensaio</b> e, além disso, não possui nenhuma partitura.</li>
+                        </ul>
+                        <p><b>Status Partitura:</b></p>
+                        <ul>
+                            <li><b>Envio permitido:</b> a partitura é enviada para o <b>computador de ensaio</b>.</li>
+                            <li><b>Envio não permitido:</b> a partitura não é enviada para o <b>computador de ensaio</b>.</li>
+                            <li><b>Ignorado:</b> a partitura é ignorada pelo Ottavada, como se não existisse.</li>
+                        </ul>
+
+                        <div class="docs-callout">
+                            <strong>Importante</strong>
+                            <p>O Ottavada não mantem a última versão do <b>envio permitido</b>, então se a música ou partitura está com <b>envio não permitido</b> ele não irá aparecer no <b>computador de ensaio</b>.</p>
+                        </div>
+
+                        <h4>Não é permitido duplicar</h4>
+                        <p><b>Música com o mesmo nome:</b> você não pode ter duas músicas com o mesmo nome. Para isso, altere o nome da música, ex: <b>Can-Can</b> para <b>Can-Can com Coral</b>, ou altere o <b>compositor e/ou arranjador</b>.</p>
+                        <p>Caso você não coloque compositor e/ou arranjador na música e depois adicione outra com o mesmo nome, também sem compositor e/ou arranjador, será considerado duplicação e a nova música não será permitida.</p>
+                        <p><b>Partituras com o mesmo nome:</b> também não é permitido ter o mesmo instrumento duas vezes na mesma música, por exemplo: <b>Violino</b> e <b>Violino</b>. É necessário diferenciar, ex: <b>Violino I</b> e <b>Violino II</b> ou <b>Violino</b> e <b>Violino (Solo)</b>.</p>
+                        <p>Mesmo sendo arquivos de formatos diferentes, ex: <b>Violino.mus</b> e <b>Violino.mscz</b>, é considerado duplicação.</p>
+
+                    </section>
 
                     <section class="docs-section" id="instalacao">
                         <h2>
@@ -113,7 +257,7 @@
                         <p>Ao abrir o Ottavada pela primeira vez, será iniciada a etapa de configuração.</p>
 
                         <h3>1ª Etapa: Selecionar Idioma</h3>
-                        <p>Aqui você seleciona o idioma que deseja que o Ottavada use. Ele sugere com base no idioma configurado em seu computador, mas você pode alterar para o de sua preferência.</p>
+                        <p>Aqui você seleciona o idioma que deseja que o Ottavada use. O aplicativo sugere um idioma com base na configuração do seu computador, mas você pode alterar para o de sua preferência.</p>
 
                         <h3>2ª Etapa: Tipo de Computador</h3>
                         <p>Aqui você seleciona o tipo de computador. Temos dois:</p>
@@ -127,7 +271,6 @@
 
                         <h3>4ª Etapa: Configuração do Provedor de Nuvem</h3>
                         <p>Atualmente o Ottavada suporta o <strong>Koofr</strong> (recomendado) e o <strong>Google Drive</strong>. O Koofr é recomendado porque é <em>muito</em> mais rápido que o Google Drive, mas, em contrapartida, é mais chato de configurar.</p>
-                        <p><strong>Importante</strong>: você precisa usar a mesma conta do provedor de nuvem nos outros computadores com Ottavada. Isso é necessário para que todos consigam acessar os mesmos arquivos.</p>
 
                         <div class="docs-callout">
                             <strong>Importante</strong>
@@ -135,14 +278,14 @@
                         </div>
 
                         <h4>Koofr</h4>
-                        <p>Caso você não tenha uma conta, acesse: <a target="_blank" rel="noopener noreferrer" href="https://koofr.eu">Koofr</a> (clique) ou pesquise por <strong>koofr</strong> no Google. Recomendo criar uma conta no Koofr caso não tenha, utilizando uma conta Google — o processo é mais rápido.</p>
+                        <p>Caso você não tenha uma conta, acesse: <a target="_blank" rel="noopener noreferrer" href="https://koofr.eu">Koofr</a> (clique) ou pesquise por <strong>koofr</strong> no Google. Recomendo criar uma conta no Koofr caso não tenha, utilizando uma conta Google: o processo é mais rápido.</p>
                         <p>Logado no Koofr e na página inicial do Drive, clique no canto superior direito e selecione <strong>Preferências</strong>.</p>
                         <img alt="" src="/docs/files/image3-pt-BR.avif">
                         <p>Vá em <strong>Password</strong>. Em <strong>Passwords da App</strong>, coloque um nome (por exemplo: "Ottavada") e clique em <strong>Gerar</strong>.</p>
                         <img alt="" src="/docs/files/image4-pt-BR.avif">
                         <p>Será aberto um pop-up com sua senha gerada, clique no botão de <strong>Copiar</strong>.</p>
                         <img alt="" src="/docs/files/image5-pt-BR.avif">
-                        <p>Recomendo salvar essa senha — ela será usada nos seus outros computadores com Ottavada.</p>
+                        <p>Recomendo salvar essa senha: ela será usada nos seus outros computadores com Ottavada.</p>
                         <p>Voltando ao Ottavada, coloque o e-mail que você utilizou para acessar o Koofr (caso seja pelo Gmail, use o mesmo e-mail) e, depois, a senha que você copiou.</p>
 
                         <h4>Google Drive</h4>
@@ -156,31 +299,64 @@
 
                     <section class="docs-section" id="adicionando-musica">
                         <h2>Adicionando música e partituras</h2>
-                        <p>O Ottavada funciona utilizando indexação de pastas, a grosso modo funciona assim: você aponta para o Ottavada uma pasta que tenha partituras, o Ottavada vai ler a pastas e os arquivos que são partituras. Com base no nome da pasta e dos arquivos ele vai <b>sugerir</b> (podendo ser alterado) o nome da música e partitura</p>
-                        <p>Então para que isso funcione corretamente, você precisa seguir alguns padrões:</p>
+                        <p>O Ottavada funciona utilizando indexação de pastas, a grosso modo funciona assim: você aponta para o Ottavada uma pasta que tenha partituras, o Ottavada vai ler a pasta e os arquivos dentro dela, que são partituras ou outra extensão que o aplicativo considera.</p>
+                        <p>Com base no nome da pasta e dos arquivos ele vai <b>sugerir</b> (podendo ser alterado) o nome da música e partitura. Então para que isso funcione corretamente, você precisa seguir alguns padrões:</p>
 
-                        <ol>
-                            <li>O nome da pasta deve ser o nome da música. Exemplo: <b>/Can-Can</b></li>
-                            <li>No nome do instrumento deve ser o nome do arquivo ou terminar com nome do instrumento. Exemplos: <b>Can-Can - Bassoon.mscz</b> ou <b>Bassoon.mscz</b></li>
-                        </ol>
+                        <p><b>1. </b>O nome da pasta deve ser o nome da música. Exemplo: <b>/Can-Can</b>.</p>
+                        <img alt="" src="/docs/files/image7-pt-BR.avif">
+                        <p><b>2. </b>No nome do instrumento deve ser o nome do arquivo ou terminar com nome do instrumento. Exemplos: <b>Can-Can - Bassoon.mscz</b> ou <b>Bassoon.mscz</b>.</p>
+                        <img alt="" src="/docs/files/image8-pt-BR.avif">
+
                         <div class="docs-callout">
                             <strong>Observação</strong>
-                            <p>Foi colado isso para agilizar a adição de músicas e partituras, o desenvolvedor observou esse padrão (pastas com nome da música e arquivos da partitura com nome do instrumento) em vários orquestras e também aplicativos musicais. Ele não é perfeito, mas seguindo esse padrão ele vai ajudar muito.</p>
+                            <p>Esse padrão foi criado para agilizar a adição de músicas e partituras. O desenvolvedor observou esse comportamento (pastas com o nome da música e arquivos de partitura com o nome do instrumento) em várias orquestras e também em outros aplicativos musicais. Ele não é perfeito, mas, seguindo esse padrão, a adição fica muito mais rápida.</p>
                         </div>
 
-                        <p>Para indexar um diretório você clica no ícone que a seta está apontado na imagem abaixo.</p>
-                        <p>Ao clicar será aberto o Explore do Windows, você vai até uma pasta com a partitura, seleciona ela e clica em <b>Selecionar pasta</b>.</p>
-                        <p>Irá aparecer um Modal com <b>Nome da Música</b>,<b>Nome do Compositor</b>, <b>Nome do Arranjador</b> e <b>Os instrumentos</b>. Cada arquivo é considerado um instrumento pelo Ottavada, então mesmo que a partitura com todos os instrumentos não seja um instrumento especifico, ele é considerado o instrumento: <b>Score</b>, <b>Grade</b> e outros</p>
-                        <p>O nome que você colocar na música ou na partitura não altera no arquivo real, </p>
+                        <p>Para indexar um diretório você clica no ícone de uma pasta com uma lupa no topo a direita.</p>
+                        <img alt="" src="/docs/files/image9-pt-BR.avif">
 
+                        <p>Ao clicar será aberto o Explore do Windows, você vai até uma pasta com a partitura, seleciona ela e clica em <b>Selecionar pasta</b>.</p>
+                        <img alt="" src="/docs/files/image10-pt-BR.avif">
+
+                        <p>Aparecerá uma janela (modal) com os campos <b>Nome da Música</b>, <b>Nome do Compositor</b>, <b>Nome do Arranjador</b> e <b>os instrumentos</b>. Cada arquivo é considerado um instrumento pelo Ottavada. Assim, mesmo que a partitura com todos os instrumentos juntos não seja um instrumento específico, ela é considerada um instrumento com nomes como <b>Score</b>, <b>Grade</b> ou outros.</p>
+
+                        <img style="width: 80%" alt="" src="/docs/files/image11-pt-BR.avif">
+                        <div class="docs-callout">
+                            <strong>Importante</strong>
+                            <p>O nome que você colocar na música ou no instrumento dentro do Ottavada não altera o nome do arquivo original no seu computador.</p>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="enviando-nuvem">
+                        <h2>Enviando para nuvem</h2>
+                        <p>Após adicionar suas músicas, é hora de enviá-las para o <b>provedor de nuvem</b>, e o processo é bem simples. Basta clicar no ícone de <b>sync</b> (duas setas em círculo se apontando), localizado ao lado do botão de adicionar partitura.</p>
+
+                        <img alt="" src="/docs/files/image11-pt-BR.avif">
+                        <p>Ao clicar no ícone de sync, o Ottavada faz uma varredura em todas as músicas e partituras que você adicionou, modificou ou removeu e abre o <b>modal com relatório</b>. No exemplo, só foi adicionado uma música e alguns instrumentos, então na imagem de exemplo só tem isso, mas se tivesse feito outra alteração teria mostrado.</p>
+                        <img alt="" src="/docs/files/image12-pt-BR.avif">
+                        <p>O envio para a nuvem só é efetivamente realizado depois que você clica em <b>continuar</b> no modal.</p>
+
+                        <div class="docs-callout">
+                            <strong>Observação</strong>
+                            <p>Sempre revise com atenção antes de clicar em <b>continuar</b>. As alterações listadas no modal são exatamente o que será enviado para a nuvem.</p>
+                            <br>
+                            <p>Caso identifique algum problema — por exemplo, o status de uma música errado — clique em <b>cancelar</b>, corrija o que for necessário e clique no ícone de sync novamente.</p>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="verificando-alteracoes">
+                        <h2>Verificando alterações</h2>
+                        <p>Sempre que você clica no botão de sync, o Ottavada faz uma varredura automática em todas as músicas e identifica o que foi adicionado, alterado ou removido desde o último envio.</p>
+                        <p>O status de cada partitura é então atualizado: de <b>envio permitido</b> para <b>envio não permitido</b> sempre que houver alterações pendentes.</p>
+                        <p>A verificação só acontece nesse momento não é contínua. Isso garante que você tenha controle total sobre o que é enviado para a nuvem, com a sua confirmação explícita no modal de revisão.</p>
                     </section>
 
                     <section class="docs-section" id="atalhos">
                         <h2>Atalhos</h2>
                         <ul class="docs-list">
-                            <li><kbd>Ctrl</kbd> + <kbd>O</kbd> &mdash; <span>Abrir pasta</span></li>
-                            <li><kbd>Ctrl</kbd> + <kbd>F</kbd> &mdash; <span>Buscar</span></li>
-                            <li><kbd>Esc</kbd> &mdash; <span>Fechar diálogo</span></li>
+                            <li><kbd>Ctrl</kbd> + <kbd>O</kbd>: <span>Abrir pasta</span></li>
+                            <li><kbd>Ctrl</kbd> + <kbd>F</kbd>: <span>Buscar</span></li>
+                            <li><kbd>Esc</kbd>: <span>Fechar diálogo</span></li>
                         </ul>
                     </section>
 
@@ -189,7 +365,7 @@
                         <details class="docs-faq">
                             <summary>O Ottavada é gratuito?</summary>
                             <p>
-                                Sim, o Ottavada é gratuito para uso pessoal e de orquestras.
+                                Sim, o Ottavada é gratuito para uso pessoal, de orquestras, bandas e instituições.
                             </p>
                         </details>
                         <details class="docs-faq">
@@ -227,7 +403,7 @@
         </div>
 
         <button class="chat-fab" id="chatFAB" aria-label="Abrir chat" style="display: none;">
-            <img id="fabImg" src="/files/bot.png" alt="bot" style="padding: 5px">
+            <img id="fabImg" src="/files/bot.avif" alt="bot" style="padding: 5px">
             <span class="chat-fab-dot" id="chatDot"></span>
         </button>
         <div class="chat-tooltip" id="chatTooltip" style="display: none;">
@@ -237,7 +413,7 @@
         <div class="chat-popup" id="chatPopup" aria-label="Janela do chat">
             <div class="chat-header">
                 <div class="chat-header-info">
-                    <strong>OtavoBot</strong>
+                    <strong>OttavoBot</strong>
                     <span id="chatStatus">Online</span>
                 </div>
                 <button class="chat-close" id="chatClose" aria-label="Fechar chat">
@@ -247,7 +423,7 @@
             <div class="chat-messages" id="chatMessages">
                 <div class="chat-notice">
                     <span class="chat-notice-icon">&#9888;</span>
-                    <span>O OtavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
+                    <span>O OttavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
                 </div>
                 <div class="chat-bubble bot">
                     Olá! Como posso ajudar? Envie sua mensagem.
@@ -348,6 +524,26 @@
                     return bubble;
                 }
 
+                function saveHistory() {
+                    try {
+                        sessionStorage.setItem(
+                            "ottavadaChatHistory",
+                            JSON.stringify(history),
+                        );
+                    } catch (e) {}
+                }
+
+                function loadHistory() {
+                    try {
+                        var raw = sessionStorage.getItem("ottavadaChatHistory");
+                        if (!raw) return [];
+                        var parsed = JSON.parse(raw);
+                        return Array.isArray(parsed) ? parsed : [];
+                    } catch (e) {
+                        return [];
+                    }
+                }
+
                 function showThinking() {
                     var bubble = document.createElement("div");
                     bubble.className = "chat-bubble bot thinking-bubble";
@@ -378,13 +574,14 @@
                     var msg = text.trim();
                     addMessage(msg, "user");
                     history.push({ role: "user", msg: msg });
+                    saveHistory();
 
                     input.value = "";
                     resetTextarea();
                     sendBtn.disabled = true;
                     isSending = true;
 
-                    setBotImages("/files/bot-pensando.png");
+                    setBotImages("/files/bot-pensando.avif");
                     showThinking();
                     setStatus("Digitando...");
 
@@ -393,28 +590,42 @@
                         msg: msg,
                     };
 
+                    var timeoutId = setTimeout(function () {
+                        removeThinking();
+                        setBotImages("/files/bot.avif");
+                        setStatus("Online");
+                        addMessage(
+                            "Desculpe, ocorreu um erro. Tente novamente.",
+                            "bot",
+                        );
+                        isSending = false;
+                    }, 120000);
+
                     fetch(webhookUrl, {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(body),
                     })
                         .then(function (res) {
+                            clearTimeout(timeoutId);
                             if (!res.ok) throw new Error("Erro " + res.status);
                             return res.json();
                         })
                         .then(function (data) {
                             removeThinking();
-                            setBotImages("/files/bot.png");
+                            setBotImages("/files/bot.avif");
                             setStatus("Online");
 
                             if (data && data.msg) {
                                 addMessage(data.msg, "bot");
                                 history.push({ role: "bot", msg: data.msg });
+                                saveHistory();
                             }
                         })
                         .catch(function () {
+                            clearTimeout(timeoutId);
                             removeThinking();
-                            setBotImages("/files/bot.png");
+                            setBotImages("/files/bot.avif");
                             setStatus("Online");
                             addMessage(
                                 "Desculpe, ocorreu um erro. Tente novamente.",
@@ -431,6 +642,14 @@
                     var hasInteracted = false;
                     fab.style.display = "";
                     tooltip.style.display = "";
+
+                    var saved = loadHistory();
+                    if (saved.length) {
+                        history = saved;
+                        history.forEach(function (entry) {
+                            addMessage(entry.msg, entry.role === "user" ? "user" : "bot");
+                        });
+                    }
 
                     fab.addEventListener("click", toggleChat);
                     closeBtn.addEventListener("click", closeChat);
@@ -516,6 +735,100 @@
                         }
                     })
                     .catch(function () {});
+            })();
+        </script>
+
+        <script>
+            (function () {
+                "use strict";
+
+                var sidebar = document.getElementById("docsSidebar");
+                var backdrop = document.getElementById("docsSidebarBackdrop");
+                var toggle = document.getElementById("docsSidebarToggle");
+                var closeBtn = document.getElementById("docsSidebarClose");
+                var header = document.querySelector(".header");
+                var navLinks = document.querySelectorAll(".docs-nav-link");
+
+                function syncHeaderHeight() {
+                    if (!header || !sidebar) return;
+                    var h = header.offsetHeight;
+                    document.documentElement.style.setProperty("--header-height", h + "px");
+                }
+
+                function openSidebar() {
+                    if (!sidebar) return;
+                    sidebar.classList.add("open");
+                    backdrop.classList.add("visible");
+                    toggle.setAttribute("aria-expanded", "true");
+                    document.body.style.overflow = "hidden";
+                }
+
+                function closeSidebar() {
+                    if (!sidebar) return;
+                    sidebar.classList.remove("open");
+                    backdrop.classList.remove("visible");
+                    toggle.setAttribute("aria-expanded", "false");
+                    document.body.style.overflow = "";
+                }
+
+                if (toggle) toggle.addEventListener("click", openSidebar);
+                if (closeBtn) closeBtn.addEventListener("click", closeSidebar);
+                if (backdrop) backdrop.addEventListener("click", closeSidebar);
+
+                navLinks.forEach(function (link) {
+                    link.addEventListener("click", function () {
+                        if (window.innerWidth < 1024) closeSidebar();
+                    });
+                });
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && sidebar && sidebar.classList.contains("open")) {
+                        closeSidebar();
+                    }
+                });
+
+                var sections = [];
+                navLinks.forEach(function (link) {
+                    var id = link.getAttribute("data-nav-target");
+                    var el = document.getElementById(id);
+                    if (el) sections.push({ id: id, el: el, link: link });
+                });
+
+                function setActive(id) {
+                    navLinks.forEach(function (l) { l.classList.remove("active"); });
+                    for (var i = 0; i < sections.length; i++) {
+                        if (sections[i].id === id) {
+                            sections[i].link.classList.add("active");
+                            break;
+                        }
+                    }
+                }
+
+                function onScroll() {
+                    if (!sections.length) return;
+                    var headerH = header ? header.offsetHeight : 0;
+                    var scrollPos = window.scrollY + headerH + 40;
+                    var current = sections[0].id;
+                    for (var i = 0; i < sections.length; i++) {
+                        if (sections[i].el.offsetTop <= scrollPos) {
+                            current = sections[i].id;
+                        } else {
+                            break;
+                        }
+                    }
+                    setActive(current);
+                }
+
+                syncHeaderHeight();
+                window.addEventListener("resize", syncHeaderHeight);
+                window.addEventListener("load", syncHeaderHeight);
+
+                if (sections.length) {
+                    setActive(sections[0].id);
+                    window.addEventListener("scroll", onScroll, { passive: true });
+                    window.addEventListener("load", onScroll);
+                    onScroll();
+                }
             })();
         </script>
     </body>

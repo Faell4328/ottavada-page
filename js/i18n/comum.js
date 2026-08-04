@@ -9,7 +9,7 @@ window.__i18nCommon = {
       "placeholder": "Digite sua mensagem...",
       "statusOnline": "Online",
       "statusTyping": "Digitando...",
-      "statusSubtitle": "O OtavoBot \u00e9 um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paci\u00eancia.",
+      "statusSubtitle": "O OttavoBot \u00e9 um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paci\u00eancia.",
       "tooltip": "Caso tenha alguma d\u00favida, pergunte ao nosso chatbot",
       "tooltips": [
         "Caso tenha alguma d\u00favida, pergunte ao nosso chatbot",
@@ -33,7 +33,7 @@ window.__i18nCommon = {
       "placeholder": "Type your message...",
       "statusOnline": "Online",
       "statusTyping": "Typing...",
-      "statusSubtitle": "OtavoBot is an LLM, which may take a few seconds or minutes depending on your question, please be patient.",
+      "statusSubtitle": "OttavoBot is an LLM, which may take a few seconds or minutes depending on your question, please be patient.",
       "tooltip": "Have any questions? Ask our chatbot",
       "tooltips": [
         "Have any questions? Ask our chatbot",
@@ -57,7 +57,7 @@ window.__i18nCommon = {
       "placeholder": "Escribe tu mensaje...",
       "statusOnline": "En l\u00ednea",
       "statusTyping": "Escribiendo...",
-      "statusSubtitle": "OtavoBot es un LLM, puede tardar unos segundos o minutos dependiendo de tu pregunta, por favor ten paciencia.",
+      "statusSubtitle": "OttavoBot es un LLM, puede tardar unos segundos o minutos dependiendo de tu pregunta, por favor ten paciencia.",
       "tooltip": "\u00bfTienes alguna duda? Pregunta a nuestro chatbot",
       "tooltips": [
         "\u00bfTienes alguna duda? Pregunta a nuestro chatbot",
@@ -81,7 +81,7 @@ window.__i18nCommon = {
       "placeholder": "\u00c9crivez votre message...",
       "statusOnline": "En ligne",
       "statusTyping": "\u00c9crit...",
-      "statusSubtitle": "OtavoBot est un LLM, cela peut prendre quelques secondes ou minutes selon votre question, merci de votre patience.",
+      "statusSubtitle": "OttavoBot est un LLM, cela peut prendre quelques secondes ou minutes selon votre question, merci de votre patience.",
       "tooltip": "Vous avez des questions\u00a0? Demandez \u00e0 notre chatbot",
       "tooltips": [
         "Vous avez des questions\u00a0? Demandez \u00e0 notre chatbot",
@@ -105,7 +105,7 @@ window.__i18nCommon = {
       "placeholder": "Scrivi il tuo messaggio...",
       "statusOnline": "Online",
       "statusTyping": "Sta scrivendo...",
-      "statusSubtitle": "OtavoBot \u00e8 un LLM, potrebbe impiegare alcuni secondi o minuti a seconda della tua domanda, per favore abbi pazienza.",
+      "statusSubtitle": "OttavoBot \u00e8 un LLM, potrebbe impiegare alcuni secondi o minuti a seconda della tua domanda, per favore abbi pazienza.",
       "tooltip": "Hai qualche domanda? Chiedi al nostro chatbot",
       "tooltips": [
         "Hai qualche domanda? Chiedi al nostro chatbot",
@@ -129,7 +129,7 @@ window.__i18nCommon = {
       "placeholder": "Schreiben Sie Ihre Nachricht...",
       "statusOnline": "Online",
       "statusTyping": "Schreibt...",
-      "statusSubtitle": "OtavoBot ist ein LLM, die Antwort kann je nach Frage einige Sekunden oder Minuten dauern, bitte haben Sie Geduld.",
+      "statusSubtitle": "OttavoBot ist ein LLM, die Antwort kann je nach Frage einige Sekunden oder Minuten dauern, bitte haben Sie Geduld.",
       "tooltip": "Haben Sie Fragen? Fragen Sie unseren Chatbot",
       "tooltips": [
         "Haben Sie Fragen? Fragen Sie unseren Chatbot",

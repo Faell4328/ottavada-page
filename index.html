@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title data-i18n="meta.title">
-            Ottavada — Organize e sincronize partituras da sua orquestra
+            Ottavada: organize e sincronize partituras da sua orquestra
         </title>
         <meta
             name="description"
@@ -14,7 +14,7 @@
         <meta
             property="og:title"
             data-i18n-content="meta.ogTitle"
-            content="Ottavada — Organize e Sincronize Partituras"
+            content="Ottavada: Organize e Sincronize Partituras"
         />
         <meta
             property="og:description"
@@ -23,21 +23,21 @@
         />
         <meta
             property="og:image"
-            content="https://ottavada.com/icon.png"
+            content="https://ottavada.com/icon.avif"
         />
         <meta
             property="og:url"
             content="https://ottavada.com"
         />
         <meta property="og:type" content="website" />
-        <link rel="icon" type="image/avif" href="files/icon.png" />
+        <link rel="icon" type="image/avif" href="files/icon.avif" />
         <link
             rel="preload"
             as="image"
             href="orquestra.avif"
             fetchpriority="high"
         />
-        <link rel="preload" as="image" href="files/icon.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="files/icon.avif" fetchpriority="high" />
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -61,9 +61,9 @@
 
             <header class="header" aria-label="Navegação principal">
                 <div class="container topbar">
-                    <div class="brand">
+                    <a class="brand" href="./" aria-label="Ottavada: Página inicial">
                         <img
-                            src="files/icon.png"
+                            src="files/icon.avif"
                             data-i18n-aria="alt.logo"
                             data-i18n-aria-attr="alt"
                             alt="Ottavada"
@@ -72,7 +72,7 @@
                             <strong data-i18n="brand.name">Ottavada</strong>
                             <span data-i18n="brand.tagline">O seu maestro de partituras</span>
                         </div>
-                    </div>
+                    </a>
                     <nav class="nav-desktop" aria-label="Navegação principal">
                         <div class="lang-switcher">
                             <span class="lang-label">Language</span>
@@ -109,7 +109,7 @@
                     <span class="hero-title-line" id="hero-line-2"></span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">
-                    Gerencie, organize e sincronize partituras da sua orquestra.
+                    Gerencie, organize e sincronize suas partituras.
                     Sem complicações, sem mudar a sua forma de trabalhar.
                 </p>
                 <div class="hero-cta">
@@ -117,7 +117,7 @@
                         <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         <span data-i18n="hero.cta">Baixar gratuitamente</span>
                     </a>
-                    <span class="hero-cta-note" data-i18n="hero.ctaNote">Para Windows 10 e 11 (x32 e x64)</span>
+                    <span class="hero-cta-note" data-i18n="hero.ctaNote">Para Windows 10 e 11</span>
                 </div>
             </section>
 
@@ -126,7 +126,7 @@
                     <div style="text-align: center;">
                         <span class="section-kicker" data-i18n="sections.descricao.kicker">Por que o Ottavada?</span>
                         <p class="description-text" data-i18n="sections.descricao.text">
-                            O gerenciamento de partituras em orquestras ainda
+                            O gerenciamento de partituras ainda
                             é feito manualmente: troca de e-mails, pen drives,
                             pastas e partituras duplicadas, e risco constante de perder a
                             versão certa. O Ottavada resolve isso.
@@ -151,7 +151,7 @@
                                     Basta selecionar uma pasta com partituras.
                                     O Ottavada identifica o nome da música pelo
                                     diretório e sugere os instrumentos a partir
-                                    dos arquivos &mdash; sem cadastro manual.
+                                    dos arquivos, sem cadastro manual.
                                 </p>
                             </div>
                         </article>
@@ -164,7 +164,7 @@
                                 <p data-i18n="benefits.duplicatas.body">
                                     O sistema não permite dois nomes iguais de
                                     música ou partitura. Se tem dois violinos,
-                                    serão "Violino I" e "Violino II" &mdash;
+                                    serão "Violino I" e "Violino II",
                                     nunca "Violino" repetido.
                                 </p>
                             </div>
@@ -186,14 +186,15 @@
                         <article class="benefit-card">
                             <div>
                                 <span class="card-icon">🎻</span>
-                                <h3 data-i18n="benefits.ordem.title">Ordem profissional de orquestra</h3>
+                                <h3 data-i18n="benefits.ordem.title">Ordem padrão de grade</h3>
                             </div>
                             <div class="card-body">
                                 <p data-i18n="benefits.ordem.body">
                                     Ao expandir uma música, as partituras
                                     aparecem na ordem padrão de grade:
                                     madeiras, metais, percussão, teclados
-                                    e cordas &mdash; igual ao Finale.
+                                    e cordas, igual ao "Standard Orchestral
+                                    Score Order", padrão mundial.
                                 </p>
                             </div>
                         </article>
@@ -219,7 +220,7 @@
                             <div class="card-body">
                                 <p data-i18n="benefits.ferramentas.body">
                                     Funciona com Finale, MuseScore, Sibelius,
-                                    Dorico e qualquer programa que gere
+                                    Dorico e qualquer arquivo em
                                     PDF, MusicXML ou MIDI. Você continua
                                     trabalhando do seu jeito, sem mudar nada.
                                 </p>
@@ -237,7 +238,7 @@
                         <article class="benefit-card featured">
                             <div>
                                 <span class="card-icon">🎓</span>
-                                <h3 data-i18n="benefits.maestro.title">Computador do Maestro</h3>
+                                <h3 data-i18n="benefits.maestro.title">Modo computador do maestro</h3>
                             </div>
                             <div class="card-body">
                                 <p data-i18n="benefits.maestro.body">
@@ -251,7 +252,7 @@
                         <article class="benefit-card featured">
                             <div>
                                 <span class="card-icon">🎵</span>
-                                <h3 data-i18n="benefits.ensaio.title">Computador de Ensaio</h3>
+                                <h3 data-i18n="benefits.ensaio.title">Modo computador de ensaio</h3>
                             </div>
                             <div class="card-body">
                                 <p data-i18n="benefits.ensaio.body">
@@ -322,7 +323,7 @@
                                 <p data-i18n="benefits.desinstalou.body">
                                     Se um dia decidir não usar mais, suas
                                     partituras continuam exatamente onde
-                                    estavam &mdash; organizadas, acessíveis e
+                                    estavam, organizadas, acessíveis e
                                     sem nenhuma dependência do Ottavada.
                                 </p>
                             </div>
@@ -330,7 +331,7 @@
                         <article class="benefit-card">
                             <div>
                                 <span class="card-icon">🛡️</span>
-                                <h3 data-i18n="benefits.escolha.title">Você decide o que vai para o ensaio</h3>
+                                <h3 data-i18n="benefits.escolha.title">Você decide o que vai para os outros computadores</h3>
                             </div>
                             <div class="card-body">
                                 <p data-i18n="benefits.escolha.body">
@@ -338,32 +339,6 @@
                                     ensaio. Você escolhe: essa partitura pode
                                     ser enviada, bloqueada ou ignorada.
                                     Você no controle, sempre.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="benefit-card">
-                            <div>
-                                <span class="card-icon">🌐</span>
-                                <h3 data-i18n="benefits.idiomas.title">Multi-idiomas</h3>
-                            </div>
-                            <div class="card-body">
-                                <p data-i18n="benefits.idiomas.body">
-                                    Suporte para português, inglês, espanhol,
-                                    francês e alemão em desenvolvimento, para
-                                    atender músicos de qualquer lugar.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="benefit-card">
-                            <div>
-                                <span class="card-icon">🔄</span>
-                                <h3 data-i18n="benefits.atualizacoes.title">Atualizações automáticas</h3>
-                            </div>
-                            <div class="card-body">
-                                <p data-i18n="benefits.atualizacoes.body">
-                                    O aplicativo se mantém atualizado sozinho,
-                                    mas você decide quando aplicar a
-                                    atualização. Nada é forçado.
                                 </p>
                             </div>
                         </article>
@@ -380,6 +355,105 @@
                                 </p>
                             </div>
                         </article>
+                    </div>
+                </section>
+
+                <section class="section" id="mais-vantagens">
+                    <div style="text-align: center;">
+                        <span class="section-kicker" data-i18n="sections.maisVantagens.kicker">Mais vantagens</span>
+                        <h2 data-i18n="sections.maisVantagens.heading">Pequenos detalhes que fazem diferença.</h2>
+                    </div>
+                    <div class="benefits-grid">
+                        <article class="benefit-card">
+                            <div>
+                                <span class="card-icon">🌐</span>
+                                <h3 data-i18n="benefits.idiomas.title">Multi-idiomas</h3>
+                            </div>
+                            <div class="card-body">
+                                <p data-i18n="benefits.idiomas.body">
+                                    Disponível em português, com inglês,
+                                    espanhol, francês e alemão em
+                                    desenvolvimento, para atender músicos
+                                    de qualquer lugar.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="benefit-card">
+                            <div>
+                                <span class="card-icon">🆓</span>
+                                <h3 data-i18n="benefits.gratuito.title">Gratuito, sem pegadinhas</h3>
+                            </div>
+                            <div class="card-body">
+                                <p data-i18n="benefits.gratuito.body">
+                                    Totalmente gratuito para uso pessoal,
+                                    orquestras, bandas e instituições.
+                                    Sem assinatura, sem limite de músicas
+                                    e sem servidor próprio para manter.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="benefit-card">
+                            <div>
+                                <span class="card-icon">🌱</span>
+                                <h3 data-i18n="benefits.evolucao.title">Em constante evolução</h3>
+                            </div>
+                            <div class="card-body">
+                                <p data-i18n="benefits.evolucao.body">
+                                    O Ottavada está em fase inicial de
+                                    desenvolvimento, mas recebe melhorias
+                                    frequentes. Novas funcionalidades,
+                                    correções e idiomas são adicionados
+                                    com base no feedback dos usuários.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="benefit-card">
+                            <div>
+                                <span class="card-icon">☁️</span>
+                                <h3 data-i18n="benefits.semLigar.title">Sem deixar o computador ligado</h3>
+                            </div>
+                            <div class="card-body">
+                                <p data-i18n="benefits.semLigar.body">
+                                    Cada computador acessa a nuvem por
+                                    conta própria. Você não precisa manter
+                                    o computador do maestro ligado para
+                                    usar o de ensaio, a sincronização
+                                    acontece direto pela nuvem.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="benefit-card">
+                            <div>
+                                <span class="card-icon">💻</span>
+                                <h3 data-i18n="benefits.openSource.title">Open source</h3>
+                            </div>
+                            <div class="card-body">
+                                <p data-i18n="benefits.openSource.body">
+                                    O Ottavada é open source. Você pode ver
+                                    o código, sugerir mudanças e contribuir
+                                    no <a target="_blank" rel="noopener noreferrer" href="https://github.com/Faell4328/ottavada">GitHub</a>.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section help-section" id="ajuda">
+                    <div class="help-inner">
+                        <div class="help-head">
+                            <span class="section-kicker" data-i18n="help.kicker">Precisa de ajuda?</span>
+                            <p class="help-sub" data-i18n="help.subtitle">Veja os guias passo a passo ou pergunte ao nosso assistente no canto inferior direito da tela.</p>
+                        </div>
+                        <a class="help-card" href="docs/">
+                            <span class="help-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </span>
+                            <div class="help-text">
+                                <h3 data-i18n="help.docs.title">Ler a documentação</h3>
+                                <p data-i18n="help.docs.body">Como instalar, configurar e usar o Ottavada do zero, com guias passo a passo.</p>
+                            </div>
+                            <span class="help-arrow" aria-hidden="true">→</span>
+                        </a>
                     </div>
                 </section>
 
@@ -454,7 +528,7 @@
 
         <!-- Chat Widget -->
         <button class="chat-fab" id="chatFAB" data-i18n-aria="chat.ariaLabel" aria-label="Abrir chat" style="display: none;">
-            <img id="fabImg" src="files/bot.png" alt="bot" style="padding: 5px">
+            <img id="fabImg" src="files/bot.avif" alt="bot" style="padding: 5px">
             <span class="chat-fab-dot" id="chatDot"></span>
         </button>
         <div class="chat-tooltip" id="chatTooltip" data-i18n="chat.tooltip" style="display: none;">
@@ -464,7 +538,7 @@
         <div class="chat-popup" id="chatPopup" aria-label="Janela do chat">
             <div class="chat-header">
                 <div class="chat-header-info">
-                    <strong>OtavoBot</strong>
+                    <strong>OttavoBot</strong>
                     <span id="chatStatus" data-i18n="chat.statusOnline">Online</span>
                 </div>
                 <button class="chat-close" id="chatClose" data-i18n-aria="chat.ariaClose" aria-label="Fechar chat">
@@ -474,7 +548,7 @@
             <div class="chat-messages" id="chatMessages">
                 <div class="chat-notice">
                     <span class="chat-notice-icon">&#9888;</span>
-                    <span data-i18n="chat.statusSubtitle">O OtavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
+                    <span data-i18n="chat.statusSubtitle">O OttavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.</span>
                 </div>
                 <div class="chat-bubble bot" data-i18n="chat.welcome">
                     Olá! Como posso ajudar? Envie sua mensagem.
@@ -560,6 +634,26 @@
                     return bubble;
                 }
 
+                function saveHistory() {
+                    try {
+                        sessionStorage.setItem(
+                            "ottavadaChatHistory",
+                            JSON.stringify(history),
+                        );
+                    } catch (e) {}
+                }
+
+                function loadHistory() {
+                    try {
+                        var raw = sessionStorage.getItem("ottavadaChatHistory");
+                        if (!raw) return [];
+                        var parsed = JSON.parse(raw);
+                        return Array.isArray(parsed) ? parsed : [];
+                    } catch (e) {
+                        return [];
+                    }
+                }
+
                 function showThinking() {
                     var bubble = document.createElement("div");
                     bubble.className = "chat-bubble bot thinking-bubble";
@@ -590,13 +684,14 @@
                     var msg = text.trim();
                     addMessage(msg, "user");
                     history.push({ role: "user", msg: msg });
+                    saveHistory();
 
                     input.value = "";
                     resetTextarea();
                     sendBtn.disabled = true;
                     isSending = true;
 
-                    setBotImages("files/bot-pensando.png");
+                    setBotImages("files/bot-pensando.avif");
                     showThinking();
                     setStatus(window.__i18n.chat.statusTyping);
 
@@ -605,28 +700,42 @@
                         msg: msg,
                     };
 
+                    var timeoutId = setTimeout(function () {
+                        removeThinking();
+                        setBotImages("files/bot.avif");
+                        setStatus(window.__i18n.chat.statusOnline);
+                        addMessage(
+                            window.__i18n.chat.error,
+                            "bot",
+                        );
+                        isSending = false;
+                    }, 120000);
+
                     fetch(webhookUrl, {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(body),
                     })
                         .then(function (res) {
+                            clearTimeout(timeoutId);
                             if (!res.ok) throw new Error("Erro " + res.status);
                             return res.json();
                         })
                         .then(function (data) {
                             removeThinking();
-                            setBotImages("files/bot.png");
+                            setBotImages("files/bot.avif");
                             setStatus(window.__i18n.chat.statusOnline);
 
                             if (data && data.msg) {
                                 addMessage(data.msg, "bot");
                                 history.push({ role: "bot", msg: data.msg });
+                                saveHistory();
                             }
                         })
                         .catch(function () {
+                            clearTimeout(timeoutId);
                             removeThinking();
-                            setBotImages("files/bot.png");
+                            setBotImages("files/bot.avif");
                             setStatus(window.__i18n.chat.statusOnline);
                             addMessage(
                                 window.__i18n.chat.error,
@@ -643,6 +752,14 @@
                     var hasInteracted = false;
                     fab.style.display = "";
                     tooltip.style.display = "";
+
+                    var saved = loadHistory();
+                    if (saved.length) {
+                        history = saved;
+                        history.forEach(function (entry) {
+                            addMessage(entry.msg, entry.role === "user" ? "user" : "bot");
+                        });
+                    }
 
                     fab.addEventListener("click", toggleChat);
                     closeBtn.addEventListener("click", closeChat);
