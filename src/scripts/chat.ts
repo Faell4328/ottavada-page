@@ -159,9 +159,11 @@ function init() {
     showThinking();
     setStatus(statusTyping);
 
+    const lang = form?.getAttribute("data-lang") ?? undefined;
     const body = {
       old_msg: history.length > 1 ? history.slice(0, -1) : null,
       msg,
+      ...(lang ? { lang } : {}),
     };
 
     const timeoutId = setTimeout(() => {
