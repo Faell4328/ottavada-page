@@ -162,9 +162,9 @@ img {
         background 160ms ease,
         color 160ms ease,
         border-color 200ms ease;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
 }
 .docs-nav-link:hover {
     background: rgba(255, 255, 255, 0.05);

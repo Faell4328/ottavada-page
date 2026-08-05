@@ -125,13 +125,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#atalhos" class="docs-nav-link" data-nav-target="atalhos">
-                                    <span class="docs-nav-text">Atalhos</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#faq" class="docs-nav-link" data-nav-target="faq">
-                                    <span class="docs-nav-text">Perguntas frequentes</span>
+                                <a href="#baixando" class="docs-nav-link" data-nav-target="baixando">
+                                    <span class="docs-nav-text">Baixando no computador de ensaio</span>
                                 </a>
                             </li>
                             <li>
@@ -156,7 +151,7 @@
                         <h2>Mensagem do desenvolvedor</h2>
                         <p>O Ottavada está em fase inicial de desenvolvimento. Tentei mantê-lo o mais simples e flexível possível, mas ainda há muitas funcionalidades que gostaria de implementar e outras sobre as quais tenho dúvidas.</p>
                         <p>Por isso, seu feedback é muito importante. Envie opiniões, ideias, críticas ou qualquer outra sugestão para <b>ottavada@hotmail.com</b>. Isso ajuda (e muito) o projeto.</p>
-                        <p>Outra coisa <b>muito importante</b>, essa documentação foi projetada para ser a mais enxuta possível, então leia ela por completa para conseguir utilizar a ferramenta sem confusão ou dor de cabeça.</p>
+                        <p>Outra coisa <b>muito importante</b>, essa documentação foi projetada para ser a mais enxuta possível, então leia-a por completo para conseguir utilizar a ferramenta sem confusão ou dor de cabeça.</p>
                     </section>
                     <section class="docs-section" id="conceitos-essenciais">
                         <h2>Conceitos essenciais</h2>
@@ -185,7 +180,7 @@
                             <li>Cada <b>música</b> é uma <b>pasta</b>.</li>
                             <li>Cada <b>partitura</b> é um <b>arquivo</b> dentro dessa pasta.</li>
                         </ul>
-                        <p>Quando você aponta uma pasta para o Ottavada, ele <b>indexa</b> ela, ou seja, lê a pasta e os arquivos dentro dela para entender que aquela pasta é a música X e cada arquivo é uma partitura de um instrumento. Isso se chama <b>indexar pasta (diretório)</b>.</p>
+                        <p>Quando você aponta uma pasta para o Ottavada, ele a <b>indexa</b>, ou seja, lê a pasta e os arquivos dentro dela para entender que aquela pasta é a música X e cada arquivo é uma partitura de um instrumento. Isso se chama <b>indexar pasta (diretório)</b>.</p>
                         <p>O Ottavada possui um sistema de sugestão de nome da música e dos instrumentos. Para que ele funcione é preciso:</p>
                         <ul>
                             <li>O <b>nome da pasta</b> ser o <b>nome da música</b>.</li>
@@ -203,7 +198,7 @@
                             </li>
                         </ul>
 
-                        <p>Com isso o nome da música sugerida é <b>CAN-CAN</b> e os instrumentos: <b>score</b>, <b>flauta</b>, <b>violino</b> e <b>cello</b>. Caso não seja identificado um instrumento válido no nome do arquivo o campo fica vazio, sendo necessário preencher manualmente.</p>
+                        <p>Com isso o nome da música sugerida é <b>Can-Can</b> e os instrumentos: <b>score</b>, <b>flauta</b>, <b>violino</b> e <b>cello</b>. Caso não seja identificado um instrumento válido no nome do arquivo, o campo fica vazio, sendo necessário preenchê-lo manualmente.</p>
                         <p>A ideia veio para agilizar o cadastro de músicas no Ottavada, observando um padrão: <b>nome da música na pasta</b> e <b>nome do instrumento no arquivo</b>.</p>
 
                         <div class="docs-callout">
@@ -229,14 +224,19 @@
                             <li><b>Ignorado:</b> a partitura é ignorada pelo Ottavada, como se não existisse.</li>
                         </ul>
 
-                        <p><b>Exemplo:</b> Na imagem abaixo, o <b>Computador do Maestro</b> (esquerda) tem uma música com partitura em status <b>envio não permitido</b> que é do <b>Oboé I</b>. Note que no <b>Computador de Ensaio</b> (direita), essa música não aparece.</p>
+                        <div class="docs-callout">
+                            <strong>Dica</strong>
+                            <p>Ao clicar na imagem, você poderá vê-la em tela cheia.</p>
+                        </div>
+
+                        <p><b>Exemplo:</b> Na imagem abaixo, o <b>Computador do Maestro</b> (esquerda) tem uma música cuja partitura de <b>Oboé I</b> está com status <b>envio não permitido</b>. Note que no <b>Computador de Ensaio</b> (direita), essa música não aparece.</p>
                         <img alt="" src="/docs/files/image1-pt-BR.avif">
 
                         <p>Da mesma forma, se a música inteira estiver com status <b>envio não permitido</b>, ela também não aparecerá no computador de ensaio.</p>
                         <img alt="" src="/docs/files/image2-pt-BR.avif">
 
                         <h4>Não é permitido duplicar</h4>
-                        <p><b>Músicas com o mesmo nome:</b> você pode ter músicas com o mesmo nome, desde que tenham <b>compositor</b> ou <b>arranjador</b> diferente. Por exemplo, pode ter "Can-Can" sem compositor, "Can-Can" com compositor X, ou "Can-Can" com compositor X e arranjador Y, são consideradas músicas diferentes.</p>
+                        <p><b>Músicas com o mesmo nome:</b> você pode ter músicas com o mesmo nome, desde que tenham <b>compositor</b> ou <b>arranjador</b> diferente. Por exemplo, pode ter "Can-Can" sem compositor, "Can-Can" com compositor X, ou "Can-Can" com compositor X e arranjador Y — essas são consideradas músicas diferentes.</p>
                         <p>No entanto, se você adicionar uma música sem compositor e sem arranjador, e depois tentar adicionar outra com o mesmo nome também sem compositor e sem arranjador, será considerado duplicação. Da mesma forma, se você adicionar uma música com compositor X, e depois tentar adicionar outra com o mesmo nome e compositor X, também será duplicação.</p>
                         <p><b>Partituras com o mesmo nome:</b> não é permitido ter o mesmo instrumento duas vezes na mesma música, por exemplo: <b>Violino</b> e <b>Violino</b>. É necessário diferenciar, ex: <b>Violino I</b> e <b>Violino II</b> ou <b>Violino</b> e <b>Violino (Solo)</b>. Mesmo sendo arquivos com extensões diferentes, ex: <b>Violino.mus</b> e <b>Violino.pdf</b>, é considerado duplicação.</p>
 
@@ -249,7 +249,7 @@
                         <p>Na página home, clique em <b>Baixar gratuitamente</b>.</p>
                         <p>Será baixado o "ottavada.cmd"; ao clicar nele, aparecerá um aviso, mas basta clicar em <b>Executar</b>.</p>
                         <img alt="" src="/docs/files/image3-pt-BR.avif">
-                        <p>Será aberta o script de instalação que identifica o seu sistema operacional e instala o Ottavada de acordo com ele.</p>
+                        <p>Será aberto o script de instalação que identifica o seu sistema operacional e instala o Ottavada de acordo com ele.</p>
                         <img alt="" src="/docs/files/image4-pt-BR.avif">
                         <p>Após a instalação, o Ottavada será iniciado.</p>
                     </section>
@@ -269,7 +269,7 @@
                         </ul>
 
                         <h3>3ª Etapa: Nome do Computador e Nome da Organização ou Instituição</h3>
-                        <p>Aqui basta colocar o nome do seu computador (por exemplo: "Computador de Casa" ou "Computador da Orquestra") e, no outro campo, o nome da orquestra, banda, instituição ou apenas pessoal.</p>
+                        <p>Aqui basta colocar o nome do seu computador (por exemplo: "Computador de Casa" ou "Computador da Orquestra") e, no outro campo, o nome da orquestra, banda, instituição ou apenas um nome para uso pessoal.</p>
 
                         <h3>4ª Etapa: Configuração do Provedor de Nuvem</h3>
                         <p>Atualmente o Ottavada suporta o <strong>Koofr</strong> (recomendado) e o <strong>Google Drive</strong>. O Koofr é recomendado porque é <b>muito</b> mais rápido que o Google Drive, mas, em contrapartida, é mais chato de configurar.</p>
@@ -280,7 +280,7 @@
                         </div>
 
                         <h4>Koofr</h4>
-                        <p>Caso você não tenha uma conta, acesse: <a target="_blank" rel="noopener noreferrer" href="https://koofr.eu">Koofr</a> (clique) ou pesquise por <strong>koofr</strong> no Google. Recomendo criar uma conta no Koofr caso não tenha, utilizando uma conta Google: o processo é mais rápido.</p>
+                        <p>Caso você não tenha uma conta, acesse: <a target="_blank" rel="noopener noreferrer" href="https://koofr.eu">Koofr</a> ou pesquise por <strong>koofr</strong> no Google. Recomendo criar a conta pelo Google: o processo é mais rápido.</p>
                         <p>Logado no Koofr e na página inicial do Drive, clique no canto superior direito e selecione <strong>Preferências</strong>.</p>
                         <img alt="" src="/docs/files/image5-pt-BR.avif">
                         <p>Vá em <strong>Password</strong>. Em <strong>Passwords da App</strong>, coloque um nome (por exemplo: "Ottavada") e clique em <strong>Gerar</strong>.</p>
@@ -309,10 +309,10 @@
                         <p>Arquivos dentro da pasta:</p>
                         <img alt="" src="/docs/files/image10-pt-BR.avif">
 
-                        <p>Agora vamos ver na prática: para indexar um diretório, clique no ícone de uma pasta com uma lupa no topo à direita.</p>
+                        <p>Agora vamos ver na prática: para indexar um diretório, clique no ícone de uma pasta com uma lupa, no topo à direita.</p>
                         <img alt="" src="/docs/files/image11-pt-BR.avif">
 
-                        <p>Ao clicar será aberto o Explorador de Arquivos, você vai até uma pasta com as partituras, seleciona ela e clica em <b>Selecionar pasta</b>.</p>
+                        <p>Ao clicar, será aberto o Explorador de Arquivos. Navegue até a pasta com as partituras, selecione-a e clique em <b>Selecionar pasta</b>.</p>
                         <img alt="" src="/docs/files/image12-pt-BR.avif">
 
                         <p>Aparecerá um modal com os campos <b>Nome da Música</b>, <b>Nome do Compositor</b>, <b>Nome do Arranjador</b> e <b>os instrumentos</b>. Cada arquivo é considerado um instrumento pelo Ottavada. Assim, mesmo que a partitura com todos os instrumentos juntos não seja um instrumento específico, ela é considerada um instrumento com nomes como <b>Score</b>, <b>Grade</b> ou outros.</p>
@@ -329,9 +329,10 @@
                         <p>Após adicionar suas músicas, é hora de enviá-las para o <b>provedor de nuvem</b>, e o processo é bem simples. Basta clicar no ícone de <b>sync</b> (duas setas em círculo se apontando), localizado ao lado do botão de adicionar partitura.</p>
 
                         <img alt="" src="/docs/files/image14-pt-BR.avif">
-                        <p>Ao clicar no ícone de sync, o Ottavada faz uma varredura em todas as músicas e partituras que você adicionou, modificou ou removeu e abre o <b>modal com relatório</b>. No exemplo, só foi adicionado uma música e alguns instrumentos, então na imagem de exemplo só tem isso, mas se tivesse feito outra alteração teria mostrado.</p>
+                        <p>Ao clicar no ícone de sync, o Ottavada faz uma varredura em todas as músicas e partituras que você adicionou, modificou ou removeu, e abre o <b>modal com relatório</b>. No exemplo, só foi adicionada uma música e alguns instrumentos, então a imagem mostra apenas isso, mas se houvesse outras alterações elas também apareceriam.</p>
                         <img alt="" src="/docs/files/image15-pt-BR.avif">
-                        <p>O envio para a nuvem só é efetivamente realizado depois que você clica em <b>continuar</b>.</p>
+                        <p>O envio para a nuvem só é efetivamente realizado depois que você clica em <b>continuar</b>. Ao clicar, será exibida uma barra com o progresso do envio das músicas e partituras.</p>
+                        <img alt="" src="/docs/files/image16-pt-BR.avif">
 
                         <div class="docs-callout">
                             <strong>Observação</strong>
@@ -344,49 +345,33 @@
                     <section class="docs-section" id="realizando-alteracoes">
                         <h2>Realizando alterações</h2>
                         <p>Exemplo: precisamos alterar a partitura de <b>Oboé I</b>. Abra a música clicando nela e dê dois cliques na partitura do Oboé I.</p>
-                        <img alt="" src="/docs/files/image16-pt-BR.avif">
-                        <p>Após fazer a alteração, clique no ícone de <b>sync</b> (duas setas em círculo). O relatório mostrará que o arquivo foi alterado e o status mudará para <b>envio não permitido</b>.</p>
                         <img alt="" src="/docs/files/image17-pt-BR.avif">
+                        <p>No caso, é um arquivo <b>.mscz</b>, que é aberto no meu computador com MuseScore. À esquerda está a partitura antes da alteração e à direita, a alterada (foi adicionado o trecho marcado em vermelho).</p>
+                        <img alt="" src="/docs/files/image18-pt-BR.avif">
+                        <p>Após fazer a alteração, clique no ícone de <b>sync</b> (duas setas em círculo). O relatório mostrará que o arquivo foi alterado e o status mudará para <b>envio não permitido</b>.</p>
+                        <img alt="" src="/docs/files/image19-pt-BR.avif">
                         <p><b>Se a alteração ainda não está pronta:</b> clique em <b>continuar</b>. A partitura será enviada com status <b>envio não permitido</b> e não aparecerá nos computadores de ensaio.</p>
                         <p><b>Quando a alteração estiver pronta:</b> clique em <b>cancelar</b> no relatório. Depois, vá até a música e a partitura.</p>
-                        <img alt="" src="/docs/files/image18-pt-BR.avif">
+                        <img alt="" src="/docs/files/image20-pt-BR.avif">
                         <p>O status estará como <b>envio não permitido</b> (porque a partitura foi alterada). Clique nos três pontinhos e selecione <b>Permitir para envio</b>.</p>
-                        <img alt="" src="/docs/files/image19-pt-BR.avif">
-                        <p>Agora, ao clicar novamente no ícone de <b>sync</b>, o relatório mostrará o status como <b>envio permitido</b> e a partitura será enviada para os computadores de ensaio.</p>
+                        <img alt="" src="/docs/files/image21-pt-BR.avif">
+                        <p>Agora, ao clicar novamente no ícone de <b>sync</b>, o relatório mostrará o status como <b>envio permitido</b> e a partitura será enviada para os computadores de ensaio. O processo é o mesmo descrito em <a href="#enviando-nuvem">enviando para nuvem</a>.</p>
                     </section>
 
-                    <section class="docs-section" id="atalhos">
-                        <h2>Atalhos</h2>
-                        <ul class="docs-list">
-                            <li><kbd>Ctrl</kbd> + <kbd>O</kbd>: <span>Abrir pasta</span></li>
-                            <li><kbd>Ctrl</kbd> + <kbd>F</kbd>: <span>Buscar</span></li>
-                            <li><kbd>Esc</kbd>: <span>Fechar diálogo</span></li>
-                        </ul>
-                    </section>
-
-                    <section class="docs-section" id="faq">
-                        <h2>Perguntas frequentes</h2>
-                        <details class="docs-faq">
-                            <summary>O Ottavada é gratuito?</summary>
-                            <p>
-                                Sim, o Ottavada é gratuito para uso pessoal, de orquestras, bandas e instituições.
-                            </p>
-                        </details>
-                        <details class="docs-faq">
-                            <summary>Funciona offline?</summary>
-                            <p>
-                                Sim, após a primeira sincronização todas as partituras
-                                ficam disponíveis localmente.
-                            </p>
-                        </details>
-                        <details class="docs-faq">
-                            <summary>Posso desinstalar sem perder minhas partituras?</summary>
-                            <p>
-                                Sim, o Ottavada não altera nem move seus arquivos.
-                                Ao desinstalar, suas partituras permanecem exatamente
-                                onde estavam.
-                            </p>
-                        </details>
+                    <section class="docs-section" id="baixando">
+                        <h2>Baixando no computador de ensaio</h2>
+                        <h3>Instalando no computador de ensaio</h3>
+                        <p>O processo é o mesmo do tópico de <a href="#instalacao">instalação</a>. A única diferença é que, na 2ª etapa, você seleciona <b>computador de ensaio</b>.</p>
+                        <div class="docs-callout">
+                            <strong>Importante</strong>
+                            <p>Você deve usar o <b>mesmo provedor de nuvem</b> (Koofr ou Google Drive) e a <b>mesma conta</b> que está no <b>computador do maestro</b>. Caso contrário, os computadores não conseguirão trocar informações.</p>
+                        </div>
+                        <p>Na tela inicial do Ottavada, clique no ícone de <b>sync</b>.</p>
+                        <img alt="" src="/docs/files/image22-pt-BR.avif">
+                        <p>Será mostrado o progresso do download das músicas e partituras.</p>
+                        <img alt="" src="/docs/files/image23-pt-BR.avif">
+                        <p>E pronto, simples assim. O que foi adicionado e modificado no <b>computador do maestro</b> já aparece no <b>computador de ensaio</b>.</p>
+                        <img alt="" src="/docs/files/image24-pt-BR.avif">
                     </section>
 
                     <section class="docs-section" id="suporte">
