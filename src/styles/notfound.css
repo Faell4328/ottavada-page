@@ -1,0 +1,73 @@
+/* ==========================================================================
+   404 PAGE
+   ========================================================================== */
+.notfound-layout {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.notfound-layout .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.25);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.notfound-card {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 42rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+@media (min-width: 640px) {
+    .notfound-card {
+        padding: 3rem 2rem;
+    }
+}
+
+.notfound-badge {
+    width: fit-content;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.notfound-card h1 {
+    margin: 1.25rem 0 0;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    color: #fff;
+}
+@media (min-width: 640px) {
+    .notfound-card h1 {
+        font-size: 3.75rem;
+    }
+}
+
+.notfound-card .btn-wrap {
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: center;
+}

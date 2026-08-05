@@ -1,0 +1,31 @@
+---
+import LangSwitcher from "~/components/LangSwitcher.astro";
+import { BRAND_TAGLINE, HOME_LABEL, NAV_LABEL, ui, type Locale } from "~/i18n";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+
+const { locale, pathname } = Astro.props as Props;
+const t = ui[locale];
+const homeHref = `/${locale}/`;
+---
+
+<header class="header" aria-label={NAV_LABEL[locale]}>
+  <div class="container topbar">
+    <a class="brand" href={homeHref} aria-label={`${t.brand}: ${HOME_LABEL[locale]}`}>
+      <img src="/files/icon.avif" alt={t.brand} />
+      <div>
+        <strong>{t.brand}</strong>
+        <span>{BRAND_TAGLINE[locale]}</span>
+      </div>
+    </a>
+    <nav class="nav-desktop" aria-label={NAV_LABEL[locale]}>
+      <div class="lang-switcher">
+        <span class="lang-label">Language</span>
+        <LangSwitcher locale={locale} pathname={pathname} />
+      </div>
+    </nav>
+  </div>
+</header>

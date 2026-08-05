@@ -1,0 +1,62 @@
+---
+import { ui, type Locale } from "~/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props as Props;
+const t = ui[locale].chat;
+const tooltipsJson = JSON.stringify(t.tooltips);
+---
+
+<button class="chat-fab" id="chatFAB" aria-label={t.fabLabel} style="display: none;">
+  <img id="fabImg" src="/files/bot.avif" alt="bot" style="padding: 5px" />
+  <span class="chat-fab-dot" id="chatDot"></span>
+</button>
+<div
+  class="chat-tooltip"
+  id="chatTooltip"
+  style="display: none;"
+  data-tooltips={tooltipsJson}
+  data-status-online={t.statusOnline}
+  data-status-typing={t.statusTyping}
+  data-error={t.error}
+>
+  {t.tooltip}
+</div>
+
+<div class="chat-popup" id="chatPopup" aria-label={t.popupLabel}>
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <strong>{t.name}</strong>
+      <span id="chatStatus">{t.statusOnline}</span>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label={t.closeLabel}>
+      &times;
+    </button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-notice">
+      <span class="chat-notice-icon">&#9888;</span>
+      <span>{t.notice}</span>
+    </div>
+    <div class="chat-bubble bot">
+      {t.welcome}
+    </div>
+  </div>
+  <form class="chat-input-area" id="chatForm" autocomplete="off">
+    <textarea
+      id="chatInput"
+      rows="1"
+      placeholder={t.placeholder}
+      aria-label={t.ariaMsg}
+    ></textarea>
+    <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label={t.ariaSend}>
+      <svg viewBox="0 0 24 24">
+        <line x1="22" y1="2" x2="11" y2="13" />
+        <polygon points="22,2 15,22 11,13 2,9" />
+      </svg>
+    </button>
+  </form>
+</div>

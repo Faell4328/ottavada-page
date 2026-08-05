@@ -1,0 +1,66 @@
+---
+import ThanksLayout from "~/layouts/ThanksLayout.astro";
+import { thanks, withLocale, type Locale } from "~/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props as Props;
+const t = thanks[locale];
+const homeHref = withLocale("/", locale);
+---
+
+<ThanksLayout locale={locale} title={t.meta.title} description={t.meta.description}>
+  <main class="thanks-layout">
+    <div class="container" style="max-width: 56rem">
+      <div class="thanks-card">
+        <div>
+          <h1>{t.heading}</h1>
+          <p class="countdown-text" id="thanks-countdown">
+            {t.countdown.replace("{seconds}", "5")}
+          </p>
+        </div>
+        <div class="thanks-video-wrap">
+          <video
+            src="/files/agradecimento.mp4"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+          ></video>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script
+    define:vars={{
+      countdownTpl: t.countdown,
+      homeHref,
+    }}
+  >
+    (function () {
+      const downloadLink = document.createElement("a");
+      downloadLink.href = "/ottavada.cmd";
+      downloadLink.download = "ottavada.cmd";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+
+      let seconds = 5;
+      const countdownEl = document.getElementById("thanks-countdown");
+      const timerId = setInterval(() => {
+        seconds -= 1;
+        if (seconds <= 0) {
+          clearInterval(timerId);
+          window.location.href = homeHref;
+          return;
+        }
+        if (countdownEl) {
+          countdownEl.textContent = countdownTpl.replace("{seconds}", String(seconds));
+        }
+      }, 1000);
+    })();
+  </script>
+</ThanksLayout>

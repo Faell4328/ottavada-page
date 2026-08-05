@@ -1,0 +1,246 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import { home, withLocale, type Locale } from "~/i18n";
+
+import "~/styles/home.css";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props as Props;
+const t = home[locale];
+const thanksHref = withLocale("/agradecimento", locale);
+const docsHref = withLocale("/docs", locale);
+
+const schemaJson = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Ottavada",
+  operatingSystem: "Windows",
+  applicationCategory: "Multimedia",
+  description:
+    "Organize e sincronize partituras da sua orquestra de forma simples e eficiente.",
+});
+
+const ogUrl = `https://ottavada.com/${locale}/`;
+---
+
+<BaseLayout
+  locale={locale}
+  title={t.meta.title}
+  description={t.meta.description}
+  ogTitle={t.meta.ogTitle}
+  ogDescription={t.meta.ogDescription}
+  ogUrl={ogUrl}
+  preloadHeroImage
+  msValidate
+  schemaJson={schemaJson}
+>
+  <div class="home-shell"></div>
+
+  <section class="hero-section">
+    <h1 class="hero-title">
+      <span class="hero-title-line" id="hero-line-1"></span>
+      <span class="hero-title-line" id="hero-line-2"></span>
+    </h1>
+    <p class="hero-subtitle">{t.hero.subtitle}</p>
+    <div class="hero-cta">
+      <a class="button" href={thanksHref} rel="noreferrer">
+        <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>{t.hero.cta}</span>
+      </a>
+      <span class="hero-cta-note">{t.hero.ctaNote}</span>
+    </div>
+  </section>
+
+  <main class="container main-content">
+    <section class="section" id="descricao">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.descricao.kicker}</span>
+        <p class="description-text">{t.sections.descricao.text}</p>
+        <div class="section-divider"></div>
+      </div>
+    </section>
+
+    <section class="section" id="organizacao">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.organizacao.kicker}</span>
+        <h2>{t.sections.organizacao.heading}</h2>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div><span class="card-icon">📂</span><h3>{t.benefits.indexacao.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.indexacao.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🎯</span><h3>{t.benefits.duplicatas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.duplicatas.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🔍</span><h3>{t.benefits.busca.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.busca.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🎻</span><h3>{t.benefits.ordem.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.ordem.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">⭐</span><h3>{t.benefits.favoritos.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.favoritos.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🔄</span><h3>{t.benefits.ferramentas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.ferramentas.body}</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sincronizacao">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.sincronizacao.kicker}</span>
+        <h2>{t.sections.sincronizacao.heading}</h2>
+      </div>
+      <div class="benefits-grid grid-2col">
+        <article class="benefit-card featured">
+          <div><span class="card-icon">🎓</span><h3>{t.benefits.maestro.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.maestro.body}</p></div>
+        </article>
+        <article class="benefit-card featured">
+          <div><span class="card-icon">🎵</span><h3>{t.benefits.ensaio.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.ensaio.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">☁️</span><h3>{t.benefits.nuvem.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.nuvem.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">💾</span><h3>{t.benefits.backup.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.backup.body}</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="liberdade">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.liberdade.kicker}</span>
+        <h2>{t.sections.liberdade.heading}</h2>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div><span class="card-icon">📁</span><h3>{t.benefits.arquivos.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.arquivos.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🚪</span><h3>{t.benefits.desinstalou.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.desinstalou.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🛡️</span><h3>{t.benefits.escolha.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.escolha.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🗄️</span><h3>{t.benefits.copias.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.copias.body}</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="mais-vantagens">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.maisVantagens.kicker}</span>
+        <h2>{t.sections.maisVantagens.heading}</h2>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div><span class="card-icon">🌐</span><h3>{t.benefits.idiomas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.idiomas.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🆓</span><h3>{t.benefits.gratuito.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.gratuito.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🌱</span><h3>{t.benefits.evolucao.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.evolucao.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">☁️</span><h3>{t.benefits.semLigar.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.semLigar.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">💻</span><h3>{t.benefits.openSource.title}</h3></div>
+          <div class="card-body"><p>
+            {t.benefits.openSource.body}{" "}
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Faell4328/ottavada">GitHub</a>.
+          </p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section help-section" id="ajuda">
+      <div class="help-inner">
+        <div class="help-head">
+          <span class="section-kicker">{t.help.kicker}</span>
+          <p class="help-sub">{t.help.subtitle}</p>
+        </div>
+        <a class="help-card" href={docsHref}>
+          <span class="help-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </span>
+          <div class="help-text">
+            <h3>{t.help.docs.title}</h3>
+            <p>{t.help.docs.body}</p>
+          </div>
+          <span class="help-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>{t.footer.email}</p>
+      <span>{t.footer.dev}</span>
+    </footer>
+  </main>
+
+  <script define:vars={{ line1: t.hero.line1, line2: t.hero.line2 }}>
+    (function () {
+      "use strict";
+      const heroTitleLines = [line1, line2];
+      const firstLineLength = heroTitleLines[0].length;
+      const totalLength = firstLineLength + heroTitleLines[1].length;
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let visibleChars = prefersReducedMotion ? totalLength : 0;
+
+      function updateDisplay() {
+        const firstLine = heroTitleLines[0].slice(0, Math.min(visibleChars, firstLineLength));
+        const secondLine = visibleChars > firstLineLength
+          ? heroTitleLines[1].slice(0, visibleChars - firstLineLength)
+          : "";
+        const el1 = document.getElementById("hero-line-1");
+        const el2 = document.getElementById("hero-line-2");
+        if (el1) el1.textContent = firstLine;
+        if (el2) el2.textContent = secondLine;
+      }
+      updateDisplay();
+
+      if (visibleChars < totalLength) {
+        (function tick() {
+          if (visibleChars >= totalLength) return;
+          visibleChars++;
+          updateDisplay();
+          if (visibleChars < totalLength) setTimeout(tick, 34);
+        })();
+      }
+
+      const rawHash = window.location.hash;
+      if (rawHash && rawHash.length > 1) {
+        const sectionId = rawHash.slice(1);
+        const el = document.getElementById(sectionId);
+        if (el) {
+          setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 100);
+        }
+      }
+    })();
+  </script>
+</BaseLayout>

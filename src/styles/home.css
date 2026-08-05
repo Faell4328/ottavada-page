@@ -13,7 +13,7 @@
             rgba(4, 10, 19, 0.36) 0%,
             rgba(4, 10, 19, 0.74) 100%
         ),
-        url("orquestra.avif");
+        url("/orquestra.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

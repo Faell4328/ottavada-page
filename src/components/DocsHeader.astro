@@ -1,0 +1,48 @@
+---
+import ChatWidget from "~/components/ChatWidget.astro";
+import LangSwitcher from "~/components/LangSwitcher.astro";
+import { BRAND_TAGLINE, HOME_LABEL, NAV_LABEL, ui, type Locale } from "~/i18n";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+
+const { locale, pathname } = Astro.props as Props;
+const t = ui[locale];
+const homeHref = `/${locale}/`;
+---
+
+<header class="header" aria-label={NAV_LABEL[locale]}>
+  <div class="container topbar">
+    <div class="topbar-left">
+      <button
+        class="docs-sidebar-toggle"
+        id="docsSidebarToggle"
+        aria-label={t.openSidebar}
+        aria-expanded="false"
+        aria-controls="docsSidebar"
+        type="button"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+      <a class="brand" href={homeHref} aria-label={`${t.brand}: ${HOME_LABEL[locale]}`}>
+        <img src="/files/icon.avif" alt={t.brand} />
+        <div>
+          <strong>{t.brand}</strong>
+          <span>{BRAND_TAGLINE[locale]}</span>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-desktop" aria-label={NAV_LABEL[locale]}>
+      <div class="lang-switcher">
+        <span class="lang-label">Language</span>
+        <LangSwitcher locale={locale} pathname={pathname} />
+      </div>
+    </nav>
+  </div>
+</header>
