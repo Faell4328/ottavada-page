@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ottavada</title><script>
+      (function () {
+        var KEY = "ottavada-lang";
+        var L = ["en", "pt-BR", "es", "fr", "it", "de"];
+        var D = "en";
+        function is(v) { return v && L.indexOf(v) !== -1; }
+        function br() {
+          var r = (navigator.language || "").replace("_", "-");
+          if (is(r)) return r;
+          var p = r.split("-")[0];
+          for (var i = 0; i < L.length; i++) if (L[i].split("-")[0] === p) return L[i];
+          return null;
+        }
+        var q = new URLSearchParams(window.location.search);
+        if (q.has("lang")) {
+          var l = q.get("lang");
+          if (is(l)) { try { localStorage.setItem(KEY, l); } catch(e){} window.location.replace("/" + l + "/"); return; }
+        }
+        var s; try { s = localStorage.getItem(KEY); } catch(e){}
+        var t = is(s) ? s : (br() || D);
+        try { localStorage.setItem(KEY, t); } catch(e){}
+        window.location.replace("/" + t + "/");
+      })();
+    </script></head><body></body></html>

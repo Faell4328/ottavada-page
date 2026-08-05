@@ -1,0 +1,1 @@
+var e=e=>!!e&&[`en`,`pt-BR`,`es`,`fr`,`it`,`de`].includes(e);function t(e){try{localStorage.setItem(`ottavada-lang`,e)}catch{}}function n(){document.querySelectorAll(`a[data-lang]`).forEach(n=>{n.addEventListener(`click`,()=>{let r=n.getAttribute(`data-lang`);e(r)&&t(r)})})}document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,n):n();
