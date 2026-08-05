@@ -73,7 +73,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gerencie, organize e sincronize suas partituras. Sem complicações, sem mudar a sua forma de trabalhar.",
       cta: "Baixar gratuitamente",
-      ctaNote: "Para Windows 10 e 11",
+      ctaNote: "Para Windows 10 e 11 (x32 e x64)",
     },
     sections: {
       descricao: {
@@ -147,12 +147,12 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Se um dia decidir não usar mais, suas partituras continuam exatamente onde estavam, organizadas, acessíveis e sem nenhuma dependência do Ottavada.",
       },
       escolha: {
-        title: "Você decide o que vai para os outros computadores",
+        title: "Você decide o que vai para o ensaio",
         body: "Nem tudo precisa ir para o computador do ensaio. Você escolhe: essa partitura pode ser enviada, bloqueada ou ignorada. Você no controle, sempre.",
       },
       idiomas: {
         title: "Multi-idiomas",
-        body: "Disponível em português, com inglês, espanhol, francês, italiano e alemão em desenvolvimento, para atender músicos de qualquer lugar.",
+        body: "Disponível em português, inglês, espanhol, francês, italiano e alemão, para atender músicos de qualquer lugar.",
       },
       gratuito: {
         title: "Gratuito, sem pegadinhas",
@@ -460,10 +460,10 @@ export const home: Record<Locale, HomeMessages> = {
   },
   fr: {
     meta: {
-      title: "Ottavada\u00a0: organisez et synchronisez les partitions de votre orchestre",
+      title: "Ottavada : organisez et synchronisez les partitions de votre orchestre",
       description:
         "Ottavada est un logiciel gratuit pour gérer, organiser et synchroniser des partitions. Pour Windows 10 et 11.",
-      ogTitle: "Ottavada\u00a0: Organisez et Synchronisez des Partitions",
+      ogTitle: "Ottavada : Organisez et Synchronisez des Partitions",
       ogDescription:
         "Logiciel gratuit pour gérer et synchroniser les partitions de votre orchestre.",
     },
@@ -479,8 +479,8 @@ export const home: Record<Locale, HomeMessages> = {
     },
     sections: {
       descricao: {
-        kicker: "Pourquoi Ottavada\u00a0?",
-        text: "La gestion des partitions se fait encore manuellement\u00a0: échanges d\u2019e-mails, clés USB, dossiers et partitions en double, et risque constant de perdre la bonne version. Ottavada résout cela.",
+        kicker: "Pourquoi Ottavada ?",
+        text: "La gestion des partitions se fait encore manuellement : échanges d’e-mails, clés USB, dossiers et partitions en double, et risque constant de perdre la bonne version. Ottavada résout cela.",
       },
       organizacao: {
         kicker: "Organisation",
@@ -488,11 +488,11 @@ export const home: Record<Locale, HomeMessages> = {
       },
       sincronizacao: {
         kicker: "Synchronisation",
-        heading: "Une seule application. Deux modes d\u2019utilisation.",
+        heading: "Une seule application. Deux modes d’utilisation.",
       },
       liberdade: {
         kicker: "Liberté",
-        heading: "Vous n\u2019êtes pas prisonnier de l\u2019outil.",
+        heading: "Vous n’êtes pas prisonnier de l’outil.",
       },
       maisVantagens: {
         kicker: "Plus d'avantages",
@@ -506,19 +506,19 @@ export const home: Record<Locale, HomeMessages> = {
       },
       duplicatas: {
         title: "Fini les doublons",
-        body: "Le système n\u2019autorise pas deux noms identiques de morceau ou de partition. S\u2019il y a deux violons, ce seront «\u00a0Violon I\u00a0» et «\u00a0Violon II\u00a0», jamais un «\u00a0Violon\u00a0» en double.",
+        body: "Le système n’autorise pas deux noms identiques de morceau ou de partition. S’il y a deux violons, ce seront « Violon I » et « Violon II », jamais un « Violon » en double.",
       },
       busca: {
         title: "Recherche et filtres intelligents",
-        body: "Trouvez n\u2019importe quel morceau en quelques secondes. Recherchez par nom ou filtrez par catégorie, compositeur et arrangeur. Parfait pour les grandes collections.",
+        body: "Trouvez n’importe quel morceau en quelques secondes. Recherchez par nom ou filtrez par catégorie, compositeur et arrangeur. Parfait pour les grandes collections.",
       },
       ordem: {
         title: "Ordre standard de la partition",
-        body: "Lorsque vous développez un morceau, les partitions apparaissent dans l\u2019ordre standard de la partition\u00a0: bois, cuivres, percussions, claviers et cordes, conformément au standard mondial \"Standard Orchestral Score Order\".",
+        body: "Lorsque vous développez un morceau, les partitions apparaissent dans l’ordre standard de la partition : bois, cuivres, percussions, claviers et cordes, conformément au standard mondial \"Standard Orchestral Score Order\".",
       },
       favoritos: {
         title: "Favoris et sections rapides",
-        body: "Marquez des morceaux comme favoris et accédez aux sections comme «\u00a0Non autorisées\u00a0» ou «\u00a0Sans partitions\u00a0» en un seul clic. Tout à portée de main.",
+        body: "Marquez des morceaux comme favoris et accédez aux sections comme « Non autorisées » ou « Sans partitions » en un seul clic. Tout à portée de main.",
       },
       ferramentas: {
         title: "Utilisez les outils que vous connaissez déjà",
@@ -526,7 +526,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       maestro: {
         title: "Mode ordinateur du chef",
-        body: "Contrôle total du répertoire\u00a0: ajoutez, modifiez et supprimez des morceaux et partitions. Définissez ce qui va sur l\u2019ordinateur de répétition et ce qui reste avec vous.",
+        body: "Contrôle total du répertoire : ajoutez, modifiez et supprimez des morceaux et partitions. Définissez ce qui va sur l’ordinateur de répétition et ce qui reste avec vous.",
       },
       ensaio: {
         title: "Mode ordinateur de répétition",
@@ -534,23 +534,23 @@ export const home: Record<Locale, HomeMessages> = {
       },
       nuvem: {
         title: "Cloud gratuit",
-        body: "Synchronisez via Google Drive ou Koofr sans frais supplémentaires. Les fichiers sont compressés avant l\u2019envoi, occupant moins d\u2019espace et étant plus rapides.",
+        body: "Synchronisez via Google Drive ou Koofr sans frais supplémentaires. Les fichiers sont compressés avant l’envoi, occupant moins d’espace et étant plus rapides.",
       },
       backup: {
-        title: "Ordinateur cassé\u00a0? Rien n\u2019est perdu",
-        body: "Formaté ou changé de machine\u00a0? Vos partitions, catégories, compositeurs et arrangeurs sont en sécurité. Un clic et tout revient à sa place.",
+        title: "Ordinateur cassé ? Rien n’est perdu",
+        body: "Formaté ou changé de machine ? Vos partitions, catégories, compositeurs et arrangeurs sont en sécurité. Un clic et tout revient à sa place.",
       },
       arquivos: {
         title: "Vos fichiers, vos règles",
-        body: "Ottavada ne renomme ni les dossiers ni les fichiers, ne déplace rien et n\u2019impose pas de formats propriétaires. Votre organisation manuelle est respectée et encouragée.",
+        body: "Ottavada ne renomme ni les dossiers ni les fichiers, ne déplace rien et n’impose pas de formats propriétaires. Votre organisation manuelle est respectée et encouragée.",
       },
       desinstalou: {
-        title: "Désinstallé\u00a0? Vos fichiers restent",
-        body: "Si vous décidez un jour de ne plus l\u2019utiliser, vos partitions restent exactement là où elles étaient, organisées, accessibles et sans aucune dépendance à Ottavada.",
+        title: "Désinstallé ? Vos fichiers restent",
+        body: "Si vous décidez un jour de ne plus l’utiliser, vos partitions restent exactement là où elles étaient, organisées, accessibles et sans aucune dépendance à Ottavada.",
       },
       escolha: {
         title: "Vous décidez de ce qui va en répétition",
-        body: "Tout ne doit pas aller sur l\u2019ordinateur de répétition. Vous choisissez\u00a0: cette partition peut être envoyée, bloquée ou ignorée. Vous avez le contrôle, toujours.",
+        body: "Tout ne doit pas aller sur l’ordinateur de répétition. Vous choisissez : cette partition peut être envoyée, bloquée ou ignorée. Vous avez le contrôle, toujours.",
       },
       idiomas: {
         title: "Multi-langues",
@@ -558,15 +558,15 @@ export const home: Record<Locale, HomeMessages> = {
       },
       gratuito: {
         title: "Gratuit, sans piège",
-        body: "Totalement gratuit pour usage personnel, orchestres, bandas et institutions. Sans abonnement, sans limite de morceaux et sans serveur propriétaire à maintenir.",
+        body: "Totalement gratuit pour usage personnel, orchestres, bands et institutions. Sans abonnement, sans limite de morceaux et sans serveur propriétaire à maintenir.",
       },
       evolucao: {
         title: "En évolution constante",
         body: "Ottavada est en phase initiale de développement, mais reçoit des améliorations fréquentes. De nouvelles fonctionnalités, corrections et langues sont ajoutées en fonction des retours des utilisateurs.",
       },
       semLigar: {
-        title: "Sans laisser l'ordinateur allumé",
-        body: "Chaque ordinateur accède au cloud par lui-même. Vous n'avez pas besoin de garder l'ordinateur du chef allumé pour utiliser celui de répétition, la synchronisation se fait directement via le cloud.",
+        title: "Sans laisser l’ordinateur allumé",
+        body: "Chaque ordinateur accède au cloud par lui-même. Vous n’avez pas besoin de garder l’ordinateur du chef allumé pour utiliser celui de répétition, la synchronisation se fait directement via le cloud.",
       },
       openSource: {
         title: "Open source",
@@ -578,12 +578,12 @@ export const home: Record<Locale, HomeMessages> = {
       },
     },
     footer: {
-      email: "Email de contact\u00a0: ottavada@hotmail.com",
+      email: "Email de contact : ottavada@hotmail.com",
       dev: "Développé par Rhafaell (faell4328)",
     },
     help: {
-      kicker: "Besoin d\u2019aide\u00a0?",
-      heading: "Une question\u00a0? On vous aide.",
+      kicker: "Besoin d’aide ?",
+      heading: "Une question ? On vous aide.",
       subtitle:
         "Consultez les guides pas à pas ou posez votre question à notre assistant en bas à droite.",
       docs: {
@@ -609,7 +609,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gestisci, organizza e sincronizza i tuoi spartiti. Senza complicazioni, senza cambiare il tuo modo di lavorare.",
       cta: "Scarica gratuitamente",
-      ctaNote: "Per Windows 10 e 11",
+      ctaNote: "Per Windows 10 e 11 (x32 e x64)",
     },
     sections: {
       descricao: {
@@ -622,7 +622,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       sincronizacao: {
         kicker: "Sincronizzazione",
-        heading: "Una sola app. Due modalità d\u2019uso.",
+        heading: "Una sola app. Due modalità d’uso.",
       },
       liberdade: {
         kicker: "Libertà",
@@ -648,7 +648,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ordem: {
         title: "Ordine standard della partitura",
-        body: "Quando espandi un brano, gli spartiti appaiono nell\u2019ordine standard della partitura: legni, ottoni, percussioni, tastiere e archi, secondo lo standard mondiale \"Standard Orchestral Score Order\".",
+        body: "Quando espandi un brano, gli spartiti appaiono nell’ordine standard della partitura: legni, ottoni, percussioni, tastiere e archi, secondo lo standard mondiale \"Standard Orchestral Score Order\".",
       },
       favoritos: {
         title: "Preferiti e sezioni rapide",
@@ -668,7 +668,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       nuvem: {
         title: "Cloud gratuito",
-        body: "Sincronizza tramite Google Drive o Koofr senza costi aggiuntivi. I file vengono compressi prima dell\u2019invio, occupando meno spazio ed essendo più veloci.",
+        body: "Sincronizza tramite Google Drive o Koofr senza costi aggiuntivi. I file vengono compressi prima dell’invio, occupando meno spazio ed essendo più veloci.",
       },
       backup: {
         title: "Computer rotto? Nulla è perduto",
@@ -719,7 +719,7 @@ export const home: Record<Locale, HomeMessages> = {
       kicker: "Hai bisogno di aiuto?",
       heading: "Hai dubbi? Ti aiutiamo.",
       subtitle:
-        "Consulta le guide passo passo o chiedi al nostro assistente nell\u2019angolo in basso a destra.",
+        "Consulta le guide passo passo o chiedi al nostro assistente nell’angolo in basso a destra.",
       docs: {
         title: "Leggi la documentazione",
         body: "Come installare, configurare e usare Ottavada da zero, con guide passo passo.",
@@ -818,7 +818,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       escolha: {
         title: "Sie entscheiden, was zur Probe geht",
-        body: "Nicht alles muss auf den Proben-Computer. Sie wählen: Diese Note kann gesendet, blockiert oder ignoriert werden. Sie haben die Kontrolle, immer.",
+        body: "Nicht alles muss auf den Proben-Computer. Sie wählen: Diese Partitur kann gesendet, blockiert oder ignoriert werden. Sie haben die Kontrolle, immer.",
       },
       idiomas: {
         title: "Mehrsprachig",
@@ -850,13 +850,13 @@ export const home: Record<Locale, HomeMessages> = {
       dev: "Entwickelt von Rhafaell (faell4328)",
     },
     help: {
-      kicker: "Brauchst du Hilfe?",
-      heading: "Fragen? Wir helfen dir.",
+      kicker: "Brauchen Sie Hilfe?",
+      heading: "Haben Sie Fragen? Wir helfen Ihnen.",
       subtitle:
-        "Sieh dir die Schritt-für-Schritt-Anleitungen an oder frag unseren Assistenten unten rechts.",
+        "Sehen Sie sich die Schritt-für-Schritt-Anleitungen an oder fragen Sie unseren Assistenten unten rechts.",
       docs: {
         title: "Dokumentation lesen",
-        body: "Wie du Ottavada von Grund auf installierst, einrichtest und nutzt, mit Schritt-für-Schritt-Anleitungen.",
+        body: "Wie Sie Ottavada von Grund auf installieren, einrichten und nutzen, mit Schritt-für-Schritt-Anleitungen.",
       },
     },
   },

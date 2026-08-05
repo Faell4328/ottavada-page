@@ -37,9 +37,9 @@ export const thanks: Record<Locale, ThanksMessages> = {
       title: "Ottavada: Merci",
       description: "Merci de votre intérêt pour Ottavada.",
     },
-    heading: "Merci de votre intérêt pour l\u2019outil\u00a0!",
+    heading: "Merci de votre intérêt pour l’outil !",
     countdown:
-      "Vous serez redirigé vers la page d\u2019accueil dans {seconds} secondes...",
+      "Vous serez redirigé vers la page d’accueil dans {seconds} secondes...",
   },
   it: {
     meta: {
@@ -47,7 +47,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Grazie per il tuo interesse in Ottavada.",
     },
     heading: "Grazie per il tuo interesse nello strumento!",
-    countdown: "Sarai reindirizzato alla home page tra {seconds} secondi...",
+    countdown: "Sarai reindirizzato alla pagina iniziale tra {seconds} secondi...",
   },
   de: {
     meta: {
