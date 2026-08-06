@@ -58,4 +58,5 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://ottavada.com/sitemap.xml
+Sitemap: https://ottavada.com/sitemap-index.xml
+Sitemap: https://ottavada.com/sitemap-0.xml

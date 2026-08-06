@@ -42,11 +42,11 @@ export type DocsMessages = {
 
 const ptBR: DocsMessages = {
   meta: {
-    title: "Documentação: Ottavada",
+    title: "Documentação Ottavada: instale e sincronize partituras em minutos",
     description:
-      "Documentação oficial do Ottavada. Guias, referência e tutoriais para organizar e sincronizar partituras da sua orquestra.",
-    ogTitle: "Documentação: Ottavada",
-    ogDescription: "Guias, referência e tutoriais do Ottavada.",
+      "Guias passo a passo para instalar, configurar e usar o Ottavada. Aprenda a organizar e sincronizar as partituras da sua orquestra sem complicação. Gratuito e open source.",
+    ogTitle: "Documentação Ottavada: do zero ao ensaio sincronizado",
+    ogDescription: "Tutoriais, referência e guias passo a passo do Ottavada — o maestro digital da sua orquestra.",
   },
   brand: { name: "Ottavada", tagline: "O seu maestro de partituras" },
   nav: { topics: "Tópicos", close: "Fechar menu", sidebarLabel: "Navegação da documentação" },
@@ -465,11 +465,11 @@ const ptBR: DocsMessages = {
 
 const en: DocsMessages = {
   meta: {
-    title: "Documentation: Ottavada",
+    title: "Ottavada Documentation: install and sync sheet music in minutes",
     description:
-      "Official Ottavada documentation. Guides, reference and tutorials to organize and sync your orchestra's sheet music.",
-    ogTitle: "Documentation: Ottavada",
-    ogDescription: "Ottavada guides, reference and tutorials.",
+      "Step-by-step guides to install, configure and use Ottavada. Learn how to organize and sync your orchestra's sheet music without hassle. Free and open source.",
+    ogTitle: "Ottavada Documentation: from zero to synced rehearsal",
+    ogDescription: "Tutorials, reference and step-by-step guides for Ottavada — your orchestra's digital conductor.",
   },
   brand: { name: "Ottavada", tagline: "Your sheet music conductor" },
   nav: { topics: "Topics", close: "Close menu", sidebarLabel: "Documentation navigation" },
@@ -888,11 +888,11 @@ const en: DocsMessages = {
 
 const es: DocsMessages = {
   meta: {
-    title: "Documentación: Ottavada",
+    title: "Documentación Ottavada: instala y sincroniza partituras en minutos",
     description:
-      "Documentación oficial de Ottavada. Guías, referencia y tutoriales para organizar y sincronizar las partituras de tu orquesta.",
-    ogTitle: "Documentación: Ottavada",
-    ogDescription: "Guías, referencia y tutoriales de Ottavada.",
+      "Guías paso a paso para instalar, configurar y usar Ottavada. Aprende a organizar y sincronizar las partituras de tu orquesta sin complicación. Gratuito y open source.",
+    ogTitle: "Documentación Ottavada: de cero al ensayo sincronizado",
+    ogDescription: "Tutoriales, referencia y guías paso a paso de Ottavada — el director digital de tu orquesta.",
   },
   brand: { name: "Ottavada", tagline: "Tu director de partituras" },
   nav: { topics: "Temas", close: "Cerrar menú", sidebarLabel: "Navegación de la documentación" },
@@ -1311,11 +1311,11 @@ const es: DocsMessages = {
 
 const fr: DocsMessages = {
   meta: {
-    title: "Documentation : Ottavada",
+    title: "Documentation Ottavada : installez et synchronisez vos partitions en minutes",
     description:
-      "Documentation officielle d’Ottavada. Guides, références et tutoriels pour organiser et synchroniser les partitions de votre orchestre.",
-    ogTitle: "Documentation : Ottavada",
-    ogDescription: "Guides, références et tutoriels d’Ottavada.",
+      "Guides pas à pas pour installer, configurer et utiliser Ottavada. Apprenez à organiser et synchroniser les partitions de votre orchestre sans complication. Gratuit et open source.",
+    ogTitle: "Documentation Ottavada : de zéro à la répétition synchronisée",
+    ogDescription: "Tutoriels, références et guides pas à pas d’Ottavada — le chef numérique de votre orchestre.",
   },
   brand: { name: "Ottavada", tagline: "Votre chef de partitions" },
   nav: { topics: "Sujets", close: "Fermer le menu", sidebarLabel: "Navigation de la documentation" },
@@ -1734,11 +1734,11 @@ const fr: DocsMessages = {
 
 const it: DocsMessages = {
   meta: {
-    title: "Documentazione: Ottavada",
+    title: "Documentazione Ottavada: installa e sincronizza gli spartiti in pochi minuti",
     description:
-      "Documentazione ufficiale di Ottavada. Guide, riferimenti e tutorial per organizzare e sincronizzare gli spartiti della tua orchestra.",
-    ogTitle: "Documentazione: Ottavada",
-    ogDescription: "Guide, riferimenti e tutorial di Ottavada.",
+      "Guide passo passo per installare, configurare e usare Ottavada. Impara a organizzare e sincronizzare gli spartiti della tua orchestra senza complicazioni. Gratuito e open source.",
+    ogTitle: "Documentazione Ottavada: da zero alla prova sincronizzata",
+    ogDescription: "Tutorial, riferimenti e guide passo passo di Ottavada — il direttore digitale della tua orchestra.",
   },
   brand: { name: "Ottavada", tagline: "Il tuo direttore di spartiti" },
   nav: { topics: "Argomenti", close: "Chiudi menu", sidebarLabel: "Navigazione della documentazione" },
@@ -2157,11 +2157,11 @@ const it: DocsMessages = {
 
 const de: DocsMessages = {
   meta: {
-    title: "Dokumentation: Ottavada",
+    title: "Ottavada-Dokumentation: Noten in Minuten installieren und synchronisieren",
     description:
-      "Offizielle Ottavada-Dokumentation. Anleitungen, Referenzen und Tutorials zum Organisieren und Synchronisieren der Noten Ihres Orchesters.",
-    ogTitle: "Dokumentation: Ottavada",
-    ogDescription: "Anleitungen, Referenzen und Tutorials zu Ottavada.",
+      "Schritt-für-Schritt-Anleitungen zur Installation, Einrichtung und Nutzung von Ottavada. Lernen Sie, die Noten Ihres Orchesters ohne Komplikationen zu organisieren und zu synchronisieren. Kostenlos und Open Source.",
+    ogTitle: "Ottavada-Dokumentation: von null zur synchronisierten Probe",
+    ogDescription: "Tutorials, Referenzen und Schritt-für-Schritt-Anleitungen zu Ottavada — der digitale Dirigent Ihres Orchesters.",
   },
   brand: { name: "Ottavada", tagline: "Ihr Noten-Dirigent" },
   nav: { topics: "Themen", close: "Menü schließen", sidebarLabel: "Dokumentationsnavigation" },

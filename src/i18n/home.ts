@@ -58,121 +58,121 @@ export type HomeMessages = {
 export const home: Record<Locale, HomeMessages> = {
   "pt-BR": {
     meta: {
-      title: "Ottavada: organize e sincronize partituras da sua orquestra",
+      title: "Ottavada: diga adeus aos pen drives e e-mails na sua orquestra",
       description:
-        "Ottavada é um software gratuito para gerenciar, organizar e sincronizar partituras. Para Windows 10 e 11.",
-      ogTitle: "Ottavada: Organize e Sincronize Partituras",
+        "Cansado de pen drives, e-mails e partituras duplicadas? O Ottavada organiza, sincroniza e protege o repertório da sua orquestra entre computadores. Gratuito, open source e sem assinatura. Para Windows 10 e 11.",
+      ogTitle: "Ottavada: Diga adeus aos pen drives e partituras duplicadas",
       ogDescription:
-        "Software gratuito para gerenciar e sincronizar partituras da sua orquestra.",
+        "Software gratuito e open source para organizar e sincronizar o repertório da sua orquestra. Sem assinatura, sem servidor próprio.",
     },
-    brand: { name: "Ottavada", tagline: "O seu maestro de partituras" },
+    brand: { name: "Ottavada", tagline: "O maestro digital da sua orquestra" },
     nav: { download: "Baixar agora", docs: "Documentação" },
     hero: {
-      line1: "Encontre, organize e compartilhe",
-      line2: "partituras sem duplicação entre seus computadores.",
+      line1: "Diga adeus aos pen drives e e-mails.",
+      line2: "Suas partituras sincronizadas, sem duplicar nada.",
       subtitle:
-        "Gerencie, organize e sincronize suas partituras. Sem complicações, sem mudar a sua forma de trabalhar.",
+        "O Ottavada organiza, sincroniza e protege o repertório da sua orquestra entre todos os computadores. Sem complicação, sem assinatura, sem mudar a sua forma de trabalhar.",
       cta: "Baixar gratuitamente",
-      ctaNote: "Para Windows 10 e 11",
+      ctaNote: "Para Windows 10 e 11 — 100% gratuito",
     },
     sections: {
       descricao: {
-        kicker: "Por que o Ottavada?",
-        text: "O gerenciamento de partituras ainda é feito manualmente: troca de e-mails, pen drives, pastas e partituras duplicadas, e risco constante de perder a versão certa. O Ottavada resolve isso.",
+        kicker: "Cansado de perder partituras?",
+        text: "O gerenciamento de partituras ainda é feito manualmente: troca de e-mails, pen drives, pastas duplicadas e o risco constante de tocar a versão errada no ensaio. O Ottavada resolve isso de uma vez.",
       },
       organizacao: {
         kicker: "Organização",
-        heading: "Nunca mais perca tempo procurando a partitura certa.",
+        heading: "Ache qualquer partitura em segundos. Sem caça ao tesouro.",
       },
       sincronizacao: {
         kicker: "Sincronização",
-        heading: "Um só aplicativo. Dois modos de uso.",
+        heading: "Um só aplicativo. Dois modos: maestro e ensaio.",
       },
       liberdade: {
         kicker: "Liberdade",
-        heading: "Você não fica preso à ferramenta.",
+        heading: "Seus arquivos, suas regras. Sem prender ninguém.",
       },
       maisVantagens: {
         kicker: "Mais vantagens",
-        heading: "Pequenos detalhes que fazem diferença.",
+        heading: "Pequenos detalhes que fazem toda a diferença.",
       },
     },
     benefits: {
       indexacao: {
-        title: "Indexação inteligente",
-        body: "Basta selecionar uma pasta com partituras. O Ottavada identifica o nome da música pela pasta e sugere os instrumentos a partir dos arquivos, sem cadastro manual.",
+        title: "Cadastre 50 partituras em 1 minuto",
+        body: "Selecione uma pasta com partituras e pronto: o Ottavada lê o nome da música pela pasta e sugere os instrumentos a partir dos arquivos. Sem digitar um por um.",
       },
       duplicatas: {
-        title: "Chega de duplicatas",
-        body: 'O sistema não permite dois nomes iguais de música ou partitura. Se tem dois violinos, serão "Violino I" e "Violino II", nunca "Violino" repetido.',
+        title: "Chega de 'Violino' duplicado",
+        body: 'O sistema não permite dois nomes iguais de música ou partitura. Se tem dois violinos, serão "Violino I" e "Violino II", nunca "Violino" repetido no ensaio.',
       },
       busca: {
-        title: "Busca e filtros inteligentes",
-        body: "Encontre qualquer música em segundos. Pesquise por nome ou filtre por categoria, compositor e arranjador. Perfeito para acervos grandes.",
+        title: "Ache qualquer música em 3 segundos",
+        body: "Pesquise por nome ou filtre por categoria, compositor e arranjador. Perfeito para orquestras com centenas de partituras.",
       },
       ordem: {
-        title: "Ordem padrão de grade",
-        body: 'Ao expandir uma música, as partituras aparecem na ordem padrão de grade: madeiras, metais, percussão, teclados e cordas, igual ao "Standard Orchestral Score Order", padrão mundial.',
+        title: "Ordem padrão de grade mundial",
+        body: 'Ao abrir uma música, as partituras aparecem na ordem padrão: madeiras, metais, percussão, teclados e cordas. O mesmo "Standard Orchestral Score Order" usado no mundo todo.',
       },
       favoritos: {
-        title: "Favoritos e seções rápidas",
-        body: 'Marque músicas como favoritas e acesse seções como "Não permitidas" ou "Sem partituras" com um clique. Tudo ao alcance da mão.',
+        title: "Favoritos e atalhos a um clique",
+        body: 'Marque músicas como favoritas e acesse rapidamente seções como "Não permitidas" ou "Sem partituras". Tudo na ponta dos dedos.',
       },
       ferramentas: {
-        title: "Use as ferramentas que você já conhece",
-        body: "Funciona com Finale, MuseScore, Sibelius, Dorico e qualquer arquivo em PDF, MusicXML ou MIDI. Você continua trabalhando do seu jeito, sem mudar nada.",
+        title: "Continue usando suas ferramentas favoritas",
+        body: "Funciona com Finale, MuseScore, Sibelius, Dorico e qualquer arquivo em PDF, MusicXML ou MIDI. Você não muda nada no seu fluxo de trabalho.",
       },
       maestro: {
-        title: "Modo computador do maestro",
-        body: "Controle total do repertório: adicione, edite e remova músicas e partituras. Defina quais vão para o computador de ensaio e quais ficam só com você.",
+        title: "Computador do maestro: controle total",
+        body: "Adicione, edite e remova músicas e partituras. Defina o que vai para o ensaio e o que fica só com você. Você manda, sempre.",
       },
       ensaio: {
-        title: "Modo computador de ensaio",
-        body: "Consulta rápida para a sala de ensaio. Os arquivos só podem ser visualizados, sem risco de alterar ou remover nada sem querer.",
+        title: "Computador de ensaio: só leitura, zero risco",
+        body: "Consulta rápida para a sala de ensaio. Os arquivos só podem ser visualizados, sem risco de alguém apagar ou alterar a partitura sem querer.",
       },
       nuvem: {
-        title: "Nuvem gratuita",
-        body: "Sincronize pelo Google Drive ou Koofr sem custo adicional. Arquivos são compactados antes do envio, ocupando menos espaço e sendo mais rápidos.",
+        title: "Sincronize de graça pelo Google Drive ou Koofr",
+        body: "Sem custo de assinatura. Os arquivos são compactados antes do envio, ocupando menos espaço e sincronizando mais rápido.",
       },
       backup: {
-        title: "Computador quebrou? Nada se perdeu",
-        body: "Formatou ou trocou de máquina? Suas partituras, categorias, compositores e arranjadores estão seguros. Com um clique, tudo volta ao lugar.",
+        title: "PC formatou? Tudo de volta em 1 clique",
+        body: "Trocou de máquina ou formatou o computador? Suas partituras, categorias, compositores e arranjadores estão salvos. Um clique e tudo volta ao lugar, nas mesmas pastas de antes.",
       },
       arquivos: {
         title: "Seus arquivos, suas regras",
-        body: "O Ottavada não renomeia pastas nem arquivos, não movimenta nada e não impõe formatos proprietários. Sua organização manual é respeitada e incentivada.",
+        body: "O Ottavada não renomeia pastas nem arquivos, não move nada e não impõe formatos proprietários. Sua organização manual é respeitada e incentivada.",
       },
       desinstalou: {
-        title: "Desinstalou? Seus arquivos continuam lá",
-        body: "Se um dia decidir não usar mais, suas partituras continuam exatamente onde estavam, organizadas, acessíveis e sem nenhuma dependência do Ottavada.",
+        title: "Desinstalou? Suas partituras continuam lá",
+        body: "Se um dia decidir parar de usar, suas partituras continuam exatamente onde estavam, organizadas, acessíveis e sem nenhuma dependência do Ottavada.",
       },
       escolha: {
         title: "Você decide o que vai para o ensaio",
-        body: "Nem tudo precisa ir para o computador do ensaio. Você escolhe: essa partitura pode ser enviada, bloqueada ou ignorada. Você no controle, sempre.",
+        body: "Nem toda partitura precisa ir para o computador de ensaio. Você escolhe: enviar, bloquear ou ignorar. Partituras em rascunho ficam só com você.",
       },
       idiomas: {
-        title: "Multi-idiomas",
-        body: "Disponível em português, inglês, espanhol, francês, italiano e alemão, para atender músicos de qualquer lugar.",
+        title: "Em 6 idiomas, do Brasil à Alemanha",
+        body: "Disponível em português, inglês, espanhol, francês, italiano e alemão. Para orquestras, bandas e músicos do mundo todo.",
       },
       gratuito: {
-        title: "Gratuito, sem pegadinhas",
-        body: "Totalmente gratuito para uso pessoal, orquestras, bandas e instituições. Sem assinatura, sem limite de músicas e sem servidor próprio para manter.",
+        title: "Gratuito de verdade. Sem pegadinhas.",
+        body: "100% gratuito para uso pessoal, orquestras, bandas e instituições. Sem assinatura, sem limite de músicas, sem anúncio e sem servidor próprio para manter.",
       },
       evolucao: {
-        title: "Em constante evolução",
-        body: "O Ottavada está em fase inicial de desenvolvimento, mas recebe melhorias frequentes. Novas funcionalidades, correções e idiomas são adicionados com base no feedback dos usuários.",
+        title: "Atualizado toda semana com seu feedback",
+        body: "O Ottavada está em fase inicial, mas recebe melhorias frequentes. Novas funcionalidades, correções e idiomas são adicionados com base no que os usuários pedem.",
       },
       semLigar: {
-        title: "Sem deixar o computador ligado",
-        body: "Cada computador acessa a nuvem por conta própria. Você não precisa manter o computador do maestro ligado para usar o de ensaio, a sincronização acontece direto pela nuvem.",
+        title: "Sem deixar o PC ligado 24h",
+        body: "Cada computador acessa a nuvem por conta própria. Você não precisa manter o computador do maestro ligado para usar o de ensaio — a sincronização acontece direto pela nuvem.",
       },
       openSource: {
-        title: "Open source",
-        body: "O Ottavada é open source. Você pode ver o código, sugerir mudanças e contribuir no GitHub.",
+        title: "Open source no GitHub, sem letras miúdas",
+        body: "O código é aberto: você pode ver, sugerir mudanças e contribuir. Sem telemetria escondida, sem coleta de dados.",
       },
       copias: {
-        title: "Cópias locais",
-        body: "As partituras ficam salvas no seu computador. Acesse tudo mesmo sem internet durante o ensaio. Rápido e sem depender de nuvem.",
+        title: "Funciona offline no ensaio",
+        body: "As partituras ficam salvas no seu computador. Acesse tudo mesmo sem internet durante o ensaio. Rápido, confiável e sem depender da nuvem na hora H.",
       },
     },
     footer: {
@@ -192,121 +192,121 @@ export const home: Record<Locale, HomeMessages> = {
   },
   en: {
     meta: {
-      title: "Ottavada: organize and sync your orchestra's sheet music",
+      title: "Ottavada: say goodbye to pen drives and emails in your orchestra",
       description:
-        "Ottavada is free software to manage, organize and sync sheet music. For Windows 10 and 11.",
-      ogTitle: "Ottavada: Organize and Sync Sheet Music",
+        "Tired of pen drives, emails and duplicate sheet music? Ottavada organizes, syncs and protects your orchestra's repertoire across computers. Free, open source, no subscription. For Windows 10 and 11.",
+      ogTitle: "Ottavada: Say goodbye to pen drives and duplicate scores",
       ogDescription:
-        "Free software to manage and sync your orchestra's sheet music.",
+        "Free and open source software to organize and sync your orchestra's repertoire. No subscription, no proprietary server.",
     },
-    brand: { name: "Ottavada", tagline: "Your sheet music conductor" },
+    brand: { name: "Ottavada", tagline: "Your orchestra's digital conductor" },
     nav: { download: "Download now", docs: "Documentation" },
     hero: {
-      line1: "Find, organize and share",
-      line2: "sheet music without duplication across your computers.",
+      line1: "Say goodbye to pen drives and emails.",
+      line2: "Your sheet music, synced — never duplicated.",
       subtitle:
-        "Manage, organize and sync your sheet music. No complications, no changing the way you work.",
+        "Ottavada organizes, syncs and protects your orchestra's repertoire across every computer. No hassle, no subscription, no changing the way you work.",
       cta: "Download for free",
-      ctaNote: "For Windows 10 and 11",
+      ctaNote: "For Windows 10 and 11 — 100% free",
     },
     sections: {
       descricao: {
-        kicker: "Why Ottavada?",
-        text: "Sheet music management is still done manually: email exchanges, pen drives, duplicate folders and sheets, and constant risk of losing the right version. Ottavada solves this.",
+        kicker: "Tired of losing sheet music?",
+        text: "Sheet music management is still done manually: email exchanges, pen drives, duplicate folders, and the constant risk of playing the wrong version at rehearsal. Ottavada fixes that for good.",
       },
       organizacao: {
         kicker: "Organization",
-        heading: "Never waste time looking for the right sheet music again.",
+        heading: "Find any sheet music in seconds. No more treasure hunts.",
       },
       sincronizacao: {
         kicker: "Sync",
-        heading: "One app. Two usage modes.",
+        heading: "One app. Two modes: conductor and rehearsal.",
       },
       liberdade: {
         kicker: "Freedom",
-        heading: "You're not locked into the tool.",
+        heading: "Your files, your rules. No lock-in.",
       },
       maisVantagens: {
         kicker: "More perks",
-        heading: "Small details that make a difference.",
+        heading: "Small details that make all the difference.",
       },
     },
     benefits: {
       indexacao: {
-        title: "Smart indexing",
-        body: "Just select a folder with sheet music. Ottavada identifies the song name from the folder and suggests instruments from the files, with no manual entry needed.",
+        title: "Add 50 scores in 1 minute",
+        body: "Just select a folder with sheet music and you're done: Ottavada reads the song name from the folder and suggests the instruments from the files. No typing one by one.",
       },
       duplicatas: {
-        title: "No more duplicates",
-        body: 'The system does not allow two identical names for a piece or sheet. If there are two violins, they will be "Violin I" and "Violin II", never a duplicate "Violin".',
+        title: "No more duplicate 'Violin'",
+        body: 'The system does not allow two identical names for a piece or sheet. If there are two violins, they will be "Violin I" and "Violin II", never a duplicate "Violin" at rehearsal.',
       },
       busca: {
-        title: "Smart search and filters",
-        body: "Find any piece in seconds. Search by name or filter by category, composer, and arranger. Perfect for large collections.",
+        title: "Find any piece in 3 seconds",
+        body: "Search by name or filter by category, composer and arranger. Perfect for orchestras with hundreds of scores.",
       },
       ordem: {
-        title: "Standard score order",
-        body: 'When expanding a piece, sheet music appears in standard score order: woodwinds, brass, percussion, keyboards and strings, matching the world standard "Standard Orchestral Score Order".',
+        title: "World-standard score order",
+        body: 'When you open a piece, sheet music appears in standard order: woodwinds, brass, percussion, keyboards and strings. The same "Standard Orchestral Score Order" used worldwide.',
       },
       favoritos: {
-        title: "Favorites and quick sections",
-        body: 'Mark pieces as favorites and access sections like "Not allowed" or "No sheet music" with a single click. Everything at your fingertips.',
+        title: "Favorites and shortcuts in one click",
+        body: 'Mark pieces as favorites and quickly access sections like "Not allowed" or "No sheet music". Everything at your fingertips.',
       },
       ferramentas: {
-        title: "Use the tools you already know",
-        body: "Works with Finale, MuseScore, Sibelius, Dorico and any file in PDF, MusicXML or MIDI. You keep working your way, with no changes.",
+        title: "Keep using your favorite tools",
+        body: "Works with Finale, MuseScore, Sibelius, Dorico and any file in PDF, MusicXML or MIDI. You don't change a thing in your workflow.",
       },
       maestro: {
-        title: "Conductor computer mode",
-        body: "Full repertoire control: add, edit and remove pieces and sheet music. Choose what goes to the rehearsal computer and what stays with you.",
+        title: "Conductor computer: full control",
+        body: "Add, edit and remove pieces and sheet music. Decide what goes to rehearsal and what stays with you. You call the shots, always.",
       },
       ensaio: {
-        title: "Rehearsal computer mode",
-        body: "Quick reference for the rehearsal room. Files can only be viewed, with no risk of accidentally changing or deleting anything.",
+        title: "Rehearsal computer: read-only, zero risk",
+        body: "Quick reference for the rehearsal room. Files can only be viewed, with no risk of someone accidentally deleting or changing a score.",
       },
       nuvem: {
-        title: "Free cloud sync",
-        body: "Sync via Google Drive or Koofr at no extra cost. Files are compressed before upload, taking up less space and being faster.",
+        title: "Sync free via Google Drive or Koofr",
+        body: "No subscription fees. Files are compressed before upload, taking up less space and syncing faster.",
       },
       backup: {
-        title: "Computer broke? Nothing is lost",
-        body: "Formatted or switched machines? Your sheet music, categories, composers and arrangers are safe. One click and everything is back in place.",
+        title: "PC formatted? Back in 1 click",
+        body: "Switched machines or formatted the computer? Your sheet music, categories, composers and arrangers are saved. One click and everything is back in place, in the same folders as before.",
       },
       arquivos: {
         title: "Your files, your rules",
         body: "Ottavada does not rename folders or files, does not move anything, and does not impose proprietary formats. Your manual organization is respected and encouraged.",
       },
       desinstalou: {
-        title: "Uninstalled? Your files stay",
-        body: "If you ever decide to stop using it, your sheet music stays exactly where it was, organized, accessible, and with no dependency on Ottavada.",
+        title: "Uninstalled? Your sheet music stays",
+        body: "If one day you decide to stop using it, your sheet music stays exactly where it was, organized, accessible, and with no dependency on Ottavada.",
       },
       escolha: {
         title: "You decide what goes to rehearsal",
-        body: "Not everything needs to go to the rehearsal computer. You choose: this sheet can be sent, blocked, or ignored. You're in control, always.",
+        body: "Not every score needs to go to the rehearsal computer. You choose: send, block or ignore. Drafts stay only with you.",
       },
       idiomas: {
-        title: "Multi-language",
-        body: "Available in Portuguese, English, Spanish, French, Italian and German, to serve musicians from anywhere.",
+        title: "In 6 languages, from Brazil to Germany",
+        body: "Available in Portuguese, English, Spanish, French, Italian and German. For orchestras, bands and musicians worldwide.",
       },
       gratuito: {
-        title: "Free, no tricks",
-        body: "Totally free for personal use, orchestras, bands and institutions. No subscription, no limit on pieces, and no proprietary server to maintain.",
+        title: "Truly free. No catch.",
+        body: "100% free for personal use, orchestras, bands and institutions. No subscription, no limit on pieces, no ads and no proprietary server to maintain.",
       },
       evolucao: {
-        title: "Constantly evolving",
-        body: "Ottavada is in early development, but receives frequent improvements. New features, fixes and languages are added based on user feedback.",
+        title: "Updated every week with your feedback",
+        body: "Ottavada is in early stages, but receives frequent improvements. New features, fixes and languages are added based on user requests.",
       },
       semLigar: {
-        title: "No need to keep a computer on",
+        title: "No need to keep a PC on 24/7",
         body: "Each computer accesses the cloud on its own. You don't need to keep the conductor computer on for the rehearsal computer to work — sync happens directly through the cloud.",
       },
       openSource: {
-        title: "Open source",
-        body: "Ottavada is open source. You can view the code, suggest changes, and contribute on GitHub.",
+        title: "Open source on GitHub, no fine print",
+        body: "The code is open: you can view it, suggest changes and contribute. No hidden telemetry, no data collection.",
       },
       copias: {
-        title: "Local copies",
-        body: "Sheet music is saved on your computer. Access everything even without internet during rehearsal. Fast and no cloud dependency.",
+        title: "Works offline at rehearsal",
+        body: "Sheet music is saved on your computer. Access everything even without internet during rehearsal. Fast, reliable, and no cloud dependency when it matters most.",
       },
     },
     footer: {
@@ -326,121 +326,121 @@ export const home: Record<Locale, HomeMessages> = {
   },
   es: {
     meta: {
-      title: "Ottavada: organiza y sincroniza las partituras de tu orquesta",
+      title: "Ottavada: di adiós a los pen drives y correos en tu orquesta",
       description:
-        "Ottavada es un software gratuito para gestionar, organizar y sincronizar partituras. Para Windows 10 y 11.",
-      ogTitle: "Ottavada: Organiza y Sincroniza Partituras",
+        "¿Cansado de pen drives, correos y partituras duplicadas? Ottavada organiza, sincroniza y protege el repertorio de tu orquesta entre ordenadores. Gratuito, open source y sin suscripción. Para Windows 10 y 11.",
+      ogTitle: "Ottavada: Di adiós a los pen drives y partituras duplicadas",
       ogDescription:
-        "Software gratuito para gestionar y sincronizar las partituras de tu orquesta.",
+        "Software gratuito y open source para organizar y sincronizar el repertorio de tu orquesta. Sin suscripción, sin servidor propio.",
     },
-    brand: { name: "Ottavada", tagline: "Tu director de partituras" },
+    brand: { name: "Ottavada", tagline: "El director digital de tu orquesta" },
     nav: { download: "Descargar ahora", docs: "Documentación" },
     hero: {
-      line1: "Encuentra, organiza y comparte",
-      line2: "partituras sin duplicados entre tus ordenadores.",
+      line1: "Di adiós a los pen drives y correos.",
+      line2: "Tus partituras sincronizadas, sin duplicar nada.",
       subtitle:
-        "Gestiona, organiza y sincroniza tus partituras. Sin complicaciones, sin cambiar tu forma de trabajar.",
+        "Ottavada organiza, sincroniza y protege el repertorio de tu orquesta entre todos los ordenadores. Sin complicaciones, sin suscripción, sin cambiar tu forma de trabajar.",
       cta: "Descargar gratis",
-      ctaNote: "Para Windows 10 y 11",
+      ctaNote: "Para Windows 10 y 11 — 100% gratuito",
     },
     sections: {
       descricao: {
-        kicker: "¿Por qué Ottavada?",
-        text: "La gestión de partituras todavía se hace manualmente: intercambio de correos, pen drives, carpetas y partituras duplicadas, y riesgo constante de perder la versión correcta. Ottavada lo resuelve.",
+        kicker: "¿Cansado de perder partituras?",
+        text: "La gestión de partituras todavía se hace manualmente: correos, pen drives, carpetas duplicadas y el riesgo constante de tocar la versión equivocada en el ensayo. Ottavada lo resuelve de una vez.",
       },
       organizacao: {
         kicker: "Organización",
-        heading: "Nunca más pierdas tiempo buscando la partitura correcta.",
+        heading: "Encuentra cualquier partitura en segundos. Sin búsqueda del tesoro.",
       },
       sincronizacao: {
         kicker: "Sincronización",
-        heading: "Una sola aplicación. Dos modos de uso.",
+        heading: "Una sola app. Dos modos: director y ensayo.",
       },
       liberdade: {
         kicker: "Libertad",
-        heading: "No estás atado a la herramienta.",
+        heading: "Tus archivos, tus reglas. Sin ataduras.",
       },
       maisVantagens: {
         kicker: "Más ventajas",
-        heading: "Pequeños detalles que marcan la diferencia.",
+        heading: "Pequeños detalles que marcan toda la diferencia.",
       },
     },
     benefits: {
       indexacao: {
-        title: "Indexación inteligente",
-        body: "Solo selecciona una carpeta con partituras. Ottavada identifica el nombre de la canción por la carpeta y sugiere los instrumentos a partir de los archivos, sin registro manual.",
+        title: "Registra 50 partituras en 1 minuto",
+        body: "Solo selecciona una carpeta con partituras y listo: Ottavada lee el nombre de la canción por la carpeta y sugiere los instrumentos a partir de los archivos. Sin teclear uno por uno.",
       },
       duplicatas: {
-        title: "Adiós a los duplicados",
-        body: 'El sistema no permite dos nombres iguales de canción o partitura. Si hay dos violines, serán "Violín I" y "Violín II", nunca un "Violín" duplicado.',
+        title: "Adiós al 'Violín' duplicado",
+        body: 'El sistema no permite dos nombres iguales de canción o partitura. Si hay dos violines, serán "Violín I" y "Violín II", nunca un "Violín" repetido en el ensayo.',
       },
       busca: {
-        title: "Búsqueda y filtros inteligentes",
-        body: "Encuentra cualquier canción en segundos. Busca por nombre o filtra por categoría, compositor y arreglista. Perfecto para colecciones grandes.",
+        title: "Encuentra cualquier canción en 3 segundos",
+        body: "Busca por nombre o filtra por categoría, compositor y arreglista. Perfecto para orquestas con cientos de partituras.",
       },
       ordem: {
-        title: "Orden estándar de partitura",
-        body: 'Al expandir una canción, las partituras aparecen en el orden estándar de partitura: maderas, metales, percusión, teclados y cuerdas, igual al estándar mundial "Standard Orchestral Score Order".',
+        title: "Orden estándar de partitura mundial",
+        body: 'Al abrir una canción, las partituras aparecen en el orden estándar: maderas, metales, percusión, teclados y cuerdas. El mismo "Standard Orchestral Score Order" usado en todo el mundo.',
       },
       favoritos: {
-        title: "Favoritos y secciones rápidas",
-        body: 'Marca canciones como favoritas y accede a secciones como "No permitidas" o "Sin partituras" con un solo clic. Todo al alcance de la mano.',
+        title: "Favoritos y atajos a un clic",
+        body: 'Marca canciones como favoritas y accede rápidamente a secciones como "No permitidas" o "Sin partituras". Todo al alcance de la mano.',
       },
       ferramentas: {
-        title: "Usa las herramientas que ya conoces",
-        body: "Funciona con Finale, MuseScore, Sibelius, Dorico y cualquier archivo en PDF, MusicXML o MIDI. Sigues trabajando a tu manera, sin cambiar nada.",
+        title: "Sigue usando tus herramientas favoritas",
+        body: "Funciona con Finale, MuseScore, Sibelius, Dorico y cualquier archivo en PDF, MusicXML o MIDI. No cambias nada en tu flujo de trabajo.",
       },
       maestro: {
-        title: "Modo computadora del director",
-        body: "Control total del repertorio: añade, edita y elimina canciones y partituras. Define cuáles van a la computadora de ensayo y cuáles se quedan solo contigo.",
+        title: "Ordenador del director: control total",
+        body: "Añade, edita y elimina canciones y partituras. Define qué va al ensayo y qué se queda solo contigo. Tú mandas, siempre.",
       },
       ensaio: {
-        title: "Modo computadora de ensayo",
-        body: "Consulta rápida para la sala de ensayo. Los archivos solo se pueden visualizar, sin riesgo de alterar o eliminar nada sin querer.",
+        title: "Ordenador de ensayo: solo lectura, cero riesgo",
+        body: "Consulta rápida para la sala de ensayo. Los archivos solo se pueden visualizar, sin riesgo de que alguien borre o cambie una partitura por accidente.",
       },
       nuvem: {
-        title: "Nube gratuita",
-        body: "Sincroniza mediante Google Drive o Koofr sin costo adicional. Los archivos se comprimen antes del envío, ocupando menos espacio y siendo más rápidos.",
+        title: "Sincroniza gratis con Google Drive o Koofr",
+        body: "Sin coste de suscripción. Los archivos se comprimen antes del envío, ocupando menos espacio y sincronizando más rápido.",
       },
       backup: {
-        title: "¿Computadora rota? Nada se perdió",
-        body: "¿Formateaste o cambiaste de máquina? Tus partituras, categorías, compositores y arreglistas están seguros. Con un clic, todo vuelve a su lugar.",
+        title: "¿PC formateado? Todo vuelve en 1 clic",
+        body: "¿Cambiaste de máquina o formateaste el ordenador? Tus partituras, categorías, compositores y arreglistas están a salvo. Un clic y todo vuelve a su lugar, en las mismas carpetas de antes.",
       },
       arquivos: {
         title: "Tus archivos, tus reglas",
         body: "Ottavada no renombra carpetas ni archivos, no mueve nada y no impone formatos propietarios. Tu organización manual es respetada e incentivada.",
       },
       desinstalou: {
-        title: "¿Desinstalado? Tus archivos siguen allí",
-        body: "Si algún día decides dejar de usarlo, tus partituras siguen exactamente donde estaban, organizadas, accesibles y sin ninguna dependencia de Ottavada.",
+        title: "¿Desinstalado? Tus partituras siguen allí",
+        body: "Si un día decides dejar de usarlo, tus partituras siguen exactamente donde estaban, organizadas, accesibles y sin ninguna dependencia de Ottavada.",
       },
       escolha: {
         title: "Tú decides qué va al ensayo",
-        body: "No todo necesita ir a la computadora de ensayo. Tú eliges: esta partitura puede ser enviada, bloqueada o ignorada. Tú tienes el control, siempre.",
+        body: "No toda partitura necesita ir al ordenador de ensayo. Tú eliges: enviar, bloquear o ignorar. Los borradores se quedan solo contigo.",
       },
       idiomas: {
-        title: "Multi-idioma",
-        body: "Disponible en portugués, inglés, español, francés, italiano y alemán, para atender a músicos de cualquier lugar.",
+        title: "En 6 idiomas, de Brasil a Alemania",
+        body: "Disponible en portugués, inglés, español, francés, italiano y alemán. Para orquestas, bandas y músicos de todo el mundo.",
       },
       gratuito: {
-        title: "Gratuito, sin trampas",
-        body: "Totalmente gratuito para uso personal, orquestas, bandas e instituciones. Sin suscripción, sin límite de canciones y sin servidor propio que mantener.",
+        title: "Gratis de verdad. Sin trampas.",
+        body: "100% gratuito para uso personal, orquestas, bandas e instituciones. Sin suscripción, sin límite de canciones, sin anuncios y sin servidor propio que mantener.",
       },
       evolucao: {
-        title: "En constante evolución",
-        body: "Ottavada está en fase inicial de desarrollo, pero recibe mejoras frecuentes. Se añaden nuevas funcionalidades, correcciones e idiomas según los comentarios de los usuarios.",
+        title: "Actualizado cada semana con tu feedback",
+        body: "Ottavada está en fase inicial, pero recibe mejoras frecuentes. Se añaden nuevas funcionalidades, correcciones e idiomas según lo que piden los usuarios.",
       },
       semLigar: {
-        title: "Sin dejar el ordenador encendido",
-        body: "Cada ordenador accede a la nube por su cuenta. No necesitas mantener el ordenador del director encendido para usar el de ensayo, la sincronización ocurre directamente en la nube.",
+        title: "Sin dejar el PC encendido 24h",
+        body: "Cada ordenador accede a la nube por su cuenta. No necesitas mantener el ordenador del director encendido para usar el de ensayo: la sincronización ocurre directamente en la nube.",
       },
       openSource: {
-        title: "Open source",
-        body: "Ottavada es open source. Puedes ver el código, sugerir cambios y contribuir en GitHub.",
+        title: "Open source en GitHub, sin letra pequeña",
+        body: "El código es abierto: puedes verlo, sugerir cambios y contribuir. Sin telemetría oculta, sin recopilación de datos.",
       },
       copias: {
-        title: "Copias locales",
-        body: "Las partituras se guardan en tu computadora. Accede a todo incluso sin internet durante el ensayo. Rápido y sin depender de la nube.",
+        title: "Funciona offline en el ensayo",
+        body: "Las partituras se guardan en tu ordenador. Accede a todo incluso sin internet durante el ensayo. Rápido, fiable y sin depender de la nube en el momento clave.",
       },
     },
     footer: {
@@ -460,130 +460,130 @@ export const home: Record<Locale, HomeMessages> = {
   },
   fr: {
     meta: {
-      title: "Ottavada : organisez et synchronisez les partitions de votre orchestre",
+      title: "Ottavada : dites adieu aux clés USB et e-mails dans votre orchestre",
       description:
-        "Ottavada est un logiciel gratuit pour gérer, organiser et synchroniser des partitions. Pour Windows 10 et 11.",
-      ogTitle: "Ottavada : Organisez et Synchronisez des Partitions",
+        "Marre des clés USB, des e-mails et des partitions en double ? Ottavada organise, synchronise et protège le répertoire de votre orchestre entre ordinateurs. Gratuit, open source et sans abonnement. Pour Windows 10 et 11.",
+      ogTitle: "Ottavada : Dites adieu aux clés USB et aux partitions en double",
       ogDescription:
-        "Logiciel gratuit pour gérer et synchroniser les partitions de votre orchestre.",
+        "Logiciel gratuit et open source pour organiser et synchroniser le répertoire de votre orchestre. Sans abonnement, sans serveur propriétaire.",
     },
-    brand: { name: "Ottavada", tagline: "Votre chef de partitions" },
+    brand: { name: "Ottavada", tagline: "Le chef numérique de votre orchestre" },
     nav: { download: "Télécharger", docs: "Documentation" },
     hero: {
-      line1: "Trouvez, organisez et partagez",
-      line2: "des partitions sans doublons entre vos ordinateurs.",
+      line1: "Dites adieu aux clés USB et aux e-mails.",
+      line2: "Vos partitions synchronisées, sans doublon.",
       subtitle:
-        "Gérez, organisez et synchronisez vos partitions. Sans complications, sans changer votre façon de travailler.",
+        "Ottavada organise, synchronise et protège le répertoire de votre orchestre entre tous les ordinateurs. Sans complication, sans abonnement, sans changer votre façon de travailler.",
       cta: "Télécharger gratuitement",
-      ctaNote: "Pour Windows 10 et 11",
+      ctaNote: "Pour Windows 10 et 11 — 100 % gratuit",
     },
     sections: {
       descricao: {
-        kicker: "Pourquoi Ottavada ?",
-        text: "La gestion des partitions se fait encore manuellement : échanges d’e-mails, clés USB, dossiers et partitions en double, et risque constant de perdre la bonne version. Ottavada résout cela.",
+        kicker: "Marre de perdre des partitions ?",
+        text: "La gestion des partitions se fait encore manuellement : échanges d’e-mails, clés USB, dossiers en double et le risque constant de jouer la mauvaise version en répétition. Ottavada règle ça pour de bon.",
       },
       organizacao: {
         kicker: "Organisation",
-        heading: "Ne perdez plus jamais de temps à chercher la bonne partition.",
+        heading: "Trouvez n’importe quelle partition en secondes. Finie la chasse au trésor.",
       },
       sincronizacao: {
         kicker: "Synchronisation",
-        heading: "Une seule application. Deux modes d’utilisation.",
+        heading: "Une seule app. Deux modes : chef et répétition.",
       },
       liberdade: {
         kicker: "Liberté",
-        heading: "Vous n’êtes pas prisonnier de l’outil.",
+        heading: "Vos fichiers, vos règles. Aucun verrouillage.",
       },
       maisVantagens: {
         kicker: "Plus d'avantages",
-        heading: "De petits détails qui font la différence.",
+        heading: "De petits détails qui changent tout.",
       },
     },
     benefits: {
       indexacao: {
-        title: "Indexation intelligente",
-        body: "Sélectionnez simplement un dossier contenant des partitions. Ottavada identifie le nom du morceau par le dossier et suggère les instruments à partir des fichiers, sans saisie manuelle.",
+        title: "Enregistrez 50 partitions en 1 minute",
+        body: "Sélectionnez un dossier de partitions et c’est tout : Ottavada lit le nom du morceau via le dossier et suggère les instruments à partir des fichiers. Plus de saisie une par une.",
       },
       duplicatas: {
-        title: "Fini les doublons",
-        body: "Le système n’autorise pas deux noms identiques de morceau ou de partition. S’il y a deux violons, ce seront « Violon I » et « Violon II », jamais un « Violon » en double.",
+        title: "Fini le « Violon » en double",
+        body: "Le système n’autorise pas deux noms identiques de morceau ou de partition. S’il y a deux violons, ce seront « Violon I » et « Violon II », jamais un « Violon » répété en répétition.",
       },
       busca: {
-        title: "Recherche et filtres intelligents",
-        body: "Trouvez n’importe quel morceau en quelques secondes. Recherchez par nom ou filtrez par catégorie, compositeur et arrangeur. Parfait pour les grandes collections.",
+        title: "Trouvez n’importe quel morceau en 3 secondes",
+        body: "Recherchez par nom ou filtrez par catégorie, compositeur et arrangeur. Parfait pour les orchestres avec des centaines de partitions.",
       },
       ordem: {
-        title: "Ordre standard de la partition",
-        body: "Lorsque vous développez un morceau, les partitions apparaissent dans l’ordre standard de la partition : bois, cuivres, percussions, claviers et cordes, conformément au standard mondial \"Standard Orchestral Score Order\".",
+        title: "Ordre de partition standard mondial",
+        body: "À l’ouverture d’un morceau, les partitions apparaissent dans l’ordre standard : bois, cuivres, percussions, claviers et cordes. Le même « Standard Orchestral Score Order » utilisé dans le monde entier.",
       },
       favoritos: {
-        title: "Favoris et sections rapides",
-        body: "Marquez des morceaux comme favoris et accédez aux sections comme « Non autorisées » ou « Sans partitions » en un seul clic. Tout à portée de main.",
+        title: "Favoris et raccourcis en un clic",
+        body: "Marquez des morceaux comme favoris et accédez rapidement aux sections comme « Non autorisées » ou « Sans partitions ». Tout à portée de main.",
       },
       ferramentas: {
-        title: "Utilisez les outils que vous connaissez déjà",
-        body: "Fonctionne avec Finale, MuseScore, Sibelius, Dorico et tout fichier en PDF, MusicXML ou MIDI. Vous continuez à travailler à votre façon, sans rien changer.",
+        title: "Gardez vos outils préférés",
+        body: "Compatible avec Finale, MuseScore, Sibelius, Dorico et tout fichier en PDF, MusicXML ou MIDI. Vous ne changez rien à votre flux de travail.",
       },
       maestro: {
-        title: "Mode ordinateur du chef",
-        body: "Contrôle total du répertoire : ajoutez, modifiez et supprimez des morceaux et partitions. Définissez ce qui va sur l’ordinateur de répétition et ce qui reste avec vous.",
+        title: "Ordinateur du chef : contrôle total",
+        body: "Ajoutez, modifiez et supprimez des morceaux et partitions. Définissez ce qui va en répétition et ce qui reste avec vous. C’est vous qui décidez, toujours.",
       },
       ensaio: {
-        title: "Mode ordinateur de répétition",
-        body: "Consultation rapide pour la salle de répétition. Les fichiers ne peuvent être que consultés, sans risque de modifier ou supprimer quoi que ce soit par erreur.",
+        title: "Ordinateur de répétition : lecture seule, zéro risque",
+        body: "Consultation rapide pour la salle de répétition. Les fichiers sont en lecture seule, sans risque qu’une partition soit supprimée ou modifiée par accident.",
       },
       nuvem: {
-        title: "Cloud gratuit",
-        body: "Synchronisez via Google Drive ou Koofr sans frais supplémentaires. Les fichiers sont compressés avant l’envoi, occupant moins d’espace et étant plus rapides.",
+        title: "Synchronisation gratuite via Google Drive ou Koofr",
+        body: "Sans frais d’abonnement. Les fichiers sont compressés avant l’envoi : moins d’espace utilisé et synchronisation plus rapide.",
       },
       backup: {
-        title: "Ordinateur cassé ? Rien n’est perdu",
-        body: "Formaté ou changé de machine ? Vos partitions, catégories, compositeurs et arrangeurs sont en sécurité. Un clic et tout revient à sa place.",
+        title: "PC formaté ? Tout revient en 1 clic",
+        body: "Vous avez changé de machine ou formaté votre ordinateur ? Vos partitions, catégories, compositeurs et arrangeurs sont sauvegardés. Un clic et tout revient à sa place, dans les mêmes dossiers qu’avant.",
       },
       arquivos: {
         title: "Vos fichiers, vos règles",
         body: "Ottavada ne renomme ni les dossiers ni les fichiers, ne déplace rien et n’impose pas de formats propriétaires. Votre organisation manuelle est respectée et encouragée.",
       },
       desinstalou: {
-        title: "Désinstallé ? Vos fichiers restent",
-        body: "Si vous décidez un jour de ne plus l’utiliser, vos partitions restent exactement là où elles étaient, organisées, accessibles et sans aucune dépendance à Ottavada.",
+        title: "Désinstallé ? Vos partitions restent",
+        body: "Si un jour vous décidez d’arrêter, vos partitions restent exactement là où elles étaient, organisées, accessibles et sans aucune dépendance à Ottavada.",
       },
       escolha: {
-        title: "Vous décidez de ce qui va en répétition",
-        body: "Tout ne doit pas aller sur l’ordinateur de répétition. Vous choisissez : cette partition peut être envoyée, bloquée ou ignorée. Vous avez le contrôle, toujours.",
+        title: "Vous décidez ce qui va en répétition",
+        body: "Toutes les partitions n’ont pas besoin d’aller sur l’ordinateur de répétition. Vous choisissez : envoyer, bloquer ou ignorer. Les brouillons restent uniquement avec vous.",
       },
       idiomas: {
-        title: "Multi-langues",
-        body: "Disponible en portugais, anglais, espagnol, français, italien et allemand, pour servir les musiciens du monde entier.",
+        title: "En 6 langues, du Brésil à l’Allemagne",
+        body: "Disponible en portugais, anglais, espagnol, français, italien et allemand. Pour les orchestres, bandas et musiciens du monde entier.",
       },
       gratuito: {
-        title: "Gratuit, sans piège",
-        body: "Totalement gratuit pour usage personnel, orchestres, bands et institutions. Sans abonnement, sans limite de morceaux et sans serveur propriétaire à maintenir.",
+        title: "Vraiment gratuit. Sans piège.",
+        body: "100 % gratuit pour usage personnel, orchestres, bandas et institutions. Sans abonnement, sans limite de morceaux, sans publicité et sans serveur propriétaire à maintenir.",
       },
       evolucao: {
-        title: "En évolution constante",
-        body: "Ottavada est en phase initiale de développement, mais reçoit des améliorations fréquentes. De nouvelles fonctionnalités, corrections et langues sont ajoutées en fonction des retours des utilisateurs.",
+        title: "Mis à jour chaque semaine grâce à vos retours",
+        body: "Ottavada en est à ses débuts, mais reçoit des améliorations fréquentes. Nouvelles fonctionnalités, corrections et langues sont ajoutées en fonction des demandes des utilisateurs.",
       },
       semLigar: {
-        title: "Sans laisser l’ordinateur allumé",
-        body: "Chaque ordinateur accède au cloud par lui-même. Vous n’avez pas besoin de garder l’ordinateur du chef allumé pour utiliser celui de répétition, la synchronisation se fait directement via le cloud.",
+        title: "Pas besoin de laisser le PC allumé 24h/24",
+        body: "Chaque ordinateur accède au cloud de son côté. Vous n’avez pas besoin de garder l’ordinateur du chef allumé pour utiliser celui de répétition — la synchronisation se fait directement via le cloud.",
       },
       openSource: {
-        title: "Open source",
-        body: "Ottavada est open source. Vous pouvez voir le code, suggérer des changements et contribuer sur GitHub.",
+        title: "Open source sur GitHub, sans petites lignes",
+        body: "Le code est ouvert : vous pouvez le consulter, suggérer des changements et contribuer. Pas de télémétrie cachée, pas de collecte de données.",
       },
       copias: {
-        title: "Copies locales",
-        body: "Les partitions sont enregistrées sur votre ordinateur. Accédez à tout même sans internet pendant la répétition. Rapide et sans dépendance au cloud.",
+        title: "Fonctionne hors ligne en répétition",
+        body: "Les partitions sont enregistrées sur votre ordinateur. Accédez à tout même sans internet pendant la répétition. Rapide, fiable et aucune dépendance au cloud au moment crucial.",
       },
     },
     footer: {
-      email: "Email de contact : ottavada@hotmail.com",
+      email: "Email de contact : ottavada@hotmail.com",
       dev: "Développé par Rhafaell (faell4328)",
     },
     help: {
-      kicker: "Besoin d’aide ?",
-      heading: "Une question ? On vous aide.",
+      kicker: "Besoin d’aide ?",
+      heading: "Une question ? On vous aide.",
       subtitle:
         "Consultez les guides pas à pas ou posez votre question à notre assistant en bas à droite.",
       docs: {
@@ -594,121 +594,121 @@ export const home: Record<Locale, HomeMessages> = {
   },
   it: {
     meta: {
-      title: "Ottavada: organizza e sincronizza gli spartiti della tua orchestra",
+      title: "Ottavada: addio a pen drive ed e-mail nella tua orchestra",
       description:
-        "Ottavada è un software gratuito per gestire, organizzare e sincronizzare spartiti. Per Windows 10 e 11.",
-      ogTitle: "Ottavada: Organizza e Sincronizza Spartiti",
+        "Stanco di pen drive, e-mail e spartiti duplicati? Ottavada organizza, sincronizza e protegge il repertorio della tua orchestra tra computer. Gratuito, open source e senza abbonamento. Per Windows 10 e 11.",
+      ogTitle: "Ottavada: Addio a pen drive e spartiti duplicati",
       ogDescription:
-        "Software gratuito per gestire e sincronizzare gli spartiti della tua orchestra.",
+        "Software gratuito e open source per organizzare e sincronizzare il repertorio della tua orchestra. Senza abbonamento, senza server proprietario.",
     },
-    brand: { name: "Ottavada", tagline: "Il tuo direttore di spartiti" },
+    brand: { name: "Ottavada", tagline: "Il direttore digitale della tua orchestra" },
     nav: { download: "Scarica ora", docs: "Documentazione" },
     hero: {
-      line1: "Trova, organizza e condividi",
-      line2: "spartiti senza duplicati tra i tuoi computer.",
+      line1: "Addio a pen drive ed e-mail.",
+      line2: "I tuoi spartiti sincronizzati, senza duplicati.",
       subtitle:
-        "Gestisci, organizza e sincronizza i tuoi spartiti. Senza complicazioni, senza cambiare il tuo modo di lavorare.",
+        "Ottavada organizza, sincronizza e protegge il repertorio della tua orchestra tra tutti i computer. Senza complicazioni, senza abbonamento, senza cambiare il tuo modo di lavorare.",
       cta: "Scarica gratuitamente",
-      ctaNote: "Per Windows 10 e 11",
+      ctaNote: "Per Windows 10 e 11 — 100% gratuito",
     },
     sections: {
       descricao: {
-        kicker: "Perché Ottavada?",
-        text: "La gestione degli spartiti è ancora fatta manualmente: scambi di email, pen drive, cartelle e spartiti duplicati, e il rischio costante di perdere la versione giusta. Ottavada risolve questo.",
+        kicker: "Stanco di perdere spartiti?",
+        text: "La gestione degli spartiti è ancora fatta manualmente: scambi di e-mail, pen drive, cartelle duplicate e il rischio costante di suonare la versione sbagliata in prova. Ottavada risolve il problema una volta per tutte.",
       },
       organizacao: {
         kicker: "Organizzazione",
-        heading: "Non perdere mai più tempo a cercare lo spartito giusto.",
+        heading: "Trova qualsiasi spartito in secondi. Basta cacce al tesoro.",
       },
       sincronizacao: {
         kicker: "Sincronizzazione",
-        heading: "Una sola app. Due modalità d’uso.",
+        heading: "Una sola app. Due modalità: direttore e prove.",
       },
       liberdade: {
         kicker: "Libertà",
-        heading: "Non sei vincolato allo strumento.",
+        heading: "I tuoi file, le tue regole. Nessun vincolo.",
       },
       maisVantagens: {
         kicker: "Altri vantaggi",
-        heading: "Piccoli dettagli che fanno la differenza.",
+        heading: "Piccoli dettagli che fanno tutta la differenza.",
       },
     },
     benefits: {
       indexacao: {
-        title: "Indicizzazione intelligente",
-        body: "Basta selezionare una cartella con gli spartiti. Ottavada identifica il nome del brano dalla cartella e suggerisce gli strumenti dai file, senza inserimento manuale.",
+        title: "Registra 50 spartiti in 1 minuto",
+        body: "Seleziona una cartella con spartiti e il gioco è fatto: Ottavada legge il nome del brano dalla cartella e suggerisce gli strumenti dai file. Niente più inserimenti uno per uno.",
       },
       duplicatas: {
-        title: "Basta duplicati",
-        body: 'Il sistema non permette due nomi uguali di brano o spartito. Se ci sono due violini, saranno "Violino I" e "Violino II", mai un "Violino" duplicato.',
+        title: "Basta 'Violino' duplicati",
+        body: 'Il sistema non permette due nomi uguali di brano o spartito. Se ci sono due violini, saranno "Violino I" e "Violino II", mai un "Violino" ripetuto in prova.',
       },
       busca: {
-        title: "Ricerca e filtri intelligenti",
-        body: "Trova qualsiasi brano in pochi secondi. Cerca per nome o filtra per categoria, compositore e arrangiatore. Perfetto per grandi raccolte.",
+        title: "Trova qualsiasi brano in 3 secondi",
+        body: "Cerca per nome o filtra per categoria, compositore e arrangiatore. Perfetto per orchestre con centinaia di spartiti.",
       },
       ordem: {
-        title: "Ordine standard della partitura",
-        body: "Quando espandi un brano, gli spartiti appaiono nell’ordine standard della partitura: legni, ottoni, percussioni, tastiere e archi, secondo lo standard mondiale \"Standard Orchestral Score Order\".",
+        title: "Ordine di partitura standard mondiale",
+        body: "All’apertura di un brano, gli spartiti appaiono nell’ordine standard: legni, ottoni, percussioni, tastiere e archi. Lo stesso \"Standard Orchestral Score Order\" usato in tutto il mondo.",
       },
       favoritos: {
-        title: "Preferiti e sezioni rapide",
-        body: 'Segna i brani come preferiti e accedi a sezioni come "Non consentite" o "Senza spartiti" con un solo clic. Tutto a portata di mano.',
+        title: "Preferiti e scorciatoie in un clic",
+        body: "Segna i brani come preferiti e accedi rapidamente a sezioni come \"Non consentite\" o \"Senza spartiti\". Tutto a portata di mano.",
       },
       ferramentas: {
-        title: "Usa gli strumenti che già conosci",
-        body: "Funziona con Finale, MuseScore, Sibelius, Dorico e qualsiasi file in PDF, MusicXML o MIDI. Continui a lavorare a modo tuo, senza cambiare nulla.",
+        title: "Continua a usare i tuoi strumenti preferiti",
+        body: "Funziona con Finale, MuseScore, Sibelius, Dorico e qualsiasi file in PDF, MusicXML o MIDI. Non cambi nulla nel tuo flusso di lavoro.",
       },
       maestro: {
-        title: "Modalità computer del direttore",
-        body: "Controllo totale del repertorio: aggiungi, modifica e rimuovi brani e spartiti. Decidi cosa va sul computer delle prove e cosa resta solo con te.",
+        title: "Computer del direttore: controllo totale",
+        body: "Aggiungi, modifica e rimuovi brani e spartiti. Decidi cosa va in prova e cosa resta solo con te. Comandi tu, sempre.",
       },
       ensaio: {
-        title: "Modalità computer delle prove",
-        body: "Consultazione rapida per la sala prove. I file possono essere solo visualizzati, senza il rischio di modificare o eliminare nulla per sbaglio.",
+        title: "Computer delle prove: sola lettura, zero rischi",
+        body: "Consultazione rapida per la sala prove. I file possono essere solo visualizzati, senza rischio che qualcuno elimini o modifichi uno spartito per sbaglio.",
       },
       nuvem: {
-        title: "Cloud gratuito",
-        body: "Sincronizza tramite Google Drive o Koofr senza costi aggiuntivi. I file vengono compressi prima dell’invio, occupando meno spazio ed essendo più veloci.",
+        title: "Sincronizza gratis con Google Drive o Koofr",
+        body: "Nessun costo di abbonamento. I file vengono compressi prima dell’invio: occupano meno spazio e si sincronizzano più velocemente.",
       },
       backup: {
-        title: "Computer rotto? Nulla è perduto",
-        body: "Formattato o cambiato macchina? I tuoi spartiti, categorie, compositori e arrangiatori sono al sicuro. Un clic e tutto torna al suo posto.",
+        title: "PC formattato? Tutto torna in 1 clic",
+        body: "Hai cambiato macchina o formattato il computer? I tuoi spartiti, categorie, compositori e arrangiatori sono al sicuro. Un clic e tutto torna al suo posto, nelle stesse cartelle di prima.",
       },
       arquivos: {
         title: "I tuoi file, le tue regole",
         body: "Ottavada non rinomina cartelle né file, non sposta nulla e non impone formati proprietari. La tua organizzazione manuale è rispettata e incoraggiata.",
       },
       desinstalou: {
-        title: "Disinstallato? I tuoi file rimangono",
+        title: "Disinstallato? I tuoi spartiti restano",
         body: "Se un giorno decidi di non usarlo più, i tuoi spartiti rimangono esattamente dove erano, organizzati, accessibili e senza alcuna dipendenza da Ottavada.",
       },
       escolha: {
-        title: "Decidi tu cosa va alle prove",
-        body: "Non tutto deve andare sul computer delle prove. Scegli tu: questo spartito può essere inviato, bloccato o ignorato. Tu hai il controllo, sempre.",
+        title: "Decidi tu cosa va in prova",
+        body: "Non tutti gli spartiti devono andare sul computer delle prove. Scegli tu: inviare, bloccare o ignorare. Le bozze restano solo con te.",
       },
       idiomas: {
-        title: "Multi-lingua",
-        body: "Disponibile in portoghese, inglese, spagnolo, francese, italiano e tedesco, per servire musicisti di tutto il mondo.",
+        title: "In 6 lingue, dal Brasile alla Germania",
+        body: "Disponibile in portoghese, inglese, spagnolo, francese, italiano e tedesco. Per orchestre, bande e musicisti di tutto il mondo.",
       },
       gratuito: {
-        title: "Gratuito, senza trucchi",
-        body: "Totalmente gratuito per uso personale, orchestre, bande e istituzioni. Nessun abbonamento, nessun limite di brani e nessun server proprietario da mantenere.",
+        title: "Gratuito davvero. Senza trucchi.",
+        body: "100% gratuito per uso personale, orchestre, bande e istituzioni. Nessun abbonamento, nessun limite di brani, nessuna pubblicità e nessun server proprietario da mantenere.",
       },
       evolucao: {
-        title: "In costante evoluzione",
-        body: "Ottavada è in fase iniziale di sviluppo, ma riceve miglioramenti frequenti. Nuove funzionalità, correzioni e lingue vengono aggiunte in base al feedback degli utenti.",
+        title: "Aggiornato ogni settimana con il tuo feedback",
+        body: "Ottavada è in fase iniziale, ma riceve miglioramenti frequenti. Nuove funzionalità, correzioni e lingue vengono aggiunte in base alle richieste degli utenti.",
       },
       semLigar: {
-        title: "Senza tenere il computer acceso",
-        body: "Ogni computer accede al cloud per conto proprio. Non devi tenere acceso il computer del direttore per usare quello delle prove, la sincronizzazione avviene direttamente tramite il cloud.",
+        title: "Senza tenere il PC acceso 24 ore",
+        body: "Ogni computer accede al cloud per conto proprio. Non devi tenere acceso il computer del direttore per usare quello delle prove: la sincronizzazione avviene direttamente tramite il cloud.",
       },
       openSource: {
-        title: "Open source",
-        body: "Ottavada è open source. Puoi vedere il codice, suggerire modifiche e contribuire su GitHub.",
+        title: "Open source su GitHub, senza clausole nascoste",
+        body: "Il codice è aperto: puoi vederlo, suggerire modifiche e contribuire. Nessuna telemetria nascosta, nessuna raccolta dati.",
       },
       copias: {
-        title: "Copie locali",
-        body: "Gli spartiti sono salvati sul tuo computer. Accedi a tutto anche senza internet durante le prove. Veloce e senza dipendenza dal cloud.",
+        title: "Funziona offline in prova",
+        body: "Gli spartiti sono salvati sul tuo computer. Accedi a tutto anche senza internet durante le prove. Veloce, affidabile e senza dipendenza dal cloud nei momenti cruciali.",
       },
     },
     footer: {
@@ -728,39 +728,39 @@ export const home: Record<Locale, HomeMessages> = {
   },
   de: {
     meta: {
-      title: "Ottavada: Organisieren und synchronisieren Sie die Noten Ihres Orchesters",
+      title: "Ottavada: Schluss mit USB-Sticks und E-Mails in Ihrem Orchester",
       description:
-        "Ottavada ist eine kostenlose Software zum Verwalten, Organisieren und Synchronisieren von Noten. Für Windows 10 und 11.",
-      ogTitle: "Ottavada: Noten organisieren und synchronisieren",
+        "Müde von USB-Sticks, E-Mails und doppelten Noten? Ottavada organisiert, synchronisiert und schützt das Repertoire Ihres Orchesters zwischen Computern. Kostenlos, Open Source und ohne Abo. Für Windows 10 und 11.",
+      ogTitle: "Ottavada: Schluss mit USB-Sticks und doppelten Noten",
       ogDescription:
-        "Kostenlose Software zum Verwalten und Synchronisieren der Noten Ihres Orchesters.",
+        "Kostenlose und Open-Source-Software zum Organisieren und Synchronisieren des Repertoires Ihres Orchesters. Ohne Abo, ohne eigenen Server.",
     },
-    brand: { name: "Ottavada", tagline: "Ihr Noten-Dirigent" },
+    brand: { name: "Ottavada", tagline: "Der digitale Dirigent Ihres Orchesters" },
     nav: { download: "Jetzt herunterladen", docs: "Dokumentation" },
     hero: {
-      line1: "Finden, organisieren und teilen Sie",
-      line2: "Noten ohne Duplikate zwischen Ihren Computern.",
+      line1: "Schluss mit USB-Sticks und E-Mails.",
+      line2: "Ihre Noten synchronisiert, ohne Duplikate.",
       subtitle:
-        "Verwalten, organisieren und synchronisieren Sie Ihre Noten. Ohne Komplikationen, ohne Ihre Arbeitsweise zu ändern.",
+        "Ottavada organisiert, synchronisiert und schützt das Repertoire Ihres Orchesters zwischen allen Computern. Ohne Komplikationen, ohne Abo, ohne Änderung Ihrer Arbeitsweise.",
       cta: "Kostenlos herunterladen",
-      ctaNote: "Für Windows 10 und 11",
+      ctaNote: "Für Windows 10 und 11 — 100 % kostenlos",
     },
     sections: {
       descricao: {
-        kicker: "Warum Ottavada?",
-        text: "Die Notenverwaltung erfolgt immer noch manuell: E-Mail-Austausch, USB-Sticks, doppelte Ordner und Noten sowie die ständige Gefahr, die richtige Version zu verlieren. Ottavada löst das.",
+        kicker: "Müde, Noten zu verlieren?",
+        text: "Notenverwaltung passiert immer noch manuell: E-Mail-Austausch, USB-Sticks, doppelte Ordner und das ständige Risiko, in der Probe die falsche Version zu spielen. Ottavada löst das ein für alle Mal.",
       },
       organizacao: {
         kicker: "Organisation",
-        heading: "Verschwenden Sie nie wieder Zeit mit der Suche nach der richtigen Note.",
+        heading: "Finden Sie jede Note in Sekunden. Schluss mit der Schnitzeljagd.",
       },
       sincronizacao: {
         kicker: "Synchronisation",
-        heading: "Eine App. Zwei Nutzungsmodi.",
+        heading: "Eine App. Zwei Modi: Dirigent und Probe.",
       },
       liberdade: {
         kicker: "Freiheit",
-        heading: "Sie sind nicht an das Werkzeug gebunden.",
+        heading: "Ihre Dateien, Ihre Regeln. Keine Bindung.",
       },
       maisVantagens: {
         kicker: "Weitere Vorteile",
@@ -769,80 +769,80 @@ export const home: Record<Locale, HomeMessages> = {
     },
     benefits: {
       indexacao: {
-        title: "Intelligente Indizierung",
-        body: "Wählen Sie einfach einen Ordner mit Noten aus. Ottavada erkennt den Namen des Stücks anhand des Ordners und schlägt Instrumente aus den Dateien vor, ohne manuelle Eingabe.",
+        title: "50 Noten in 1 Minute erfassen",
+        body: "Wählen Sie einfach einen Ordner mit Noten und fertig: Ottavada liest den Stücknamen aus dem Ordner und schlägt die Instrumente aus den Dateien vor. Kein Eintippen mehr, eines nach dem anderen.",
       },
       duplicatas: {
-        title: "Schluss mit Duplikaten",
-        body: "Das System erlaubt keine zwei gleichen Namen für ein Stück oder eine Note. Wenn es zwei Violinen gibt, heißen sie „Violine I“ und „Violine II“, niemals eine doppelte „Violine“.",
+        title: "Schluss mit doppelter „Violine“",
+        body: "Das System erlaubt keine zwei gleichen Namen für ein Stück oder eine Note. Wenn es zwei Violinen gibt, heißen sie „Violine I“ und „Violine II“, niemals eine doppelte „Violine“ in der Probe.",
       },
       busca: {
-        title: "Intelligente Suche und Filter",
-        body: "Finden Sie jedes Stück in Sekunden. Suchen Sie nach Namen oder filtern Sie nach Kategorie, Komponist und Arrangeur. Perfekt für große Sammlungen.",
+        title: "Jedes Stück in 3 Sekunden finden",
+        body: "Suchen Sie nach Namen oder filtern Sie nach Kategorie, Komponist und Arrangeur. Perfekt für Orchester mit Hunderten von Noten.",
       },
       ordem: {
-        title: "Standard-Partituranordnung",
-        body: "Beim Erweitern eines Stücks erscheinen die Noten in der Standard-Partituranordnung: Holzbläser, Blechbläser, Schlagzeug, Tasteninstrumente und Streicher, gemäß dem weltweiten Standard \"Standard Orchestral Score Order\".",
+        title: "Weltweiter Standard-Notenlayout",
+        body: "Beim Öffnen eines Stücks erscheinen die Noten in der Standardreihenfolge: Holzbläser, Blechbläser, Schlagzeug, Tasteninstrumente und Streicher. Derselbe „Standard Orchestral Score Order“, der weltweit verwendet wird.",
       },
       favoritos: {
-        title: "Favoriten und Schnellbereiche",
-        body: "Markieren Sie Stücke als Favoriten und greifen Sie mit einem Klick auf Bereiche wie „Nicht erlaubt“ oder „Keine Noten“ zu. Alles griffbereit.",
+        title: "Favoriten und Verknüpfungen mit einem Klick",
+        body: "Markieren Sie Stücke als Favoriten und greifen Sie schnell auf Bereiche wie „Nicht erlaubt“ oder „Keine Noten“ zu. Alles in Reichweite.",
       },
       ferramentas: {
-        title: "Nutzen Sie die Werkzeuge, die Sie bereits kennen",
-        body: "Funktioniert mit Finale, MuseScore, Sibelius, Dorico und jeder Datei in PDF, MusicXML oder MIDI. Sie arbeiten weiter wie gewohnt, ohne etwas zu ändern.",
+        title: "Behalten Sie Ihre Lieblingswerkzeuge",
+        body: "Funktioniert mit Finale, MuseScore, Sibelius, Dorico und jeder Datei in PDF, MusicXML oder MIDI. Sie ändern nichts in Ihrem Workflow.",
       },
       maestro: {
-        title: "Modus Dirigenten-Computer",
-        body: "Volle Kontrolle über das Repertoire: Fügen Sie Stücke und Noten hinzu, bearbeiten und entfernen Sie sie. Legen Sie fest, was auf den Proben-Computer geht und was nur bei Ihnen bleibt.",
+        title: "Dirigenten-Computer: volle Kontrolle",
+        body: "Fügen Sie Stücke und Noten hinzu, bearbeiten und entfernen Sie sie. Legen Sie fest, was zur Probe geht und was nur bei Ihnen bleibt. Sie haben das Sagen, immer.",
       },
       ensaio: {
-        title: "Modus Proben-Computer",
-        body: "Schnelle Referenz für den Probenraum. Dateien können nur angezeigt werden, ohne Gefahr, versehentlich etwas zu ändern oder zu löschen.",
+        title: "Proben-Computer: schreibgeschützt, null Risiko",
+        body: "Schnelle Referenz für den Probenraum. Dateien können nur angezeigt werden, ohne dass jemand versehentlich eine Note löscht oder ändert.",
       },
       nuvem: {
-        title: "Kostenlose Cloud",
-        body: "Synchronisieren Sie über Google Drive oder Koofr ohne zusätzliche Kosten. Dateien werden vor dem Hochladen komprimiert, nehmen weniger Platz ein und sind schneller.",
+        title: "Kostenlos synchronisieren via Google Drive oder Koofr",
+        body: "Keine Abo-Gebühren. Dateien werden vor dem Hochladen komprimiert: weniger Speicherplatz und schnellere Synchronisation.",
       },
       backup: {
-        title: "Computer kaputt? Nichts ist verloren",
-        body: "Formatiert oder das Gerät gewechselt? Ihre Noten, Kategorien, Komponisten und Arrangeure sind sicher. Ein Klick und alles ist wieder an seinem Platz.",
+        title: "PC formatiert? Alles in 1 Klick zurück",
+        body: "Computer gewechselt oder formatiert? Ihre Noten, Kategorien, Komponisten und Arrangeure sind gesichert. Ein Klick und alles ist wieder da, in denselben Ordnern wie zuvor.",
       },
       arquivos: {
         title: "Ihre Dateien, Ihre Regeln",
         body: "Ottavada benennt weder Ordner noch Dateien um, verschiebt nichts und erzwingt keine proprietären Formate. Ihre manuelle Organisation wird respektiert und gefördert.",
       },
       desinstalou: {
-        title: "Deinstalliert? Ihre Dateien bleiben",
+        title: "Deinstalliert? Ihre Noten bleiben",
         body: "Wenn Sie sich eines Tages entscheiden, es nicht mehr zu verwenden, bleiben Ihre Noten genau dort, wo sie waren, organisiert, zugänglich und ohne Abhängigkeit von Ottavada.",
       },
       escolha: {
         title: "Sie entscheiden, was zur Probe geht",
-        body: "Nicht alles muss auf den Proben-Computer. Sie wählen: Diese Partitur kann gesendet, blockiert oder ignoriert werden. Sie haben die Kontrolle, immer.",
+        body: "Nicht jede Note muss auf den Proben-Computer. Sie wählen: senden, blockieren oder ignorieren. Entwürfe bleiben nur bei Ihnen.",
       },
       idiomas: {
-        title: "Mehrsprachig",
-        body: "Verfügbar in Portugiesisch, Englisch, Spanisch, Französisch, Italienisch und Deutsch, um Musiker aus aller Welt zu bedienen.",
+        title: "In 6 Sprachen, von Brasilien bis Deutschland",
+        body: "Verfügbar in Portugiesisch, Englisch, Spanisch, Französisch, Italienisch und Deutsch. Für Orchester, Bands und Musiker weltweit.",
       },
       gratuito: {
-        title: "Kostenlos, ohne Tricks",
-        body: "Vollständig kostenlos für den persönlichen Gebrauch, Orchester, Bands und Institutionen. Kein Abonnement, keine Stückbegrenzung und kein eigener Server zu warten.",
+        title: "Wirklich kostenlos. Ohne Tricks.",
+        body: "100 % kostenlos für den persönlichen Gebrauch, Orchester, Bands und Institutionen. Kein Abo, keine Stückbegrenzung, keine Werbung und kein eigener Server zu warten.",
       },
       evolucao: {
-        title: "In ständiger Weiterentwicklung",
-        body: "Ottavada befindet sich in einer frühen Entwicklungsphase, erhält jedoch häufig Verbesserungen. Neue Funktionen, Korrekturen und Sprachen werden basierend auf dem Feedback der Benutzer hinzugefügt.",
+        title: "Wöchentlich mit Ihrem Feedback aktualisiert",
+        body: "Ottavada befindet sich in einer frühen Phase, erhält jedoch häufig Verbesserungen. Neue Funktionen, Korrekturen und Sprachen werden basierend auf Nutzeranfragen hinzugefügt.",
       },
       semLigar: {
-        title: "Ohne den Computer eingeschaltet zu lassen",
+        title: "PC muss nicht 24/7 laufen",
         body: "Jeder Computer greift eigenständig auf die Cloud zu. Sie müssen den Dirigenten-Computer nicht eingeschaltet lassen, damit der Proben-Computer funktioniert — die Synchronisation erfolgt direkt über die Cloud.",
       },
       openSource: {
-        title: "Open Source",
-        body: "Ottavada ist Open Source. Sie können den Code einsehen, Änderungen vorschlagen und auf GitHub beitragen.",
+        title: "Open Source auf GitHub, ohne Kleingedrucktes",
+        body: "Der Code ist offen: Sie können ihn einsehen, Änderungen vorschlagen und beitragen. Keine versteckte Telemetrie, keine Datenerfassung.",
       },
       copias: {
-        title: "Lokale Kopien",
-        body: "Die Noten werden auf Ihrem Computer gespeichert. Greifen Sie auch ohne Internet während der Probe auf alles zu. Schnell und ohne Cloud-Abhängigkeit.",
+        title: "Funktioniert offline in der Probe",
+        body: "Die Noten werden auf Ihrem Computer gespeichert. Greifen Sie auch ohne Internet während der Probe auf alles zu. Schnell, zuverlässig und in entscheidenden Momenten unabhängig von der Cloud.",
       },
     },
     footer: {
