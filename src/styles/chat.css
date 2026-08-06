@@ -177,6 +177,54 @@
     margin-top: 0.3rem;
     opacity: 0.6;
 }
+.chat-bubble.bot p {
+    margin: 0 0 0.5rem;
+}
+.chat-bubble.bot p:last-child {
+    margin-bottom: 0;
+}
+.chat-bubble.bot a {
+    color: var(--brand-strong, #5c8cff);
+    text-decoration: underline;
+    word-break: break-all;
+}
+.chat-bubble.bot a:hover {
+    opacity: 0.85;
+}
+.chat-bubble.bot ul,
+.chat-bubble.bot ol {
+    margin: 0 0 0.5rem;
+    padding-left: 1.25rem;
+}
+.chat-bubble.bot ul:last-child,
+.chat-bubble.bot ol:last-child {
+    margin-bottom: 0;
+}
+.chat-bubble.bot li {
+    margin-bottom: 0.2rem;
+}
+.chat-bubble.bot li:last-child {
+    margin-bottom: 0;
+}
+.chat-bubble.bot code {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+}
+.chat-bubble.bot pre {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 0 0 0.5rem;
+}
+.chat-bubble.bot pre:last-child {
+    margin-bottom: 0;
+}
+.chat-bubble.bot strong {
+    font-weight: 600;
+}
 
 /* Chat input area */
 .chat-input-area {

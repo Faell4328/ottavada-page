@@ -119,7 +119,11 @@ function init() {
   function addMessage(text: string, type: "user" | "bot" | "thinking") {
     const bubble = document.createElement("div");
     bubble.className = `chat-bubble ${type}`;
-    bubble.textContent = text;
+    if (type === "bot") {
+      bubble.innerHTML = text;
+    } else {
+      bubble.textContent = text;
+    }
     messages!.appendChild(bubble);
     messages!.scrollTop = messages!.scrollHeight;
     return bubble;
