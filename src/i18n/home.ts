@@ -73,7 +73,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gerencie, organize e sincronize suas partituras. Sem complicações, sem mudar a sua forma de trabalhar.",
       cta: "Baixar gratuitamente",
-      ctaNote: "Para Windows 10 e 11 (x32 e x64)",
+      ctaNote: "Para Windows 10 e 11",
     },
     sections: {
       descricao: {
@@ -207,7 +207,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Manage, organize and sync your sheet music. No complications, no changing the way you work.",
       cta: "Download for free",
-      ctaNote: "For Windows 10 and 11 (x32 and x64)",
+      ctaNote: "For Windows 10 and 11",
     },
     sections: {
       descricao: {
@@ -341,7 +341,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gestiona, organiza y sincroniza tus partituras. Sin complicaciones, sin cambiar tu forma de trabajar.",
       cta: "Descargar gratis",
-      ctaNote: "Para Windows 10 y 11 (x32 y x64)",
+      ctaNote: "Para Windows 10 y 11",
     },
     sections: {
       descricao: {
@@ -475,7 +475,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gérez, organisez et synchronisez vos partitions. Sans complications, sans changer votre façon de travailler.",
       cta: "Télécharger gratuitement",
-      ctaNote: "Pour Windows 10 et 11 (x32 et x64)",
+      ctaNote: "Pour Windows 10 et 11",
     },
     sections: {
       descricao: {
@@ -609,7 +609,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Gestisci, organizza e sincronizza i tuoi spartiti. Senza complicazioni, senza cambiare il tuo modo di lavorare.",
       cta: "Scarica gratuitamente",
-      ctaNote: "Per Windows 10 e 11 (x32 e x64)",
+      ctaNote: "Per Windows 10 e 11",
     },
     sections: {
       descricao: {
@@ -743,7 +743,7 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Verwalten, organisieren und synchronisieren Sie Ihre Noten. Ohne Komplikationen, ohne Ihre Arbeitsweise zu ändern.",
       cta: "Kostenlos herunterladen",
-      ctaNote: "Für Windows 10 und 11 (x32 und x64)",
+      ctaNote: "Für Windows 10 und 11",
     },
     sections: {
       descricao: {

@@ -18,6 +18,15 @@ export type ChatLabels = {
   error: string;
 };
 
+export type NotFoundLabels = {
+  badge: string;
+  heading: string;
+  backHome: string;
+  imgAlt: string;
+  title: string;
+  description: string;
+};
+
 export type UiMessages = {
   brand: string;
   nav: string;
@@ -25,6 +34,7 @@ export type UiMessages = {
   openSidebar: string;
   closeSidebar: string;
   chat: ChatLabels;
+  notFound: NotFoundLabels;
 };
 
 const ptBR: UiMessages = {
@@ -53,6 +63,14 @@ const ptBR: UiMessages = {
     name: "OttavoBot",
     notice: "O OttavoBot é um LLM, que pode demorar alguns segundos ou minutos dependendo da sua pergunta, por favor tenha paciência.",
     error: "Desculpe, ocorreu um erro. Tente novamente.",
+  },
+  notFound: {
+    badge: "Erro 404",
+    heading: "Página não encontrada",
+    backHome: "Voltar para a página inicial",
+    imgAlt: "Ilustração de página não encontrada",
+    title: "Score Maestro — Página não encontrada",
+    description: "Página não encontrada.",
   },
 };
 
@@ -83,6 +101,14 @@ const en: UiMessages = {
     notice: "OttavoBot is an LLM, which may take a few seconds or minutes depending on your question, please be patient.",
     error: "Sorry, an error occurred. Please try again.",
   },
+  notFound: {
+    badge: "Error 404",
+    heading: "Page not found",
+    backHome: "Back to home page",
+    imgAlt: "Page not found illustration",
+    title: "Score Maestro — Page not found",
+    description: "Page not found.",
+  },
 };
 
 const es: UiMessages = {
@@ -111,6 +137,14 @@ const es: UiMessages = {
     name: "OttavoBot",
     notice: "OttavoBot es un LLM, puede tardar unos segundos o minutos dependiendo de tu pregunta, por favor ten paciencia.",
     error: "Lo siento, ocurrió un error. Intenta de nuevo.",
+  },
+  notFound: {
+    badge: "Error 404",
+    heading: "Página no encontrada",
+    backHome: "Volver a la página de inicio",
+    imgAlt: "Ilustración de página no encontrada",
+    title: "Score Maestro — Página no encontrada",
+    description: "Página no encontrada.",
   },
 };
 
@@ -141,6 +175,14 @@ const fr: UiMessages = {
     notice: "OttavoBot est un LLM, cela peut prendre quelques secondes ou minutes selon votre question, merci de votre patience.",
     error: "Désolé, une erreur s’est produite. Veuillez réessayer.",
   },
+  notFound: {
+    badge: "Erreur 404",
+    heading: "Page introuvable",
+    backHome: "Retour à la page d’accueil",
+    imgAlt: "Illustration de page introuvable",
+    title: "Score Maestro — Page introuvable",
+    description: "Page introuvable.",
+  },
 };
 
 const it: UiMessages = {
@@ -170,6 +212,14 @@ const it: UiMessages = {
     notice: "OttavoBot è un LLM, potrebbe impiegare alcuni secondi o minuti a seconda della tua domanda, per favore abbi pazienza.",
     error: "Spiacenti, si è verificato un errore. Riprova.",
   },
+  notFound: {
+    badge: "Errore 404",
+    heading: "Pagina non trovata",
+    backHome: "Torna alla home page",
+    imgAlt: "Illustrazione pagina non trovata",
+    title: "Score Maestro — Pagina non trovata",
+    description: "Pagina non trovata.",
+  },
 };
 
 const de: UiMessages = {
@@ -198,6 +248,14 @@ const de: UiMessages = {
     name: "OttavoBot",
     notice: "OttavoBot ist ein LLM, die Antwort kann je nach Frage einige Sekunden oder Minuten dauern, bitte haben Sie Geduld.",
     error: "Entschuldigung, ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+  },
+  notFound: {
+    badge: "Fehler 404",
+    heading: "Seite nicht gefunden",
+    backHome: "Zurück zur Startseite",
+    imgAlt: "Illustration Seite nicht gefunden",
+    title: "Score Maestro — Seite nicht gefunden",
+    description: "Seite nicht gefunden.",
   },
 };
 

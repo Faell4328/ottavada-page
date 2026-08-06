@@ -2,4 +2,4 @@ export * from "./config";
 export { home, type HomeMessages, type BenefitMessages } from "./home";
 export { thanks, type ThanksMessages } from "./thanks";
 export { docs, type DocsMessages } from "./docs";
-export { ui, type UiMessages, type ChatLabels } from "./ui";
+export { ui, type UiMessages, type ChatLabels, type NotFoundLabels } from "./ui";

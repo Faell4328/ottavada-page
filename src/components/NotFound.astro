@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import { withLocale, type Locale } from "~/i18n";
+import { ui, withLocale, type Locale } from "~/i18n";
 import "~/styles/notfound.css";
 
 interface Props {
@@ -8,26 +8,27 @@ interface Props {
 }
 
 const { locale } = Astro.props as Props;
+const { notFound } = ui[locale];
 const homeHref = withLocale("/", locale);
 ---
 
 <BaseLayout
   locale={locale}
-  title="Score Maestro — Página não encontrada"
-  description="Página não encontrada."
+  title={notFound.title}
+  description={notFound.description}
   bodyClass="notfound-body"
 >
   <main class="notfound-layout">
     <img
       src="/notfound.avif"
-      alt="Ilustração de página não encontrada"
+      alt={notFound.imgAlt}
       class="bg-img"
     />
     <section class="notfound-card">
-      <div class="notfound-badge">Erro 404</div>
-      <h1>Página não encontrada</h1>
+      <div class="notfound-badge">{notFound.badge}</div>
+      <h1>{notFound.heading}</h1>
       <div class="btn-wrap">
-        <a href={homeHref} class="button">Voltar para a página inicial</a>
+        <a href={homeHref} class="button">{notFound.backHome}</a>
       </div>
     </section>
   </main>

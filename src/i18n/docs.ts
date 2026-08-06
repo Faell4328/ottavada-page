@@ -12,6 +12,7 @@ export type DocsMessages = {
     adicionandoMusica: string;
     enviandoNuvem: string;
     realizandoAlteracoes: string;
+    backup: string;
     baixando: string;
     suporte: string;
   };
@@ -38,6 +39,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Adicionando música",
       enviandoNuvem: "Enviando para a nuvem",
       realizandoAlteracoes: "Realizando alterações",
+      backup: "Recuperando backup",
       baixando: "Baixando no computador de ensaio",
       suporte: "Suporte",
     },
@@ -65,6 +67,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Adding music",
       enviandoNuvem: "Sending to the cloud",
       realizandoAlteracoes: "Making changes",
+      backup: "Restoring a backup",
       baixando: "Downloading on the rehearsal computer",
       suporte: "Support",
     },
@@ -92,6 +95,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Añadir música",
       enviandoNuvem: "Enviando a la nube",
       realizandoAlteracoes: "Realizando cambios",
+      backup: "Recuperando la copia de seguridad",
       baixando: "Descargando en la computadora de ensayo",
       suporte: "Soporte",
     },
@@ -119,6 +123,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Ajouter un morceau",
       enviandoNuvem: "Envoi vers le cloud",
       realizandoAlteracoes: "Effectuer des modifications",
+      backup: "Restauration d’une sauvegarde",
       baixando: "Téléchargement sur l’ordinateur de répétition",
       suporte: "Support",
     },
@@ -146,6 +151,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Aggiungere musica",
       enviandoNuvem: "Invio al cloud",
       realizandoAlteracoes: "Apportare modifiche",
+      backup: "Ripristino del backup",
       baixando: "Download sul computer delle prove",
       suporte: "Supporto",
     },
@@ -173,6 +179,7 @@ export const docs: Record<Locale, DocsMessages> = {
       adicionandoMusica: "Musik hinzufügen",
       enviandoNuvem: "In die Cloud senden",
       realizandoAlteracoes: "Änderungen vornehmen",
+      backup: "Backup wiederherstellen",
       baixando: "Auf dem Proben-Computer herunterladen",
       suporte: "Support",
     },

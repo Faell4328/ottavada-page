@@ -1,5 +1,6 @@
 ---
 import NotFound from "~/components/NotFound.astro";
-const locale = "en" as const;
+import { getPathLocale, DEFAULT_LOCALE } from "~/i18n";
+const locale = getPathLocale(Astro.url.pathname) ?? DEFAULT_LOCALE;
 ---
 <NotFound locale={locale} />
