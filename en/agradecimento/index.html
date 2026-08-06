@@ -29,8 +29,8 @@
         try { localStorage.setItem(STORAGE_KEY, target); } catch (e) {}
         window.location.replace("/" + target + cleanRest + window.location.search + window.location.hash);
       })();
-    </script><link rel="stylesheet" href="/_astro/LangSwitcher.cEly3-g1.css"><link rel="stylesheet" href="/_astro/_page_.isq3i6Om.css"></head><body><main class="thanks-layout"><div class="container" style="max-width: 56rem"><div class="thanks-card"><div><h1>Thank you for your interest in the tool!</h1><p class="countdown-text" id="thanks-countdown">You will be redirected to the homepage in 5 seconds...</p></div><div class="thanks-video-wrap"><video src="/files/agradecimento.mp4" autoplay muted playsinline preload="auto"></video></div></div></div></main><script>(function(){const countdownTpl = "You will be redirected to the homepage in {seconds} seconds...";
-const homeHref = "/en/";
+    </script><link rel="stylesheet" href="/_astro/LangSwitcher.cEly3-g1.css"><link rel="stylesheet" href="/_astro/_page_.isq3i6Om.css"></head><body><main class="thanks-layout"><div class="container" style="max-width: 56rem"><div class="thanks-card"><div><h1>Thank you for your interest in the tool!</h1><p class="countdown-text" id="thanks-countdown">You will be redirected to the documentation in 5 seconds...</p></div><div class="thanks-video-wrap"><video src="/files/agradecimento.mp4" autoplay muted playsinline preload="auto"></video></div></div></div></main><script>(function(){const countdownTpl = "You will be redirected to the documentation in {seconds} seconds...";
+const docsHref = "/en/docs/";
 
     (function () {
       const downloadLink = document.createElement("a");
@@ -46,7 +46,7 @@ const homeHref = "/en/";
         seconds -= 1;
         if (seconds <= 0) {
           clearInterval(timerId);
-          window.location.href = homeHref;
+          window.location.href = docsHref;
           return;
         }
         if (countdownEl) {
