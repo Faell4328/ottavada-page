@@ -42,7 +42,7 @@ const ogUrl = `https://ottavada.com/${locale}/`;
   <section class="hero-section">
     <h1 class="hero-title">
       <span class="hero-title-line" id="hero-line-1"></span>
-      <span class="hero-title-line" id="hero-line-2"></span>
+      {t.hero.line2 && <span class="hero-title-line" id="hero-line-2"></span>}
     </h1>
     <p class="hero-subtitle">{t.hero.subtitle}</p>
     <div class="hero-cta">
@@ -63,6 +63,14 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       </div>
     </section>
 
+    <section class="section" id="para-quem">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.paraQuem.kicker}</span>
+        <p class="description-text">{t.sections.paraQuem.text}</p>
+        <div class="section-divider"></div>
+      </div>
+    </section>
+
     <section class="section" id="organizacao">
       <div style="text-align: center;">
         <span class="section-kicker">{t.sections.organizacao.kicker}</span>
@@ -76,6 +84,10 @@ const ogUrl = `https://ottavada.com/${locale}/`;
         <article class="benefit-card">
           <div><span class="card-icon">🎯</span><h3>{t.benefits.duplicatas.title}</h3></div>
           <div class="card-body"><p>{t.benefits.duplicatas.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🧹</span><h3>{t.benefits.duplicacoesOcultas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.duplicacoesOcultas.body}</p></div>
         </article>
         <article class="benefit-card">
           <div><span class="card-icon">🔍</span><h3>{t.benefits.busca.title}</h3></div>
