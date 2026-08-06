@@ -1,0 +1,60 @@
+# Ottavada
+
+> Ottavada is a free, open source desktop application for Windows 10 and 11 that organizes, syncs and protects the sheet music repertoire of orchestras, bands and institutions across multiple computers — using Google Drive or Koofr as a free cloud bridge. No subscription, no proprietary server, no data collection.
+
+The official site is available in 6 languages: Portuguese (Brazil), English, Spanish, French, Italian and German. Ottavada is in early development but receives frequent updates based on user feedback.
+
+## Pages
+
+- [Home (EN)](https://ottavada.com/en/): Landing page with the product pitch, key features and benefits
+- [Home (PT-BR)](https://ottavada.com/pt-BR/): Página inicial
+- [Home (ES)](https://ottavada.com/es/): Página de inicio
+- [Home (FR)](https://ottavada.com/fr/): Page d'accueil
+- [Home (IT)](https://ottavada.com/it/): Pagina iniziale
+- [Home (DE)](https://ottavada.com/de/): Startseite
+- [Documentation (EN)](https://ottavada.com/en/docs/): Full user guide — installation, first steps, adding music, syncing to the cloud, making changes, backup, support
+- [Documentation (PT-BR)](https://ottavada.com/pt-BR/docs/): Documentação completa em português
+- [Documentation (ES)](https://ottavada.com/es/docs/): Documentación en español
+- [Documentation (FR)](https://ottavada.com/fr/docs/): Documentation en français
+- [Documentation (IT)](https://ottavada.com/it/docs/): Documentazione in italiano
+- [Documentation (DE)](https://ottavada.com/de/docs/): Dokumentation auf Deutsch
+
+## Key features
+
+- Smart folder indexing: point Ottavada at a folder and it auto-suggests song and instrument names from filenames
+- No duplicates: the system blocks identical song or instrument names in the same scope
+- Smart search and filters by name, category, composer, arranger
+- Standard Orchestral Score Order (woodwinds, brass, percussion, keyboards, strings) automatically applied
+- Two usage modes in one app: Conductor computer (full control) and Rehearsal computer (read-only, zero risk)
+- Free cloud sync via Google Drive or Koofr — files are compressed before upload
+- Works with the tools musicians already use: Finale, MuseScore, Sibelius, Dorico, plus PDF, MusicXML and MIDI files
+- Local copies on every computer — works offline during rehearsal, no cloud dependency at the critical moment
+- 1-click restore: format a PC or buy a new one and the entire repertoire comes back in the original folders
+- No file renaming, no proprietary formats, no lock-in — uninstalling leaves files untouched
+- 6 languages: pt-BR, en, es, fr, it, de
+- 100% free, no subscription, no ads, no limit on pieces
+- Open source on GitHub: https://github.com/Faell4328/ottavada
+
+## How it works (short)
+
+1. Install on a "Conductor computer" (admin) and one or more "Rehearsal computers" (read-only)
+2. On the Conductor, point Ottavada at a folder of sheet music — it indexes songs and instruments from the folder/file naming pattern
+3. Click the sync icon to send changes to the cloud (Google Drive or Koofr)
+4. On each Rehearsal computer, click sync to pull the latest repertoire
+5. The Conductor controls per-piece and per-score status (send allowed, send not allowed, ignored)
+
+## Limitations (intentional)
+
+- Only one Conductor computer can sync at a time. Multiple Rehearsal computers are unlimited.
+- No central server — cloud sync uses the user's own Google Drive or Koofr account.
+- Currently Windows 10 and 11 only.
+
+## Contact
+
+- Email: ottavada@hotmail.com
+- GitHub: https://github.com/Faell4328/ottavada
+- Developer: Rhafaell (faell4328)
+
+## Full content
+
+For the complete concatenated content of the site (home + documentation) in plain Markdown, see [llms-full.txt](https://ottavada.com/llms-full.txt).
