@@ -51,52 +51,52 @@ function renderInline(input: string): string {
       <nav class="docs-sidebar-nav" aria-label={t.nav.topics}>
         <ul>
           <li>
-            <a href="#mensagem-desenvolvedor" class="docs-nav-link" data-nav-target="mensagem-desenvolvedor"
+            <a href={`#${t.anchors.mensagem}`} class="docs-nav-link" data-nav-target={t.anchors.mensagem}
               ><span class="docs-nav-text">{t.toc.mensagem}</span></a
             >
           </li>
           <li>
-            <a href="#conceitos-essenciais" class="docs-nav-link" data-nav-target="conceitos-essenciais"
+            <a href={`#${t.anchors.conceitos}`} class="docs-nav-link" data-nav-target={t.anchors.conceitos}
               ><span class="docs-nav-text">{t.toc.conceitos}</span></a
             >
           </li>
           <li>
-            <a href="#instalacao" class="docs-nav-link" data-nav-target="instalacao"
+            <a href={`#${t.anchors.instalacao}`} class="docs-nav-link" data-nav-target={t.anchors.instalacao}
               ><span class="docs-nav-text">{t.toc.instalacao}</span></a
             >
           </li>
           <li>
-            <a href="#primeiros-passos" class="docs-nav-link" data-nav-target="primeiros-passos"
+            <a href={`#${t.anchors.primeirosPassos}`} class="docs-nav-link" data-nav-target={t.anchors.primeirosPassos}
               ><span class="docs-nav-text">{t.toc.primeirosPassos}</span></a
             >
           </li>
           <li>
-            <a href="#adicionando-musica" class="docs-nav-link" data-nav-target="adicionando-musica"
+            <a href={`#${t.anchors.adicionandoMusica}`} class="docs-nav-link" data-nav-target={t.anchors.adicionandoMusica}
               ><span class="docs-nav-text">{t.toc.adicionandoMusica}</span></a
             >
           </li>
           <li>
-            <a href="#enviando-nuvem" class="docs-nav-link" data-nav-target="enviando-nuvem"
+            <a href={`#${t.anchors.enviandoNuvem}`} class="docs-nav-link" data-nav-target={t.anchors.enviandoNuvem}
               ><span class="docs-nav-text">{t.toc.enviandoNuvem}</span></a
             >
           </li>
           <li>
-            <a href="#realizando-alteracoes" class="docs-nav-link" data-nav-target="realizando-alteracoes"
+            <a href={`#${t.anchors.realizandoAlteracoes}`} class="docs-nav-link" data-nav-target={t.anchors.realizandoAlteracoes}
               ><span class="docs-nav-text">{t.toc.realizandoAlteracoes}</span></a
             >
           </li>
           <li>
-            <a href="#backup" class="docs-nav-link" data-nav-target="backup"
+            <a href={`#${t.anchors.backup}`} class="docs-nav-link" data-nav-target={t.anchors.backup}
               ><span class="docs-nav-text">{t.toc.backup}</span></a
             >
           </li>
           <li>
-            <a href="#baixando" class="docs-nav-link" data-nav-target="baixando"
+            <a href={`#${t.anchors.baixando}`} class="docs-nav-link" data-nav-target={t.anchors.baixando}
               ><span class="docs-nav-text">{t.toc.baixando}</span></a
             >
           </li>
           <li>
-            <a href="#suporte" class="docs-nav-link" data-nav-target="suporte"
+            <a href={`#${t.anchors.suporte}`} class="docs-nav-link" data-nav-target={t.anchors.suporte}
               ><span class="docs-nav-text">{t.toc.suporte}</span></a
             >
           </li>
@@ -107,7 +107,7 @@ function renderInline(input: string): string {
 
   <main class="container docs-main">
     <article class="docs-content">
-      <section class="docs-section" id="mensagem-desenvolvedor">
+      <section class="docs-section" id={t.anchors.mensagem}>
         <h2>{t.toc.mensagem}</h2>
         {locale !== "pt-BR" && locale !== "en" && <p class="docs-images-note">{t.imagesNote}</p>}
         {
@@ -118,7 +118,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="conceitos-essenciais">
+      <section class="docs-section" id={t.anchors.conceitos}>
         <h2>{t.toc.conceitos}</h2>
         {
           t.sections.conceitos.blocks.map((block: DocsBlock) => {
@@ -155,7 +155,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="instalacao">
+      <section class="docs-section" id={t.anchors.instalacao}>
         <h2>{t.toc.instalacao}</h2>
         {
           t.sections.instalacao.blocks.map((block: DocsBlock) => {
@@ -192,7 +192,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="primeiros-passos">
+      <section class="docs-section" id={t.anchors.primeirosPassos}>
         <h2>{t.toc.primeirosPassos}</h2>
         {
           t.sections.primeirosPassos.blocks.map((block: DocsBlock) => {
@@ -229,7 +229,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="adicionando-musica">
+      <section class="docs-section" id={t.anchors.adicionandoMusica}>
         <h2>{t.toc.adicionandoMusica}</h2>
         {
           t.sections.adicionandoMusica.blocks.map((block: DocsBlock) => {
@@ -266,7 +266,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="enviando-nuvem">
+      <section class="docs-section" id={t.anchors.enviandoNuvem}>
         <h2>{t.toc.enviandoNuvem}</h2>
         {
           t.sections.enviandoNuvem.blocks.map((block: DocsBlock) => {
@@ -303,7 +303,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="realizando-alteracoes">
+      <section class="docs-section" id={t.anchors.realizandoAlteracoes}>
         <h2>{t.toc.realizandoAlteracoes}</h2>
         {
           t.sections.realizandoAlteracoes.blocks.map((block: DocsBlock) => {
@@ -340,7 +340,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="baixando">
+      <section class="docs-section" id={t.anchors.baixando}>
         <h2>{t.toc.baixando}</h2>
         {
           t.sections.baixando.blocks.map((block: DocsBlock) => {
@@ -377,7 +377,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="backup">
+      <section class="docs-section" id={t.anchors.backup}>
         <h2>{t.toc.backup}</h2>
         {
           t.sections.backup.blocks.map((block: DocsBlock) => {
@@ -414,7 +414,7 @@ function renderInline(input: string): string {
         }
       </section>
 
-      <section class="docs-section" id="suporte">
+      <section class="docs-section" id={t.anchors.suporte}>
         <h2>{t.toc.suporte}</h2>
         {
           t.sections.suporte.blocks.map((block: DocsBlock) => {

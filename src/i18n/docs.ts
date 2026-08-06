@@ -23,6 +23,18 @@ export type DocsMessages = {
     baixando: string;
     suporte: string;
   };
+  anchors: {
+    mensagem: string;
+    conceitos: string;
+    instalacao: string;
+    primeirosPassos: string;
+    adicionandoMusica: string;
+    enviandoNuvem: string;
+    realizandoAlteracoes: string;
+    backup: string;
+    baixando: string;
+    suporte: string;
+  };
   callouts: { note: string; important: string; tip: string };
   imagesNote: string;
   footer: { email: string; dev: string };
@@ -61,6 +73,18 @@ const ptBR: DocsMessages = {
     backup: "Recuperando backup",
     baixando: "Baixando no computador de ensaio",
     suporte: "Suporte",
+  },
+  anchors: {
+    mensagem: "mensagem-desenvolvedor",
+    conceitos: "conceitos-essenciais",
+    instalacao: "instalacao",
+    primeirosPassos: "primeiros-passos",
+    adicionandoMusica: "adicionando-musica",
+    enviandoNuvem: "enviando-nuvem",
+    realizandoAlteracoes: "realizando-alteracoes",
+    backup: "backup",
+    baixando: "baixando",
+    suporte: "suporte",
   },
   callouts: { note: "Observação", important: "Importante", tip: "Dica" },
   imagesNote: "Desculpe, mas em seu idioma as imagens estão apenas em inglês.",
@@ -485,6 +509,18 @@ const en: DocsMessages = {
     baixando: "Downloading on the rehearsal computer",
     suporte: "Support",
   },
+  anchors: {
+    mensagem: "message-from-developer",
+    conceitos: "essential-concepts",
+    instalacao: "installation",
+    primeirosPassos: "first-steps",
+    adicionandoMusica: "adding-music",
+    enviandoNuvem: "sending-to-cloud",
+    realizandoAlteracoes: "making-changes",
+    backup: "restoring-backup",
+    baixando: "downloading-rehearsal",
+    suporte: "support",
+  },
   callouts: { note: "Note", important: "Important", tip: "Tip" },
   imagesNote: "Sorry, but in your language the images are only available in English.",
   footer: {
@@ -827,7 +863,7 @@ const en: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Now, when you click the **sync** icon again, the report will show the status as **send allowed** and the score will be sent to the rehearsal computers. The process is the same as described in [sending to the cloud](#enviando-nuvem).",
+          text: "Now, when you click the **sync** icon again, the report will show the status as **send allowed** and the score will be sent to the rehearsal computers. The process is the same as described in [sending to the cloud](#sending-to-cloud).",
         },
       ],
     },
@@ -836,7 +872,7 @@ const en: DocsMessages = {
         { kind: "h3", text: "Installing on the rehearsal computer" },
         {
           kind: "p",
-          text: "The process is the same as the [installation](#instalacao) topic. The only difference is that, in step 2, you select **rehearsal computer**.",
+          text: "The process is the same as the [installation](#installation) topic. The only difference is that, in step 2, you select **rehearsal computer**.",
         },
         {
           kind: "callout",
@@ -862,7 +898,7 @@ const en: DocsMessages = {
         },
         {
           kind: "p",
-          text: "You need to install Ottavada on the computer and follow the [installation](#instalacao) procedures; in step 2, select **conductor's computer** and use the same cloud provider and credentials (for Koofr, email and app password; for Google Drive, account access).",
+          text: "You need to install Ottavada on the computer and follow the [installation](#installation) procedures; in step 2, select **conductor's computer** and use the same cloud provider and credentials (for Koofr, email and app password; for Google Drive, account access).",
         },
         { kind: "p", text: "Just go to settings (gear icon)." },
         { kind: "image", name: "image25", alt: "" },
@@ -907,6 +943,18 @@ const es: DocsMessages = {
     backup: "Recuperar copia de seguridad",
     baixando: "Descargar en el ordenador de ensayo",
     suporte: "Soporte",
+  },
+  anchors: {
+    mensagem: "mensaje-desarrollador",
+    conceitos: "conceptos-esenciales",
+    instalacao: "instalacion",
+    primeirosPassos: "primeros-pasos",
+    adicionandoMusica: "anadir-musica",
+    enviandoNuvem: "enviando-nube",
+    realizandoAlteracoes: "realizando-cambios",
+    backup: "recuperar-backup",
+    baixando: "descargar-ensayo",
+    suporte: "soporte",
   },
   callouts: { note: "Nota", important: "Importante", tip: "Consejo" },
   imagesNote: "Lo sentimos, pero en tu idioma las imágenes solo están disponibles en inglés.",
@@ -1250,7 +1298,7 @@ const es: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Ahora, al hacer clic de nuevo en el icono de **sync**, el informe mostrará el estado como **envío permitido** y la partitura se enviará a los ordenadores de ensayo. El proceso es el mismo que el descrito en [enviando a la nube](#enviando-nuvem).",
+          text: "Ahora, al hacer clic de nuevo en el icono de **sync**, el informe mostrará el estado como **envío permitido** y la partitura se enviará a los ordenadores de ensayo. El proceso es el mismo que el descrito en [enviando a la nube](#enviando-nube).",
         },
       ],
     },
@@ -1259,7 +1307,7 @@ const es: DocsMessages = {
         { kind: "h3", text: "Instalación en el ordenador de ensayo" },
         {
           kind: "p",
-          text: "El proceso es el mismo que el del tema de [instalación](#instalacao). La única diferencia es que, en el paso 2, seleccionas **ordenador de ensayo**.",
+          text: "El proceso es el mismo que el del tema de [instalación](#instalacion). La única diferencia es que, en el paso 2, seleccionas **ordenador de ensayo**.",
         },
         {
           kind: "callout",
@@ -1285,7 +1333,7 @@ const es: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Necesitas instalar Ottavada en el ordenador y seguir los procedimientos del [instalación](#instalacao); en el paso 2, seleccionas **ordenador del director** y usas el mismo proveedor de nube y credenciales (en el caso de Koofr, email y contraseña de la aplicación; en el caso de Google Drive, acceso a la cuenta).",
+          text: "Necesitas instalar Ottavada en el ordenador y seguir los procedimientos del [instalación](#instalacion); en el paso 2, seleccionas **ordenador del director** y usas el mismo proveedor de nube y credenciales (en el caso de Koofr, email y contraseña de la aplicación; en el caso de Google Drive, acceso a la cuenta).",
         },
         { kind: "p", text: "Solo ve a la configuración (icono de engranaje)." },
         { kind: "image", name: "image25", alt: "" },
@@ -1330,6 +1378,18 @@ const fr: DocsMessages = {
     backup: "Restaurer une sauvegarde",
     baixando: "Téléchargement sur l’ordinateur de répétition",
     suporte: "Support",
+  },
+  anchors: {
+    mensagem: "message-developpeur",
+    conceitos: "concepts-essentiels",
+    instalacao: "installation",
+    primeirosPassos: "premiers-pas",
+    adicionandoMusica: "ajouter-musique",
+    enviandoNuvem: "envoi-cloud",
+    realizandoAlteracoes: "effectuer-modifications",
+    backup: "restaurer-sauvegarde",
+    baixando: "telechargement-ordinateur",
+    suporte: "support",
   },
   callouts: { note: "Remarque", important: "Important", tip: "Astuce" },
   imagesNote: "Désolé, mais dans votre langue les images ne sont disponibles qu’en anglais.",
@@ -1673,7 +1733,7 @@ const fr: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Maintenant, en cliquant à nouveau sur l’icône de **sync**, le rapport affichera le statut **envoi autorisé** et la partition sera envoyée vers les ordinateurs de répétition. Le processus est le même que celui décrit dans [envoi vers le cloud](#enviando-nuvem).",
+          text: "Maintenant, en cliquant à nouveau sur l’icône de **sync**, le rapport affichera le statut **envoi autorisé** et la partition sera envoyée vers les ordinateurs de répétition. Le processus est le même que celui décrit dans [envoi vers le cloud](#envoi-cloud).",
         },
       ],
     },
@@ -1682,7 +1742,7 @@ const fr: DocsMessages = {
         { kind: "h3", text: "Installation sur l’ordinateur de répétition" },
         {
           kind: "p",
-          text: "Le processus est le même que celui du sujet [installation](#instalacao). La seule différence est qu’à la 2ᵉ étape, vous sélectionnez **ordinateur de répétition**.",
+          text: "Le processus est le même que celui du sujet [installation](#installation). La seule différence est qu’à la 2ᵉ étape, vous sélectionnez **ordinateur de répétition**.",
         },
         {
           kind: "callout",
@@ -1708,7 +1768,7 @@ const fr: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Vous devez installer Ottavada sur l’ordinateur et suivre les procédures de l’[installation](#instalacao) ; à la 2ᵉ étape, sélectionnez **ordinateur du chef** et utilisez le même fournisseur de cloud et les mêmes identifiants (pour Koofr, e-mail et mot de passe de l’application ; pour Google Drive, accès au compte).",
+          text: "Vous devez installer Ottavada sur l’ordinateur et suivre les procédures de l’[installation](#installation) ; à la 2ᵉ étape, sélectionnez **ordinateur du chef** et utilisez le même fournisseur de cloud et les mêmes identifiants (pour Koofr, e-mail et mot de passe de l’application ; pour Google Drive, accès au compte).",
         },
         { kind: "p", text: "Allez simplement dans les paramètres (icône d’engrenage)." },
         { kind: "image", name: "image25", alt: "" },
@@ -1753,6 +1813,18 @@ const it: DocsMessages = {
     backup: "Ripristinare un backup",
     baixando: "Download sul computer delle prove",
     suporte: "Supporto",
+  },
+  anchors: {
+    mensagem: "messaggio-sviluppatore",
+    conceitos: "concetti-essenziali",
+    instalacao: "installazione",
+    primeirosPassos: "primi-passi",
+    adicionandoMusica: "aggiungere-musica",
+    enviandoNuvem: "invio-cloud",
+    realizandoAlteracoes: "apportare-modifiche",
+    backup: "ripristinare-backup",
+    baixando: "download-computer-prove",
+    suporte: "supporto",
   },
   callouts: { note: "Nota", important: "Importante", tip: "Suggerimento" },
   imagesNote: "Ci scusiamo, ma nella tua lingua le immagini sono disponibili solo in inglese.",
@@ -2096,7 +2168,7 @@ const it: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Ora, cliccando di nuovo sull’icona di **sync**, il report mostrerà lo stato come **invio consentito** e lo spartito verrà inviato ai computer delle prove. Il processo è lo stesso descritto in [invio al cloud](#enviando-nuvem).",
+          text: "Ora, cliccando di nuovo sull’icona di **sync**, il report mostrerà lo stato come **invio consentito** e lo spartito verrà inviato ai computer delle prove. Il processo è lo stesso descritto in [invio al cloud](#invio-cloud).",
         },
       ],
     },
@@ -2105,7 +2177,7 @@ const it: DocsMessages = {
         { kind: "h3", text: "Installazione sul computer delle prove" },
         {
           kind: "p",
-          text: "Il processo è lo stesso dell’argomento [installazione](#instalacao). L’unica differenza è che, nella 2ª fase, selezioni **computer delle prove**.",
+          text: "Il processo è lo stesso dell’argomento [installazione](#installazione). L’unica differenza è che, nella 2ª fase, selezioni **computer delle prove**.",
         },
         {
           kind: "callout",
@@ -2131,7 +2203,7 @@ const it: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Devi installare Ottavada sul computer e seguire le procedure di [installazione](#instalacao); nella 2ª fase, seleziona **computer del maestro** e usa lo stesso provider cloud e le stesse credenziali (nel caso di Koofr, email e password dell’app; nel caso di Google Drive, accesso all’account).",
+          text: "Devi installare Ottavada sul computer e seguire le procedure di [installazione](#installazione); nella 2ª fase, seleziona **computer del maestro** e usa lo stesso provider cloud e le stesse credenziali (nel caso di Koofr, email e password dell’app; nel caso di Google Drive, accesso all’account).",
         },
         { kind: "p", text: "Vai semplicemente nelle impostazioni (icona dell’ingranaggio)." },
         { kind: "image", name: "image25", alt: "" },
@@ -2176,6 +2248,18 @@ const de: DocsMessages = {
     backup: "Backup wiederherstellen",
     baixando: "Auf dem Proben-Computer herunterladen",
     suporte: "Support",
+  },
+  anchors: {
+    mensagem: "nachricht-entwickler",
+    conceitos: "grundlegende-konzepte",
+    instalacao: "installation",
+    primeirosPassos: "erste-schritte",
+    adicionandoMusica: "musik-hinzufugen",
+    enviandoNuvem: "in-cloud-senden",
+    realizandoAlteracoes: "anderungen-vornehmen",
+    backup: "backup-wiederherstellen",
+    baixando: "herunterladen-proben-computer",
+    suporte: "support",
   },
   callouts: { note: "Hinweis", important: "Wichtig", tip: "Tipp" },
   imagesNote: "Entschuldigung, aber in Ihrer Sprache sind die Bilder nur auf Englisch verfügbar.",
@@ -2519,7 +2603,7 @@ const de: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Wenn Sie nun erneut auf das **Sync**-Symbol klicken, zeigt der Bericht den Status als **Senden erlaubt** und die Partitur wird an die Proben-Computer gesendet. Der Vorgang ist derselbe wie unter [in die Cloud senden](#enviando-nuvem) beschrieben.",
+          text: "Wenn Sie nun erneut auf das **Sync**-Symbol klicken, zeigt der Bericht den Status als **Senden erlaubt** und die Partitur wird an die Proben-Computer gesendet. Der Vorgang ist derselbe wie unter [in die Cloud senden](#in-cloud-senden) beschrieben.",
         },
       ],
     },
@@ -2528,7 +2612,7 @@ const de: DocsMessages = {
         { kind: "h3", text: "Installation auf dem Proben-Computer" },
         {
           kind: "p",
-          text: "Der Vorgang ist derselbe wie im Thema [Installation](#instalacao). Der einzige Unterschied ist, dass Sie in Schritt 2 **Proben-Computer** auswählen.",
+          text: "Der Vorgang ist derselbe wie im Thema [Installation](#installation). Der einzige Unterschied ist, dass Sie in Schritt 2 **Proben-Computer** auswählen.",
         },
         {
           kind: "callout",
@@ -2554,7 +2638,7 @@ const de: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Sie müssen Ottavada auf dem Computer installieren und die Schritte aus der [Installation](#instalacao) befolgen; in Schritt 2 wählen Sie **Dirigenten-Computer** und verwenden denselben Cloud-Anbieter und dieselben Anmeldedaten (für Koofr: E-Mail und App-Passwort; für Google Drive: Kontozugriff).",
+          text: "Sie müssen Ottavada auf dem Computer installieren und die Schritte aus der [Installation](#installation) befolgen; in Schritt 2 wählen Sie **Dirigenten-Computer** und verwenden denselben Cloud-Anbieter und dieselben Anmeldedaten (für Koofr: E-Mail und App-Passwort; für Google Drive: Kontozugriff).",
         },
         { kind: "p", text: "Gehen Sie einfach zu den Einstellungen (Zahnrad-Symbol)." },
         { kind: "image", name: "image25", alt: "" },
