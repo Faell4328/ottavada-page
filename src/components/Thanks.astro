@@ -8,7 +8,7 @@ interface Props {
 
 const { locale } = Astro.props as Props;
 const t = thanks[locale];
-const homeHref = withLocale("/", locale);
+const docsHref = withLocale("/docs", locale);
 ---
 
 <ThanksLayout locale={locale} title={t.meta.title} description={t.meta.description}>
@@ -22,13 +22,7 @@ const homeHref = withLocale("/", locale);
           </p>
         </div>
         <div class="thanks-video-wrap">
-          <video
-            src="/files/agradecimento.mp4"
-            autoplay
-            muted
-            playsinline
-            preload="auto"
-          ></video>
+          <video src="/files/agradecimento.mp4" autoplay muted playsinline preload="auto"></video>
         </div>
       </div>
     </div>
@@ -37,7 +31,7 @@ const homeHref = withLocale("/", locale);
   <script
     define:vars={{
       countdownTpl: t.countdown,
-      homeHref,
+      docsHref,
     }}
   >
     (function () {
@@ -54,7 +48,7 @@ const homeHref = withLocale("/", locale);
         seconds -= 1;
         if (seconds <= 0) {
           clearInterval(timerId);
-          window.location.href = homeHref;
+          window.location.href = docsHref;
           return;
         }
         if (countdownEl) {

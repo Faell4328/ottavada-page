@@ -13,8 +13,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Obrigado pelo interesse no Ottavada.",
     },
     heading: "Obrigado pelo interesse na ferramenta!",
-    countdown:
-      "Você será redirecionado à página inicial em {seconds} segundos...",
+    countdown: "Você será redirecionado à documentação em {seconds} segundos...",
   },
   en: {
     meta: {
@@ -22,7 +21,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Thank you for your interest in Ottavada.",
     },
     heading: "Thank you for your interest in the tool!",
-    countdown: "You will be redirected to the homepage in {seconds} seconds...",
+    countdown: "You will be redirected to the documentation in {seconds} seconds...",
   },
   es: {
     meta: {
@@ -30,7 +29,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Gracias por tu interés en Ottavada.",
     },
     heading: "¡Gracias por tu interés en la herramienta!",
-    countdown: "Serás redirigido a la página principal en {seconds} segundos...",
+    countdown: "Serás redirigido a la documentación en {seconds} segundos...",
   },
   fr: {
     meta: {
@@ -39,7 +38,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
     },
     heading: "Merci de votre intérêt pour l’outil !",
     countdown:
-      "Vous serez redirigé vers la page d’accueil dans {seconds} secondes...",
+      "Vous serez redirigé vers la documentation dans {seconds} secondes...",
   },
   it: {
     meta: {
@@ -47,7 +46,7 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Grazie per il tuo interesse in Ottavada.",
     },
     heading: "Grazie per il tuo interesse nello strumento!",
-    countdown: "Sarai reindirizzato alla pagina iniziale tra {seconds} secondi...",
+    countdown: "Sarai reindirizzato alla documentazione tra {seconds} secondi...",
   },
   de: {
     meta: {
@@ -55,6 +54,6 @@ export const thanks: Record<Locale, ThanksMessages> = {
       description: "Vielen Dank für Ihr Interesse an Ottavada.",
     },
     heading: "Vielen Dank für Ihr Interesse an dem Tool!",
-    countdown: "Sie werden in {seconds} Sekunden zur Startseite weitergeleitet...",
+    countdown: "Sie werden in {seconds} Sekunden zur Dokumentation weitergeleitet...",
   },
 };
