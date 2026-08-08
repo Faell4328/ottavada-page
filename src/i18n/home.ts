@@ -37,7 +37,9 @@ export type HomeMessages = {
     line2: string;
     subtitle: string;
     cta: string;
+    ctaOs: string;
     ctaNote: string;
+    otherSystem: string;
   };
   sections: {
     descricao: { kicker: string; text: string };
@@ -62,7 +64,7 @@ export const home: Record<Locale, HomeMessages> = {
     meta: {
       title: "Ottavada: chega de trabalho manual com suas músicas e partituras",
       description:
-        "Cansado de trabalho manual com partituras? O Ottavada organiza, sincroniza e protege o repertório da sua orquestra entre computadores. Gratuito, open source e sem assinatura. Para Windows 10 e 11.",
+        "Cansado de trabalho manual com partituras? O Ottavada organiza, sincroniza e protege o repertório da sua orquestra entre computadores. Gratuito, open source e sem assinatura. Para Windows, Linux e Mac.",
       ogTitle: "Ottavada: Chega de trabalho manual com suas partituras",
       ogDescription:
         "Software gratuito e open source para organizar e sincronizar o repertório da sua orquestra. Sem assinatura, sem servidor próprio.",
@@ -75,7 +77,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Seu repertório sempre organizado e sincronizado entre maestro e ensaio. Sem mudar nada no seu jeito de trabalhar.",
       cta: "Baixar gratuitamente",
-      ctaNote: "Para Windows 10 e 11 — 100% gratuito",
+      ctaOs: "Baixar para %s",
+      ctaNote: "Para Windows, Linux e Mac — 100% gratuito",
+      otherSystem: "Caso seja outro sistema operacional",
     },
     sections: {
       descricao: {
@@ -204,7 +208,7 @@ export const home: Record<Locale, HomeMessages> = {
     meta: {
       title: "Ottavada: no more manual work with your songs and sheet music",
       description:
-        "Tired of manual work with sheet music? Ottavada organizes, syncs and protects your orchestra's repertoire across computers. Free, open source, no subscription. For Windows 10 and 11.",
+        "Tired of manual work with sheet music? Ottavada organizes, syncs and protects your orchestra's repertoire across computers. Free, open source, no subscription. For Windows, Linux and Mac.",
       ogTitle: "Ottavada: No more manual work with your sheet music",
       ogDescription:
         "Free and open source software to organize, sync and share your orchestra's repertoire. No subscription, no proprietary server.",
@@ -217,7 +221,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Your repertoire always organized and synced between conductor and rehearsal. No changing the way you work.",
       cta: "Download for free",
-      ctaNote: "For Windows 10 and 11 — 100% free",
+      ctaOs: "Download for %s",
+      ctaNote: "For Windows, Linux and Mac — 100% free",
+      otherSystem: "Using another operating system?",
     },
     sections: {
       descricao: {
@@ -346,7 +352,7 @@ export const home: Record<Locale, HomeMessages> = {
     meta: {
       title: "Ottavada: basta de trabajo manual con tus canciones y partituras",
       description:
-        "¿Cansado del trabajo manual con partituras? Ottavada organiza, sincroniza y protege el repertorio de tu orquesta entre ordenadores. Gratuito, open source y sin suscripción. Para Windows 10 y 11.",
+        "¿Cansado del trabajo manual con partituras? Ottavada organiza, sincroniza y protege el repertorio de tu orquesta entre ordenadores. Gratuito, open source y sin suscripción. Para Windows, Linux y Mac.",
       ogTitle: "Ottavada: Basta de trabajo manual con tus partituras",
       ogDescription:
         "Software gratuito y open source para organizar, sincronizar y compartir el repertorio de tu orquesta. Sin suscripción, sin servidor propio.",
@@ -359,7 +365,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Tu repertorio siempre organizado y sincronizado entre director y ensayo. Sin cambiar tu forma de trabajar.",
       cta: "Descargar gratis",
-      ctaNote: "Para Windows 10 y 11 — 100% gratuito",
+      ctaOs: "Descargar para %s",
+      ctaNote: "Para Windows, Linux y Mac — 100% gratuito",
+      otherSystem: "¿Usas otro sistema operativo?",
     },
     sections: {
       descricao: {
@@ -488,7 +496,7 @@ export const home: Record<Locale, HomeMessages> = {
     meta: {
       title: "Ottavada : assez de travail manuel avec vos morceaux et partitions",
       description:
-        "Marre du travail manuel avec vos partitions ? Ottavada organise, synchronise et protège le répertoire de votre orchestre entre ordinateurs. Gratuit, open source et sans abonnement. Pour Windows 10 et 11.",
+        "Marre du travail manuel avec vos partitions ? Ottavada organise, synchronise et protège le répertoire de votre orchestre entre ordinateurs. Gratuit, open source et sans abonnement. Pour Windows, Linux et Mac.",
       ogTitle: "Ottavada : Assez de travail manuel avec vos partitions",
       ogDescription:
         "Logiciel gratuit et open source pour organiser, synchroniser et partager le répertoire de votre orchestre. Sans abonnement, sans serveur propriétaire.",
@@ -501,7 +509,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Votre répertoire toujours organisé et synchronisé entre chef et répétition. Sans changer votre façon de travailler.",
       cta: "Télécharger gratuitement",
-      ctaNote: "Pour Windows 10 et 11 — 100 % gratuit",
+      ctaOs: "Télécharger pour %s",
+      ctaNote: "Pour Windows, Linux et Mac — 100 % gratuit",
+      otherSystem: "Vous utilisez un autre système d'exploitation ?",
     },
     sections: {
       descricao: {
@@ -631,7 +641,7 @@ export const home: Record<Locale, HomeMessages> = {
     meta: {
       title: "Ottavada: basta lavoro manuale con le tue canzoni e spartiti",
       description:
-        "Stanco del lavoro manuale con gli spartiti? Ottavada organizza, sincronizza e protegge il repertorio della tua orchestra tra computer. Gratuito, open source e senza abbonamento. Per Windows 10 e 11.",
+        "Stanco del lavoro manuale con gli spartiti? Ottavada organizza, sincronizza e protegge il repertorio della tua orchestra tra computer. Gratuito, open source e senza abbonamento. Per Windows, Linux e Mac.",
       ogTitle: "Ottavada: Basta lavoro manuale con i tuoi spartiti",
       ogDescription:
         "Software gratuito e open source per organizzare, sincronizzare e condividere il repertorio della tua orchestra. Senza abbonamento, senza server proprietario.",
@@ -644,7 +654,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Il tuo repertorio sempre organizzato e sincronizzato tra direttore e prove. Senza cambiare il tuo modo di lavorare.",
       cta: "Scarica gratuitamente",
-      ctaNote: "Per Windows 10 e 11 — 100% gratuito",
+      ctaOs: "Scarica per %s",
+      ctaNote: "Per Windows, Linux e Mac — 100% gratuito",
+      otherSystem: "Usi un altro sistema operativo?",
     },
     sections: {
       descricao: {
@@ -786,7 +798,9 @@ export const home: Record<Locale, HomeMessages> = {
       subtitle:
         "Ihr Repertoire immer organisiert und synchronisiert zwischen Dirigent und Probe. Ohne Ihre Arbeitsweise zu ändern.",
       cta: "Kostenlos herunterladen",
-      ctaNote: "Für Windows 10 und 11 — 100 % kostenlos",
+      ctaOs: "Herunterladen für %s",
+      ctaNote: "Für Windows, Linux und Mac — 100 % kostenlos",
+      otherSystem: "Anderes Betriebssystem?",
     },
     sections: {
       descricao: {

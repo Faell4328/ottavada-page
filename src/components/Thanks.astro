@@ -35,9 +35,13 @@ const docsHref = withLocale("/docs", locale);
     }}
   >
     (function () {
+      const isWindows = /windows/i.test(navigator.userAgent);
+      const downloadFile = isWindows ? "/ottavada.cmd" : "/ottavada.sh";
+      const downloadName = isWindows ? "ottavada.cmd" : "ottavada.sh";
+
       const downloadLink = document.createElement("a");
-      downloadLink.href = "/ottavada.cmd";
-      downloadLink.download = "ottavada.cmd";
+      downloadLink.href = downloadFile;
+      downloadLink.download = downloadName;
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);

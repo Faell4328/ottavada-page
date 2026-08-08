@@ -12,12 +12,13 @@ const { locale } = Astro.props as Props;
 const t = home[locale];
 const thanksHref = withLocale("/agradecimento", locale);
 const docsHref = withLocale("/docs", locale);
+const downloadHref = withLocale("/download", locale);
 
 const schemaJson = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Ottavada",
-  operatingSystem: "Windows",
+  operatingSystem: "Windows, Linux, Mac",
   applicationCategory: "Multimedia",
   description:
     "Organize e sincronize partituras da sua orquestra de forma simples e eficiente.",
@@ -46,11 +47,12 @@ const ogUrl = `https://ottavada.com/${locale}/`;
     </h1>
     <p class="hero-subtitle">{t.hero.subtitle}</p>
     <div class="hero-cta">
-      <a class="button" href={thanksHref} rel="noreferrer">
+      <a class="button" id="hero-cta-btn" href={thanksHref} rel="noreferrer">
         <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        <span>{t.hero.cta}</span>
+        <span id="hero-cta-text">{t.hero.cta}</span>
       </a>
       <span class="hero-cta-note">{t.hero.ctaNote}</span>
+      <a class="hero-other-system" href={downloadHref}>{t.hero.otherSystem}</a>
     </div>
   </section>
 
@@ -215,9 +217,21 @@ const ogUrl = `https://ottavada.com/${locale}/`;
     </footer>
   </main>
 
-  <script define:vars={{ line1: t.hero.line1, line2: t.hero.line2 }}>
+  <script define:vars={{ line1: t.hero.line1, line2: t.hero.line2, ctaOs: t.hero.ctaOs }}>
     (function () {
       "use strict";
+
+      (function detectOs() {
+        const ua = navigator.userAgent;
+        let osName = "";
+        if (/windows/i.test(ua)) osName = "Windows";
+        else if (/mac/i.test(ua)) osName = "Mac";
+        else if (/linux/i.test(ua)) osName = "Linux";
+        if (osName) {
+          const ctaText = document.getElementById("hero-cta-text");
+          if (ctaText) ctaText.textContent = ctaOs.replace("%s", osName);
+        }
+      })();
       const heroTitleLines = [line1, line2];
       const firstLineLength = heroTitleLines[0].length;
       const totalLength = firstLineLength + heroTitleLines[1].length;
