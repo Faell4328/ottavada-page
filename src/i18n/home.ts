@@ -79,7 +79,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Baixar gratuitamente",
       ctaOs: "Baixar para %s",
       ctaNote: "Para Windows, Linux e Mac — 100% gratuito",
-      otherSystem: "Caso seja outro sistema operacional",
+      otherSystem: "Todos os downloads",
     },
     sections: {
       descricao: {
@@ -223,7 +223,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Download for free",
       ctaOs: "Download for %s",
       ctaNote: "For Windows, Linux and Mac — 100% free",
-      otherSystem: "Using another operating system?",
+      otherSystem: "All downloads",
     },
     sections: {
       descricao: {
@@ -367,7 +367,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Descargar gratis",
       ctaOs: "Descargar para %s",
       ctaNote: "Para Windows, Linux y Mac — 100% gratuito",
-      otherSystem: "¿Usas otro sistema operativo?",
+      otherSystem: "Todos los downloads",
     },
     sections: {
       descricao: {
@@ -511,7 +511,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Télécharger gratuitement",
       ctaOs: "Télécharger pour %s",
       ctaNote: "Pour Windows, Linux et Mac — 100 % gratuit",
-      otherSystem: "Vous utilisez un autre système d'exploitation ?",
+      otherSystem: "Tous les téléchargements",
     },
     sections: {
       descricao: {
@@ -656,7 +656,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Scarica gratuitamente",
       ctaOs: "Scarica per %s",
       ctaNote: "Per Windows, Linux e Mac — 100% gratuito",
-      otherSystem: "Usi un altro sistema operativo?",
+      otherSystem: "Tutti i download",
     },
     sections: {
       descricao: {
@@ -800,7 +800,7 @@ export const home: Record<Locale, HomeMessages> = {
       cta: "Kostenlos herunterladen",
       ctaOs: "Herunterladen für %s",
       ctaNote: "Für Windows, Linux und Mac — 100 % kostenlos",
-      otherSystem: "Anderes Betriebssystem?",
+      otherSystem: "Alle Downloads",
     },
     sections: {
       descricao: {

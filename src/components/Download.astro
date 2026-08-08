@@ -11,7 +11,11 @@ const t = download[locale];
 
 const ogUrl = `https://ottavada.com/${locale}/download/`;
 
-const RELEASE_BASE = "https://github.com/Faell4328/ottavada/releases/download/v1.3";
+const RELEASE_BASE = import.meta.env.PUBLIC_RELEASE_BASE;
+const LINUX_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_LINUX_APPIMAGE}`;
+const MAC_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_MAC_DMG}`;
+const WIN_X32_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X32}`;
+const WIN_X64_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X64}`;
 ---
 
 <BaseLayout
@@ -27,20 +31,36 @@ const RELEASE_BASE = "https://github.com/Faell4328/ottavada/releases/download/v1
       <h1 class="dl-heading">{t.heading}</h1>
 
       <div class="dl-cards">
-        <a class="dl-card" href="/ottavada.cmd" download="ottavada.cmd">
-          <span class="dl-card-os">{t.windows}</span>
-          <span class="dl-card-arch">{t.archLabel.win}</span>
-          <span class="button button-sm">{t.downloadBtn}</span>
+        <div class="dl-card">
+          <div class="dl-card-head">
+            <span class="dl-card-os">{t.windows}</span>
+            <span class="dl-card-arch">{t.archLabel.win}</span>
+          </div>
+          <div class="dl-card-actions">
+            <a class="button button-sm" href="/ottavada.cmd" download="ottavada.cmd">{t.winInstaller}</a>
+          </div>
+          <div class="dl-card-actions">
+            <a class="button button-sm" href={WIN_X64_URL}>{t.winX64}</a>
+            <a class="button button-sm" href={WIN_X32_URL}>{t.winX32}</a>
+          </div>
+        </div>
+        <a class="dl-card" href={LINUX_URL}>
+          <div class="dl-card-head">
+            <span class="dl-card-os">{t.linux}</span>
+            <span class="dl-card-arch">{t.archLabel.linux}</span>
+          </div>
+          <div class="dl-card-actions">
+            <span class="button button-sm">{t.linuxBtn}</span>
+          </div>
         </a>
-        <a class="dl-card" href={RELEASE_BASE + "/Linux_Ottavada_x64.AppImage"}>
-          <span class="dl-card-os">{t.linux}</span>
-          <span class="dl-card-arch">{t.archLabel.linux}</span>
-          <span class="button button-sm">{t.downloadBtn}</span>
-        </a>
-        <a class="dl-card" href="/ottavada.sh" download="ottavada.sh">
-          <span class="dl-card-os">{t.mac}</span>
-          <span class="dl-card-arch">{t.archLabel.mac}</span>
-          <span class="button button-sm">{t.downloadBtn}</span>
+        <a class="dl-card" href={MAC_URL}>
+          <div class="dl-card-head">
+            <span class="dl-card-os">{t.mac}</span>
+            <span class="dl-card-arch">{t.archLabel.mac}</span>
+          </div>
+          <div class="dl-card-actions">
+            <span class="button button-sm">{t.macBtn}</span>
+          </div>
         </a>
       </div>
     </div>
@@ -67,9 +87,9 @@ const RELEASE_BASE = "https://github.com/Faell4328/ottavada/releases/download/v1
     }
     .dl-card {
       display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      padding: 1.25rem 1.5rem;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem 1.5rem;
       border-radius: 0.85rem;
       border: 1px solid rgba(255, 255, 255, 0.1);
       background: rgba(255, 255, 255, 0.03);
@@ -82,27 +102,45 @@ const RELEASE_BASE = "https://github.com/Faell4328/ottavada/releases/download/v1
       background: rgba(255, 255, 255, 0.06);
       border-color: rgba(255, 255, 255, 0.2);
     }
+    .dl-card-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     .dl-card-os {
       font-weight: 700;
-      font-size: 1.1rem;
-      min-width: 6rem;
+      font-size: 1.15rem;
     }
     .dl-card-arch {
       color: var(--muted);
       font-size: 0.85rem;
-      flex: 1;
+    }
+    .dl-card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
     }
     .button-sm {
-      padding: 0.4rem 1.2rem;
+      padding: 0.6rem 1.3rem;
       font-size: 0.85rem;
+      white-space: nowrap;
     }
     @media (max-width: 640px) {
       .dl-heading {
         font-size: 1.6rem;
       }
       .dl-card {
-        flex-wrap: wrap;
-        gap: 0.75rem;
+        padding: 1.25rem 1rem;
+      }
+      .dl-card-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .button-sm {
+        width: 100%;
       }
     }
   </style>

@@ -9,6 +9,9 @@ interface Props {
 const { locale } = Astro.props as Props;
 const t = thanks[locale];
 const docsHref = withLocale("/docs", locale);
+const RELEASE_BASE = import.meta.env.PUBLIC_RELEASE_BASE;
+const LINUX_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_LINUX_APPIMAGE}`;
+const MAC_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_MAC_DMG}`;
 ---
 
 <ThanksLayout locale={locale} title={t.meta.title} description={t.meta.description}>
@@ -32,16 +35,30 @@ const docsHref = withLocale("/docs", locale);
     define:vars={{
       countdownTpl: t.countdown,
       docsHref,
+      linuxUrl: LINUX_URL,
+      macUrl: MAC_URL,
     }}
   >
     (function () {
-      const isWindows = /windows/i.test(navigator.userAgent);
-      const downloadFile = isWindows ? "/ottavada.cmd" : "/ottavada.sh";
-      const downloadName = isWindows ? "ottavada.cmd" : "ottavada.sh";
+      const ua = (navigator.userAgent || "") + (navigator.platform || "");
+      const isWindows = /windows|win32|win64/i.test(ua);
+      const isMac = !isWindows && /mac|darwin/i.test(ua);
+
+      let downloadUrl;
+      let downloadName;
+      if (isWindows) {
+        downloadUrl = "/ottavada.cmd";
+        downloadName = "ottavada.cmd";
+      } else if (isMac) {
+        downloadUrl = macUrl;
+      } else {
+        downloadUrl = linuxUrl;
+      }
 
       const downloadLink = document.createElement("a");
-      downloadLink.href = downloadFile;
-      downloadLink.download = downloadName;
+      downloadLink.href = downloadUrl;
+      if (downloadName) downloadLink.download = downloadName;
+      downloadLink.style.display = "none";
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);
