@@ -29,17 +29,31 @@
         try { localStorage.setItem(STORAGE_KEY, target); } catch (e) {}
         window.location.replace("/" + target + cleanRest + window.location.search + window.location.hash);
       })();
-    </script><link rel="stylesheet" href="/_astro/_page_.DxTI_H_F.css"><link rel="stylesheet" href="/_astro/BaseLayout.cEly3-g1.css"></head><body><main class="thanks-layout"><div class="container" style="max-width: 56rem"><div class="thanks-card"><div><h1>Grazie per il tuo interesse nello strumento!</h1><p class="countdown-text" id="thanks-countdown">Sarai reindirizzato alla documentazione tra 5 secondi...</p></div><div class="thanks-video-wrap"><video src="/files/agradecimento.mp4" autoplay muted playsinline preload="auto"></video></div></div></div></main><script>(function(){const countdownTpl = "Sarai reindirizzato alla documentazione tra {seconds} secondi...";
+    </script><link rel="stylesheet" href="/_astro/_page_.CLoApDCP.css"><link rel="stylesheet" href="/_astro/BaseLayout.cEly3-g1.css"></head><body><main class="thanks-layout"><div class="container" style="max-width: 56rem"><div class="thanks-card"><div><h1>Grazie per il tuo interesse nello strumento!</h1><p class="countdown-text" id="thanks-countdown">Sarai reindirizzato alla documentazione tra 5 secondi...</p></div><div class="thanks-video-wrap"><video src="/files/agradecimento.mp4" autoplay muted playsinline preload="auto"></video></div></div></div></main><script>(function(){const countdownTpl = "Sarai reindirizzato alla documentazione tra {seconds} secondi...";
 const docsHref = "/it/docs/";
+const linuxUrl = "undefined/undefined";
+const macUrl = "undefined/undefined";
 
     (function () {
-      const isWindows = /windows/i.test(navigator.userAgent);
-      const downloadFile = isWindows ? "/ottavada.cmd" : "/ottavada.sh";
-      const downloadName = isWindows ? "ottavada.cmd" : "ottavada.sh";
+      const ua = (navigator.userAgent || "") + (navigator.platform || "");
+      const isWindows = /windows|win32|win64/i.test(ua);
+      const isMac = !isWindows && /mac|darwin/i.test(ua);
+
+      let downloadUrl;
+      let downloadName;
+      if (isWindows) {
+        downloadUrl = "/ottavada.cmd";
+        downloadName = "ottavada.cmd";
+      } else if (isMac) {
+        downloadUrl = macUrl;
+      } else {
+        downloadUrl = linuxUrl;
+      }
 
       const downloadLink = document.createElement("a");
-      downloadLink.href = downloadFile;
-      downloadLink.download = downloadName;
+      downloadLink.href = downloadUrl;
+      if (downloadName) downloadLink.download = downloadName;
+      downloadLink.style.display = "none";
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);
