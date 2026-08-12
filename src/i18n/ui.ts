@@ -69,7 +69,7 @@ const ptBR: UiMessages = {
     heading: "Página não encontrada",
     backHome: "Voltar para a página inicial",
     imgAlt: "Ilustração de página não encontrada",
-    title: "Score Maestro — Página não encontrada",
+    title: "Ottavada — Página não encontrada",
     description: "Página não encontrada.",
   },
 };
@@ -106,7 +106,7 @@ const en: UiMessages = {
     heading: "Page not found",
     backHome: "Back to home page",
     imgAlt: "Page not found illustration",
-    title: "Score Maestro — Page not found",
+    title: "Ottavada — Page not found",
     description: "Page not found.",
   },
 };
@@ -143,7 +143,7 @@ const es: UiMessages = {
     heading: "Página no encontrada",
     backHome: "Volver a la página de inicio",
     imgAlt: "Ilustración de página no encontrada",
-    title: "Score Maestro — Página no encontrada",
+    title: "Ottavada — Página no encontrada",
     description: "Página no encontrada.",
   },
 };
@@ -180,7 +180,7 @@ const fr: UiMessages = {
     heading: "Page introuvable",
     backHome: "Retour à la page d’accueil",
     imgAlt: "Illustration de page introuvable",
-    title: "Score Maestro — Page introuvable",
+    title: "Ottavada — Page introuvable",
     description: "Page introuvable.",
   },
 };
@@ -217,7 +217,7 @@ const it: UiMessages = {
     heading: "Pagina non trovata",
     backHome: "Torna alla home page",
     imgAlt: "Illustrazione pagina non trovata",
-    title: "Score Maestro — Pagina non trovata",
+    title: "Ottavada — Pagina non trovata",
     description: "Pagina non trovata.",
   },
 };
@@ -254,7 +254,7 @@ const de: UiMessages = {
     heading: "Seite nicht gefunden",
     backHome: "Zurück zur Startseite",
     imgAlt: "Illustration Seite nicht gefunden",
-    title: "Score Maestro — Seite nicht gefunden",
+    title: "Ottavada — Seite nicht gefunden",
     description: "Seite nicht gefunden.",
   },
 };
