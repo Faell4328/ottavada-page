@@ -10,6 +10,18 @@
     "windows-i686": {
       "signature": "ASSINATURA_X86",
       "url": "https://github.com/Faell4328/ottavada/releases/download/v0.11/Ottavada_0.11.0_x86-setup.exe"
+    },
+    "linux-x86_64": {
+      "signature": "ASSINATURA_LINUX_X64",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_x86_64.AppImage"
+    },
+    "darwin-x86_64": {
+      "signature": "ASSINATURA_MACOS_X64",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_x64.dmg"
+    },
+    "darwin-aarch64": {
+      "signature": "ASSINATURA_MACOS_ARM",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_aarch64.dmg"
     }
   }
 }
