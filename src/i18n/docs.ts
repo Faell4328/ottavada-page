@@ -71,7 +71,7 @@ const ptBR: DocsMessages = {
     enviandoNuvem: "Enviando para a nuvem",
     realizandoAlteracoes: "Realizando alterações",
     backup: "Recuperando backup",
-    baixando: "Baixando no computador de ensaio",
+    baixando: "Baixando no modo Consultar",
     suporte: "Suporte",
   },
   anchors: {
@@ -112,7 +112,7 @@ const ptBR: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "Como Funciona?" },
-        { kind: "h4", text: "Computador do Maestro" },
+        { kind: "h4", text: "Modo Gerir" },
         {
           kind: "p",
           text: "É o computador responsável por adicionar, editar e remover músicas, partituras, categorias, compositores, arranjadores e enviar backups para o provedor de nuvem.",
@@ -120,27 +120,32 @@ const ptBR: DocsMessages = {
         { kind: "h4", text: "Provedor de Nuvem" },
         {
           kind: "p",
-          text: "É o intermediador entre os computadores. Ele recebe os arquivos enviados pelo **Computador do Maestro** e os repassa para os outros computadores.",
+          text: "É o intermediador entre os computadores. Ele recebe os arquivos enviados pelo **Modo Gerir** e os repassa para os outros computadores.",
         },
-        { kind: "h4", text: "Computador de Ensaio" },
+        { kind: "h4", text: "Modo Consultar" },
         {
           kind: "p",
-          text: "É o computador utilizado unicamente para consultar as músicas e partituras **permitidas** pelo **computador do maestro**.",
+          text: "É o computador utilizado unicamente para consultar as músicas e partituras **permitidas** pelo **modo Gerir**.",
         },
         { kind: "h3", text: "Limitações" },
-        { kind: "h4", text: "Mais de um computador maestro sendo usado ao mesmo tempo" },
+        { kind: "h4", text: "Mais de um modo Gerir sendo usado ao mesmo tempo" },
         {
           kind: "p",
-          text: "O Ottavada não suporta o uso simultâneo de mais de um **computador do maestro**. Essa é uma limitação intencional da arquitetura: como o Ottavada não depende de um servidor central, não há custo alto de manutenção para o desenvolvedor, e por isso a ferramenta pode ser totalmente gratuita, sem assinatura, sem cobrança e sem nada vendido dentro dela.",
+          text: "O Ottavada não suporta o uso simultâneo de mais de um **modo Gerir**. Essa é uma limitação intencional da arquitetura: como o Ottavada não depende de um servidor central, não há custo alto de manutenção para o desenvolvedor, e por isso a ferramenta pode ser totalmente gratuita, sem assinatura, sem cobrança e sem nada vendido dentro dela.",
         },
         {
           kind: "p",
-          text: "Você pode ter mais de um **computador do maestro**, desde que sejam usados em **momentos diferentes**. Como o Ottavada envia informações para o provedor de nuvem continuamente, ter vários enviando ao mesmo tempo pode causar conflitos e perda de dados. Caso precise usar simultaneamente, você pode fazer, mas assumindo o risco de conflitos. **Uma solução para esse cenário já está em planejamento**.",
+          text: "Você pode ter mais de um **modo Gerir**, desde que sejam usados em **momentos diferentes**. Como o Ottavada envia informações para o provedor de nuvem continuamente, ter vários enviando ao mesmo tempo pode causar conflitos e perda de dados. Caso precise usar simultaneamente, você pode fazer, mas assumindo o risco de conflitos. **Uma solução para esse cenário já está em planejamento**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "O **computador do ensaio** não tem essa limitação, pois é usado apenas para leitura e não envia nada para a nuvem.",
+          text: "O **modo Consultar** não tem essa limitação, pois é usado apenas para leitura e não envia nada para a nuvem.",
+        },
+        { kind: "h3", text: "Telemetria e privacidade" },
+        {
+          kind: "p",
+          text: "Para saber quantas pessoas estão usando o Ottavada, o aplicativo coleta alguns dados de uso. Nenhum dado pessoal é coletado: nem o nome do computador, nem o nome da sua organização. Esses dados servem apenas para estatísticas, são armazenados de forma criptografada e nunca são compartilhados ou vendidos.",
         },
         { kind: "h3", text: "Músicas e partituras" },
         {
@@ -198,35 +203,35 @@ const ptBR: DocsMessages = {
         { kind: "h4", text: "Status de Música e Partitura" },
         {
           kind: "p",
-          text: "Toda **música** e **partitura** possui um **status** que define o que será ou não enviado para o **computador de ensaio**.",
+          text: "Toda **música** e **partitura** possui um **status** que define o que será ou não enviado para o **modo Consultar**.",
         },
         { kind: "p", text: "**Status Música:**" },
         {
           kind: "ul",
           items: [
-            "**Envio permitido:** a música é enviada para o **computador de ensaio** e tem ao menos um instrumento com status **envio permitido**.",
-            "**Envio não permitido:** a música não é enviada para o **computador de ensaio** e tem todos os instrumentos com status **envio não permitido**.",
-            "**Sem partitura:** a música não é enviada para o **computador de ensaio** e, além disso, não possui nenhuma partitura.",
+            "**Envio permitido:** a música é enviada para o **modo Consultar** e tem ao menos um instrumento com status **envio permitido**.",
+            "**Envio não permitido:** a música não é enviada para o **modo Consultar** e tem todos os instrumentos com status **envio não permitido**.",
+            "**Sem partitura:** a música não é enviada para o **modo Consultar** e, além disso, não possui nenhuma partitura.",
           ],
         },
         { kind: "p", text: "**Status Partitura:**" },
         {
           kind: "ul",
           items: [
-            "**Envio permitido:** a partitura é enviada para o **computador de ensaio**.",
-            "**Envio não permitido:** a partitura não é enviada para o **computador de ensaio**.",
+            "**Envio permitido:** a partitura é enviada para o **modo Consultar**.",
+            "**Envio não permitido:** a partitura não é enviada para o **modo Consultar**.",
             "**Ignorado:** a partitura é ignorada pelo Ottavada, como se não existisse.",
           ],
         },
         { kind: "callout", tone: "tip", text: "Ao clicar na imagem, você poderá vê-la em tela cheia." },
         {
           kind: "p",
-          text: "**Exemplo:** Na imagem abaixo, o **Computador do Maestro** (esquerda) tem uma música cuja partitura de **Oboé I** está com status **envio não permitido**. Note que no **Computador de Ensaio** (direita), essa música não aparece.",
+          text: "**Exemplo:** Na imagem abaixo, o **Modo Gerir** (esquerda) tem uma música cuja partitura de **Oboé I** está com status **envio não permitido**. Note que no **Modo Consultar** (direita), essa música não aparece.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "Da mesma forma, se a música inteira estiver com status **envio não permitido**, ela também não aparecerá no computador de ensaio.",
+          text: "Da mesma forma, se a música inteira estiver com status **envio não permitido**, ela também não aparecerá no modo Consultar.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "Não é permitido duplicar" },
@@ -268,13 +273,13 @@ const ptBR: DocsMessages = {
           kind: "p",
           text: "Aqui você seleciona o idioma que deseja que o Ottavada use. O aplicativo sugere um idioma com base na configuração do seu computador, mas você pode alterar para o de sua preferência.",
         },
-        { kind: "h3", text: "2ª Etapa: Tipo de Computador" },
-        { kind: "p", text: "Aqui você seleciona o tipo de computador. Temos dois:" },
+        { kind: "h3", text: "2ª Etapa: Modo de Uso" },
+        { kind: "p", text: "Aqui você seleciona o modo de uso. Temos dois:" },
         {
           kind: "ul",
           items: [
-            "**Computador do Maestro**: responsável por adicionar, editar e remover músicas e partituras, controlando o que vai ou não para os outros computadores.",
-            "**Computador de Ensaio**: utilizado apenas para leitura das músicas e partituras que o **computador do maestro** disponibilizou.",
+            "**Modo Gerir**: responsável por adicionar, editar e remover músicas e partituras, controlando o que vai ou não para os outros computadores.",
+            "**Modo Consultar**: utilizado apenas para leitura das músicas e partituras que o **modo Gerir** disponibilizou.",
           ],
         },
         { kind: "h3", text: "3ª Etapa: Nome do Computador e Nome da Organização ou Instituição" },
@@ -329,7 +334,7 @@ const ptBR: DocsMessages = {
         { kind: "h3", text: "5ª Etapa: Revisão das informações" },
         {
           kind: "p",
-          text: "E, finalmente, temos a tela de revisão das informações, mostrando o nome do computador, o nome da orquestra ou instituição, o tipo de computador e o provedor de nuvem.",
+          text: "E, finalmente, temos a tela de revisão das informações, mostrando o nome do computador, o nome da orquestra ou instituição, o modo de uso e o provedor de nuvem.",
         },
       ],
     },
@@ -414,7 +419,7 @@ const ptBR: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**Se a alteração ainda não está pronta:** clique em **continuar**. A partitura será enviada com status **envio não permitido** e não aparecerá nos computadores de ensaio.",
+          text: "**Se a alteração ainda não está pronta:** clique em **continuar**. A partitura será enviada com status **envio não permitido** e não aparecerá no modo Consultar.",
         },
         {
           kind: "p",
@@ -428,21 +433,21 @@ const ptBR: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Agora, ao clicar novamente no ícone de **sync**, o relatório mostrará o status como **envio permitido** e a partitura será enviada para os computadores de ensaio. O processo é o mesmo descrito em [enviando para nuvem](#enviando-nuvem).",
+          text: "Agora, ao clicar novamente no ícone de **sync**, o relatório mostrará o status como **envio permitido** e a partitura será enviada para o modo Consultar. O processo é o mesmo descrito em [enviando para nuvem](#enviando-nuvem).",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Instalando no computador de ensaio" },
+        { kind: "h3", text: "Instalando no modo Consultar" },
         {
           kind: "p",
-          text: "O processo é o mesmo do tópico de [instalação](#instalacao). A única diferença é que, na 2ª etapa, você seleciona **computador de ensaio**.",
+          text: "O processo é o mesmo do tópico de [instalação](#instalacao). A única diferença é que, na 2ª etapa, você seleciona **modo Consultar**.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "Você deve usar o **mesmo provedor de nuvem** (Koofr ou Google Drive) e a **mesma conta** que está no **computador do maestro**. Caso contrário, os computadores não conseguirão trocar informações.",
+          text: "Você deve usar o **mesmo provedor de nuvem** (Koofr ou Google Drive) e a **mesma conta** que está no **modo Gerir**. Caso contrário, os computadores não conseguirão trocar informações.",
         },
         { kind: "p", text: "Na tela inicial do Ottavada, clique no ícone de **sync**." },
         { kind: "image", name: "image22", alt: "" },
@@ -450,7 +455,7 @@ const ptBR: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "E pronto, simples assim. O que foi adicionado, modificado e até removido no **computador do maestro** já aparece no **computador de ensaio**. No nosso exemplo foi apenas adicionado e alterado (foi alterada a de **Oboé I**, mas como foi definido como status **envio permitido** ele apareceu).",
+          text: "E pronto, simples assim. O que foi adicionado, modificado e até removido no **modo Gerir** já aparece no **modo Consultar**. No nosso exemplo foi apenas adicionado e alterado (foi alterada a de **Oboé I**, mas como foi definido como status **envio permitido** ele apareceu).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -463,7 +468,7 @@ const ptBR: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Você precisa instalar o Ottavada no computador e seguir os procedimentos do [instalação](#instalacao), na 2ª etapa, você seleciona **computador do maestro** e usa o mesmo provedor de nuvem e credenciais (no caso do Koofr, email e senha do aplicativo ou, no caso do Google Drive, acesso à conta).",
+          text: "Você precisa instalar o Ottavada no computador e seguir os procedimentos do [instalação](#instalacao), na 2ª etapa, você seleciona **modo Gerir** e usa o mesmo provedor de nuvem e credenciais (no caso do Koofr, email e senha do aplicativo ou, no caso do Google Drive, acesso à conta).",
         },
         { kind: "p", text: "Basta ir em configurações (ícone de engrenagem)." },
         { kind: "image", name: "image25", alt: "" },
@@ -506,7 +511,7 @@ const en: DocsMessages = {
     enviandoNuvem: "Sending to the cloud",
     realizandoAlteracoes: "Making changes",
     backup: "Restoring a backup",
-    baixando: "Downloading on the rehearsal computer",
+    baixando: "Downloading in Consult mode",
     suporte: "Support",
   },
   anchors: {
@@ -547,7 +552,7 @@ const en: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "How does it work?" },
-        { kind: "h4", text: "Conductor's computer" },
+        { kind: "h4", text: "Manage mode" },
         {
           kind: "p",
           text: "It is the computer responsible for adding, editing and removing songs, scores, categories, composers, arrangers, and sending backups to the cloud provider.",
@@ -555,27 +560,32 @@ const en: DocsMessages = {
         { kind: "h4", text: "Cloud Provider" },
         {
           kind: "p",
-          text: "It is the intermediary between the computers. It receives the files sent by the **Conductor's computer** and forwards them to the other computers.",
+          text: "It is the intermediary between the computers. It receives the files sent by the **Manage mode** and forwards them to the other computers.",
         },
-        { kind: "h4", text: "Rehearsal Computer" },
+        { kind: "h4", text: "Consult mode" },
         {
           kind: "p",
-          text: "It is the computer used solely to consult the songs and scores **allowed** by the **conductor's computer**.",
+          text: "It is the computer used solely to consult the songs and scores **allowed** by the **Manage mode**.",
         },
         { kind: "h3", text: "Limitations" },
-        { kind: "h4", text: "More than one conductor computer being used at the same time" },
+        { kind: "h4", text: "More than one Manage mode being used at the same time" },
         {
           kind: "p",
-          text: "Ottavada does not support the simultaneous use of more than one **conductor's computer**. This is an intentional architectural limitation: since Ottavada does not depend on a central server, there is no high maintenance cost for the developer, which is why the tool can be completely free, with no subscription, no charges, and nothing sold within it.",
+          text: "Ottavada does not support the simultaneous use of more than one **Manage mode**. This is an intentional architectural limitation: since Ottavada does not depend on a central server, there is no high maintenance cost for the developer, which is why the tool can be completely free, with no subscription, no charges, and nothing sold within it.",
         },
         {
           kind: "p",
-          text: "You can have more than one **conductor's computer**, as long as they are used at **different times**. Since Ottavada continuously sends information to the cloud provider, having several sending at the same time can cause conflicts and data loss. If you need to use them simultaneously, you can, but assuming the risk of conflicts. **A solution for this scenario is already being planned**.",
+          text: "You can have more than one **Manage mode**, as long as they are used at **different times**. Since Ottavada continuously sends information to the cloud provider, having several sending at the same time can cause conflicts and data loss. If you need to use them simultaneously, you can, but assuming the risk of conflicts. **A solution for this scenario is already being planned**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "The **rehearsal computer** does not have this limitation, as it is used only for reading and does not send anything to the cloud.",
+          text: "The **Consult mode** does not have this limitation, as it is used only for reading and does not send anything to the cloud.",
+        },
+        { kind: "h3", text: "Telemetry and privacy" },
+        {
+          kind: "p",
+          text: "To know how many people are using Ottavada, the app collects some usage data. No personal data is collected: neither your computer name nor your organization name. This data is used only for statistics, is stored encrypted, and is never shared or sold.",
         },
         { kind: "h3", text: "Songs and scores" },
         {
@@ -633,35 +643,35 @@ const en: DocsMessages = {
         { kind: "h4", text: "Song and Score Status" },
         {
           kind: "p",
-          text: "Every **song** and **score** has a **status** that defines what will or will not be sent to the **rehearsal computer**.",
+          text: "Every **song** and **score** has a **status** that defines what will or will not be sent to the **Consult mode**.",
         },
         { kind: "p", text: "**Song status:**" },
         {
           kind: "ul",
           items: [
-            "**Send allowed:** the song is sent to the **rehearsal computer** and has at least one instrument with status **send allowed**.",
-            "**Send not allowed:** the song is not sent to the **rehearsal computer** and all its instruments have status **send not allowed**.",
-            "**No score:** the song is not sent to the **rehearsal computer** and, in addition, has no score.",
+            "**Send allowed:** the song is sent to the **Consult mode** and has at least one instrument with status **send allowed**.",
+            "**Send not allowed:** the song is not sent to the **Consult mode** and all its instruments have status **send not allowed**.",
+            "**No score:** the song is not sent to the **Consult mode** and, in addition, has no score.",
           ],
         },
         { kind: "p", text: "**Score status:**" },
         {
           kind: "ul",
           items: [
-            "**Send allowed:** the score is sent to the **rehearsal computer**.",
-            "**Send not allowed:** the score is not sent to the **rehearsal computer**.",
+            "**Send allowed:** the score is sent to the **Consult mode**.",
+            "**Send not allowed:** the score is not sent to the **Consult mode**.",
             "**Ignored:** the score is ignored by Ottavada, as if it didn't exist.",
           ],
         },
         { kind: "callout", tone: "tip", text: "By clicking on the image, you can view it full screen." },
         {
           kind: "p",
-          text: "**Example:** In the image below, the **Conductor's Computer** (left) has a song whose **Oboe I** score has status **send not allowed**. Note that on the **Rehearsal Computer** (right), that song does not appear.",
+          text: "**Example:** In the image below, the **Manage mode** (left) has a song whose **Oboe I** score has status **send not allowed**. Note that on the **Consult mode** (right), that song does not appear.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "Likewise, if the whole song has status **send not allowed**, it will also not appear on the rehearsal computer.",
+          text: "Likewise, if the whole song has status **send not allowed**, it will also not appear on the Consult mode.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "Duplicates are not allowed" },
@@ -703,13 +713,13 @@ const en: DocsMessages = {
           kind: "p",
           text: "Here you select the language you want Ottavada to use. The app suggests a language based on your computer's settings, but you can change it to your preference.",
         },
-        { kind: "h3", text: "Step 2: Computer Type" },
-        { kind: "p", text: "Here you select the computer type. There are two:" },
+        { kind: "h3", text: "Step 2: Usage mode" },
+        { kind: "p", text: "Here you select the usage mode. There are two:" },
         {
           kind: "ul",
           items: [
-            "**Conductor's Computer**: responsible for adding, editing and removing songs and scores, controlling what goes or doesn't go to the other computers.",
-            "**Rehearsal Computer**: used only for reading the songs and scores that the **conductor's computer** has made available.",
+            "**Manage mode**: responsible for adding, editing and removing songs and scores, controlling what goes or doesn't go to the other computers.",
+            "**Consult mode**: used only for reading the songs and scores that the **Manage mode** has made available.",
           ],
         },
         { kind: "h3", text: "Step 3: Computer Name and Organization or Institution Name" },
@@ -764,7 +774,7 @@ const en: DocsMessages = {
         { kind: "h3", text: "Step 5: Review of information" },
         {
           kind: "p",
-          text: "And finally, we have the information review screen, showing the computer name, the orchestra or institution name, the computer type, and the cloud provider.",
+          text: "And finally, we have the information review screen, showing the computer name, the orchestra or institution name, the usage mode, and the cloud provider.",
         },
       ],
     },
@@ -849,7 +859,7 @@ const en: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**If the change is not ready yet:** click **continue**. The score will be sent with status **send not allowed** and will not appear on the rehearsal computers.",
+          text: "**If the change is not ready yet:** click **continue**. The score will be sent with status **send not allowed** and will not appear in Consult mode.",
         },
         {
           kind: "p",
@@ -863,21 +873,21 @@ const en: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Now, when you click the **sync** icon again, the report will show the status as **send allowed** and the score will be sent to the rehearsal computers. The process is the same as described in [sending to the cloud](#sending-to-cloud).",
+          text: "Now, when you click the **sync** icon again, the report will show the status as **send allowed** and the score will be sent to Consult mode. The process is the same as described in [sending to the cloud](#sending-to-cloud).",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Installing on the rehearsal computer" },
+        { kind: "h3", text: "Installing in Consult mode" },
         {
           kind: "p",
-          text: "The process is the same as the [installation](#installation) topic. The only difference is that, in step 2, you select **rehearsal computer**.",
+          text: "The process is the same as the [installation](#installation) topic. The only difference is that, in step 2, you select **Consult mode**.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "You must use the **same cloud provider** (Koofr or Google Drive) and the **same account** that is on the **conductor's computer**. Otherwise, the computers will not be able to exchange information.",
+          text: "You must use the **same cloud provider** (Koofr or Google Drive) and the **same account** that is on the **Manage mode**. Otherwise, the computers will not be able to exchange information.",
         },
         { kind: "p", text: "On the Ottavada home screen, click the **sync** icon." },
         { kind: "image", name: "image22", alt: "" },
@@ -885,7 +895,7 @@ const en: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "And that's it, that simple. What was added, modified, or even removed on the **conductor's computer** already appears on the **rehearsal computer**. In our example only an addition and a change were made (the **Oboe I** score was changed, but since it was set to status **send allowed** it appeared).",
+          text: "And that's it, that simple. What was added, modified, or even removed on the **Manage mode** already appears on the **Consult mode**. In our example only an addition and a change were made (the **Oboe I** score was changed, but since it was set to status **send allowed** it appeared).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -898,7 +908,7 @@ const en: DocsMessages = {
         },
         {
           kind: "p",
-          text: "You need to install Ottavada on the computer and follow the [installation](#installation) procedures; in step 2, select **conductor's computer** and use the same cloud provider and credentials (for Koofr, email and app password; for Google Drive, account access).",
+          text: "You need to install Ottavada on the computer and follow the [installation](#installation) procedures; in step 2, select **Manage mode** and use the same cloud provider and credentials (for Koofr, email and app password; for Google Drive, account access).",
         },
         { kind: "p", text: "Just go to settings (gear icon)." },
         { kind: "image", name: "image25", alt: "" },
@@ -941,7 +951,7 @@ const es: DocsMessages = {
     enviandoNuvem: "Enviando a la nube",
     realizandoAlteracoes: "Realizando cambios",
     backup: "Recuperar copia de seguridad",
-    baixando: "Descargar en el ordenador de ensayo",
+    baixando: "Descargar en el modo Consultar",
     suporte: "Soporte",
   },
   anchors: {
@@ -982,7 +992,7 @@ const es: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "¿Cómo funciona?" },
-        { kind: "h4", text: "Ordenador del Director" },
+        { kind: "h4", text: "Modo Gestionar" },
         {
           kind: "p",
           text: "Es el ordenador responsable de añadir, editar y eliminar músicas, partituras, categorías, compositores, arreglistas y enviar copias de seguridad al proveedor de nube.",
@@ -990,27 +1000,32 @@ const es: DocsMessages = {
         { kind: "h4", text: "Proveedor de Nube" },
         {
           kind: "p",
-          text: "Es el intermediario entre los ordenadores. Recibe los archivos enviados por el **Ordenador del Director** y los reenvía a los demás ordenadores.",
+          text: "Es el intermediario entre los ordenadores. Recibe los archivos enviados por el **Modo Gestionar** y los reenvía a los demás ordenadores.",
         },
-        { kind: "h4", text: "Ordenador de Ensayo" },
+        { kind: "h4", text: "Modo Consultar" },
         {
           kind: "p",
-          text: "Es el ordenador utilizado únicamente para consultar las músicas y partituras **permitidas** por el **ordenador del director**.",
+          text: "Es el ordenador utilizado únicamente para consultar las músicas y partituras **permitidas** por el **modo Gestionar**.",
         },
         { kind: "h3", text: "Limitaciones" },
-        { kind: "h4", text: "Más de un ordenador director usándose al mismo tiempo" },
+        { kind: "h4", text: "Más de un modo Gestionar usándose al mismo tiempo" },
         {
           kind: "p",
-          text: "Ottavada no admite el uso simultáneo de más de un **ordenador del director**. Esta es una limitación intencional de la arquitectura: como Ottavada no depende de un servidor central, no hay un alto coste de mantenimiento para el desarrollador, y por eso la herramienta puede ser totalmente gratuita, sin suscripción, sin cobros y sin nada vendido dentro.",
+          text: "Ottavada no admite el uso simultáneo de más de un **modo Gestionar**. Esta es una limitación intencional de la arquitectura: como Ottavada no depende de un servidor central, no hay un alto coste de mantenimiento para el desarrollador, y por eso la herramienta puede ser totalmente gratuita, sin suscripción, sin cobros y sin nada vendido dentro.",
         },
         {
           kind: "p",
-          text: "Puedes tener más de un **ordenador del director**, siempre que se usen en **momentos diferentes**. Como Ottavada envía información al proveedor de nube continuamente, tener varios enviando al mismo tiempo puede causar conflictos y pérdida de datos. Si necesitas usarlos simultáneamente, puedes hacerlo, pero asumiendo el riesgo de conflictos. **Ya se está planificando una solución para este escenario**.",
+          text: "Puedes tener más de un **modo Gestionar**, siempre que se usen en **momentos diferentes**. Como Ottavada envía información al proveedor de nube continuamente, tener varios enviando al mismo tiempo puede causar conflictos y pérdida de datos. Si necesitas usarlos simultáneamente, puedes hacerlo, pero asumiendo el riesgo de conflictos. **Ya se está planificando una solución para este escenario**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "El **ordenador de ensayo** no tiene esta limitación, ya que se usa solo para lectura y no envía nada a la nube.",
+          text: "El **modo Consultar** no tiene esta limitación, ya que se usa solo para lectura y no envía nada a la nube.",
+        },
+        { kind: "h3", text: "Telemetría y privacidad" },
+        {
+          kind: "p",
+          text: "Para saber cuántas personas usan Ottavada, la aplicación recopila algunos datos de uso. No se recopila ningún dato personal: ni el nombre de tu ordenador, ni el nombre de tu organización. Esos datos sirven solo para estadísticas, se almacenan de forma cifrada y nunca se comparten ni se venden.",
         },
         { kind: "h3", text: "Músicas y partituras" },
         {
@@ -1068,35 +1083,35 @@ const es: DocsMessages = {
         { kind: "h4", text: "Estado de Música y Partitura" },
         {
           kind: "p",
-          text: "Toda **música** y **partitura** tiene un **estado** que define lo que se enviará o no al **ordenador de ensayo**.",
+          text: "Toda **música** y **partitura** tiene un **estado** que define lo que se enviará o no al **modo Consultar**.",
         },
         { kind: "p", text: "**Estado de la música:**" },
         {
           kind: "ul",
           items: [
-            "**Envío permitido:** la música se envía al **ordenador de ensayo** y tiene al menos un instrumento con estado **envío permitido**.",
-            "**Envío no permitido:** la música no se envía al **ordenador de ensayo** y todos sus instrumentos tienen estado **envío no permitido**.",
-            "**Sin partitura:** la música no se envía al **ordenador de ensayo** y, además, no tiene ninguna partitura.",
+            "**Envío permitido:** la música se envía al **modo Consultar** y tiene al menos un instrumento con estado **envío permitido**.",
+            "**Envío no permitido:** la música no se envía al **modo Consultar** y todos sus instrumentos tienen estado **envío no permitido**.",
+            "**Sin partitura:** la música no se envía al **modo Consultar** y, además, no tiene ninguna partitura.",
           ],
         },
         { kind: "p", text: "**Estado de la partitura:**" },
         {
           kind: "ul",
           items: [
-            "**Envío permitido:** la partitura se envía al **ordenador de ensayo**.",
-            "**Envío no permitido:** la partitura no se envía al **ordenador de ensayo**.",
+            "**Envío permitido:** la partitura se envía al **modo Consultar**.",
+            "**Envío no permitido:** la partitura no se envía al **modo Consultar**.",
             "**Ignorado:** la partitura es ignorada por Ottavada, como si no existiera.",
           ],
         },
         { kind: "callout", tone: "tip", text: "Al hacer clic en la imagen, podrás verla a pantalla completa." },
         {
           kind: "p",
-          text: "**Ejemplo:** En la imagen de abajo, el **Ordenador del Director** (izquierda) tiene una música cuya partitura de **Oboe I** está con estado **envío no permitido**. Fíjate que en el **Ordenador de Ensayo** (derecha) esa música no aparece.",
+          text: "**Ejemplo:** En la imagen de abajo, el **Modo Gestionar** (izquierda) tiene una música cuya partitura de **Oboe I** está con estado **envío no permitido**. Fíjate que en el **Modo Consultar** (derecha) esa música no aparece.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "Del mismo modo, si toda la música está con estado **envío no permitido**, tampoco aparecerá en el ordenador de ensayo.",
+          text: "Del mismo modo, si toda la música está con estado **envío no permitido**, tampoco aparecerá en el modo Consultar.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "No se permite duplicar" },
@@ -1138,13 +1153,13 @@ const es: DocsMessages = {
           kind: "p",
           text: "Aquí seleccionas el idioma que quieres que use Ottavada. La aplicación sugiere un idioma en función de la configuración de tu ordenador, pero puedes cambiarlo al de tu preferencia.",
         },
-        { kind: "h3", text: "Paso 2: Tipo de Ordenador" },
-        { kind: "p", text: "Aquí seleccionas el tipo de ordenador. Hay dos:" },
+        { kind: "h3", text: "Paso 2: Modo de Uso" },
+        { kind: "p", text: "Aquí seleccionas el modo de uso. Hay dos:" },
         {
           kind: "ul",
           items: [
-            "**Ordenador del Director**: responsable de añadir, editar y eliminar músicas y partituras, controlando lo que va o no a los demás ordenadores.",
-            "**Ordenador de Ensayo**: utilizado solo para la lectura de las músicas y partituras que el **ordenador del director** haya puesto a disposición.",
+            "**Modo Gestionar**: responsable de añadir, editar y eliminar músicas y partituras, controlando lo que va o no a los demás ordenadores.",
+            "**Modo Consultar**: utilizado solo para la lectura de las músicas y partituras que el **modo Gestionar** haya puesto a disposición.",
           ],
         },
         { kind: "h3", text: "Paso 3: Nombre del Ordenador y Nombre de la Organización o Institución" },
@@ -1199,7 +1214,7 @@ const es: DocsMessages = {
         { kind: "h3", text: "Paso 5: Revisión de la información" },
         {
           kind: "p",
-          text: "Y, por último, tenemos la pantalla de revisión de la información, mostrando el nombre del ordenador, el nombre de la orquesta o institución, el tipo de ordenador y el proveedor de nube.",
+          text: "Y, por último, tenemos la pantalla de revisión de la información, mostrando el nombre del ordenador, el nombre de la orquesta o institución, el modo de uso y el proveedor de nube.",
         },
       ],
     },
@@ -1284,7 +1299,7 @@ const es: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**Si el cambio aún no está listo:** haz clic en **continuar**. La partitura se enviará con estado **envío no permitido** y no aparecerá en los ordenadores de ensayo.",
+          text: "**Si el cambio aún no está listo:** haz clic en **continuar**. La partitura se enviará con estado **envío no permitido** y no aparecerá en el modo Consultar.",
         },
         {
           kind: "p",
@@ -1298,21 +1313,21 @@ const es: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Ahora, al hacer clic de nuevo en el icono de **sync**, el informe mostrará el estado como **envío permitido** y la partitura se enviará a los ordenadores de ensayo. El proceso es el mismo que el descrito en [enviando a la nube](#enviando-nube).",
+          text: "Ahora, al hacer clic de nuevo en el icono de **sync**, el informe mostrará el estado como **envío permitido** y la partitura se enviará al modo Consultar. El proceso es el mismo que el descrito en [enviando a la nube](#enviando-nube).",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Instalación en el ordenador de ensayo" },
+        { kind: "h3", text: "Instalación en el modo Consultar" },
         {
           kind: "p",
-          text: "El proceso es el mismo que el del tema de [instalación](#instalacion). La única diferencia es que, en el paso 2, seleccionas **ordenador de ensayo**.",
+          text: "El proceso es el mismo que el del tema de [instalación](#instalacion). La única diferencia es que, en el paso 2, seleccionas **modo Consultar**.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "Debes usar el **mismo proveedor de nube** (Koofr o Google Drive) y la **misma cuenta** que está en el **ordenador del director**. De lo contrario, los ordenadores no podrán intercambiar información.",
+          text: "Debes usar el **mismo proveedor de nube** (Koofr o Google Drive) y la **misma cuenta** que está en el **modo Gestionar**. De lo contrario, los ordenadores no podrán intercambiar información.",
         },
         { kind: "p", text: "En la pantalla inicial de Ottavada, haz clic en el icono de **sync**." },
         { kind: "image", name: "image22", alt: "" },
@@ -1320,7 +1335,7 @@ const es: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "Y listo, así de simple. Lo que se añadió, modificó e incluso se eliminó en el **ordenador del director** ya aparece en el **ordenador de ensayo**. En nuestro ejemplo solo se añadió y modificó (se modificó la de **Oboe I**, pero como se definió con estado **envío permitido** apareció).",
+          text: "Y listo, así de simple. Lo que se añadió, modificó e incluso se eliminó en el **modo Gestionar** ya aparece en el **modo Consultar**. En nuestro ejemplo solo se añadió y modificó (se modificó la de **Oboe I**, pero como se definió con estado **envío permitido** apareció).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -1333,7 +1348,7 @@ const es: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Necesitas instalar Ottavada en el ordenador y seguir los procedimientos del [instalación](#instalacion); en el paso 2, seleccionas **ordenador del director** y usas el mismo proveedor de nube y credenciales (en el caso de Koofr, email y contraseña de la aplicación; en el caso de Google Drive, acceso a la cuenta).",
+          text: "Necesitas instalar Ottavada en el ordenador y seguir los procedimientos del [instalación](#instalacion); en el paso 2, seleccionas **modo Gestionar** y usas el mismo proveedor de nube y credenciales (en el caso de Koofr, email y contraseña de la aplicación; en el caso de Google Drive, acceso a la cuenta).",
         },
         { kind: "p", text: "Solo ve a la configuración (icono de engranaje)." },
         { kind: "image", name: "image25", alt: "" },
@@ -1376,7 +1391,7 @@ const fr: DocsMessages = {
     enviandoNuvem: "Envoi vers le cloud",
     realizandoAlteracoes: "Effectuer des modifications",
     backup: "Restaurer une sauvegarde",
-    baixando: "Téléchargement sur l’ordinateur de répétition",
+    baixando: "Téléchargement sur le mode Consulter",
     suporte: "Support",
   },
   anchors: {
@@ -1417,7 +1432,7 @@ const fr: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "Comment ça marche ?" },
-        { kind: "h4", text: "Ordinateur du Chef" },
+        { kind: "h4", text: "Mode Gérer" },
         {
           kind: "p",
           text: "C’est l’ordinateur chargé d’ajouter, modifier et supprimer des morceaux, partitions, catégories, compositeurs, arrangeurs, et d’envoyer des sauvegardes vers le fournisseur de cloud.",
@@ -1425,27 +1440,32 @@ const fr: DocsMessages = {
         { kind: "h4", text: "Fournisseur de Cloud" },
         {
           kind: "p",
-          text: "C’est l’intermédiaire entre les ordinateurs. Il reçoit les fichiers envoyés par l’**Ordinateur du Chef** et les transmet aux autres ordinateurs.",
+          text: "C’est l’intermédiaire entre les ordinateurs. Il reçoit les fichiers envoyés par le **Mode Gérer** et les transmet aux autres ordinateurs.",
         },
-        { kind: "h4", text: "Ordinateur de Répétition" },
+        { kind: "h4", text: "Mode Consulter" },
         {
           kind: "p",
-          text: "C’est l’ordinateur utilisé uniquement pour consulter les morceaux et partitions **autorisés** par l’**ordinateur du chef**.",
+          text: "C’est l’ordinateur utilisé uniquement pour consulter les morceaux et partitions **autorisés** par le **mode Gérer**.",
         },
         { kind: "h3", text: "Limitations" },
-        { kind: "h4", text: "Plus d’un ordinateur chef utilisé en même temps" },
+        { kind: "h4", text: "Plus d’un mode Gérer utilisé en même temps" },
         {
           kind: "p",
-          text: "Ottavada ne prend pas en charge l’utilisation simultanée de plus d’un **ordinateur du chef**. Il s’agit d’une limitation intentionnelle de l’architecture : comme Ottavada ne dépend pas d’un serveur central, il n’y a pas de coût de maintenance élevé pour le développeur, et c’est pourquoi l’outil peut être entièrement gratuit, sans abonnement, sans frais et sans rien vendu à l’intérieur.",
+          text: "Ottavada ne prend pas en charge l’utilisation simultanée de plus d’un **mode Gérer**. Il s’agit d’une limitation intentionnelle de l’architecture : comme Ottavada ne dépend pas d’un serveur central, il n’y a pas de coût de maintenance élevé pour le développeur, et c’est pourquoi l’outil peut être entièrement gratuit, sans abonnement, sans frais et sans rien vendu à l’intérieur.",
         },
         {
           kind: "p",
-          text: "Vous pouvez avoir plus d’un **ordinateur du chef**, à condition qu’ils soient utilisés à des **moments différents**. Comme Ottavada envoie continuellement des informations au fournisseur de cloud, en avoir plusieurs qui envoient en même temps peut provoquer des conflits et des pertes de données. Si vous avez besoin de les utiliser simultanément, vous pouvez le faire, mais en assumant le risque de conflits. **Une solution pour ce scénario est déjà en cours de planification**.",
+          text: "Vous pouvez avoir plus d’un **mode Gérer**, à condition qu’ils soient utilisés à des **moments différents**. Comme Ottavada envoie continuellement des informations au fournisseur de cloud, en avoir plusieurs qui envoient en même temps peut provoquer des conflits et des pertes de données. Si vous avez besoin de les utiliser simultanément, vous pouvez le faire, mais en assumant le risque de conflits. **Une solution pour ce scénario est déjà en cours de planification**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "L’**ordinateur de répétition** n’a pas cette limitation, car il est utilisé uniquement pour la lecture et n’envoie rien vers le cloud.",
+          text: "Le **mode Consulter** n’a pas cette limitation, car il est utilisé uniquement pour la lecture et n’envoie rien vers le cloud.",
+        },
+        { kind: "h3", text: "Télémétrie et confidentialité" },
+        {
+          kind: "p",
+          text: "Pour savoir combien de personnes utilisent Ottavada, l’application collecte quelques données d’utilisation. Aucune donnée personnelle n’est collectée : ni le nom de votre ordinateur, ni le nom de votre organisation. Ces données servent uniquement aux statistiques, sont stockées de manière chiffrée et ne sont jamais partagées ni vendues.",
         },
         { kind: "h3", text: "Morceaux et partitions" },
         {
@@ -1503,35 +1523,35 @@ const fr: DocsMessages = {
         { kind: "h4", text: "Statut du morceau et de la partition" },
         {
           kind: "p",
-          text: "Chaque **morceau** et chaque **partition** possède un **statut** qui définit ce qui sera envoyé ou non à l’**ordinateur de répétition**.",
+          text: "Chaque **morceau** et chaque **partition** possède un **statut** qui définit ce qui sera envoyé ou non à l’**mode Consulter**.",
         },
         { kind: "p", text: "**Statut du morceau :**" },
         {
           kind: "ul",
           items: [
-            "**Envoi autorisé :** le morceau est envoyé à l’**ordinateur de répétition** et a au moins un instrument avec le statut **envoi autorisé**.",
-            "**Envoi non autorisé :** le morceau n’est pas envoyé à l’**ordinateur de répétition** et tous ses instruments ont le statut **envoi non autorisé**.",
-            "**Sans partition :** le morceau n’est pas envoyé à l’**ordinateur de répétition** et, de plus, n’a aucune partition.",
+            "**Envoi autorisé :** le morceau est envoyé à l’**mode Consulter** et a au moins un instrument avec le statut **envoi autorisé**.",
+            "**Envoi non autorisé :** le morceau n’est pas envoyé à l’**mode Consulter** et tous ses instruments ont le statut **envoi non autorisé**.",
+            "**Sans partition :** le morceau n’est pas envoyé à l’**mode Consulter** et, de plus, n’a aucune partition.",
           ],
         },
         { kind: "p", text: "**Statut de la partition :**" },
         {
           kind: "ul",
           items: [
-            "**Envoi autorisé :** la partition est envoyée à l’**ordinateur de répétition**.",
-            "**Envoi non autorisé :** la partition n’est pas envoyée à l’**ordinateur de répétition**.",
+            "**Envoi autorisé :** la partition est envoyée à l’**mode Consulter**.",
+            "**Envoi non autorisé :** la partition n’est pas envoyée à l’**mode Consulter**.",
             "**Ignoré :** la partition est ignorée par Ottavada, comme si elle n’existait pas.",
           ],
         },
         { kind: "callout", tone: "tip", text: "En cliquant sur l’image, vous pourrez la voir en plein écran." },
         {
           kind: "p",
-          text: "**Exemple :** Dans l’image ci-dessous, l’**Ordinateur du Chef** (à gauche) contient un morceau dont la partition de **Hautbois I** est en statut **envoi non autorisé**. Notez que sur l’**Ordinateur de Répétition** (à droite), ce morceau n’apparaît pas.",
+          text: "**Exemple :** Dans l’image ci-dessous, le **Mode Gérer** (à gauche) contient un morceau dont la partition de **Hautbois I** est en statut **envoi non autorisé**. Notez que sur le **Mode Consulter** (à droite), ce morceau n’apparaît pas.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "De la même manière, si tout le morceau est en statut **envoi non autorisé**, il n’apparaîtra pas non plus sur l’ordinateur de répétition.",
+          text: "De la même manière, si tout le morceau est en statut **envoi non autorisé**, il n’apparaîtra pas non plus sur le mode Consulter.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "Les doublons ne sont pas autorisés" },
@@ -1573,13 +1593,13 @@ const fr: DocsMessages = {
           kind: "p",
           text: "Ici, vous choisissez la langue que vous souhaitez qu’Ottavada utilise. L’application suggère une langue en fonction de la configuration de votre ordinateur, mais vous pouvez la modifier selon votre préférence.",
         },
-        { kind: "h3", text: "Étape 2 : Type d’ordinateur" },
-        { kind: "p", text: "Ici, vous sélectionnez le type d’ordinateur. Il y en a deux :" },
+        { kind: "h3", text: "Étape 2 : Mode d’utilisation" },
+        { kind: "p", text: "Ici, vous sélectionnez le mode d’utilisation. Il y en a deux :" },
         {
           kind: "ul",
           items: [
-            "**Ordinateur du Chef** : responsable de l’ajout, de la modification et de la suppression des morceaux et partitions, en contrôlant ce qui va ou non vers les autres ordinateurs.",
-            "**Ordinateur de Répétition** : utilisé uniquement pour lire les morceaux et partitions que l’**ordinateur du chef** a mis à disposition.",
+            "**Mode Gérer** : responsable de l’ajout, de la modification et de la suppression des morceaux et partitions, en contrôlant ce qui va ou non vers les autres ordinateurs.",
+            "**Mode Consulter** : utilisé uniquement pour lire les morceaux et partitions que le **mode Gérer** a mis à disposition.",
           ],
         },
         { kind: "h3", text: "Étape 3 : Nom de l’ordinateur et nom de l’organisation ou institution" },
@@ -1634,7 +1654,7 @@ const fr: DocsMessages = {
         { kind: "h3", text: "Étape 5 : Vérification des informations" },
         {
           kind: "p",
-          text: "Et, enfin, nous avons l’écran de vérification des informations, affichant le nom de l’ordinateur, le nom de l’orchestre ou de l’institution, le type d’ordinateur et le fournisseur de cloud.",
+          text: "Et, enfin, nous avons l’écran de vérification des informations, affichant le nom de l’ordinateur, le nom de l’orchestre ou de l’institution, le mode d’utilisation et le fournisseur de cloud.",
         },
       ],
     },
@@ -1719,7 +1739,7 @@ const fr: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**Si la modification n’est pas encore prête :** cliquez sur **continuer**. La partition sera envoyée avec le statut **envoi non autorisé** et n’apparaîtra pas sur les ordinateurs de répétition.",
+          text: "**Si la modification n’est pas encore prête :** cliquez sur **continuer**. La partition sera envoyée avec le statut **envoi non autorisé** et n’apparaîtra pas en mode Consulter.",
         },
         {
           kind: "p",
@@ -1733,21 +1753,21 @@ const fr: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Maintenant, en cliquant à nouveau sur l’icône de **sync**, le rapport affichera le statut **envoi autorisé** et la partition sera envoyée vers les ordinateurs de répétition. Le processus est le même que celui décrit dans [envoi vers le cloud](#envoi-cloud).",
+          text: "Maintenant, en cliquant à nouveau sur l’icône de **sync**, le rapport affichera le statut **envoi autorisé** et la partition sera envoyée vers le mode Consulter. Le processus est le même que celui décrit dans [envoi vers le cloud](#envoi-cloud).",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Installation sur l’ordinateur de répétition" },
+        { kind: "h3", text: "Installation en mode Consulter" },
         {
           kind: "p",
-          text: "Le processus est le même que celui du sujet [installation](#installation). La seule différence est qu’à la 2ᵉ étape, vous sélectionnez **ordinateur de répétition**.",
+          text: "Le processus est le même que celui du sujet [installation](#installation). La seule différence est qu’à la 2ᵉ étape, vous sélectionnez **mode Consulter**.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "Vous devez utiliser le **même fournisseur de cloud** (Koofr ou Google Drive) et le **même compte** que celui de l’**ordinateur du chef**. Sinon, les ordinateurs ne pourront pas échanger d’informations.",
+          text: "Vous devez utiliser le **même fournisseur de cloud** (Koofr ou Google Drive) et le **même compte** que celui du **mode Gérer**. Sinon, les ordinateurs ne pourront pas échanger d’informations.",
         },
         { kind: "p", text: "Sur l’écran d’accueil d’Ottavada, cliquez sur l’icône **sync**." },
         { kind: "image", name: "image22", alt: "" },
@@ -1755,7 +1775,7 @@ const fr: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "Et voilà, c’est aussi simple que ça. Ce qui a été ajouté, modifié, et même supprimé sur l’**ordinateur du chef** apparaît déjà sur l’**ordinateur de répétition**. Dans notre exemple, seuls un ajout et une modification ont été effectués (la partition de **Hautbois I** a été modifiée, mais comme elle a été définie avec le statut **envoi autorisé**, elle est apparue).",
+          text: "Et voilà, c’est aussi simple que ça. Ce qui a été ajouté, modifié, et même supprimé sur le **mode Gérer** apparaît déjà sur l’**mode Consulter**. Dans notre exemple, seuls un ajout et une modification ont été effectués (la partition de **Hautbois I** a été modifiée, mais comme elle a été définie avec le statut **envoi autorisé**, elle est apparue).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -1768,7 +1788,7 @@ const fr: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Vous devez installer Ottavada sur l’ordinateur et suivre les procédures de l’[installation](#installation) ; à la 2ᵉ étape, sélectionnez **ordinateur du chef** et utilisez le même fournisseur de cloud et les mêmes identifiants (pour Koofr, e-mail et mot de passe de l’application ; pour Google Drive, accès au compte).",
+          text: "Vous devez installer Ottavada sur l’ordinateur et suivre les procédures de l’[installation](#installation) ; à la 2ᵉ étape, sélectionnez **mode Gérer** et utilisez le même fournisseur de cloud et les mêmes identifiants (pour Koofr, e-mail et mot de passe de l’application ; pour Google Drive, accès au compte).",
         },
         { kind: "p", text: "Allez simplement dans les paramètres (icône d’engrenage)." },
         { kind: "image", name: "image25", alt: "" },
@@ -1811,7 +1831,7 @@ const it: DocsMessages = {
     enviandoNuvem: "Invio al cloud",
     realizandoAlteracoes: "Apportare modifiche",
     backup: "Ripristinare un backup",
-    baixando: "Download sul computer delle prove",
+    baixando: "Download sul modo Consulta",
     suporte: "Supporto",
   },
   anchors: {
@@ -1852,7 +1872,7 @@ const it: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "Come funziona?" },
-        { kind: "h4", text: "Computer del Maestro" },
+        { kind: "h4", text: "Modo Gestire" },
         {
           kind: "p",
           text: "È il computer responsabile di aggiungere, modificare e rimuovere brani, spartiti, categorie, compositori, arrangiatori e di inviare backup al provider cloud.",
@@ -1860,27 +1880,32 @@ const it: DocsMessages = {
         { kind: "h4", text: "Provider Cloud" },
         {
           kind: "p",
-          text: "È l’intermediario tra i computer. Riceve i file inviati dal **Computer del Maestro** e li inoltra agli altri computer.",
+          text: "È l’intermediario tra i computer. Riceve i file inviati dal **Modo Gestire** e li inoltra agli altri computer.",
         },
-        { kind: "h4", text: "Computer delle Prove" },
+        { kind: "h4", text: "Modo Consulta" },
         {
           kind: "p",
-          text: "È il computer utilizzato unicamente per consultare i brani e gli spartiti **consentiti** dal **computer del maestro**.",
+          text: "È il computer utilizzato unicamente per consultare i brani e gli spartiti **consentiti** dal **modo Gestire**.",
         },
         { kind: "h3", text: "Limitazioni" },
-        { kind: "h4", text: "Più di un computer maestro usato contemporaneamente" },
+        { kind: "h4", text: "Più di un modo Gestire usato contemporaneamente" },
         {
           kind: "p",
-          text: "Ottavada non supporta l’uso simultaneo di più di un **computer del maestro**. È una limitazione intenzionale dell’architettura: poiché Ottavada non dipende da un server centrale, non c’è un alto costo di manutenzione per lo sviluppatore, e per questo lo strumento può essere completamente gratuito, senza abbonamento, senza costi e senza nulla venduto al suo interno.",
+          text: "Ottavada non supporta l’uso simultaneo di più di un **modo Gestire**. È una limitazione intenzionale dell’architettura: poiché Ottavada non dipende da un server centrale, non c’è un alto costo di manutenzione per lo sviluppatore, e per questo lo strumento può essere completamente gratuito, senza abbonamento, senza costi e senza nulla venduto al suo interno.",
         },
         {
           kind: "p",
-          text: "Puoi avere più di un **computer del maestro**, a patto che vengano usati in **momenti diversi**. Poiché Ottavada invia continuamente informazioni al provider cloud, averne più di uno che invia contemporaneamente può causare conflitti e perdita di dati. Se hai bisogno di usarli simultaneamente, puoi farlo, ma assumendoti il rischio di conflitti. **Una soluzione per questo scenario è già in fase di pianificazione**.",
+          text: "Puoi avere più di un **modo Gestire**, a patto che vengano usati in **momenti diversi**. Poiché Ottavada invia continuamente informazioni al provider cloud, averne più di uno che invia contemporaneamente può causare conflitti e perdita di dati. Se hai bisogno di usarli simultaneamente, puoi farlo, ma assumendoti il rischio di conflitti. **Una soluzione per questo scenario è già in fase di pianificazione**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "Il **computer delle prove** non ha questa limitazione, perché viene usato solo per la lettura e non invia nulla al cloud.",
+          text: "Il **modo Consulta** non ha questa limitazione, perché viene usato solo per la lettura e non invia nulla al cloud.",
+        },
+        { kind: "h3", text: "Telemetria e privacy" },
+        {
+          kind: "p",
+          text: "Per sapere quante persone usano Ottavada, l’app raccoglie alcuni dati di utilizzo. Non vengono raccolti dati personali: né il nome del tuo computer, né il nome della tua organizzazione. Questi dati servono solo per statistiche, vengono archiviati in forma cifrata e non vengono mai condivisi né venduti.",
         },
         { kind: "h3", text: "Brani e spartiti" },
         {
@@ -1938,35 +1963,35 @@ const it: DocsMessages = {
         { kind: "h4", text: "Stato di brano e spartito" },
         {
           kind: "p",
-          text: "Ogni **brano** e ogni **spartito** ha uno **stato** che definisce cosa sarà o non sarà inviato al **computer delle prove**.",
+          text: "Ogni **brano** e ogni **spartito** ha uno **stato** che definisce cosa sarà o non sarà inviato al **modo Consulta**.",
         },
         { kind: "p", text: "**Stato del brano:**" },
         {
           kind: "ul",
           items: [
-            "**Invio consentito:** il brano viene inviato al **computer delle prove** e ha almeno uno strumento con stato **invio consentito**.",
-            "**Invio non consentito:** il brano non viene inviato al **computer delle prove** e tutti i suoi strumenti hanno stato **invio non consentito**.",
-            "**Senza spartito:** il brano non viene inviato al **computer delle prove** e, inoltre, non ha nessuno spartito.",
+            "**Invio consentito:** il brano viene inviato al **modo Consulta** e ha almeno uno strumento con stato **invio consentito**.",
+            "**Invio non consentito:** il brano non viene inviato al **modo Consulta** e tutti i suoi strumenti hanno stato **invio non consentito**.",
+            "**Senza spartito:** il brano non viene inviato al **modo Consulta** e, inoltre, non ha nessuno spartito.",
           ],
         },
         { kind: "p", text: "**Stato dello spartito:**" },
         {
           kind: "ul",
           items: [
-            "**Invio consentito:** lo spartito viene inviato al **computer delle prove**.",
-            "**Invio non consentito:** lo spartito non viene inviato al **computer delle prove**.",
+            "**Invio consentito:** lo spartito viene inviato al **modo Consulta**.",
+            "**Invio non consentito:** lo spartito non viene inviato al **modo Consulta**.",
             "**Ignorato:** lo spartito viene ignorato da Ottavada, come se non esistesse.",
           ],
         },
         { kind: "callout", tone: "tip", text: "Cliccando sull’immagine, potrai vederla a schermo intero." },
         {
           kind: "p",
-          text: "**Esempio:** Nell’immagine qui sotto, il **Computer del Maestro** (sinistra) ha un brano il cui spartito di **Oboe I** è con stato **invio non consentito**. Nota che nel **Computer delle Prove** (destra) quel brano non appare.",
+          text: "**Esempio:** Nell’immagine qui sotto, il **Modo Gestire** (sinistra) ha un brano il cui spartito di **Oboe I** è con stato **invio non consentito**. Nota che nel **Modo Consulta** (destra) quel brano non appare.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "Allo stesso modo, se l’intero brano è con stato **invio non consentito**, non apparirà nemmeno sul computer delle prove.",
+          text: "Allo stesso modo, se l’intero brano è con stato **invio non consentito**, non apparirà nemmeno sul modo Consulta.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "Non è consentito duplicare" },
@@ -2008,13 +2033,13 @@ const it: DocsMessages = {
           kind: "p",
           text: "Qui selezioni la lingua che vuoi che Ottavada utilizzi. L’app suggerisce una lingua in base alle impostazioni del tuo computer, ma puoi cambiarla a tuo piacimento.",
         },
-        { kind: "h3", text: "2ª fase: Tipo di computer" },
-        { kind: "p", text: "Qui selezioni il tipo di computer. Ce ne sono due:" },
+        { kind: "h3", text: "2ª fase: Modo d'uso" },
+        { kind: "p", text: "Qui selezioni il modo d'uso. Ce ne sono due:" },
         {
           kind: "ul",
           items: [
-            "**Computer del Maestro**: responsabile di aggiungere, modificare e rimuovere brani e spartiti, controllando cosa va o non va verso gli altri computer.",
-            "**Computer delle Prove**: utilizzato solo per la lettura dei brani e spartiti che il **computer del maestro** ha reso disponibili.",
+            "**Modo Gestire**: responsabile di aggiungere, modificare e rimuovere brani e spartiti, controllando cosa va o non va verso gli altri computer.",
+            "**Modo Consulta**: utilizzato solo per la lettura dei brani e spartiti che il **modo Gestire** ha reso disponibili.",
           ],
         },
         { kind: "h3", text: "3ª fase: Nome del computer e nome dell’organizzazione o istituzione" },
@@ -2069,7 +2094,7 @@ const it: DocsMessages = {
         { kind: "h3", text: "5ª fase: Revisione delle informazioni" },
         {
           kind: "p",
-          text: "E, infine, abbiamo la schermata di revisione delle informazioni, che mostra il nome del computer, il nome dell’orchestra o istituzione, il tipo di computer e il provider cloud.",
+          text: "E, infine, abbiamo la schermata di revisione delle informazioni, che mostra il nome del computer, il nome dell’orchestra o istituzione, il modo d'uso e il provider cloud.",
         },
       ],
     },
@@ -2154,7 +2179,7 @@ const it: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**Se la modifica non è ancora pronta:** clicca su **continua**. Lo spartito verrà inviato con stato **invio non consentito** e non apparirà sui computer delle prove.",
+          text: "**Se la modifica non è ancora pronta:** clicca su **continua**. Lo spartito verrà inviato con stato **invio non consentito** e non apparirà sui modo Consulta.",
         },
         {
           kind: "p",
@@ -2168,21 +2193,21 @@ const it: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Ora, cliccando di nuovo sull’icona di **sync**, il report mostrerà lo stato come **invio consentito** e lo spartito verrà inviato ai computer delle prove. Il processo è lo stesso descritto in [invio al cloud](#invio-cloud).",
+          text: "Ora, cliccando di nuovo sull’icona di **sync**, il report mostrerà lo stato come **invio consentito** e lo spartito verrà inviato ai modo Consulta. Il processo è lo stesso descritto in [invio al cloud](#invio-cloud).",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Installazione sul computer delle prove" },
+        { kind: "h3", text: "Installazione sul modo Consulta" },
         {
           kind: "p",
-          text: "Il processo è lo stesso dell’argomento [installazione](#installazione). L’unica differenza è che, nella 2ª fase, selezioni **computer delle prove**.",
+          text: "Il processo è lo stesso dell’argomento [installazione](#installazione). L’unica differenza è che, nella 2ª fase, selezioni **modo Consulta**.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "Devi usare lo **stesso provider cloud** (Koofr o Google Drive) e lo **stesso account** che è sul **computer del maestro**. Altrimenti, i computer non potranno scambiare informazioni.",
+          text: "Devi usare lo **stesso provider cloud** (Koofr o Google Drive) e lo **stesso account** che è sul **modo Gestire**. Altrimenti, i computer non potranno scambiare informazioni.",
         },
         { kind: "p", text: "Nella schermata iniziale di Ottavada, clicca sull’icona di **sync**." },
         { kind: "image", name: "image22", alt: "" },
@@ -2190,7 +2215,7 @@ const it: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "E basta, semplice così. Ciò che è stato aggiunto, modificato e anche rimosso sul **computer del maestro** appare già sul **computer delle prove**. Nel nostro esempio sono stati solo aggiunti e modificati (è stato modificato lo spartito di **Oboe I**, ma poiché era stato impostato con stato **invio consentito** è apparso).",
+          text: "E basta, semplice così. Ciò che è stato aggiunto, modificato e anche rimosso sul **modo Gestire** appare già sul **modo Consulta**. Nel nostro esempio sono stati solo aggiunti e modificati (è stato modificato lo spartito di **Oboe I**, ma poiché era stato impostato con stato **invio consentito** è apparso).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -2203,7 +2228,7 @@ const it: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Devi installare Ottavada sul computer e seguire le procedure di [installazione](#installazione); nella 2ª fase, seleziona **computer del maestro** e usa lo stesso provider cloud e le stesse credenziali (nel caso di Koofr, email e password dell’app; nel caso di Google Drive, accesso all’account).",
+          text: "Devi installare Ottavada sul computer e seguire le procedure di [installazione](#installazione); nella 2ª fase, seleziona **modo Gestire** e usa lo stesso provider cloud e le stesse credenziali (nel caso di Koofr, email e password dell’app; nel caso di Google Drive, accesso all’account).",
         },
         { kind: "p", text: "Vai semplicemente nelle impostazioni (icona dell’ingranaggio)." },
         { kind: "image", name: "image25", alt: "" },
@@ -2246,7 +2271,7 @@ const de: DocsMessages = {
     enviandoNuvem: "In die Cloud senden",
     realizandoAlteracoes: "Änderungen vornehmen",
     backup: "Backup wiederherstellen",
-    baixando: "Auf dem Proben-Computer herunterladen",
+    baixando: "Auf dem Konsultieren-Modus herunterladen",
     suporte: "Support",
   },
   anchors: {
@@ -2287,7 +2312,7 @@ const de: DocsMessages = {
     conceitos: {
       blocks: [
         { kind: "h3", text: "Wie funktioniert es?" },
-        { kind: "h4", text: "Dirigenten-Computer" },
+        { kind: "h4", text: "Verwalten-Modus" },
         {
           kind: "p",
           text: "Es ist der Computer, der für das Hinzufügen, Bearbeiten und Entfernen von Stücken, Partituren, Kategorien, Komponisten, Arrangeuren und das Senden von Backups an den Cloud-Anbieter zuständig ist.",
@@ -2295,27 +2320,32 @@ const de: DocsMessages = {
         { kind: "h4", text: "Cloud-Anbieter" },
         {
           kind: "p",
-          text: "Er ist der Vermittler zwischen den Computern. Er empfängt die vom **Dirigenten-Computer** gesendeten Dateien und leitet sie an die anderen Computer weiter.",
+          text: "Er ist der Vermittler zwischen den Computern. Er empfängt die vom **Verwalten-Modus** gesendeten Dateien und leitet sie an die anderen Computer weiter.",
         },
-        { kind: "h4", text: "Proben-Computer" },
+        { kind: "h4", text: "Konsultieren-Modus" },
         {
           kind: "p",
-          text: "Es ist der Computer, der ausschließlich dazu verwendet wird, die vom **Dirigenten-Computer** **erlaubten** Stücke und Partituren einzusehen.",
+          text: "Es ist der Computer, der ausschließlich dazu verwendet wird, die vom **Verwalten-Modus** **erlaubten** Stücke und Partituren einzusehen.",
         },
         { kind: "h3", text: "Einschränkungen" },
-        { kind: "h4", text: "Mehr als ein Dirigenten-Computer zur gleichen Zeit" },
+        { kind: "h4", text: "Mehr als ein Verwalten-Modus zur gleichen Zeit" },
         {
           kind: "p",
-          text: "Ottavada unterstützt nicht die gleichzeitige Nutzung von mehr als einem **Dirigenten-Computer**. Dies ist eine bewusste architektonische Einschränkung: Da Ottavada nicht von einem zentralen Server abhängt, entstehen für den Entwickler keine hohen Wartungskosten, weshalb das Tool völlig kostenlos sein kann, ohne Abonnement, ohne Gebühren und ohne irgendetwas, das darin verkauft wird.",
+          text: "Ottavada unterstützt nicht die gleichzeitige Nutzung von mehr als einem **Verwalten-Modus**. Dies ist eine bewusste architektonische Einschränkung: Da Ottavada nicht von einem zentralen Server abhängt, entstehen für den Entwickler keine hohen Wartungskosten, weshalb das Tool völlig kostenlos sein kann, ohne Abonnement, ohne Gebühren und ohne irgendetwas, das darin verkauft wird.",
         },
         {
           kind: "p",
-          text: "Sie können mehr als einen **Dirigenten-Computer** haben, solange sie zu **unterschiedlichen Zeiten** verwendet werden. Da Ottavada kontinuierlich Informationen an den Cloud-Anbieter sendet, können mehrere gleichzeitige Sendungen zu Konflikten und Datenverlust führen. Wenn Sie sie gleichzeitig verwenden müssen, können Sie das tun, aber Sie übernehmen das Risiko von Konflikten. **Eine Lösung für dieses Szenario ist bereits in Planung**.",
+          text: "Sie können mehr als einen **Verwalten-Modus** haben, solange sie zu **unterschiedlichen Zeiten** verwendet werden. Da Ottavada kontinuierlich Informationen an den Cloud-Anbieter sendet, können mehrere gleichzeitige Sendungen zu Konflikten und Datenverlust führen. Wenn Sie sie gleichzeitig verwenden müssen, können Sie das tun, aber Sie übernehmen das Risiko von Konflikten. **Eine Lösung für dieses Szenario ist bereits in Planung**.",
         },
         {
           kind: "callout",
           tone: "note",
-          text: "Der **Proben-Computer** hat diese Einschränkung nicht, da er nur zum Lesen verwendet wird und nichts an die Cloud sendet.",
+          text: "Der **Konsultieren-Modus** hat diese Einschränkung nicht, da er nur zum Lesen verwendet wird und nichts an die Cloud sendet.",
+        },
+        { kind: "h3", text: "Telemetrie und Datenschutz" },
+        {
+          kind: "p",
+          text: "Um zu erfahren, wie viele Menschen Ottavada nutzen, erfasst die App einige Nutzungsdaten. Es werden keine persönlichen Daten erfasst: weder der Name Ihres Computers noch der Name Ihrer Organisation. Diese Daten dienen nur der Statistik, werden verschlüsselt gespeichert und niemals geteilt oder verkauft.",
         },
         { kind: "h3", text: "Stücke und Partituren" },
         {
@@ -2373,35 +2403,35 @@ const de: DocsMessages = {
         { kind: "h4", text: "Status von Stück und Partitur" },
         {
           kind: "p",
-          text: "Jedes **Stück** und jede **Partitur** hat einen **Status**, der definiert, was an den **Proben-Computer** gesendet wird oder nicht.",
+          text: "Jedes **Stück** und jede **Partitur** hat einen **Status**, der definiert, was an den **Konsultieren-Modus** gesendet wird oder nicht.",
         },
         { kind: "p", text: "**Stückstatus:**" },
         {
           kind: "ul",
           items: [
-            "**Senden erlaubt:** das Stück wird an den **Proben-Computer** gesendet und hat mindestens ein Instrument mit Status **Senden erlaubt**.",
-            "**Senden nicht erlaubt:** das Stück wird nicht an den **Proben-Computer** gesendet und alle seine Instrumente haben den Status **Senden nicht erlaubt**.",
-            "**Keine Partitur:** das Stück wird nicht an den **Proben-Computer** gesendet und hat außerdem keine Partitur.",
+            "**Senden erlaubt:** das Stück wird an den **Konsultieren-Modus** gesendet und hat mindestens ein Instrument mit Status **Senden erlaubt**.",
+            "**Senden nicht erlaubt:** das Stück wird nicht an den **Konsultieren-Modus** gesendet und alle seine Instrumente haben den Status **Senden nicht erlaubt**.",
+            "**Keine Partitur:** das Stück wird nicht an den **Konsultieren-Modus** gesendet und hat außerdem keine Partitur.",
           ],
         },
         { kind: "p", text: "**Partiturenstatus:**" },
         {
           kind: "ul",
           items: [
-            "**Senden erlaubt:** die Partitur wird an den **Proben-Computer** gesendet.",
-            "**Senden nicht erlaubt:** die Partitur wird nicht an den **Proben-Computer** gesendet.",
+            "**Senden erlaubt:** die Partitur wird an den **Konsultieren-Modus** gesendet.",
+            "**Senden nicht erlaubt:** die Partitur wird nicht an den **Konsultieren-Modus** gesendet.",
             "**Ignoriert:** die Partitur wird von Ottavada ignoriert, als ob sie nicht existieren würde.",
           ],
         },
         { kind: "callout", tone: "tip", text: "Durch Klicken auf das Bild können Sie es im Vollbildmodus ansehen." },
         {
           kind: "p",
-          text: "**Beispiel:** Im Bild unten hat der **Dirigenten-Computer** (links) ein Stück, dessen **Oboe I**-Partitur den Status **Senden nicht erlaubt** hat. Beachten Sie, dass dieses Stück auf dem **Proben-Computer** (rechts) nicht erscheint.",
+          text: "**Beispiel:** Im Bild unten hat der **Verwalten-Modus** (links) ein Stück, dessen **Oboe I**-Partitur den Status **Senden nicht erlaubt** hat. Beachten Sie, dass dieses Stück auf dem **Konsultieren-Modus** (rechts) nicht erscheint.",
         },
         { kind: "image", name: "image1", alt: "" },
         {
           kind: "p",
-          text: "Ebenso wird das Stück, wenn das gesamte Stück den Status **Senden nicht erlaubt** hat, auch nicht auf dem Proben-Computer angezeigt.",
+          text: "Ebenso wird das Stück, wenn das gesamte Stück den Status **Senden nicht erlaubt** hat, auch nicht auf dem Konsultieren-Modus angezeigt.",
         },
         { kind: "image", name: "image2", alt: "" },
         { kind: "h4", text: "Duplikate sind nicht erlaubt" },
@@ -2443,13 +2473,13 @@ const de: DocsMessages = {
           kind: "p",
           text: "Hier wählen Sie die Sprache aus, die Ottavada verwenden soll. Die App schlägt eine Sprache basierend auf den Einstellungen Ihres Computers vor, aber Sie können sie nach Ihren Wünschen ändern.",
         },
-        { kind: "h3", text: "Schritt 2: Computertyp" },
-        { kind: "p", text: "Hier wählen Sie den Computertyp. Es gibt zwei:" },
+        { kind: "h3", text: "Schritt 2: Verwendungsmodus" },
+        { kind: "p", text: "Hier wählen Sie den Verwendungsmodus. Es gibt zwei:" },
         {
           kind: "ul",
           items: [
-            "**Dirigenten-Computer**: verantwortlich für das Hinzufügen, Bearbeiten und Entfernen von Stücken und Partituren und steuert, was an die anderen Computer gesendet wird oder nicht.",
-            "**Proben-Computer**: wird nur zum Lesen der Stücke und Partituren verwendet, die der **Dirigenten-Computer** zur Verfügung gestellt hat.",
+            "**Verwalten-Modus**: verantwortlich für das Hinzufügen, Bearbeiten und Entfernen von Stücken und Partituren und steuert, was an die anderen Computer gesendet wird oder nicht.",
+            "**Konsultieren-Modus**: wird nur zum Lesen der Stücke und Partituren verwendet, die der **Verwalten-Modus** zur Verfügung gestellt hat.",
           ],
         },
         { kind: "h3", text: "Schritt 3: Computername und Name der Organisation oder Institution" },
@@ -2504,7 +2534,7 @@ const de: DocsMessages = {
         { kind: "h3", text: "Schritt 5: Überprüfung der Informationen" },
         {
           kind: "p",
-          text: "Und schließlich haben wir den Informationsüberprüfungsbildschirm, der den Computernamen, den Namen des Orchesters oder der Institution, den Computertyp und den Cloud-Anbieter anzeigt.",
+          text: "Und schließlich haben wir den Informationsüberprüfungsbildschirm, der den Computernamen, den Namen des Orchesters oder der Institution, den Verwendungsmodus und den Cloud-Anbieter anzeigt.",
         },
       ],
     },
@@ -2589,7 +2619,7 @@ const de: DocsMessages = {
         { kind: "image", name: "image19", alt: "" },
         {
           kind: "p",
-          text: "**Wenn die Änderung noch nicht fertig ist:** klicken Sie auf **Fortfahren**. Die Partitur wird mit dem Status **Senden nicht erlaubt** gesendet und erscheint nicht auf den Proben-Computern.",
+          text: "**Wenn die Änderung noch nicht fertig ist:** klicken Sie auf **Fortfahren**. Die Partitur wird mit dem Status **Senden nicht erlaubt** gesendet und erscheint nicht auf den Konsultieren-Modusn.",
         },
         {
           kind: "p",
@@ -2603,21 +2633,21 @@ const de: DocsMessages = {
         { kind: "image", name: "image21", alt: "" },
         {
           kind: "p",
-          text: "Wenn Sie nun erneut auf das **Sync**-Symbol klicken, zeigt der Bericht den Status als **Senden erlaubt** und die Partitur wird an die Proben-Computer gesendet. Der Vorgang ist derselbe wie unter [in die Cloud senden](#in-cloud-senden) beschrieben.",
+          text: "Wenn Sie nun erneut auf das **Sync**-Symbol klicken, zeigt der Bericht den Status als **Senden erlaubt** und die Partitur wird an die Konsultieren-Modus gesendet. Der Vorgang ist derselbe wie unter [in die Cloud senden](#in-cloud-senden) beschrieben.",
         },
       ],
     },
     baixando: {
       blocks: [
-        { kind: "h3", text: "Installation auf dem Proben-Computer" },
+        { kind: "h3", text: "Installation auf dem Konsultieren-Modus" },
         {
           kind: "p",
-          text: "Der Vorgang ist derselbe wie im Thema [Installation](#installation). Der einzige Unterschied ist, dass Sie in Schritt 2 **Proben-Computer** auswählen.",
+          text: "Der Vorgang ist derselbe wie im Thema [Installation](#installation). Der einzige Unterschied ist, dass Sie in Schritt 2 **Konsultieren-Modus** auswählen.",
         },
         {
           kind: "callout",
           tone: "important",
-          text: "Sie müssen denselben **Cloud-Anbieter** (Koofr oder Google Drive) und dasselbe **Konto** verwenden, das auf dem **Dirigenten-Computer** ist. Andernfalls können die Computer keine Informationen austauschen.",
+          text: "Sie müssen denselben **Cloud-Anbieter** (Koofr oder Google Drive) und dasselbe **Konto** verwenden, das auf dem **Verwalten-Modus** ist. Andernfalls können die Computer keine Informationen austauschen.",
         },
         { kind: "p", text: "Klicken Sie auf dem Startbildschirm von Ottavada auf das **Sync**-Symbol." },
         { kind: "image", name: "image22", alt: "" },
@@ -2625,7 +2655,7 @@ const de: DocsMessages = {
         { kind: "image", name: "image23", alt: "" },
         {
           kind: "p",
-          text: "Und das war’s, so einfach ist das. Was auf dem **Dirigenten-Computer** hinzugefügt, geändert oder sogar entfernt wurde, erscheint bereits auf dem **Proben-Computer**. In unserem Beispiel wurden nur eine Hinzufügung und eine Änderung vorgenommen (die **Oboe I**-Partitur wurde geändert, aber da sie auf den Status **Senden erlaubt** gesetzt wurde, erschien sie).",
+          text: "Und das war’s, so einfach ist das. Was auf dem **Verwalten-Modus** hinzugefügt, geändert oder sogar entfernt wurde, erscheint bereits auf dem **Konsultieren-Modus**. In unserem Beispiel wurden nur eine Hinzufügung und eine Änderung vorgenommen (die **Oboe I**-Partitur wurde geändert, aber da sie auf den Status **Senden erlaubt** gesetzt wurde, erschien sie).",
         },
         { kind: "image", name: "image24", alt: "" },
       ],
@@ -2638,7 +2668,7 @@ const de: DocsMessages = {
         },
         {
           kind: "p",
-          text: "Sie müssen Ottavada auf dem Computer installieren und die Schritte aus der [Installation](#installation) befolgen; in Schritt 2 wählen Sie **Dirigenten-Computer** und verwenden denselben Cloud-Anbieter und dieselben Anmeldedaten (für Koofr: E-Mail und App-Passwort; für Google Drive: Kontozugriff).",
+          text: "Sie müssen Ottavada auf dem Computer installieren und die Schritte aus der [Installation](#installation) befolgen; in Schritt 2 wählen Sie **Verwalten-Modus** und verwenden denselben Cloud-Anbieter und dieselben Anmeldedaten (für Koofr: E-Mail und App-Passwort; für Google Drive: Kontozugriff).",
         },
         { kind: "p", text: "Gehen Sie einfach zu den Einstellungen (Zahnrad-Symbol)." },
         { kind: "image", name: "image25", alt: "" },

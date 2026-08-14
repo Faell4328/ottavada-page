@@ -1,3 +1,3 @@
-# Ottavada — Página oficial
+# Ottavada — Official site
 
-Landing page do **Ottavada**, software gratuito para gerenciar, organizar e sincronizar partituras de orquestra.
+Landing page for **Ottavada**, free software to manage, organize and sync orchestra sheet music.

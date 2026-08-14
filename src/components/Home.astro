@@ -45,7 +45,6 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       <span class="hero-title-line" id="hero-line-1"></span>
       {t.hero.line2 && <span class="hero-title-line" id="hero-line-2"></span>}
     </h1>
-    <p class="hero-subtitle">{t.hero.subtitle}</p>
     <div class="hero-cta">
       <a class="button" id="hero-cta-btn" href={thanksHref} rel="noreferrer">
         <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -59,16 +58,30 @@ const ogUrl = `https://ottavada.com/${locale}/`;
   <main class="container main-content">
     <section class="section" id="descricao">
       <div style="text-align: center;">
-        <span class="section-kicker">{t.sections.descricao.kicker}</span>
-        <p class="description-text">{t.sections.descricao.text}</p>
+        <div class="description-text">
+          <span class="section-kicker">{t.sections.descricao.kicker}</span>
+          <p>{t.sections.descricao.text}</p>
+        </div>
         <div class="section-divider"></div>
       </div>
     </section>
 
     <section class="section" id="para-quem">
       <div style="text-align: center;">
-        <span class="section-kicker">{t.sections.paraQuem.kicker}</span>
-        <p class="description-text">{t.sections.paraQuem.text}</p>
+        <div class="description-text">
+          <span class="section-kicker">{t.sections.paraQuem.kicker}</span>
+          <p>{t.sections.paraQuem.text}</p>
+        </div>
+        <div class="section-divider"></div>
+      </div>
+    </section>
+
+    <section class="section" id="como-funciona">
+      <div style="text-align: center;">
+        <div class="description-text">
+          <span class="section-kicker">{t.sections.comoFunciona.kicker}</span>
+          <p>{t.sections.comoFunciona.text}</p>
+        </div>
         <div class="section-divider"></div>
       </div>
     </section>
@@ -80,12 +93,8 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       </div>
       <div class="benefits-grid">
         <article class="benefit-card">
-          <div><span class="card-icon">📂</span><h3>{t.benefits.indexacao.title}</h3></div>
-          <div class="card-body"><p>{t.benefits.indexacao.body}</p></div>
-        </article>
-        <article class="benefit-card">
-          <div><span class="card-icon">🎯</span><h3>{t.benefits.duplicatas.title}</h3></div>
-          <div class="card-body"><p>{t.benefits.duplicatas.body}</p></div>
+          <div><span class="card-icon">🔄</span><h3>{t.benefits.ferramentas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.ferramentas.body}</p></div>
         </article>
         <article class="benefit-card">
           <div><span class="card-icon">🧹</span><h3>{t.benefits.duplicacoesOcultas.title}</h3></div>
@@ -102,10 +111,6 @@ const ogUrl = `https://ottavada.com/${locale}/`;
         <article class="benefit-card">
           <div><span class="card-icon">⭐</span><h3>{t.benefits.favoritos.title}</h3></div>
           <div class="card-body"><p>{t.benefits.favoritos.body}</p></div>
-        </article>
-        <article class="benefit-card">
-          <div><span class="card-icon">🔄</span><h3>{t.benefits.ferramentas.title}</h3></div>
-          <div class="card-body"><p>{t.benefits.ferramentas.body}</p></div>
         </article>
       </div>
     </section>
@@ -182,12 +187,35 @@ const ogUrl = `https://ottavada.com/${locale}/`;
           <div><span class="card-icon">☁️</span><h3>{t.benefits.semLigar.title}</h3></div>
           <div class="card-body"><p>{t.benefits.semLigar.body}</p></div>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="limitacoes">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.limitacoes.kicker}</span>
+        <h2>{t.sections.limitacoes.heading}</h2>
+        <p class="description-text">{t.sections.limitacoes.intro}</p>
+      </div>
+      <div class="benefits-grid grid-2col">
         <article class="benefit-card">
-          <div><span class="card-icon">💻</span><h3>{t.benefits.openSource.title}</h3></div>
-          <div class="card-body"><p>
-            {t.benefits.openSource.body}{" "}
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Faell4328/ottavada">GitHub</a>.
-          </p></div>
+          <div><span class="card-icon">📁</span><h3>{t.benefits.limPastas.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.limPastas.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">📦</span><h3>{t.benefits.limMovida.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.limMovida.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">⚠️</span><h3>{t.benefits.limGerir.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.limGerir.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">📶</span><h3>{t.benefits.limInternet.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.limInternet.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">🧭</span><h3>{t.benefits.limAdaptacao.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.limAdaptacao.body}</p></div>
         </article>
       </div>
     </section>
