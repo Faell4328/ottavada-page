@@ -12,13 +12,15 @@ const t = docs[locale];
 const imageSuffix = locale === "pt-BR" ? "pt-BR" : "en";
 
 function imageSrc(name: string): string {
+  if (name === "image5" || name === "image6") return `/docs/files/${name}.avif`;
   return `/docs/files/${name}-${imageSuffix}.avif`;
 }
 
 function renderInline(input: string): string {
   return input
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
-    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+    .replace(/\n/g, "<br>");
 }
 ---
 
@@ -66,33 +68,40 @@ function renderInline(input: string): string {
             >
           </li>
           <li>
-            <a href={`#${t.anchors.primeirosPassos}`} class="docs-nav-link" data-nav-target={t.anchors.primeirosPassos}
+            <a
+              href={`#${t.anchors.primeirosPassos}`}
+              class="docs-nav-link"
+              data-nav-target={t.anchors.primeirosPassos}
               ><span class="docs-nav-text">{t.toc.primeirosPassos}</span></a
             >
           </li>
           <li>
-            <a href={`#${t.anchors.adicionandoMusica}`} class="docs-nav-link" data-nav-target={t.anchors.adicionandoMusica}
+            <a
+              href={`#${t.anchors.adicionandoMusica}`}
+              class="docs-nav-link"
+              data-nav-target={t.anchors.adicionandoMusica}
               ><span class="docs-nav-text">{t.toc.adicionandoMusica}</span></a
             >
           </li>
           <li>
-            <a href={`#${t.anchors.enviandoNuvem}`} class="docs-nav-link" data-nav-target={t.anchors.enviandoNuvem}
+            <a
+              href={`#${t.anchors.enviandoNuvem}`}
+              class="docs-nav-link"
+              data-nav-target={t.anchors.enviandoNuvem}
               ><span class="docs-nav-text">{t.toc.enviandoNuvem}</span></a
             >
           </li>
           <li>
-            <a href={`#${t.anchors.realizandoAlteracoes}`} class="docs-nav-link" data-nav-target={t.anchors.realizandoAlteracoes}
+            <a
+              href={`#${t.anchors.realizandoAlteracoes}`}
+              class="docs-nav-link"
+              data-nav-target={t.anchors.realizandoAlteracoes}
               ><span class="docs-nav-text">{t.toc.realizandoAlteracoes}</span></a
             >
           </li>
           <li>
             <a href={`#${t.anchors.backup}`} class="docs-nav-link" data-nav-target={t.anchors.backup}
               ><span class="docs-nav-text">{t.toc.backup}</span></a
-            >
-          </li>
-          <li>
-            <a href={`#${t.anchors.baixando}`} class="docs-nav-link" data-nav-target={t.anchors.baixando}
-              ><span class="docs-nav-text">{t.toc.baixando}</span></a
             >
           </li>
           <li>

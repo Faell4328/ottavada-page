@@ -84,3 +84,36 @@ export const NAV_LABEL: Record<Locale, string> = {
   it: "Navigazione principale",
   de: "Hauptnavigation",
 };
+
+export type StaticPage = "thanks" | "docs" | "download";
+
+export const PAGE_SLUGS: Record<StaticPage, Record<Locale, string>> = {
+  thanks: {
+    "pt-BR": "agradecimento",
+    en: "thank-you",
+    es: "gracias",
+    fr: "merci",
+    it: "ringraziamento",
+    de: "danke",
+  },
+  docs: {
+    "pt-BR": "documentacao",
+    en: "docs",
+    es: "documentacion",
+    fr: "documentation",
+    it: "documentazione",
+    de: "dokumentation",
+  },
+  download: {
+    "pt-BR": "download",
+    en: "download",
+    es: "descarga",
+    fr: "telechargement",
+    it: "download",
+    de: "download",
+  },
+};
+
+export function pagePath(page: StaticPage, locale: Locale): string {
+  return `/${PAGE_SLUGS[page][locale]}`;
+}

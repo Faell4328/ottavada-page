@@ -11,6 +11,7 @@ export type DownloadMessages = {
   winX64: string;
   winInstaller: string;
   linuxBtn: string;
+  linuxInstaller: string;
   macBtn: string;
   manualTitle: string;
   manual: string;
@@ -33,6 +34,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Baixar .exe x64",
     winInstaller: "Baixar instalador x32 e x64",
     linuxBtn: "Baixar .AppImage",
+    linuxInstaller: "Baixar instalador",
     macBtn: "Baixar .dmg",
     manualTitle: "Download manual",
     manual: "Baixar manualmente",
@@ -53,6 +55,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Download .exe x64",
     winInstaller: "Download installer x32 and x64",
     linuxBtn: "Download .AppImage",
+    linuxInstaller: "Download installer",
     macBtn: "Download .dmg",
     manualTitle: "Manual download",
     manual: "Download manually",
@@ -73,6 +76,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Descargar .exe x64",
     winInstaller: "Descargar instalador x32 y x64",
     linuxBtn: "Descargar .AppImage",
+    linuxInstaller: "Descargar instalador",
     macBtn: "Descargar .dmg",
     manualTitle: "Descarga manual",
     manual: "Descargar manualmente",
@@ -93,6 +97,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Télécharger .exe x64",
     winInstaller: "Télécharger l'installateur x32 et x64",
     linuxBtn: "Télécharger .AppImage",
+    linuxInstaller: "Télécharger l'installateur",
     macBtn: "Télécharger .dmg",
     manualTitle: "Téléchargement manuel",
     manual: "Télécharger manuellement",
@@ -113,6 +118,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Scarica .exe x64",
     winInstaller: "Scarica installatore x32 e x64",
     linuxBtn: "Scarica .AppImage",
+    linuxInstaller: "Scarica installatore",
     macBtn: "Scarica .dmg",
     manualTitle: "Download manuale",
     manual: "Scarica manualmente",
@@ -133,6 +139,7 @@ export const download: Record<Locale, DownloadMessages> = {
     winX64: "Download .exe x64",
     winInstaller: "Installer x32 und x64 herunterladen",
     linuxBtn: "Download .AppImage",
+    linuxInstaller: "Installer herunterladen",
     macBtn: "Download .dmg",
     manualTitle: "Manueller Download",
     manual: "Manuell herunterladen",

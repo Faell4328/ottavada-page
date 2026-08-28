@@ -3,7 +3,7 @@ import "~/styles/global.css";
 import "~/styles/chat.css";
 import ChatWidget from "~/components/ChatWidget.astro";
 import DocsHeader from "~/components/DocsHeader.astro";
-import { type Locale, SUPPORTED_LOCALES, type UiMessages, ui } from "~/i18n";
+import { DEFAULT_LOCALE, type Locale, SUPPORTED_LOCALES, pagePath, withLocale, type UiMessages, ui } from "~/i18n";
 
 interface Props {
   locale: Locale;
@@ -24,7 +24,7 @@ const {
   description,
   ogTitle,
   ogDescription,
-  ogUrl = `https://ottavada.com/${locale}/docs/`,
+  ogUrl = `https://ottavada.com${withLocale(pagePath("docs", locale), locale)}`,
   pageType = "website",
   msValidate = false,
   showChat = true,
@@ -35,7 +35,7 @@ const t: UiMessages = ui[locale];
 const siteOrigin = "https://ottavada.com";
 const hreflangs = SUPPORTED_LOCALES.map((code) => ({
   code,
-  href: `${siteOrigin}/${code}/docs/`,
+  href: `${siteOrigin}${withLocale(pagePath("docs", code), code)}`,
 }));
 ---
 
@@ -57,7 +57,7 @@ const hreflangs = SUPPORTED_LOCALES.map((code) => ({
     {hreflangs.map(({ code, href }) => (
       <link rel="alternate" hreflang={code} href={href} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteOrigin}/docs/`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteOrigin}${withLocale(pagePath("docs", DEFAULT_LOCALE), DEFAULT_LOCALE)}`} />
     <script is:inline>
       (function () {
         var STORAGE_KEY = "ottavada-lang";

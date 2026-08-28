@@ -2,10 +2,12 @@
 import {
   LOCALE_FLAGS,
   LOCALE_LABELS,
+  PAGE_SLUGS,
   SUPPORTED_LOCALES,
   stripLocaleFromPath,
   withLocale,
   type Locale,
+  type StaticPage,
 } from "~/i18n";
 
 interface Props {
@@ -15,12 +17,28 @@ interface Props {
 
 const { locale, pathname } = Astro.props as Props;
 const restPath = stripLocaleFromPath(pathname);
+
+let currentPage: StaticPage | null = null;
+for (const [page, slugs] of Object.entries(PAGE_SLUGS)) {
+  const slug = `/${slugs[locale]}/`;
+  if (restPath === slug) {
+    currentPage = page as StaticPage;
+    break;
+  }
+}
+
+function hrefFor(code: Locale): string {
+  if (currentPage) {
+    return withLocale(`/${PAGE_SLUGS[currentPage][code]}`, code);
+  }
+  return withLocale(restPath, code);
+}
 ---
 
 <div class="lang-flags">
   {
     SUPPORTED_LOCALES.map((code) => {
-      const href = withLocale(restPath, code);
+      const href = hrefFor(code);
       return (
         <a
           class:list={["lang-btn", { active: code === locale }]}

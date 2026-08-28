@@ -1,6 +1,6 @@
 ---
 import ThanksLayout from "~/layouts/ThanksLayout.astro";
-import { thanks, withLocale, type Locale } from "~/i18n";
+import { thanks, withLocale, pagePath, type Locale } from "~/i18n";
 
 interface Props {
   locale: Locale;
@@ -8,9 +8,9 @@ interface Props {
 
 const { locale } = Astro.props as Props;
 const t = thanks[locale];
-const docsHref = withLocale("/docs", locale);
+const docsHref = withLocale(pagePath("docs", locale), locale);
 const RELEASE_BASE = import.meta.env.PUBLIC_RELEASE_BASE;
-const LINUX_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_LINUX_APPIMAGE}`;
+const LINUX_URL = "/ottavada.sh";
 const MAC_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_MAC_DMG}`;
 ---
 
@@ -53,6 +53,7 @@ const MAC_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_MAC_DMG}`;
         downloadUrl = macUrl;
       } else {
         downloadUrl = linuxUrl;
+        downloadName = "ottavada.sh";
       }
 
       const downloadLink = document.createElement("a");

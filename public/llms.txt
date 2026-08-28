@@ -13,11 +13,11 @@ The official site is available in 6 languages: Portuguese (Brazil), English, Spa
 - [Home (IT)](https://ottavada.com/it/): Pagina iniziale
 - [Home (DE)](https://ottavada.com/de/): Startseite
 - [Documentation (EN)](https://ottavada.com/en/docs/): Full user guide — installation, first steps, adding music, syncing to the cloud, making changes, backup, support
-- [Documentation (PT-BR)](https://ottavada.com/pt-BR/docs/): Documentação completa em português
-- [Documentation (ES)](https://ottavada.com/es/docs/): Documentación en español
-- [Documentation (FR)](https://ottavada.com/fr/docs/): Documentation en français
-- [Documentation (IT)](https://ottavada.com/it/docs/): Documentazione in italiano
-- [Documentation (DE)](https://ottavada.com/de/docs/): Dokumentation auf Deutsch
+- [Documentation (PT-BR)](https://ottavada.com/pt-BR/documentacao/): Documentação completa em português
+- [Documentation (ES)](https://ottavada.com/es/documentacion/): Documentación en español
+- [Documentation (FR)](https://ottavada.com/fr/documentation/): Documentation en français
+- [Documentation (IT)](https://ottavada.com/it/documentazione/): Documentazione in italiano
+- [Documentation (DE)](https://ottavada.com/de/dokumentation/): Dokumentation auf Deutsch
 
 ## Key features
 

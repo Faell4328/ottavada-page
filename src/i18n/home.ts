@@ -1,4 +1,4 @@
-import type { Locale } from "./config";
+﻿import type { Locale } from "./config";
 
 export type BenefitMessages = {
   duplicacoesOcultas: { title: string; body: string };
@@ -10,6 +10,7 @@ export type BenefitMessages = {
   ensaio: { title: string; body: string };
   nuvem: { title: string; body: string };
   backup: { title: string; body: string };
+  compactacao: { title: string; body: string };
   arquivos: { title: string; body: string };
   desinstalou: { title: string; body: string };
   escolha: { title: string; body: string };
@@ -47,6 +48,7 @@ export type HomeMessages = {
     comoFunciona: { kicker: string; text: string };
     paraQuem: { kicker: string; text: string };
     organizacao: { kicker: string; heading: string };
+    modos: { kicker: string; heading: string };
     sincronizacao: { kicker: string; heading: string };
     liberdade: { kicker: string; heading: string };
     maisVantagens: { kicker: string; heading: string };
@@ -79,7 +81,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Baixar gratuitamente",
       ctaOs: "Baixar para %s",
-      ctaNote: "Para Windows, Linux e Mac — 100% gratuito",
+      ctaNote: "Para Windows, Linux e Mac - 100% gratuito",
       otherSystem: "Todos os downloads",
     },
     sections: {
@@ -99,9 +101,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organização",
         heading: "Ache qualquer partitura em segundos.",
       },
+      modos: {
+        kicker: "Modos de uso",
+        heading: "Um só aplicativo. Dois modos: Gerir e Consultar.",
+      },
       sincronizacao: {
         kicker: "Sincronização",
-        heading: "Um só aplicativo. Dois modos: Gerir e Consultar.",
+        heading: "Sincronize entre computadores sem complicação",
       },
       liberdade: {
         kicker: "Liberdade",
@@ -137,23 +143,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Continue usando suas ferramentas favoritas",
-        body: "Funciona com Finale, MuseScore, Sibelius, Dorico e Encore, além de PDF, MusicXML, MIDI. Você não muda nada no seu fluxo de trabalho.",
+        body: "Funciona com Finale, MuseScore, Sibelius, Dorico e Encore, além de PDF, MusicXML, XML, MIDI, MID e Dorico. Você não muda nada no seu fluxo de trabalho.",
       },
       maestro: {
         title: "Modo Gerir: controle total",
-        body: "Adicione, edite e remova músicas e partituras. Use uma partitura como base para criar outra. Defina o que vai para o modo Consultar e o que fica só com você.",
+        body: "Adicione, edite e remova músicas e partituras. Defina o que vai para o modo Consultar e o que fica só com você.",
       },
       ensaio: {
         title: "Modo Consultar: só leitura, zero risco",
         body: "Consulta rápida para a sala de ensaio. Os arquivos só podem ser visualizados, sem risco de alguém apagar ou alterar a partitura sem querer.",
       },
       nuvem: {
-        title: "Sincronize de graça pelo Google Drive ou Koofr",
-        body: "Sem custo de assinatura (com exceção se precisar de mais espaço do que os planos gratuitos suportam). Os arquivos são compactados antes do envio, ocupando menos espaço e sincronizando mais rápido.",
+        title: "Sincronize de graça por vários provedores de nuvem",
+        body: "Sem custo de assinatura (com exceção se precisar de mais espaço do que os planos gratuitos suportam). Escolha entre Koofr, Google Drive, Dropbox, OneDrive e pCloud, ou use seu próprio servidor com SFTP ou WebDAV.",
       },
       backup: {
         title: "PC formatou? Tudo de volta em 1 clique",
-        body: "Trocou de máquina ou formatou o computador? O Ottavada faz backup automático a cada hora, mantendo os 10 mais recentes. Suas pastas, arquivos e informações no Ottavada estão salvos. Um clique e tudo volta ao lugar, nas mesmas pastas de antes.",
+        body: "Trocou de máquina ou formatou o computador? Sempre que você aplica alterações, o Ottavada gera um backup automaticamente e mantém o mais recente na nuvem. Suas pastas, arquivos e informações no Ottavada estão salvos. Um clique e tudo volta ao lugar, nas mesmas pastas de antes.",
+      },
+      compactacao: {
+        title: "Arquivos compactados, sincronização mais rápida",
+        body: "Os arquivos são compactados antes do envio para a nuvem, ocupando menos espaço e sincronizando mais rápido.",
       },
       arquivos: {
         title: "Seus arquivos, suas regras",
@@ -181,7 +191,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "Sem servidor, sem PC ligado 24h",
-        body: "Outras ferramentas exigem um computador ligado o tempo todo como servidor. O Ottavada não: cada computador fala direto com o provedor de nuvem (Koofr ou Google Drive). Não sendo necessário manter ou contratar um servidor para usar o Ottavada.",
+        body: "Outras ferramentas exigem um computador ligado o tempo todo como servidor. O Ottavada não: cada computador fala direto com o provedor de nuvem. Não sendo necessário manter ou contratar um servidor para usar o Ottavada.",
       },
       copias: {
         title: "Funciona offline no ensaio",
@@ -196,8 +206,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "O Ottavada guarda o endereço de cada pasta indexada. Se você mover ou renomear a pasta de uma música, ele perde o caminho e você precisa indexar de novo para ele reencontrar. Não é complicado, mas é um passo a mais para lembrar.",
       },
       limGerir: {
-        title: "Dois computadores em Modo Gerir ao mesmo tempo? Evite",
-        body: "A nuvem é a ponte entre seus computadores. Se dois computadores em Modo Gerir sincronizarem ao mesmo tempo, eles podem se atrapalhar, um sobrescreve o que o outro enviou. Por isso a recomendação é clara: use um computador em Modo Gerir por vez.",
+        title: "Dois computadores em Modo Gerir? Não foi feito para isso",
+        body: "O Ottavada não foi projetado para usar dois computadores em Modo Gerir e não existe um mecanismo para isso. Se você precisar usar dois Modos Gerir (nunca ao mesmo tempo), será necessário importar o backup de um para o outro, um processo lento.",
       },
       limInternet: {
         title: "Sincronização precisa de internet",
@@ -239,7 +249,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Download for free",
       ctaOs: "Download for %s",
-      ctaNote: "For Windows, Linux and Mac — 100% free",
+      ctaNote: "For Windows, Linux and Mac - 100% free",
       otherSystem: "All downloads",
     },
     sections: {
@@ -259,9 +269,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organization",
         heading: "Find any sheet music in seconds.",
       },
+      modos: {
+        kicker: "Usage modes",
+        heading: "One app. Two modes: Manage and View.",
+      },
       sincronizacao: {
         kicker: "Sync",
-        heading: "One app. Two modes: Manage and Consult.",
+        heading: "Sync across computers without hassle",
       },
       liberdade: {
         kicker: "Freedom",
@@ -297,23 +311,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Keep using your favorite tools",
-        body: "Works with Finale, MuseScore, Sibelius, Dorico and Encore, plus PDF, MusicXML, MIDI. You don't change a thing in your workflow.",
+        body: "Works with Finale, MuseScore, Sibelius, Dorico and Encore, plus PDF, MusicXML, XML, MIDI, MID and Dorico. You don't change a thing in your workflow.",
       },
       maestro: {
-        title: "Manage mode: full control",
-        body: "Add, edit and remove pieces and sheet music. Use a score as a base to create another. Decide what goes to Consult mode and what stays only with you.",
+        title: "Manage Mode: full control",
+        body: "Add, edit and remove pieces and sheet music. Decide what goes to View Mode and what stays only with you.",
       },
       ensaio: {
-        title: "Consult mode: read-only, zero risk",
+        title: "View Mode: read-only, zero risk",
         body: "Quick reference for the rehearsal room. Files can only be viewed, with no risk of someone accidentally deleting or changing a score.",
       },
       nuvem: {
-        title: "Sync free via Google Drive or Koofr",
-        body: "No subscription fees (unless you need more space than the free plans support). Files are compressed before upload, taking up less space and syncing faster.",
+        title: "Sync for free via several cloud providers",
+        body: "No subscription fees (unless you need more space than the free plans support). Choose between Koofr, Google Drive, Dropbox, OneDrive and pCloud, or use your own server with SFTP or WebDAV.",
       },
       backup: {
         title: "PC formatted? Back in 1 click",
-        body: "Switched machines or formatted the computer? Ottavada makes an automatic backup every hour, keeping the 10 most recent. Your folders, files and Ottavada information are saved. One click and everything is back in place, in the same folders as before.",
+        body: "Switched machines or formatted the computer? Whenever you apply changes, Ottavada automatically generates a backup and keeps the most recent one in the cloud. Your folders, files and Ottavada information are saved. One click and everything is back in place, in the same folders as before.",
+      },
+      compactacao: {
+        title: "Compressed files, faster sync",
+        body: "Files are compressed before being sent to the cloud, taking up less space and syncing faster.",
       },
       arquivos: {
         title: "Your files, your rules",
@@ -324,8 +342,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "If one day you decide to stop using it, your sheet music stays exactly where it was, organized, accessible, and with no dependency on Ottavada.",
       },
       escolha: {
-        title: "You decide what goes to Consult mode",
-        body: "Not every score needs to go to Consult mode. You choose: send, don't send or ignore. Draft scores stay only with you until they're ready to go to your other computers.",
+        title: "You decide what goes to View Mode",
+        body: "Not every score needs to go to View Mode. You choose: send, don't send or ignore. Draft scores stay only with you until they're ready to go to your other computers.",
       },
       idiomas: {
         title: "In 6 languages, from Brazil to Germany",
@@ -341,7 +359,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "No server, no PC on 24/7",
-        body: "Other tools require a computer running all the time as a server. Ottavada doesn't: each computer talks directly to the cloud provider (Koofr or Google Drive). No need to maintain or hire a server to use Ottavada.",
+        body: "Other tools require a computer running all the time as a server. Ottavada doesn't: each computer talks directly to the cloud provider. No need to maintain or hire a server to use Ottavada.",
       },
       copias: {
         title: "Works offline at rehearsal",
@@ -356,12 +374,12 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Ottavada stores the address of each indexed folder. If you move or rename a piece's folder, it loses the path and you need to index it again so it can find it. Not complicated, but an extra step to remember.",
       },
       limGerir: {
-        title: "Two computers in Manage mode at the same time? Avoid it",
-        body: "The cloud is the bridge between your computers. If two Manage mode computers sync at the same time, they can interfere with each other, one overwriting what the other sent. So the recommendation is clear: use one Manage mode computer at a time.",
+        title: "Two computers in Manage Mode? Not built for that",
+        body: "Ottavada was not designed to use two Manage Mode computers, and there is no mechanism for it. If you need to use two Manage Modes (never at the same time), you will need to import the backup from one to the other, a slow process.",
       },
       limInternet: {
         title: "Sync needs internet",
-        body: "Exchanging music between computers depends on the connection. Without internet, Consult mode keeps working with everything already downloaded, but nothing new arrives until the connection is back.",
+        body: "Exchanging music between computers depends on the connection. Without internet, View Mode keeps working with everything already downloaded, but nothing new arrives until the connection is back.",
       },
       limAdaptacao: {
         title: "It's a new tool: takes some getting used to",
@@ -399,7 +417,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Descargar gratis",
       ctaOs: "Descargar para %s",
-      ctaNote: "Para Windows, Linux y Mac — 100% gratuito",
+      ctaNote: "Para Windows, Linux y Mac - 100% gratuito",
       otherSystem: "Todos los downloads",
     },
     sections: {
@@ -419,9 +437,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organización",
         heading: "Encuentra cualquier partitura en segundos.",
       },
+      modos: {
+        kicker: "Modos de uso",
+        heading: "Una sola app. Dos modos: Gestionar y Consultar.",
+      },
       sincronizacao: {
         kicker: "Sincronización",
-        heading: "Una sola app. Dos modos: Gestionar y Consultar.",
+        heading: "Sincroniza entre ordenadores sin complicación",
       },
       liberdade: {
         kicker: "Libertad",
@@ -457,23 +479,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Sigue usando tus herramientas favoritas",
-        body: "Funciona con Finale, MuseScore, Sibelius, Dorico y Encore, además de PDF, MusicXML, MIDI. No cambias nada en tu flujo de trabajo.",
+        body: "Funciona con Finale, MuseScore, Sibelius, Dorico y Encore, además de PDF, MusicXML, XML, MIDI, MID y Dorico. No cambias nada en tu flujo de trabajo.",
       },
       maestro: {
         title: "Modo Gestionar: control total",
-        body: "Añade, edita y elimina canciones y partituras. Usa una partitura como base para crear otra. Define qué va al modo Consultar y qué se queda solo contigo.",
+        body: "Añade, edita y elimina canciones y partituras. Define qué va al modo Consultar y qué se queda solo contigo.",
       },
       ensaio: {
         title: "Modo Consultar: solo lectura, cero riesgo",
         body: "Consulta rápida para la sala de ensayo. Los archivos solo se pueden visualizar, sin riesgo de que alguien borre o cambie una partitura por accidente.",
       },
       nuvem: {
-        title: "Sincroniza gratis con Google Drive o Koofr",
-        body: "Sin coste de suscripción (salvo que necesites más espacio del que admiten los planes gratuitos). Los archivos se comprimen antes del envío, ocupando menos espacio y sincronizando más rápido.",
+        title: "Sincroniza gratis por varios proveedores de nube",
+        body: "Sin coste de suscripción (salvo que necesites más espacio del que admiten los planes gratuitos). Elige entre Koofr, Google Drive, Dropbox, OneDrive y pCloud, o usa tu propio servidor con SFTP o WebDAV.",
       },
       backup: {
         title: "¿PC formateado? Todo vuelve en 1 clic",
-        body: "¿Cambiaste de máquina o formateaste el ordenador? Ottavada hace una copia de seguridad automática cada hora, conservando las 10 más recientes. Tus carpetas, archivos e información en Ottavada están a salvo. Un clic y todo vuelve a su lugar, en las mismas carpetas de antes.",
+        body: "¿Cambiaste de máquina o formateaste el ordenador? Cada vez que aplicas cambios, Ottavada genera automáticamente una copia de seguridad y mantiene la más reciente en la nube. Tus carpetas, archivos e información en Ottavada están a salvo. Un clic y todo vuelve a su lugar, en las mismas carpetas de antes.",
+      },
+      compactacao: {
+        title: "Archivos comprimidos, sincronización más rápida",
+        body: "Los archivos se comprimen antes de enviarse a la nube, ocupando menos espacio y sincronizando más rápido.",
       },
       arquivos: {
         title: "Tus archivos, tus reglas",
@@ -501,7 +527,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "Sin servidor, sin PC encendido 24h",
-        body: "Otras herramientas exigen un ordenador encendido todo el tiempo como servidor. Ottavada no: cada ordenador habla directamente con el proveedor de nube (Koofr o Google Drive). Sin necesidad de mantener o contratar un servidor para usar Ottavada.",
+        body: "Otras herramientas exigen un ordenador encendido todo el tiempo como servidor. Ottavada no: cada ordenador habla directamente con el proveedor de nube. Sin necesidad de mantener o contratar un servidor para usar Ottavada.",
       },
       copias: {
         title: "Funciona offline en el ensayo",
@@ -516,8 +542,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Ottavada guarda la dirección de cada carpeta indexada. Si mueves o renombras la carpeta de una canción, pierde el camino y tienes que indexar de nuevo para que la vuelva a encontrar. No es complicado, pero es un paso más a recordar.",
       },
       limGerir: {
-        title: "¿Dos ordenadores en Modo Gestionar a la vez? Evítalo",
-        body: "La nube es el puente entre tus ordenadores. Si dos ordenadores en Modo Gestionar sincronizan al mismo tiempo, pueden estorbarse, uno sobrescribe lo que envió el otro. Por eso la recomendación es clara: usa un ordenador en Modo Gestionar por vez.",
+        title: "¿Dos ordenadores en Modo Gestionar? No fue hecho para eso",
+        body: "Ottavada no fue diseñado para usar dos ordenadores en Modo Gestionar, y no existe un mecanismo para ello. Si necesitas usar dos Modos Gestionar (nunca al mismo tiempo), tendrás que importar la copia de seguridad de uno al otro, un proceso lento.",
       },
       limInternet: {
         title: "La sincronización necesita internet",
@@ -559,7 +585,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Télécharger gratuitement",
       ctaOs: "Télécharger pour %s",
-      ctaNote: "Pour Windows, Linux et Mac — 100 % gratuit",
+      ctaNote: "Pour Windows, Linux et Mac - 100 % gratuit",
       otherSystem: "Tous les téléchargements",
     },
     sections: {
@@ -579,9 +605,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organisation",
         heading: "Trouvez n’importe quelle partition en secondes.",
       },
+      modos: {
+        kicker: "Modes d'utilisation",
+        heading: "Une seule app. Deux modes : Gestion et Consultation.",
+      },
       sincronizacao: {
         kicker: "Synchronisation",
-        heading: "Une seule app. Deux modes : Gérer et Consulter.",
+        heading: "Synchronisez entre ordinateurs sans complication",
       },
       liberdade: {
         kicker: "Liberté",
@@ -617,23 +647,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Gardez vos outils préférés",
-        body: "Compatible avec Finale, MuseScore, Sibelius, Dorico et Encore, ainsi que PDF, MusicXML, MIDI. Vous ne changez rien à votre flux de travail.",
+        body: "Compatible avec Finale, MuseScore, Sibelius, Dorico et Encore, ainsi que PDF, MusicXML, XML, MIDI, MID et Dorico. Vous ne changez rien à votre flux de travail.",
       },
       maestro: {
-        title: "Mode Gérer : contrôle total",
-        body: "Ajoutez, modifiez et supprimez des morceaux et partitions. Utilisez une partition comme base pour en créer une autre. Définissez ce qui va en mode Consulter et ce qui reste uniquement avec vous.",
+        title: "Mode Gestion : contrôle total",
+        body: "Ajoutez, modifiez et supprimez des morceaux et partitions. Définissez ce qui va en mode Consultation et ce qui reste uniquement avec vous.",
       },
       ensaio: {
-        title: "Mode Consulter : lecture seule, zéro risque",
+        title: "Mode Consultation : lecture seule, zéro risque",
         body: "Consultation rapide pour la salle de répétition. Les fichiers sont en lecture seule, sans risque qu’une partition soit supprimée ou modifiée par accident.",
       },
       nuvem: {
-        title: "Synchronisation gratuite via Google Drive ou Koofr",
-        body: "Sans frais d’abonnement (sauf si vous avez besoin de plus d’espace que les offres gratuites ne le permettent). Les fichiers sont compressés avant l’envoi : moins d’espace utilisé et synchronisation plus rapide.",
+        title: "Synchronisation gratuite via plusieurs fournisseurs de cloud",
+        body: "Sans frais d’abonnement (sauf si vous avez besoin de plus d’espace que les offres gratuites ne le permettent). Choisissez entre Koofr, Google Drive, Dropbox, OneDrive et pCloud, ou utilisez votre propre serveur avec SFTP ou WebDAV.",
       },
-      backup: {
+backup: {
         title: "PC formaté ? Tout revient en 1 clic",
-        body: "Vous avez changé de machine ou formaté votre ordinateur ? Ottavada fait une sauvegarde automatique toutes les heures, en conservant les 10 plus récentes. Vos dossiers, fichiers et informations dans Ottavada sont sauvegardés. Un clic et tout revient à sa place, dans les mêmes dossiers qu’avant.",
+        body: "Vous avez changé de machine ou formaté votre ordinateur ? Chaque fois que vous appliquez des modifications, Ottavada génère automatiquement une sauvegarde et conserve la plus récente dans le cloud. Vos dossiers, fichiers et informations dans Ottavada sont sauvegardés. Un clic et tout revient à sa place, dans les mêmes dossiers qu'avant.",
+      },
+      compactacao: {
+        title: "Fichiers compressés, synchronisation plus rapide",
+        body: "Les fichiers sont compressés avant d'être envoyés vers le cloud, occupant moins d'espace et se synchronisant plus rapidement.",
       },
       arquivos: {
         title: "Vos fichiers, vos règles",
@@ -644,8 +678,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Si un jour vous décidez d’arrêter, vos partitions restent exactement là où elles étaient, organisées, accessibles et sans aucune dépendance à Ottavada.",
       },
       escolha: {
-        title: "Vous décidez ce qui va en mode Consulter",
-        body: "Toutes les partitions n’ont pas besoin d’aller en mode Consulter. Vous choisissez : envoyer, ne pas envoyer ou ignorer. Les brouillons restent uniquement avec vous jusqu’à ce qu’ils soient prêts à partir vers vos autres ordinateurs.",
+        title: "Vous décidez ce qui va en mode Consultation",
+        body: "Toutes les partitions n’ont pas besoin d’aller en mode Consultation. Vous choisissez : envoyer, ne pas envoyer ou ignorer. Les brouillons restent uniquement avec vous jusqu’à ce qu’ils soient prêts à partir vers vos autres ordinateurs.",
       },
       idiomas: {
         title: "En 6 langues, du Brésil à l’Allemagne",
@@ -661,7 +695,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "Sans serveur, sans PC allumé 24h/24",
-        body: "D’autres outils exigent un ordinateur allumé en permanence comme serveur. Ottavada non : chaque ordinateur parle directement au fournisseur de cloud (Koofr ou Google Drive). Aucun besoin de maintenir ou de louer un serveur pour utiliser Ottavada.",
+        body: "D’autres outils exigent un ordinateur allumé en permanence comme serveur. Ottavada non : chaque ordinateur parle directement au fournisseur de cloud. Aucun besoin de maintenir ou de louer un serveur pour utiliser Ottavada.",
       },
       copias: {
         title: "Fonctionne hors ligne en répétition",
@@ -676,12 +710,12 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Ottavada enregistre l’adresse de chaque dossier indexé. Si vous déplacez ou renommez le dossier d’un morceau, il perd le chemin et vous devez réindexer pour qu’il le retrouve. Pas compliqué, mais un pas de plus à retenir.",
       },
       limGerir: {
-        title: "Deux ordinateurs en mode Gérer en même temps ? Évitez",
-        body: "Le cloud est le pont entre vos ordinateurs. Si deux ordinateurs en mode Gérer synchronisent en même temps, ils peuvent se gêner, l’un écrasant ce que l’autre a envoyé. La recommandation est donc claire : utilisez un ordinateur en mode Gérer à la fois.",
+        title: "Deux ordinateurs en mode Gestion ? Pas fait pour ça",
+        body: "Ottavada n’a pas été conçu pour utiliser deux ordinateurs en mode Gestion, et il n’existe aucun mécanisme pour cela. Si vous devez utiliser deux modes Gestion (jamais en même temps), vous devrez importer la sauvegarde de l’un vers l’autre, un processus lent.",
       },
       limInternet: {
         title: "La synchronisation a besoin d’internet",
-        body: "L’échange de morceaux entre ordinateurs dépend de la connexion. Sans internet, le mode Consulter continue de fonctionner avec tout ce qui a déjà été téléchargé, mais rien de nouveau n’arrive tant que la connexion ne revient pas.",
+        body: "L’échange de morceaux entre ordinateurs dépend de la connexion. Sans internet, le mode Consultation continue de fonctionner avec tout ce qui a déjà été téléchargé, mais rien de nouveau n’arrive tant que la connexion ne revient pas.",
       },
       limAdaptacao: {
         title: "C’est un nouvel outil : il faut un peu de temps pour s’y habituer",
@@ -719,7 +753,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Scarica gratuitamente",
       ctaOs: "Scarica per %s",
-      ctaNote: "Per Windows, Linux e Mac — 100% gratuito",
+      ctaNote: "Per Windows, Linux e Mac - 100% gratuito",
       otherSystem: "Tutti i download",
     },
     sections: {
@@ -739,9 +773,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organizzazione",
         heading: "Trova qualsiasi spartito in secondi.",
       },
+      modos: {
+        kicker: "Modalità d'uso",
+        heading: "Una sola app. Due modi: Gestione e Consultazione.",
+      },
       sincronizacao: {
         kicker: "Sincronizzazione",
-        heading: "Una sola app. Due modi: Gestire e Consulta.",
+        heading: "Sincronizza tra computer senza complicazioni",
       },
       liberdade: {
         kicker: "Libertà",
@@ -777,23 +815,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Continua a usare i tuoi strumenti preferiti",
-        body: "Funziona con Finale, MuseScore, Sibelius, Dorico e Encore, oltre a PDF, MusicXML, MIDI. Non cambi nulla nel tuo flusso di lavoro.",
+        body: "Funziona con Finale, MuseScore, Sibelius, Dorico e Encore, oltre a PDF, MusicXML, XML, MIDI, MID e Dorico. Non cambi nulla nel tuo flusso di lavoro.",
       },
       maestro: {
-        title: "Modo Gestire: controllo totale",
-        body: "Aggiungi, modifica e rimuovi brani e spartiti. Usa uno spartito come base per crearne un altro. Decidi cosa va nel modo Consulta e cosa resta solo con te.",
+        title: "Modalità Gestione: controllo totale",
+        body: "Aggiungi, modifica e rimuovi brani e spartiti. Decidi cosa va nella Modalità Consultazione e cosa resta solo con te.",
       },
       ensaio: {
-        title: "Modo Consulta: sola lettura, zero rischi",
+        title: "Modalità Consultazione: sola lettura, zero rischi",
         body: "Consultazione rapida per la sala prove. I file possono essere solo visualizzati, senza rischio che qualcuno elimini o modifichi uno spartito per sbaglio.",
       },
       nuvem: {
-        title: "Sincronizza gratis con Google Drive o Koofr",
-        body: "Nessun costo di abbonamento (a meno che tu non abbia bisogno di più spazio di quanto consentano i piani gratuiti). I file vengono compressi prima dell’invio: occupano meno spazio e si sincronizzano più velocemente.",
+        title: "Sincronizza gratis con più provider cloud",
+        body: "Nessun costo di abbonamento (a meno che tu non abbia bisogno di più spazio di quanto consentano i piani gratuiti). Scegli tra Koofr, Google Drive, Dropbox, OneDrive e pCloud, oppure usa il tuo server con SFTP o WebDAV.",
       },
-      backup: {
+backup: {
         title: "PC formattato? Tutto torna in 1 clic",
-        body: "Hai cambiato macchina o formattato il computer? Ottavada fa un backup automatico ogni ora, conservando i 10 più recenti. Le tue cartelle, i tuoi file e le informazioni in Ottavada sono al sicuro. Un clic e tutto torna al suo posto, nelle stesse cartelle di prima.",
+        body: "Hai cambiato macchina o formattato il computer? Ogni volta che applichi le modifiche, Ottavada genera automaticamente un backup e conserva il più recente nel cloud. Le tue cartelle, i tuoi file e le informazioni in Ottavada sono al sicuro. Un clic e tutto torna al suo posto, nelle stesse cartelle di prima.",
+      },
+      compactacao: {
+        title: "File compressi, sincronizzazione più veloce",
+        body: "I file vengono compressi prima di essere inviati al cloud, occupando meno spazio e sincronizzandosi più velocemente.",
       },
       arquivos: {
         title: "I tuoi file, le tue regole",
@@ -804,8 +846,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Se un giorno decidi di non usarlo più, i tuoi spartiti rimangono esattamente dove erano, organizzati, accessibili e senza alcuna dipendenza da Ottavada.",
       },
       escolha: {
-        title: "Decidi tu cosa va nel modo Consulta",
-        body: "Non tutti gli spartiti devono andare nel modo Consulta. Scegli tu: inviare, non inviare o ignorare. Le bozze restano solo con te finché non sono pronte per andare sugli altri computer.",
+        title: "Decidi tu cosa va nella Modalità Consultazione",
+        body: "Non tutti gli spartiti devono andare nella Modalità Consultazione. Scegli tu: inviare, non inviare o ignorare. Le bozze restano solo con te finché non sono pronte per andare sugli altri computer.",
       },
       idiomas: {
         title: "In 6 lingue, dal Brasile alla Germania",
@@ -821,7 +863,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "Nessun server, nessun PC acceso 24 ore",
-        body: "Altri strumenti richiedono un computer acceso tutto il tempo come server. Ottavada no: ogni computer parla direttamente con il provider cloud (Koofr o Google Drive). Nessuna necessità di mantenere o noleggiare un server per usare Ottavada.",
+        body: "Altri strumenti richiedono un computer acceso tutto il tempo come server. Ottavada no: ogni computer parla direttamente con il provider cloud. Nessuna necessità di mantenere o noleggiare un server per usare Ottavada.",
       },
       copias: {
         title: "Funziona offline in prova",
@@ -836,12 +878,12 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Ottavada memorizza l’indirizzo di ogni cartella indicizzata. Se sposti o rinomini la cartella di un brano, perde il percorso e devi indicizzare di nuovo perché la ritrovi. Non è complicato, ma è un passaggio in più da ricordare.",
       },
       limGerir: {
-        title: "Due computer in Modo Gestire nello stesso momento? Evita",
-        body: "Il cloud è il ponte tra i tuoi computer. Se due computer in Modo Gestire si sincronizzano nello stesso momento, possono interferire tra loro, uno sovrascrive ciò che ha inviato l’altro. Per questo la raccomandazione è chiara: usa un computer in Modo Gestire alla volta.",
+        title: "Due computer nella Modalità Gestione? Non è stato fatto per questo",
+        body: "Ottavada non è stato progettato per usare due computer nella Modalità Gestione, e non esiste un meccanismo per questo. Se hai bisogno di usare due Modalità Gestione (mai contemporaneamente), dovrai importare il backup da uno all’altro, un processo lento.",
       },
       limInternet: {
         title: "La sincronizzazione ha bisogno di internet",
-        body: "Lo scambio di brani tra computer dipende dalla connessione. Senza internet, il Modo Consulta continua a funzionare con tutto ciò che è già stato scaricato, ma nulla di nuovo arriva finché la connessione non torna.",
+        body: "Lo scambio di brani tra computer dipende dalla connessione. Senza internet, la Modalità Consultazione continua a funzionare con tutto ciò che è già stato scaricato, ma nulla di nuovo arriva finché la connessione non torna.",
       },
       limAdaptacao: {
         title: "È uno strumento nuovo: serve un po' di tempo per abituarsi",
@@ -879,7 +921,7 @@ export const home: Record<Locale, HomeMessages> = {
       line2: "",
       cta: "Kostenlos herunterladen",
       ctaOs: "Herunterladen für %s",
-      ctaNote: "Für Windows, Linux und Mac — 100 % kostenlos",
+      ctaNote: "Für Windows, Linux und Mac - 100 % kostenlos",
       otherSystem: "Alle Downloads",
     },
     sections: {
@@ -899,9 +941,13 @@ export const home: Record<Locale, HomeMessages> = {
         kicker: "Organisation",
         heading: "Finden Sie jede Note in Sekunden.",
       },
+      modos: {
+        kicker: "Nutzungsmodi",
+        heading: "Eine App. Zwei Modi: Verwaltungsmodus und Ansichtsmodus.",
+      },
       sincronizacao: {
         kicker: "Synchronisation",
-        heading: "Eine App. Zwei Modi: Verwalten und Konsultieren.",
+        heading: "Synchronisieren Sie zwischen Computern ohne Aufwand",
       },
       liberdade: {
         kicker: "Freiheit",
@@ -937,23 +983,27 @@ export const home: Record<Locale, HomeMessages> = {
       },
       ferramentas: {
         title: "Behalten Sie Ihre Lieblingswerkzeuge",
-        body: "Funktioniert mit Finale, MuseScore, Sibelius, Dorico und Encore sowie PDF, MusicXML, MIDI. Sie ändern nichts in Ihrem Workflow.",
+        body: "Funktioniert mit Finale, MuseScore, Sibelius, Dorico und Encore sowie PDF, MusicXML, XML, MIDI, MID und Dorico. Sie ändern nichts in Ihrem Workflow.",
       },
       maestro: {
-        title: "Verwalten-Modus: volle Kontrolle",
-        body: "Fügen Sie Stücke und Noten hinzu, bearbeiten und entfernen Sie sie. Verwenden Sie eine Note als Basis für eine andere. Legen Sie fest, was in den Konsultieren-Modus geht und was nur bei Ihnen bleibt.",
+        title: "Verwaltungsmodus: volle Kontrolle",
+        body: "Fügen Sie Stücke und Noten hinzu, bearbeiten und entfernen Sie sie. Legen Sie fest, was in den Ansichtsmodus geht und was nur bei Ihnen bleibt.",
       },
       ensaio: {
-        title: "Konsultieren-Modus: schreibgeschützt, null Risiko",
+        title: "Ansichtsmodus: schreibgeschützt, null Risiko",
         body: "Schnelle Referenz für den Probenraum. Dateien können nur angezeigt werden, ohne dass jemand versehentlich eine Note löscht oder ändert.",
       },
       nuvem: {
-        title: "Kostenlos synchronisieren via Google Drive oder Koofr",
-        body: "Keine Abo-Gebühren (außer Sie benötigen mehr Speicherplatz, als die kostenlosen Pläne erlauben). Dateien werden vor dem Hochladen komprimiert: weniger Speicherplatz und schnellere Synchronisation.",
+        title: "Kostenlos über mehrere Cloud-Anbieter synchronisieren",
+        body: "Keine Abo-Gebühren (außer Sie benötigen mehr Speicherplatz, als die kostenlosen Pläne erlauben). Wählen Sie zwischen Koofr, Google Drive, Dropbox, OneDrive und pCloud oder nutzen Sie Ihren eigenen Server mit SFTP oder WebDAV.",
       },
       backup: {
         title: "PC formatiert? Alles in 1 Klick zurück",
-        body: "Computer gewechselt oder formatiert? Ottavada erstellt jede Stunde automatisch ein Backup und behält die 10 neuesten. Ihre Ordner, Dateien und Informationen in Ottavada sind gesichert. Ein Klick und alles ist wieder da, in denselben Ordnern wie zuvor.",
+        body: "Computer gewechselt oder formatiert? Immer wenn Sie Änderungen anwenden, erstellt Ottavada automatisch ein Backup und behält das neueste in der Cloud. Ihre Ordner, Dateien und Informationen in Ottavada sind gesichert. Ein Klick und alles ist wieder da, in denselben Ordnern wie zuvor.",
+      },
+      compactacao: {
+        title: "Komprimierte Dateien, schnellere Synchronisation",
+        body: "Dateien werden vor dem Senden in die Cloud komprimiert, sodass sie weniger Speicherplatz belegen und schneller synchronisiert werden.",
       },
       arquivos: {
         title: "Ihre Dateien, Ihre Regeln",
@@ -964,8 +1014,8 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Wenn Sie sich eines Tages entscheiden, es nicht mehr zu verwenden, bleiben Ihre Noten genau dort, wo sie waren, organisiert, zugänglich und ohne Abhängigkeit von Ottavada.",
       },
       escolha: {
-        title: "Sie entscheiden, was in den Konsultieren-Modus geht",
-        body: "Nicht jede Note muss in den Konsultieren-Modus. Sie wählen: senden, nicht senden oder ignorieren. Entwürfe bleiben nur bei Ihnen, bis sie bereit sind, zu Ihren anderen Computern zu gehen.",
+        title: "Sie entscheiden, was in den Ansichtsmodus geht",
+        body: "Nicht jede Note muss in den Ansichtsmodus. Sie wählen: senden, nicht senden oder ignorieren. Entwürfe bleiben nur bei Ihnen, bis sie bereit sind, zu Ihren anderen Computern zu gehen.",
       },
       idiomas: {
         title: "In 6 Sprachen, von Brasilien bis Deutschland",
@@ -981,7 +1031,7 @@ export const home: Record<Locale, HomeMessages> = {
       },
       semLigar: {
         title: "Kein Server, kein PC, der 24/7 läuft",
-        body: "Andere Tools erfordern einen Computer, der die ganze Zeit als Server läuft. Ottavada nicht: Jeder Computer spricht direkt mit dem Cloud-Anbieter (Koofr oder Google Drive). Es ist nicht nötig, einen Server zu warten oder zu mieten, um Ottavada zu nutzen.",
+        body: "Andere Tools erfordern einen Computer, der die ganze Zeit als Server läuft. Ottavada nicht: Jeder Computer spricht direkt mit dem Cloud-Anbieter. Es ist nicht nötig, einen Server zu warten oder zu mieten, um Ottavada zu nutzen.",
       },
       copias: {
         title: "Funktioniert offline in der Probe",
@@ -996,12 +1046,12 @@ export const home: Record<Locale, HomeMessages> = {
         body: "Ottavada speichert die Adresse jedes indizierten Ordners. Wenn Sie den Ordner eines Stücks verschieben oder umbenennen, verliert es den Pfad und Sie müssen erneut indizieren, damit es ihn wiederfindet. Nicht kompliziert, aber ein zusätzlicher Schritt, an den man denken muss.",
       },
       limGerir: {
-        title: "Zwei Computer im Verwalten-Modus gleichzeitig? Vermeiden",
-        body: "Die Cloud ist die Brücke zwischen Ihren Computern. Wenn zwei Computer im Verwalten-Modus gleichzeitig synchronisieren, können sie sich gegenseitig stören – einer überschreibt, was der andere gesendet hat. Daher die klare Empfehlung: Nutzen Sie jeweils einen Computer im Verwalten-Modus.",
+        title: "Zwei Computer im Verwaltungsmodus? Nicht dafür gebaut",
+        body: "Ottavada wurde nicht dafür entwickelt, zwei Computer im Verwaltungsmodus zu verwenden, und es gibt keinen Mechanismus dafür. Wenn Sie zwei Verwaltungsmodi verwenden müssen (niemals gleichzeitig), müssen Sie das Backup importieren, ein langsamer Vorgang.",
       },
       limInternet: {
         title: "Synchronisation braucht Internet",
-        body: "Der Austausch von Stücken zwischen Computern hängt von der Verbindung ab. Ohne Internet funktioniert der Konsultieren-Modus mit allem, was bereits heruntergeladen wurde, weiter, aber nichts Neues kommt an, bis die Verbindung zurück ist.",
+        body: "Der Austausch von Stücken zwischen Computern hängt von der Verbindung ab. Ohne Internet funktioniert der Ansichtsmodus mit allem, was bereits heruntergeladen wurde, weiter, aber nichts Neues kommt an, bis die Verbindung zurück ist.",
       },
       limAdaptacao: {
         title: "Es ist ein neues Tool: Man braucht eine Weile, um sich daran zu gewöhnen",

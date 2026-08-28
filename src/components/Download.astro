@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import { download, type Locale } from "~/i18n";
+import { download, withLocale, pagePath, type Locale } from "~/i18n";
 
 interface Props {
   locale: Locale;
@@ -9,10 +9,11 @@ interface Props {
 const { locale } = Astro.props as Props;
 const t = download[locale];
 
-const ogUrl = `https://ottavada.com/${locale}/download/`;
+const ogUrl = `https://ottavada.com${withLocale(pagePath("download", locale), locale)}`;
 
 const RELEASE_BASE = import.meta.env.PUBLIC_RELEASE_BASE;
 const LINUX_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_LINUX_APPIMAGE}`;
+const LINUX_INSTALLER_URL = "/ottavada.sh";
 const MAC_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_MAC_DMG}`;
 const WIN_X32_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X32}`;
 const WIN_X64_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X64}`;
@@ -38,41 +39,45 @@ const WIN_X64_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X64}`;
           </div>
           <div class="dl-card-actions">
             <a class="button button-sm" href="/ottavada.cmd" download="ottavada.cmd">{t.winInstaller}</a>
-          </div>
-          <div class="dl-card-actions">
-            <a class="button button-sm" href={WIN_X64_URL}>{t.winX64}</a>
-            <a class="button button-sm" href={WIN_X32_URL}>{t.winX32}</a>
+            <a class="button button-sm button-outline" href={WIN_X64_URL}>{t.winX64}</a>
+            <a class="button button-sm button-outline" href={WIN_X32_URL}>{t.winX32}</a>
           </div>
         </div>
-        <a class="dl-card" href={LINUX_URL}>
+        <div class="dl-card">
           <div class="dl-card-head">
             <span class="dl-card-os">{t.linux}</span>
             <span class="dl-card-arch">{t.archLabel.linux}</span>
           </div>
           <div class="dl-card-actions">
-            <span class="button button-sm">{t.linuxBtn}</span>
+            <a class="button button-sm" href={LINUX_INSTALLER_URL} download="ottavada.sh">{t.linuxInstaller}</a>
+            <a class="button button-sm button-outline" href={LINUX_URL}>{t.linuxBtn}</a>
           </div>
-        </a>
-        <a class="dl-card" href={MAC_URL}>
+        </div>
+        <div class="dl-card">
           <div class="dl-card-head">
             <span class="dl-card-os">{t.mac}</span>
             <span class="dl-card-arch">{t.archLabel.mac}</span>
           </div>
           <div class="dl-card-actions">
-            <span class="button button-sm">{t.macBtn}</span>
+            <a class="button button-sm" href={MAC_URL}>{t.macBtn}</a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </main>
 
   <style>
     .dl-page {
-      padding: 7rem 0 3rem;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7rem 0 3rem;
     }
     .dl-container {
+      width: 100%;
       max-width: 42rem;
+      margin: 0 auto;
     }
     .dl-heading {
       font-size: 2.2rem;
@@ -124,7 +129,8 @@ const WIN_X64_URL = `${RELEASE_BASE}/${import.meta.env.PUBLIC_WIN_X64}`;
       gap: 0.9rem;
     }
     .button-sm {
-      padding: 0.6rem 1.3rem;
+      min-height: 2.6rem;
+      padding: 0.55rem 1.1rem;
       font-size: 0.85rem;
       white-space: nowrap;
     }

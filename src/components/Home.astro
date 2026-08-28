@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import { home, withLocale, type Locale } from "~/i18n";
+import { home, withLocale, pagePath, type Locale } from "~/i18n";
 
 import "~/styles/home.css";
 
@@ -10,9 +10,9 @@ interface Props {
 
 const { locale } = Astro.props as Props;
 const t = home[locale];
-const thanksHref = withLocale("/agradecimento", locale);
-const docsHref = withLocale("/docs", locale);
-const downloadHref = withLocale("/download", locale);
+const thanksHref = withLocale(pagePath("thanks", locale), locale);
+const docsHref = withLocale(pagePath("docs", locale), locale);
+const downloadHref = withLocale(pagePath("download", locale), locale);
 
 const schemaJson = JSON.stringify({
   "@context": "https://schema.org",
@@ -20,8 +20,7 @@ const schemaJson = JSON.stringify({
   name: "Ottavada",
   operatingSystem: "Windows, Linux, Mac",
   applicationCategory: "Multimedia",
-  description:
-    "Organize e sincronize partituras da sua orquestra de forma simples e eficiente.",
+  description: "Organize e sincronize partituras da sua orquestra de forma simples e eficiente.",
 });
 
 const ogUrl = `https://ottavada.com/${locale}/`;
@@ -43,11 +42,18 @@ const ogUrl = `https://ottavada.com/${locale}/`;
   <section class="hero-section">
     <h1 class="hero-title">
       <span class="hero-title-line" id="hero-line-1"></span>
-      {t.hero.line2 && <span class="hero-title-line" id="hero-line-2"></span>}
+      {t.hero.line2 && <span class="hero-title-line" id="hero-line-2" />}
     </h1>
     <div class="hero-cta">
       <a class="button" id="hero-cta-btn" href={thanksHref} rel="noreferrer">
-        <svg viewBox="0 0 24 24" width="20" height="20" style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          style="vertical-align: middle; margin-right: 8px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"
+          ><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"
+          ></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg
+        >
         <span id="hero-cta-text">{t.hero.cta}</span>
       </a>
       <span class="hero-cta-note">{t.hero.ctaNote}</span>
@@ -56,7 +62,7 @@ const ogUrl = `https://ottavada.com/${locale}/`;
   </section>
 
   <main class="container main-content">
-    <section class="section" id="descricao">
+    <section class="section" style="padding: 0px; margin: 0px; gap: 0" id="descricao">
       <div style="text-align: center;">
         <div class="description-text">
           <span class="section-kicker">{t.sections.descricao.kicker}</span>
@@ -66,7 +72,7 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       </div>
     </section>
 
-    <section class="section" id="para-quem">
+    <section class="section" style="padding: 0px; margin: 0px; gap: 0" id="para-quem">
       <div style="text-align: center;">
         <div class="description-text">
           <span class="section-kicker">{t.sections.paraQuem.kicker}</span>
@@ -76,7 +82,11 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       </div>
     </section>
 
-    <section class="section" id="como-funciona">
+    <section
+      class="section"
+      style="padding: 0px; margin: 0px; margin-bottom: 120px; gap: 0"
+      id="como-funciona"
+    >
       <div style="text-align: center;">
         <div class="description-text">
           <span class="section-kicker">{t.sections.comoFunciona.kicker}</span>
@@ -115,10 +125,10 @@ const ogUrl = `https://ottavada.com/${locale}/`;
       </div>
     </section>
 
-    <section class="section" id="sincronizacao">
+    <section class="section" id="modos">
       <div style="text-align: center;">
-        <span class="section-kicker">{t.sections.sincronizacao.kicker}</span>
-        <h2>{t.sections.sincronizacao.heading}</h2>
+        <span class="section-kicker">{t.sections.modos.kicker}</span>
+        <h2>{t.sections.modos.heading}</h2>
       </div>
       <div class="benefits-grid grid-2col">
         <article class="benefit-card featured">
@@ -129,6 +139,15 @@ const ogUrl = `https://ottavada.com/${locale}/`;
           <div><span class="card-icon">🎵</span><h3>{t.benefits.ensaio.title}</h3></div>
           <div class="card-body"><p>{t.benefits.ensaio.body}</p></div>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="sincronizacao">
+      <div style="text-align: center;">
+        <span class="section-kicker">{t.sections.sincronizacao.kicker}</span>
+        <h2>{t.sections.sincronizacao.heading}</h2>
+      </div>
+      <div class="benefits-grid">
         <article class="benefit-card">
           <div><span class="card-icon">☁️</span><h3>{t.benefits.nuvem.title}</h3></div>
           <div class="card-body"><p>{t.benefits.nuvem.body}</p></div>
@@ -136,6 +155,10 @@ const ogUrl = `https://ottavada.com/${locale}/`;
         <article class="benefit-card">
           <div><span class="card-icon">💾</span><h3>{t.benefits.backup.title}</h3></div>
           <div class="card-body"><p>{t.benefits.backup.body}</p></div>
+        </article>
+        <article class="benefit-card">
+          <div><span class="card-icon">📦</span><h3>{t.benefits.compactacao.title}</h3></div>
+          <div class="card-body"><p>{t.benefits.compactacao.body}</p></div>
         </article>
       </div>
     </section>
@@ -228,7 +251,18 @@ const ogUrl = `https://ottavada.com/${locale}/`;
         </div>
         <a class="help-card" href={docsHref}>
           <span class="help-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <svg
+              viewBox="0 0 24 24"
+              width="28"
+              height="28"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg
+            >
           </span>
           <div class="help-text">
             <h3>{t.help.docs.title}</h3>
@@ -268,9 +302,8 @@ const ogUrl = `https://ottavada.com/${locale}/`;
 
       function updateDisplay() {
         const firstLine = heroTitleLines[0].slice(0, Math.min(visibleChars, firstLineLength));
-        const secondLine = visibleChars > firstLineLength
-          ? heroTitleLines[1].slice(0, visibleChars - firstLineLength)
-          : "";
+        const secondLine =
+          visibleChars > firstLineLength ? heroTitleLines[1].slice(0, visibleChars - firstLineLength) : "";
         const el1 = document.getElementById("hero-line-1");
         const el2 = document.getElementById("hero-line-2");
         if (el1) el1.textContent = firstLine;
