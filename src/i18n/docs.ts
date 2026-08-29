@@ -387,12 +387,17 @@ const ptBR: DocsMessages = {
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Agora vamos ver na prática: para indexar um diretório, clique no ícone de uma pasta com uma lupa, no topo à direita.",
+          text: "Na prática, o processo é simples: para indexar um diretório, clique no ícone de uma pasta com uma lupa, no topo à direita.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "Ao clicar, será aberto o Explorador de Arquivos. Navegue até a pasta com as partituras, selecione-a e clique em **Selecionar pasta**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "No Explorador de Arquivos é possível selecionar **mais de um diretório** por vez. É recomendado selecionar várias pastas dentro de uma pasta maior, assim todas são indexadas de uma só vez.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
@@ -861,12 +866,17 @@ const en: DocsMessages = {
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Now let's see it in practice: to index a directory, click the folder-with-magnifying-glass icon, in the top right.",
+          text: "In practice, the process is simple: to index a directory, click the folder-with-magnifying-glass icon, in the top right.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "When you click, the File Explorer will open. Navigate to the folder with the scores, select it and click **Select folder**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "In the File Explorer you can select **more than one directory** at a time. It is recommended to select several folders inside a larger folder, so they are all indexed at once.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
@@ -1335,12 +1345,17 @@ const es: DocsMessages = {
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Ahora vamos a verlo en la práctica: para indexar un directorio, haz clic en el icono de una carpeta con una lupa, en la parte superior derecha.",
+          text: "En la práctica, el proceso es simple: para indexar un directorio, haz clic en el icono de una carpeta con una lupa, en la parte superior derecha.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "Al hacer clic, se abrirá el Explorador de Archivos. Navega hasta la carpeta con las partituras, selecciónala y haz clic en **Seleccionar carpeta**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "En el Explorador de Archivos puedes seleccionar **más de un directorio** a la vez. Se recomienda seleccionar varias carpetas dentro de una carpeta mayor, así todas se indexan de una sola vez.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
@@ -1813,12 +1828,17 @@ const fr: DocsMessages = {
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Voyons maintenant en pratique : pour indexer un répertoire, cliquez sur l’icône d’un dossier avec une loupe, en haut à droite.",
+          text: "En pratique, le processus est simple : pour indexer un répertoire, cliquez sur l’icône d’un dossier avec une loupe, en haut à droite.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "En cliquant, l’Explorateur de fichiers s’ouvrira. Naviguez jusqu’au dossier contenant les partitions, sélectionnez-le et cliquez sur **Sélectionner un dossier**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "Dans l’Explorateur de fichiers, vous pouvez sélectionner **plus d’un répertoire** à la fois. Il est recommandé de sélectionner plusieurs dossiers dans un dossier plus grand, afin qu’ils soient tous indexés d’un coup.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
@@ -2287,12 +2307,17 @@ text: "**Brani con lo stesso nome:** puoi avere brani con lo stesso nome, purch�
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Ora vediamolo in pratica: per indicizzare una directory, clicca sull’icona di una cartella con una lente d’ingrandimento, in alto a destra.",
+          text: "In pratica, il processo è semplice: per indicizzare una directory, clicca sull’icona di una cartella con una lente d’ingrandimento, in alto a destra.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "Cliccando, si aprirà Esplora File. Naviga fino alla cartella con gli spartiti, selezionala e clicca su **Seleziona cartella**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "In Esplora File puoi selezionare **più di una directory** alla volta. Si consiglia di selezionare più cartelle all’interno di una cartella più grande, così vengono indicizzate tutte in una sola volta.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
@@ -2761,12 +2786,17 @@ const de: DocsMessages = {
         { kind: "image", name: "image12", alt: "" },
         {
           kind: "p",
-          text: "Schauen wir es uns nun in der Praxis an: um ein Verzeichnis zu indizieren, klicken Sie auf das Ordner-mit-Lupe-Symbol oben rechts.",
+          text: "In der Praxis ist der Vorgang einfach: Um ein Verzeichnis zu indizieren, klicken Sie auf das Ordner-mit-Lupe-Symbol oben rechts.",
         },
         { kind: "image", name: "image13", alt: "" },
         {
           kind: "p",
           text: "Wenn Sie klicken, wird der Datei-Explorer geöffnet. Navigieren Sie zum Ordner mit den Partituren, wählen Sie ihn aus und klicken Sie auf **Ordner auswählen**.",
+        },
+        {
+          kind: "callout",
+          tone: "tip",
+          text: "Im Datei-Explorer können Sie **mehr als ein Verzeichnis** auf einmal auswählen. Es wird empfohlen, mehrere Ordner innerhalb eines größeren Ordners auszuwählen, so werden sie alle auf einmal indiziert.",
         },
         { kind: "image", name: "image14", alt: "" },
         {
