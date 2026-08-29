@@ -1,23 +1,26 @@
 {
-  "version": "1.3.0",
-  "pub_date": "2026-08-22T00:00:00Z",
+  "version": "1.4.0",
+  "pub_date": "2026-08-29T18:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RES3dNQ3NhYkpVczM5L3FJY2k1RWZ4ZThyM2JKWlp4RkVSMjFRVjU5SHBaczJaQjhvYmRLR1VUcCtrMWxQTUhNVTBlR3lrNzRRdjVvVnFVQmY4UEJuUkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NzA0MTU3CWZpbGU6T3R0YXZhZGFfMS4zLjBfeDY0LXNldHVwLmV4ZQpneW8yR2JqRVRxbzM4VkoycTBseFRtemVrNkV6RW9qZ3dCakVoMXBhaEhiOUs2MGpUZk81MEpScmhjYzNnVGRvQnlSUjd2NUtzTjRvREFBUmZ6KzBDUT09Cg==",
-      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RESzZieFhNbVdEUGlWdFpmdXlWZm5OcUxYbUxmS0t6dVM4bWQvdkNOeDFsTE9EK2JURzVCRmFPZDJTVEpuWFZwZUE5S1RjY1NGVlJLM29lUTJLeHg4M1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDE5ODQxCWZpbGU6T3R0YXZhZGFfMS40LjBfeDY0LXNldHVwLmV4ZQpwdHpwaTc2V0FYUkZlTnUwa2J3NWRKS3FPTDRoOHc1NUU1VXBvVEFYeUZHZmhaZTJPY2RaK1hETW9DKzNhNTEvSzMxWGVYWTg3YWZScEVXenRYbmpEUT09Cg==",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64-setup.exe"
     },
     "windows-i686": {
-      "signature": "ASSINATURA_X86",
-      "url": "https://github.com/Faell4328/ottavada/releases/download/v0.11/Ottavada_0.11.0_x86-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RESzk0WEM4ZkxiclVaT2RlQXB4eXZObmlvZmptcHZuK2FqZzh6YzEzVTRidmFCQXFoVmNXZVU1R0ZZODlsRHp4b0hEcUpGT2JXOWIrb0FHd0pwaHYzM3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDM0NzM4CWZpbGU6T3R0YXZhZGFfMS40LjBfeDg2LXNldHVwLmV4ZQpnRjZRZGlvMXM0c2tpQmZJQTVxd2JLUnJGUVJSa2JtS2JnVXl6MUkxaVBDeENQRnlYTDMvU2VNeXc2VzFwdzdUYWo2YnN1dGRsTXVSc3RzdU5uTVpCQT09Cg==",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x32-setup.exe"
     },
     "linux-x86_64": {
-      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_x86_64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RESzdERDJMZGFOSEtDNkVtbFgyVUVkcjlvdHpTRWFCUXFUV3lobU84MXJVUk5saFVzcWd0alJKNzNlcHJweGhQRWc3VVpmUkVVdUZxQ2ZyaGllWFJBV3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDIzMDEwCWZpbGU6T3R0YXZhZGFfMS40LjBfYW1kNjQuQXBwSW1hZ2UKOVZ3bzZob3JVbENjaFZaSXg1Z0l6amZ5aWNFQ2QvbVdQZ3J2N1QwZE1rSXFMTXg4SFhrSnRMVlluY3pFTklJd2tBZjhkMm1TNVdtdEVYeGlGSWlzQWc9PQo=",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64.AppImage"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_x64.dmg"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RESzNzSTVaMXUyYTRzajhIYzhxQVJvM0NPekhiM1ltVTczN0l2NG5tRGNkOHJyb3I4elBIQlIyNXFvOGpMbGlKVUlaQ2NEWWpzTGtjZXBzcmJNdktDbUFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDI3OTEyCWZpbGU6T3R0YXZhZGEuYXBwLnRhci5negp3UEtWV1RRU053Ylh6ditEdWlhMU5xNzJiUnRnZlhZcyswQzF0VnZISW5TeU1wUTFCSExkN1ZJaGFFOE9rSGVwWnJJbkpFblNWeGhHdWlxeG9mdENDUT09Cg==",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_aarch64.dmg"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVGUxSzBnd2RESzhUTmtGTmhONUxETFpyR3Z4N1dkNnU1aU9GdWVkNTBqcFRmeGhOakw2T1F6djllaHlUOFNIUDcwNUZWem1oRkl2SjhFcm5ON1VjeGJUSHgvakNNT0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDI4Mjk3CWZpbGU6T3R0YXZhZGEuYXBwLnRhci5negpJRnU2TUd0S1R3TmtUL3h5bTFZcXFVNTY2QU1VUnNuT25zQkdBOU93OHE4V2lQeEpGd1l2QXFJaXlhdUR4L2g4Z2NKcFpnSFI3YUNVenM5YnVURGNEQT09Cg==",
+      "url": "https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_arm.app.tar.gz"
     }
   },
   "notes_i18n": {
