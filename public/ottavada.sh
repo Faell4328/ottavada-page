@@ -7,7 +7,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-echo -e "${GREEN}Instalador do Ottavada v1.3 (com extração)${NC}"
+echo -e "${GREEN}Instalador do Ottavada v1.4 (com extração)${NC}"
 echo "----------------------------------------------"
 
 # Função para detectar a distribuição
@@ -112,8 +112,8 @@ INSTALL_BASE="$HOME/Applications"
 APP_DIR="$INSTALL_BASE/ottavada"
 DESKTOP_DIR="$HOME/.local/share/applications"
 ICON_DIR="$HOME/.local/share/icons"
-APPIMAGE_NAME="Ottavada_1.3.0_amd64.AppImage"
-DOWNLOAD_URL="https://github.com/Faell4328/ottavada/releases/download/v1.3/Ottavada_1.3.0_amd64.AppImage"
+APPIMAGE_NAME="Ottavada_x64.AppImage"
+DOWNLOAD_URL="https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64.AppImage"
 
 mkdir -p "$APP_DIR"
 mkdir -p "$DESKTOP_DIR"
