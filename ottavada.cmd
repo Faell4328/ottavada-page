@@ -1,10 +1,10 @@
 set ARCH=%PROCESSOR_ARCHITECTURE%
 
 if not "%ARCH:64=%"=="%ARCH%" (
-    curl -L -o ottavada.exe https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64-setup.exe
+    curl -L -o ottavada.exe https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x64.exe
     ottavada.exe /S
 ) else (
-    curl -L -o ottavada.exe https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x32-setup.exe
+    curl -L -o ottavada.exe https://github.com/Faell4328/ottavada/releases/download/v1.4/Ottavada_x32.exe
     ottavada.exe /S
 )
 
