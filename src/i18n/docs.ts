@@ -281,12 +281,12 @@ const ptBR: DocsMessages = {
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "Na página home, clique em **Baixar para MacOS** para baixar o arquivo <code>.dmg</code>. Ao abrir o arquivo, você verá o ícone do Ottavada com duas opções: **x64** (processadores Intel) e **arm** (Apple Silicon, como os chips M1/M2). No exemplo abaixo, a opção **arm** aparece com um ícone de cadeado cinza porque este computador é **x64**. Arraste o ícone do Ottavada para a pasta **Aplicativos**.",
+          text: "Na página home, clique em **Baixar para MacOS** para baixar o arquivo <code>.dmg</code> universal (compatível com processadores Intel e Apple Silicon). Ao abrir o arquivo, você verá o ícone do Ottavada. Arraste-o para a pasta **Aplicativos**.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "Após mover o ícone para **Aplicativos**, o Ottavada estará instalado. Você pode abri-lo a partir da pasta **Aplicativos** ou do Spotlight.",
+          text: "Após mover o ícone para **Aplicativos**, o Ottavada estará instalado. Na primeira vez, clique com o botão direito no ícone do Ottavada e selecione **Abrir**. Depois disso, você pode abri-lo normalmente com um duplo clique.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
@@ -760,12 +760,12 @@ const en: DocsMessages = {
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "On the home page, click **Download for MacOS** to download the <code>.dmg</code> file. When you open it, you'll see the Ottavada icon with two options: **x64** (Intel processors) and **arm** (Apple Silicon, such as M1/M2 chips). In the example below, the **arm** option appears with a gray lock icon because this computer is **x64**. Drag the Ottavada icon to the **Applications** folder.",
+          text: "On the home page, click **Download for MacOS** to download the universal <code>.dmg</code> file (compatible with both Intel and Apple Silicon processors). When you open it, you'll see the Ottavada icon. Drag it to the **Applications** folder.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "After dragging the icon to **Applications**, Ottavada is installed. You can open it from the **Applications** folder or Spotlight.",
+          text: "After dragging the icon to **Applications**, Ottavada is installed. The first time, right-click the Ottavada icon and select **Open**. After that, you can open it normally with a double-click.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
@@ -1239,12 +1239,12 @@ const es: DocsMessages = {
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "En la página de inicio, haz clic en **Descargar para MacOS** para descargar el archivo <code>.dmg</code>. Al abrirlo, verás el icono de Ottavada con dos opciones: **x64** (procesadores Intel) y **arm** (Apple Silicon, como los chips M1/M2). En el ejemplo siguiente, la opción **arm** aparece con un icono de candado gris porque este equipo es **x64**. Arrastra el icono de Ottavada a la carpeta **Aplicaciones**.",
+          text: "En la página de inicio, haz clic en **Descargar para MacOS** para descargar el archivo <code>.dmg</code> universal (compatible con procesadores Intel y Apple Silicon). Al abrirlo, verás el icono de Ottavada. Arrástralo a la carpeta **Aplicaciones**.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "Después de arrastrar el icono a **Aplicaciones**, Ottavada quedará instalado. Puedes abrirlo desde la carpeta **Aplicaciones** o con Spotlight.",
+          text: "Después de arrastrar el icono a **Aplicaciones**, Ottavada quedará instalado. La primera vez, haz clic con el botón derecho en el icono de Ottavada y selecciona **Abrir**. Después de eso, puedes abrirlo normalmente con un doble clic.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
@@ -1722,12 +1722,12 @@ const fr: DocsMessages = {
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "Sur la page d’accueil, cliquez sur **Télécharger pour MacOS** pour télécharger le fichier <code>.dmg</code>. Lorsque vous l’ouvrez, vous verrez l’icône Ottavada avec deux options : **x64** (processeurs Intel) et **arm** (Apple Silicon, comme les puces M1/M2). Dans l’exemple ci-dessous, l’option **arm** apparaît avec une icône de cadenas grise car cet ordinateur est en **x64**. Faites glisser l’icône Ottavada vers le dossier **Applications**.",
+          text: "Sur la page d’accueil, cliquez sur **Télécharger pour MacOS** pour télécharger le fichier <code>.dmg</code> universel (compatible avec les processeurs Intel et Apple Silicon). Lorsque vous l’ouvrez, vous verrez l’icône Ottavada. Faites-la glisser vers le dossier **Applications**.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "Après avoir glissé l’icône vers **Applications**, Ottavada est installé. Vous pouvez l’ouvrir depuis le dossier **Applications** ou via Spotlight.",
+          text: "Après avoir glissé l’icône vers **Applications**, Ottavada est installé. La première fois, cliquez avec le bouton droit sur l’icône Ottavada et sélectionnez **Ouvrir**. Ensuite, vous pouvez l’ouvrir normalement avec un double-clic.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
@@ -2201,12 +2201,12 @@ text: "**Brani con lo stesso nome:** puoi avere brani con lo stesso nome, purch�
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "Nella pagina iniziale, clicca su **Scarica per MacOS** per scaricare il file <code>.dmg</code>. Quando lo apri, vedrai l’icona di Ottavada con due opzioni: **x64** (processori Intel) e **arm** (Apple Silicon, come i chip M1/M2). Nell’esempio qui sotto, l’opzione **arm** appare con un’icona di lucchetto grigia perché questo computer è **x64**. Trascina l’icona di Ottavada nella cartella **Applicazioni**.",
+          text: "Nella pagina iniziale, clicca su **Scarica per MacOS** per scaricare il file <code>.dmg</code> universale (compatibile con processori Intel e Apple Silicon). Quando lo apri, vedrai l’icona di Ottavada. Trascinala nella cartella **Applicazioni**.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "Dopo aver trascinato l’icona in **Applicazioni**, Ottavada è installato. Puoi aprirlo dalla cartella **Applicazioni** o tramite Spotlight.",
+          text: "Dopo aver trascinato l’icona in **Applicazioni**, Ottavada è installato. La prima volta, fai clic con il tasto destro sull’icona di Ottavada e seleziona **Apri**. Dopodiché, puoi aprirlo normalmente con un doppio clic.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
@@ -2680,12 +2680,12 @@ const de: DocsMessages = {
         { kind: "h3", text: "macOS" },
         {
           kind: "p",
-          text: "Klicken Sie auf der Startseite auf **Download für MacOS**, um die <code>.dmg</code>-Datei herunterzuladen. Wenn Sie sie öffnen, sehen Sie das Ottavada-Symbol mit zwei Optionen: **x64** (Intel-Prozessoren) und **arm** (Apple Silicon, wie die M1-/M2-Chips). Im Beispiel unten erscheint die Option **arm** mit einem grauen Schlosssymbol, weil dieser Computer **x64** ist. Ziehen Sie das Ottavada-Symbol in den Ordner **Programme**.",
+          text: "Klicken Sie auf der Startseite auf **Download für MacOS**, um die universelle <code>.dmg</code>-Datei herunterzuladen (kompatibel mit Intel- und Apple-Silicon-Prozessoren). Wenn Sie sie öffnen, sehen Sie das Ottavada-Symbol. Ziehen Sie es in den Ordner **Programme**.",
         },
         { kind: "image", name: "image5", alt: "" },
         {
           kind: "p",
-          text: "Nachdem Sie das Symbol in **Programme** gezogen haben, ist Ottavada installiert. Sie können es aus dem Ordner **Programme** oder über Spotlight öffnen.",
+          text: "Nachdem Sie das Symbol in **Programme** gezogen haben, ist Ottavada installiert. Klicken Sie beim ersten Mal mit der rechten Maustaste auf das Ottavada-Symbol und wählen Sie **Öffnen**. Danach können Sie es normal mit einem Doppelklick öffnen.",
         },
         { kind: "image", name: "image6", alt: "" },
       ],
